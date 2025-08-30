@@ -1,0 +1,372 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Python",
+                "slug": "python",
+                "description": "Learn Python for data science, web development, and automation.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/python.svg",
+                "exercises": [
+                    {
+                        "level": "Beginner",
+                        "title": "Python Variables & Data Types",
+                        "description": "Learn about Python variables, data types, and basic operations.",
+                        "tags": [
+                            "variables",
+                            "data-types",
+                            "python",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Variable Assignment",
+                                "question": "<p>Write a function that creates variables of different data types and returns their values.</p><p>Your function should:</p><ul><li>Create a string variable for name</li><li>Create an integer variable for age</li><li>Create a float variable for height</li><li>Create a boolean variable for student status</li><li>Return all values in the specified format</li></ul>",
+                                "hint": "Python is dynamically typed - no need to declare types",
+                                "input": "Alice\n25\n5.6\ntrue",
+                                "output": "Alice\n25\n5.6\nTrue"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Python Data Types",
+                                "question": "<p>Which of the following is NOT a built-in data type in Python?</p><p>Python has several built-in data types:</p><ul><li>int - for integers</li><li>float - for decimal numbers</li><li>str - for strings</li><li>bool - for boolean values</li><li>list - for ordered collections</li><li>tuple - for immutable collections</li><li>dict - for key-value pairs</li><li>set - for unique collections</li></ul>",
+                                "hint": "Consider the 8 main built-in data types in Python",
+                                "options": [
+                                    "int - represents whole numbers",
+                                    "float - represents decimal numbers",
+                                    "array - represents arrays (this is not a built-in type)",
+                                    "str - represents text strings"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Type Conversion",
+                                "question": "<p>Write a function that converts a string to integer and a float to string.</p><p>Your function should:</p><ul><li>Use <code>int()</code> for string to integer conversion</li><li>Use <code>str()</code> for float to string conversion</li><li>Handle the conversions properly</li><li>Return the converted values</li></ul>",
+                                "hint": "Use int(), float(), str(), bool() for type conversion",
+                                "input": "123\n45.67",
+                                "output": "123\n45.67"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Dynamic Typing",
+                                "question": "<p>What is dynamic typing in Python?</p><p>Consider this code:</p><pre><code>x = 5        # x is an integer<br>x = \"hello\"  # x is now a string<br>x = [1, 2, 3] # x is now a list</code></pre><p>What does this demonstrate?</p>",
+                                "hint": "Consider how Python handles variable types",
+                                "options": [
+                                    "Variables can change their type during execution",
+                                    "Variables must be declared with a specific type",
+                                    "Variables can only hold one type of data",
+                                    "Variables are automatically converted to strings"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "String Operations",
+                                "question": "<p>Write a function that uses f-strings to create a formatted greeting message.</p><p>Your function should:</p><ul><li>Use f-string syntax with <code>f''</code></li><li>Use <code>{}</code> for variable interpolation</li><li>Create a personalized greeting with name and age</li><li>Return the formatted string</li></ul>",
+                                "hint": "Use f-strings for string formatting",
+                                "input": "John\n30",
+                                "output": "Hello John, you are 30 years old!"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "String Methods",
+                                "question": "<p>What does the <code>upper()</code> method do to a string?</p><p>Consider this example:</p><pre><code>text = \"hello world\"<br>result = text.upper()<br>print(result) # What is printed?</code></pre>",
+                                "hint": "Consider string case conversion",
+                                "options": [
+                                    "Converts all characters to uppercase",
+                                    "Converts all characters to lowercase",
+                                    "Capitalizes only the first letter",
+                                    "Reverses the string"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Numeric Operations",
+                                "question": "<p>Write a function that performs basic arithmetic operations on two numbers.</p><p>Your function should:</p><ul><li>Accept two numeric parameters</li><li>Perform addition, subtraction, multiplication, and division</li><li>Return the results as a formatted string</li><li>Handle the operations correctly</li></ul>",
+                                "hint": "Use +, -, *, / operators for arithmetic",
+                                "input": "10\n5",
+                                "output": "15 5 50 2.0"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Integer Division",
+                                "question": "<p>What is the difference between <code>/</code> and <code>//</code> operators in Python?</p><p>Consider these examples:</p><pre><code>print(7 / 3)   # 2.333...<br>print(7 // 3)  # 2</code></pre>",
+                                "hint": "Consider floating-point vs integer division",
+                                "options": [
+                                    "/ performs floating-point division, // performs integer division",
+                                    "/ performs integer division, // performs floating-point division",
+                                    "Both perform the same type of division",
+                                    "// is deprecated and should not be used"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Boolean Operations",
+                                "question": "<p>Write a function that performs logical AND operation on two boolean values.</p><p>Your function should:</p><ul><li>Accept two boolean parameters</li><li>Use the <code>and</code> operator</li><li>Return the result of the logical AND operation</li><li>Handle true/false combinations correctly</li></ul>",
+                                "hint": "Use and, or, not operators for boolean logic",
+                                "input": "True\nTrue",
+                                "output": "True"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Truthy/Falsy Values",
+                                "question": "<p>Which of the following is a falsy value in Python?</p><p>Python has several falsy values:</p><ul><li>False</li><li>None</li><li>0 (zero)</li><li>\"\" (empty string)</li><li>[] (empty list)</li><li>{} (empty dict)</li><li>() (empty tuple)</li><li>set() (empty set)</li></ul>",
+                                "hint": "Consider values that evaluate to False in boolean context",
+                                "options": [
+                                    "1 - any non-zero number is truthy",
+                                    "[] - empty list is falsy",
+                                    "[1, 2, 3] - non-empty list is truthy",
+                                    "'hello' - non-empty string is truthy"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "Python Lists",
+                        "description": "Master Python's fundamental sequence data type.",
+                        "tags": [
+                            "lists",
+                            "python",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "List Creation",
+                                "question": "<p>Write a function that creates a list with the given elements and returns its length.</p><p>Your function should:</p><ul><li>Use square brackets <code>[]</code> to create a list</li><li>Accept space-separated values as input</li><li>Split the input string into list elements</li><li>Return the length of the created list</li></ul>",
+                                "hint": "Use list literal syntax or list() constructor",
+                                "input": "apple orange banana",
+                                "output": "3"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "List Mutability",
+                                "question": "<p>Are lists mutable in Python?</p><p>Consider this code:</p><pre><code>my_list = [1, 2, 3]<br>my_list[0] = 10<br>print(my_list) # What is printed?</code></pre>",
+                                "hint": "Consider whether lists can be modified after creation",
+                                "options": [
+                                    "Yes, lists are mutable - can be changed after creation",
+                                    "No, lists are immutable - cannot be changed",
+                                    "Only in certain conditions",
+                                    "Only when using specific methods"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "List Operations",
+                                "question": "<p>Write a function that takes a list and returns the sum of all elements.</p><p>Your function should:</p><ul><li>Accept a list of numbers as input</li><li>Use the <code>sum()</code> function or loop through elements</li><li>Calculate the total sum</li><li>Return the result</li></ul>",
+                                "hint": "Use sum() function or loop to accumulate sum",
+                                "input": "1 2 3 4 5",
+                                "output": "15"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "List Methods",
+                                "question": "<p>What does the <code>append()</code> method do to a list?</p><p>Consider this example:</p><pre><code>numbers = [1, 2, 3]<br>numbers.append(4)<br>print(numbers) # What is printed?</code></pre>",
+                                "hint": "Consider adding elements to the end of a list",
+                                "options": [
+                                    "Adds an element to the end of the list",
+                                    "Adds an element to the beginning of the list",
+                                    "Removes an element from the list",
+                                    "Sorts the list in ascending order"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "List Comprehensions",
+                                "question": "<p>Write a function that uses list comprehension to create a list of squares of even numbers.</p><p>Your function should:</p><ul><li>Use list comprehension syntax <code>[expression for item in iterable if condition]</code></li><li>Filter for even numbers using <code>if</code> condition</li><li>Square each even number</li><li>Return the resulting list</li></ul>",
+                                "hint": "Use [expression for item in iterable if condition] syntax",
+                                "input": "1 2 3 4 5 6 7 8 9 10",
+                                "output": "4 16 36 64 100"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "List Slicing",
+                                "question": "<p>What does <code>my_list[1:4]</code> return?</p><p>Consider this list:</p><pre><code>my_list = [10, 20, 30, 40, 50]<br>result = my_list[1:4]<br>print(result) # What is printed?</code></pre>",
+                                "hint": "Consider slice syntax [start:end]",
+                                "options": [
+                                    "[10, 20, 30] - elements from index 0 to 3",
+                                    "[20, 30, 40] - elements from index 1 to 3",
+                                    "[20, 30, 40, 50] - elements from index 1 to 4",
+                                    "[30, 40, 50] - elements from index 2 to 4"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "List Sorting",
+                                "question": "<p>Write a function that sorts a list of numbers in ascending order.</p><p>Your function should:</p><ul><li>Use the <code>sort()</code> method or <code>sorted()</code> function</li><li>Sort the numbers in ascending order</li><li>Return the sorted list</li><li>Handle the sorting properly</li></ul>",
+                                "hint": "Use sort() method or sorted() function",
+                                "input": "64 34 25 12 22 11 90",
+                                "output": "11 12 22 25 34 64 90"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "List vs Tuple",
+                                "question": "<p>What is the main difference between lists and tuples?</p><p>Consider these examples:</p><pre><code>my_list = [1, 2, 3]   # Can be modified<br>my_tuple = (1, 2, 3)  # Cannot be modified</code></pre>",
+                                "hint": "Consider mutability differences",
+                                "options": [
+                                    "Lists are mutable, tuples are immutable",
+                                    "Lists are immutable, tuples are mutable",
+                                    "Lists can only contain numbers, tuples can contain anything",
+                                    "There is no difference between them"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "List Filtering",
+                                "question": "<p>Write a function that filters a list to return only positive numbers.</p><p>Your function should:</p><ul><li>Use the <code>filter()</code> function or list comprehension</li><li>Check if each number is greater than 0</li><li>Return only the positive numbers</li><li>Handle the filtering properly</li></ul>",
+                                "hint": "Use filter() function or list comprehension with condition",
+                                "input": "-5 10 -3 7 0 15 -8",
+                                "output": "10 7 15"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "List Length",
+                                "question": "<p>What does the <code>len()</code> function return for a list?</p><p>Consider this example:</p><pre><code>my_list = [1, 2, 3, 4, 5]<br>length = len(my_list)<br>print(length) # What is printed?</code></pre>",
+                                "hint": "Consider the number of elements in the list",
+                                "options": [
+                                    "The sum of all elements in the list",
+                                    "The number of elements in the list",
+                                    "The largest element in the list",
+                                    "The smallest element in the list"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "Python Functions",
+                        "description": "Learn function definition, parameters, and return values in Python.",
+                        "tags": [
+                            "functions",
+                            "python",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Function Definition",
+                                "question": "<p>Write a function that adds two numbers and returns the result.</p><p>Your function should:</p><ul><li>Use the <code>def</code> keyword to define the function</li><li>Accept two numeric parameters</li><li>Return the sum of the parameters</li><li>Handle basic arithmetic correctly</li></ul>",
+                                "hint": "Use def keyword to define functions",
+                                "input": "5\n3",
+                                "output": "8"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Function Parameters",
+                                "question": "<p>What are the different types of parameters in Python functions?</p><p>Consider these parameter types:</p><ul><li>Positional parameters - defined in order</li><li>Keyword parameters - specified by name</li><li>Default parameters - have default values</li><li>Variable-length parameters - *args and **kwargs</li></ul>",
+                                "hint": "Consider parameter passing mechanisms",
+                                "options": [
+                                    "Only positional parameters - order matters",
+                                    "Positional, keyword, default, and variable-length parameters",
+                                    "Only keyword parameters - name matters",
+                                    "Only default parameters - values matter"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Default Parameters",
+                                "question": "<p>Write a function with default parameters that greets a person.</p><p>Your function should:</p><ul><li>Accept a name parameter with a default value</li><li>Return a greeting message</li><li>Handle both cases: when name is provided and when it's not</li><li>Use f-strings for the greeting</li></ul>",
+                                "hint": "Set default values in function parameters",
+                                "input": "Alice\n",
+                                "output": "Hello Alice!\nHello Guest!"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Return Statement",
+                                "question": "<p>What happens if a function doesn't have a return statement?</p><p>Consider this function:</p><pre><code>def greet(name):<br>  print(f\"Hello {name}!\")\br>result = greet(\"John\")<br>print(result) # What is printed?</code></pre>",
+                                "hint": "Consider implicit return values",
+                                "options": [
+                                    "Returns None - implicit return value",
+                                    "Returns the last printed value",
+                                    "Raises an error - return is required",
+                                    "Returns an empty string"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Lambda Functions",
+                                "question": "<p>Write a lambda function that squares a number.</p><p>Your lambda function should:</p><ul><li>Use the <code>lambda</code> keyword</li><li>Accept a single parameter</li><li>Return the square of the input</li><li>Use proper mathematical calculation</li></ul>",
+                                "hint": "Use lambda keyword for anonymous functions",
+                                "input": "6",
+                                "output": "36"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Scope",
+                                "question": "<p>What is the scope of variables in Python functions?</p><p>Consider this example:</p><pre><code>x = 10  # Global variable<br>def my_function():<br>  y = 20  # Local variable<br>  print(x)  # Can access global<br>  print(y)  # Can access local</code></pre>",
+                                "hint": "Consider variable accessibility",
+                                "options": [
+                                    "All variables are global - accessible everywhere",
+                                    "Variables have local scope - only accessible within function",
+                                    "Functions can access global variables but create local scope for new variables",
+                                    "All variables are local - not accessible outside function"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Multiple Return Values",
+                                "question": "<p>Write a function that returns multiple values using tuple unpacking.</p><p>Your function should:</p><ul><li>Return multiple values separated by commas</li><li>Handle tuple unpacking in the calling code</li><li>Return the values in the specified format</li><li>Use proper return syntax</li></ul>",
+                                "hint": "Return multiple values with comma separation",
+                                "input": "John\n25",
+                                "output": "John 25"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Docstrings",
+                                "question": "<p>What is the purpose of docstrings in Python?</p><p>Consider this example:</p><pre><code>def add(a, b):<br>  \"\"\"Add two numbers and return the result.\"\"\"<br>  return a + b</code></pre>",
+                                "hint": "Consider documentation and help",
+                                "options": [
+                                    "To add comments to code - inline documentation",
+                                    "To provide function documentation - accessible via help()",
+                                    "To create function names - naming convention",
+                                    "To define function parameters - parameter specification"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Variable Arguments",
+                                "question": "<p>Write a function that accepts variable arguments using *args.</p><p>Your function should:</p><ul><li>Use <code>*args</code> to accept variable arguments</li><li>Calculate the sum of all arguments</li><li>Handle any number of arguments</li><li>Return the total sum</li></ul>",
+                                "hint": "Use *args for variable-length arguments",
+                                "input": "1 2 3 4 5",
+                                "output": "15"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Function Objects",
+                                "question": "<p>Are functions objects in Python?</p><p>Consider this example:</p><pre><code>def greet(name):<br>  return f\"Hello {name}!\"<br>my_func = greet  # Assigning function to variable<br>print(my_func(\"John\"))  # Calling via variable</code></pre>",
+                                "hint": "Consider function assignment and calling",
+                                "options": [
+                                    "Yes, functions are first-class objects - can be assigned and passed around",
+                                    "No, functions are special - cannot be assigned",
+                                    "Only lambda functions are objects - regular functions are not",
+                                    "Only built-in functions are objects - user-defined functions are not"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

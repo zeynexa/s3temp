@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Design",
+            "slug": "design",
+            "description": "Master design principles, user experience, and visual communication techniques.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/design.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "UI/UX Design",
+                "slug": "ui-ux-design",
+                "description": "Learn user interface and user experience design principles and best practices.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/ui-ux-design.svg",
+                "exercises": [
+                    {
+                        "level": "Beginner",
+                        "title": "Design Fundamentals",
+                        "description": "Learn fundamental design principles and concepts.",
+                        "tags": [
+                            "design-principles",
+                            "fundamentals",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Visual Hierarchy",
+                                "question": "<p>What is visual hierarchy in design?</p><p>Consider: How elements are organized to guide user attention</p>",
+                                "hint": "Think about the order of importance in visual elements",
+                                "options": [
+                                    "Using only one color",
+                                    "Organizing elements to show importance and guide user attention",
+                                    "Making everything the same size",
+                                    "Using only text elements"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Color Theory",
+                                "question": "<p>What are complementary colors?</p><p>Consider: Color relationships on the color wheel</p>",
+                                "hint": "Think about colors that are opposite each other",
+                                "options": [
+                                    "Colors that are next to each other",
+                                    "Colors that are opposite each other on the color wheel",
+                                    "Colors that are the same shade",
+                                    "Colors that are very light"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Typography",
+                                "question": "<p>What is the purpose of typography in design?</p><p>Consider: How text affects readability and communication</p>",
+                                "hint": "Think about making text readable and visually appealing",
+                                "options": [
+                                    "To use as many fonts as possible",
+                                    "To make text readable, legible, and visually appealing",
+                                    "To make text as small as possible",
+                                    "To use only decorative fonts"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "User Experience Basics",
+                        "description": "Learn fundamental user experience concepts and principles.",
+                        "tags": [
+                            "user-experience",
+                            "basics",
+                            "fundamentals"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "User-Centered Design",
+                                "question": "<p>What is user-centered design?</p><p>Consider: Who the design process focuses on</p>",
+                                "hint": "Think about putting users at the center of the design process",
+                                "options": [
+                                    "Designing for designers only",
+                                    "Designing with users' needs and preferences as the primary focus",
+                                    "Designing for the latest technology",
+                                    "Designing based on personal preferences"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Usability",
+                                "question": "<p>What is usability in UX design?</p><p>Consider: How easy something is to use</p>",
+                                "hint": "Think about effectiveness, efficiency, and satisfaction",
+                                "options": [
+                                    "How beautiful something looks",
+                                    "How easy and effective something is to use",
+                                    "How expensive something is",
+                                    "How fast something loads"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "User Journey",
+                                "question": "<p>What is a user journey map?</p><p>Consider: The path a user takes through an experience</p>",
+                                "hint": "Think about mapping out user interactions and emotions",
+                                "options": [
+                                    "A map of the website",
+                                    "A visualization of user interactions and emotions throughout an experience",
+                                    "A list of user complaints",
+                                    "A technical diagram"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

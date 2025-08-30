@@ -1,0 +1,371 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Java",
+                "slug": "java",
+                "description": "Master Java for enterprise development and Android applications.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/java.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "Java Object-Oriented Programming",
+                        "description": "Learn classes, objects, inheritance, and polymorphism in Java.",
+                        "tags": [
+                            "oop",
+                            "java",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Class Definition",
+                                "question": "<p>Write a Java class that represents a Person with name and age properties.</p><p>Your class should:</p><ul><li>Declare private instance variables for name and age</li><li>Create a constructor that accepts name and age</li><li>Create getter and setter methods</li><li>Override <code>toString()</code> method</li><li>Return the formatted string representation</li></ul>",
+                                "hint": "Use private fields, constructor, getters, setters, and toString()",
+                                "input": "John\n25",
+                                "output": "Person{name='John', age=25}"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Access Modifiers",
+                                "question": "<p>What is the difference between <code>public</code> and <code>private</code> access modifiers?</p><p>Consider these access levels:</p><ul><li><code>public</code> - accessible from anywhere</li><li><code>private</code> - accessible only within the class</li><li><code>protected</code> - accessible within package and subclasses</li><li><code>default</code> - accessible within package only</li></ul>",
+                                "hint": "Consider visibility and accessibility",
+                                "options": [
+                                    "public is accessible everywhere, private is accessible only within the class",
+                                    "private is accessible everywhere, public is accessible only within the class",
+                                    "Both are accessible everywhere",
+                                    "Both are accessible only within the class"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Inheritance",
+                                "question": "<p>Write a Student class that extends Person and adds a grade property.</p><p>Your class should:</p><ul><li>Use <code>extends</code> keyword to inherit from Person</li><li>Call <code>super()</code> in the constructor</li><li>Add a grade property to the Student class</li><li>Override the <code>toString()</code> method</li><li>Return the student's information including grade</li></ul>",
+                                "hint": "Use extends keyword and super() constructor call",
+                                "input": "Alice\n20\nA",
+                                "output": "Student{name='Alice', age=20, grade='A'}"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Method Overriding",
+                                "question": "<p>What is method overriding in Java?</p><p>Consider this example:</p><pre><code>class Parent {<br>  public void display() {<br>    System.out.println(\"Parent\");<br>  }<br>}<br>class Child extends Parent {<br>  @Override<br>  public void display() {<br>    System.out.println(\"Child\");<br>  }<br>}</code></pre>",
+                                "hint": "Consider runtime polymorphism",
+                                "options": [
+                                    "A child class provides a specific implementation of a method defined in the parent class",
+                                    "A parent class provides a specific implementation of a method defined in the child class",
+                                    "Both classes provide the same implementation of a method",
+                                    "A method is hidden and cannot be accessed"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Abstract Classes",
+                                "question": "<p>Write an abstract class Shape with an abstract method calculateArea().</p><p>Your abstract class should:</p><ul><li>Use <code>abstract</code> keyword for the class</li><li>Declare an abstract method <code>calculateArea()</code></li><li>Include a concrete method for getting the shape name</li><li>Be designed for inheritance</li><li>Return the area calculation result</li></ul>",
+                                "hint": "Use abstract class and abstract method syntax",
+                                "input": "5\n3",
+                                "output": "Rectangle area: 15.0"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Interfaces",
+                                "question": "<p>What is the main difference between abstract classes and interfaces?</p><p>Consider these characteristics:</p><ul><li>Abstract classes can have constructors, interfaces cannot</li><li>Abstract classes can have instance variables, interfaces can only have constants</li><li>Abstract classes can have concrete methods, interfaces can have default methods</li><li>A class can extend only one abstract class, but implement multiple interfaces</li></ul>",
+                                "hint": "Consider multiple inheritance and implementation",
+                                "options": [
+                                    "A class can extend multiple abstract classes but implement only one interface",
+                                    "A class can extend only one abstract class but implement multiple interfaces",
+                                    "A class can extend multiple abstract classes and implement multiple interfaces",
+                                    "A class can extend only one abstract class and implement only one interface"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Polymorphism",
+                                "question": "<p>Write a program that demonstrates polymorphism with different shapes.</p><p>Your program should:</p><ul><li>Create an array of Shape objects</li><li>Include different shape types (Circle, Rectangle)</li><li>Use polymorphism to call <code>calculateArea()</code> on each shape</li><li>Print the area of each shape</li><li>Demonstrate runtime polymorphism</li></ul>",
+                                "hint": "Use array of parent class type with child class objects",
+                                "input": "5\n3\n4",
+                                "output": "Circle area: 78.54\nRectangle area: 12.0"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Static Methods",
+                                "question": "<p>What is the difference between static and instance methods?</p><p>Consider this example:</p><pre><code>class MathUtils {<br>  public static int add(int a, int b) {<br>    return a + b;<br>  }<br>  public int multiply(int a, int b) {<br>    return a * b;<br>  }<br>}</code></pre>",
+                                "hint": "Consider object creation requirements",
+                                "options": [
+                                    "Static methods can be called without creating an object, instance methods require an object",
+                                    "Instance methods can be called without creating an object, static methods require an object",
+                                    "Both require object creation",
+                                    "Neither requires object creation"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Final Classes",
+                                "question": "<p>Write a final class that cannot be inherited.</p><p>Your class should:</p><ul><li>Use <code>final</code> keyword for the class declaration</li><li>Include some utility methods</li><li>Demonstrate that it cannot be extended</li><li>Return appropriate results</li><li>Show final class behavior</li></ul>",
+                                "hint": "Use final keyword to prevent inheritance",
+                                "input": "10\n5",
+                                "output": "Sum: 15\nProduct: 50"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Encapsulation",
+                                "question": "<p>What is encapsulation in Java?</p><p>Consider this example:</p><pre><code>public class BankAccount {<br>  private double balance;<br>  public double getBalance() {<br>    return balance;<br>  }<br>  public void setBalance(double balance) {<br>    if (balance >= 0) {<br>      this.balance = balance;<br>    }<br>  }<br>}</code></pre>",
+                                "hint": "Consider data hiding and access control",
+                                "options": [
+                                    "Bundling data and methods that operate on that data within a single unit",
+                                    "Creating multiple copies of the same class",
+                                    "Making all methods public for easy access",
+                                    "Removing all private modifiers from fields"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "Java Collections Framework",
+                        "description": "Master Java collections including Lists, Sets, and Maps.",
+                        "tags": [
+                            "collections",
+                            "java",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "ArrayList Operations",
+                                "question": "<p>Write a Java program that demonstrates ArrayList operations.</p><p>Your program should:</p><ul><li>Create an ArrayList of Strings</li><li>Add elements using <code>add()</code> method</li><li>Remove elements using <code>remove()</code> method</li><li>Check if an element exists using <code>contains()</code></li><li>Print the final list</li></ul>",
+                                "hint": "Use ArrayList methods: add(), remove(), contains()",
+                                "input": "apple\norange\nbanana\napple",
+                                "output": "Size: 3\nContains apple: false\nFinal list: [orange, banana]"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "List vs Set",
+                                "question": "<p>What is the main difference between List and Set in Java?</p><p>Consider these characteristics:</p><ul><li>List allows duplicate elements, Set does not</li><li>List maintains insertion order, Set may not</li><li>List allows null elements, Set may not</li><li>List is indexed, Set is not</li></ul>",
+                                "hint": "Consider element uniqueness and ordering",
+                                "options": [
+                                    "List allows duplicates and maintains order, Set does not allow duplicates",
+                                    "Set allows duplicates and maintains order, List does not allow duplicates",
+                                    "Both allow duplicates and maintain order",
+                                    "Neither allows duplicates or maintains order"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "HashMap Operations",
+                                "question": "<p>Write a Java program that demonstrates HashMap operations.</p><p>Your program should:</p><ul><li>Create a HashMap with String keys and Integer values</li><li>Add key-value pairs using <code>put()</code> method</li><li>Retrieve values using <code>get()</code> method</li><li>Check if a key exists using <code>containsKey()</code></li><li>Print the map size and contents</li></ul>",
+                                "hint": "Use HashMap methods: put(), get(), containsKey()",
+                                "input": "apple\n5\norange\n3\nbanana\n7",
+                                "output": "Size: 3\nValue for apple: 5\nContains orange: true"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "HashSet vs TreeSet",
+                                "question": "<p>What is the difference between HashSet and TreeSet?</p><p>Consider these characteristics:</p><ul><li>HashSet uses hash table, TreeSet uses red-black tree</li><li>HashSet does not maintain order, TreeSet maintains sorted order</li><li>HashSet is faster for basic operations, TreeSet is slower but ordered</li><li>HashSet allows null, TreeSet does not allow null</li></ul>",
+                                "hint": "Consider performance vs ordering",
+                                "options": [
+                                    "HashSet is unordered and faster, TreeSet is ordered and slower",
+                                    "TreeSet is unordered and faster, HashSet is ordered and slower",
+                                    "Both are unordered and have same performance",
+                                    "Both are ordered and have same performance"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Iterator Usage",
+                                "question": "<p>Write a Java program that uses Iterator to traverse a List.</p><p>Your program should:</p><ul><li>Create a List of integers</li><li>Get an Iterator using <code>iterator()</code> method</li><li>Use <code>hasNext()</code> and <code>next()</code> methods</li><li>Remove elements using <code>remove()</code> method</li><li>Print the remaining elements</li></ul>",
+                                "hint": "Use Iterator methods: hasNext(), next(), remove()",
+                                "input": "1 2 3 4 5",
+                                "output": "Remaining elements: 1 3 5"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Collections.sort()",
+                                "question": "<p>How do you sort a List in Java?</p><p>Consider these sorting methods:</p><ul><li><code>Collections.sort()</code> - sorts in natural order</li><li><code>Collections.sort(list, comparator)</code> - sorts using custom comparator</li><li><code>list.sort(comparator)</code> - Java 8 method</li><li><code>Arrays.sort()</code> - for arrays only</li></ul>",
+                                "hint": "Consider List sorting methods",
+                                "options": [
+                                    "Only Collections.sort() method",
+                                    "Multiple methods: Collections.sort(), list.sort(), custom comparators",
+                                    "Only Arrays.sort() method",
+                                    "Only manual sorting algorithms"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "LinkedList vs ArrayList",
+                                "question": "<p>Write a program that demonstrates the difference between LinkedList and ArrayList performance.</p><p>Your program should:</p><ul><li>Create both LinkedList and ArrayList</li><li>Add elements to both collections</li><li>Measure insertion time at the beginning</li><li>Measure access time for elements</li><li>Print the performance comparison</li></ul>",
+                                "hint": "Use System.currentTimeMillis() to measure performance",
+                                "input": "1000",
+                                "output": "LinkedList insertion: faster\nArrayList access: faster"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "ConcurrentModificationException",
+                                "question": "<p>When does ConcurrentModificationException occur?</p><p>Consider this example:</p><pre><code>List&lt;String&gt; list = new ArrayList&lt;&gt;();<br>list.add(\"A\");<br>list.add(\"B\");<br>for (String item : list) {<br>  list.remove(item); // Exception occurs here<br>}</code></pre>",
+                                "hint": "Consider modification during iteration",
+                                "options": [
+                                    "When modifying a collection while iterating over it",
+                                    "When accessing a collection from multiple threads",
+                                    "When creating a collection with null elements",
+                                    "When sorting a collection with custom comparator"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "PriorityQueue",
+                                "question": "<p>Write a Java program that uses PriorityQueue to implement a min-heap.</p><p>Your program should:</p><ul><li>Create a PriorityQueue of integers</li><li>Add elements using <code>offer()</code> method</li><li>Remove elements using <code>poll()</code> method</li><li>Peek at the top element using <code>peek()</code> method</li><li>Print elements in priority order</li></ul>",
+                                "hint": "Use PriorityQueue methods: offer(), poll(), peek()",
+                                "input": "5 3 8 1 9 2",
+                                "output": "1 2 3 5 8 9"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "WeakHashMap",
+                                "question": "<p>What is the purpose of WeakHashMap in Java?</p><p>Consider these characteristics:</p><ul><li>WeakHashMap uses weak references for keys</li><li>Keys can be garbage collected when not referenced elsewhere</li><li>Useful for caching scenarios</li><li>Prevents memory leaks in certain situations</li></ul>",
+                                "hint": "Consider memory management and garbage collection",
+                                "options": [
+                                    "To create a faster HashMap implementation",
+                                    "To allow keys to be garbage collected when not referenced elsewhere",
+                                    "To create a thread-safe HashMap implementation",
+                                    "To create a sorted HashMap implementation"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "Java Exception Handling",
+                        "description": "Learn exception handling, custom exceptions, and best practices.",
+                        "tags": [
+                            "exceptions",
+                            "java",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Try-Catch Block",
+                                "question": "<p>Write a Java program that demonstrates try-catch exception handling.</p><p>Your program should:</p><ul><li>Use <code>try</code> block to attempt risky operations</li><li>Use <code>catch</code> block to handle specific exceptions</li><li>Handle <code>ArithmeticException</code> for division by zero</li><li>Print appropriate error messages</li><li>Continue execution after exception handling</li></ul>",
+                                "hint": "Use try-catch with specific exception types",
+                                "input": "10\n0",
+                                "output": "Result: 0\nError: Division by zero"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Exception Hierarchy",
+                                "question": "<p>What is the difference between checked and unchecked exceptions?</p><p>Consider these exception types:</p><ul><li>Checked exceptions must be handled or declared</li><li>Unchecked exceptions (RuntimeException) do not need to be handled</li><li>IOException is a checked exception</li><li>NullPointerException is an unchecked exception</li></ul>",
+                                "hint": "Consider compilation requirements",
+                                "options": [
+                                    "Checked exceptions must be handled at compile time, unchecked exceptions do not",
+                                    "Unchecked exceptions must be handled at compile time, checked exceptions do not",
+                                    "Both must be handled at compile time",
+                                    "Neither needs to be handled at compile time"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Multiple Catch Blocks",
+                                "question": "<p>Write a Java program that uses multiple catch blocks for different exceptions.</p><p>Your program should:</p><ul><li>Use multiple <code>catch</code> blocks for different exception types</li><li>Handle <code>NumberFormatException</code> for invalid number parsing</li><li>Handle <code>ArrayIndexOutOfBoundsException</code> for array access</li><li>Use a general <code>Exception</code> catch block as fallback</li><li>Print specific error messages for each exception</li></ul>",
+                                "hint": "Use multiple catch blocks with specific exception types",
+                                "input": "abc\n5",
+                                "output": "NumberFormatException: Invalid number format\nArrayIndexOutOfBoundsException: Index out of bounds"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Finally Block",
+                                "question": "<p>What is the purpose of the <code>finally</code> block?</p><p>Consider this example:</p><pre><code>try {<br>  // risky operation<br>} catch (Exception e) {<br>  // handle exception<br>} finally {<br>  // cleanup code<br>}</code></pre>",
+                                "hint": "Consider cleanup and resource management",
+                                "options": [
+                                    "To handle exceptions that were not caught",
+                                    "To execute cleanup code regardless of whether an exception occurred",
+                                    "To skip exception handling",
+                                    "To create new exceptions"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Custom Exception",
+                                "question": "<p>Write a custom exception class for age validation.</p><p>Your custom exception should:</p><ul><li>Extend <code>Exception</code> class</li><li>Have a constructor that accepts a message</li><li>Be used to validate age (must be positive and less than 150)</li><li>Throw the custom exception for invalid ages</li><li>Handle the custom exception properly</li></ul>",
+                                "hint": "Create a class that extends Exception",
+                                "input": "200\n-5\n25",
+                                "output": "InvalidAgeException: Age must be between 0 and 150\nInvalidAgeException: Age must be between 0 and 150\nValid age: 25"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Throws Keyword",
+                                "question": "<p>What does the <code>throws</code> keyword do in Java?</p><p>Consider this example:</p><pre><code>public void readFile() throws IOException {<br>  // file reading code<br>}</code></pre>",
+                                "hint": "Consider exception declaration vs handling",
+                                "options": [
+                                    "Handles the exception within the method",
+                                    "Declares that the method may throw the specified exception",
+                                    "Prevents the exception from occurring",
+                                    "Creates a new exception object"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Try-With-Resources",
+                                "question": "<p>Write a Java program that uses try-with-resources for automatic resource management.</p><p>Your program should:</p><ul><li>Use try-with-resources syntax</li><li>Work with resources that implement <code>AutoCloseable</code></li><li>Automatically close resources when done</li><li>Handle exceptions properly</li><li>Demonstrate automatic cleanup</li></ul>",
+                                "hint": "Use try-with-resources syntax for automatic cleanup",
+                                "input": "test data",
+                                "output": "Resource opened\nData written: test data\nResource automatically closed"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Exception Propagation",
+                                "question": "<p>What happens when an exception is not caught in a method?</p><p>Consider this call stack:</p><pre><code>methodA() calls methodB() calls methodC()<br>methodC() throws an exception</code></pre>",
+                                "hint": "Consider exception flow through call stack",
+                                "options": [
+                                    "The exception is automatically handled by the JVM",
+                                    "The exception propagates up the call stack until caught or program terminates",
+                                    "The exception is ignored and execution continues",
+                                    "The exception is converted to a runtime exception"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Exception Chaining",
+                                "question": "<p>Write a Java program that demonstrates exception chaining.</p><p>Your program should:</p><ul><li>Create a custom exception</li><li>Use <code>initCause()</code> method to chain exceptions</li><li>Use <code>getCause()</code> method to retrieve the original exception</li><li>Print the exception chain</li><li>Show the relationship between exceptions</li></ul>",
+                                "hint": "Use initCause() and getCause() methods",
+                                "input": "database error",
+                                "output": "CustomException: Application error\nCaused by: SQLException: database error"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Best Practices",
+                                "question": "<p>What is a best practice for exception handling in Java?</p><p>Consider these practices:</p><ul><li>Never catch and ignore exceptions</li><li>Use specific exception types instead of generic Exception</li><li>Clean up resources in finally blocks</li><li>Provide meaningful error messages</li></ul>",
+                                "hint": "Consider exception handling guidelines",
+                                "options": [
+                                    "Always catch and ignore all exceptions",
+                                    "Use specific exception types and provide meaningful error messages",
+                                    "Never use try-catch blocks",
+                                    "Always use generic Exception catch blocks"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

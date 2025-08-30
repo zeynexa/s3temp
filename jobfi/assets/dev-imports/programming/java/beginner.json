@@ -1,0 +1,372 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Java",
+                "slug": "java",
+                "description": "Master Java for enterprise development and Android applications.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/java.svg",
+                "exercises": [
+                    {
+                        "level": "Beginner",
+                        "title": "Java Variables & Data Types",
+                        "description": "Learn about Java variables, primitive data types, and basic operations.",
+                        "tags": [
+                            "variables",
+                            "data-types",
+                            "java",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Variable Declaration",
+                                "question": "<p>Write a Java program that declares variables of different data types and prints their values.</p><p>Your program should:</p><ul><li>Declare an <code>int</code> variable for age</li><li>Declare a <code>String</code> variable for name</li><li>Declare a <code>double</code> variable for height</li><li>Declare a <code>boolean</code> variable for student status</li><li>Print all values using <code>System.out.println()</code></li></ul>",
+                                "hint": "Use proper Java data types and System.out.println()",
+                                "input": "John\n25\n5.8\ntrue",
+                                "output": "Name: John\nAge: 25\nHeight: 5.8\nStudent: true"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Primitive Data Types",
+                                "question": "<p>Which of the following is NOT a primitive data type in Java?</p><p>Java has 8 primitive data types:</p><ul><li>byte - 8-bit signed integer</li><li>short - 16-bit signed integer</li><li>int - 32-bit signed integer</li><li>long - 64-bit signed integer</li><li>float - 32-bit floating point</li><li>double - 64-bit floating point</li><li>boolean - true/false</li><li>char - 16-bit Unicode character</li></ul>",
+                                "hint": "Consider the 8 primitive types in Java",
+                                "options": [
+                                    "int - represents whole numbers",
+                                    "String - represents text (this is not primitive)",
+                                    "boolean - represents true/false values",
+                                    "double - represents decimal numbers"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Type Conversion",
+                                "question": "<p>Write a Java program that demonstrates type conversion (casting).</p><p>Your program should:</p><ul><li>Declare a <code>double</code> variable with a decimal value</li><li>Cast it to <code>int</code> using explicit casting</li><li>Declare an <code>int</code> variable</li><li>Convert it to <code>String</code> using <code>String.valueOf()</code></li><li>Print both results</li></ul>",
+                                "hint": "Use (int) for casting and String.valueOf() for conversion",
+                                "input": "3.14\n42",
+                                "output": "Double: 3.14\nCasted to int: 3\nInt: 42\nAs String: 42"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Variable Scope",
+                                "question": "<p>What is the scope of a variable declared inside a method in Java?</p><p>Consider this code:</p><pre><code>public void myMethod() {<br>  int x = 10;<br>  System.out.println(x);<br>}<br>// Can we access x here?</code></pre>",
+                                "hint": "Consider where variables are accessible",
+                                "options": [
+                                    "Global scope - accessible anywhere in the class",
+                                    "Method scope - only accessible within the method",
+                                    "Class scope - accessible in all methods of the class",
+                                    "Package scope - accessible in the entire package"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "String Operations",
+                                "question": "<p>Write a Java program that demonstrates String concatenation and methods.</p><p>Your program should:</p><ul><li>Create two String variables</li><li>Concatenate them using the <code>+</code> operator</li><li>Use <code>toUpperCase()</code> method on the result</li><li>Use <code>length()</code> method to get the string length</li><li>Print all results</li></ul>",
+                                "hint": "Use + for concatenation and String methods",
+                                "input": "Hello\nWorld",
+                                "output": "Concatenated: HelloWorld\nUppercase: HELLOWORLD\nLength: 10"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Final Keyword",
+                                "question": "<p>What does the <code>final</code> keyword do to a variable?</p><p>Consider this example:</p><pre><code>final int MAX_SIZE = 100;<br>MAX_SIZE = 200; // What happens here?</code></pre>",
+                                "hint": "Consider immutability and reassignment",
+                                "options": [
+                                    "Makes the variable constant - cannot be reassigned",
+                                    "Makes the variable public - accessible everywhere",
+                                    "Makes the variable static - shared across instances",
+                                    "Makes the variable private - only accessible in class"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Arithmetic Operations",
+                                "question": "<p>Write a Java program that performs basic arithmetic operations.</p><p>Your program should:</p><ul><li>Declare two <code>int</code> variables</li><li>Perform addition, subtraction, multiplication, and division</li><li>Use <code>%</code> operator for modulo operation</li><li>Print all results</li></ul>",
+                                "hint": "Use +, -, *, /, % operators for arithmetic",
+                                "input": "10\n3",
+                                "output": "Addition: 13\nSubtraction: 7\nMultiplication: 30\nDivision: 3\nModulo: 1"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Operator Precedence",
+                                "question": "<p>What is the result of <code>2 + 3 * 4</code> in Java?</p><p>Consider operator precedence:</p><ul><li>Multiplication and division have higher precedence than addition and subtraction</li><li>Operators with same precedence are evaluated left to right</li><li>Parentheses can override precedence</li></ul>",
+                                "hint": "Consider which operation is performed first",
+                                "options": [
+                                    "20 - addition is performed first",
+                                    "14 - multiplication is performed first",
+                                    "24 - all operations are performed left to right",
+                                    "Error - invalid expression"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Boolean Operations",
+                                "question": "<p>Write a Java program that demonstrates logical operators.</p><p>Your program should:</p><ul><li>Declare two <code>boolean</code> variables</li><li>Use <code>&&</code> (AND) operator</li><li>Use <code>||</code> (OR) operator</li><li>Use <code>!</code> (NOT) operator</li><li>Print all results</li></ul>",
+                                "hint": "Use &&, ||, ! operators for boolean logic",
+                                "input": "true\ntrue",
+                                "output": "AND: true\nOR: true\nNOT first: false\nNOT second: false"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Wrapper Classes",
+                                "question": "<p>What is the purpose of wrapper classes in Java?</p><p>Consider these examples:</p><ul><li><code>Integer</code> wraps <code>int</code></li><li><code>Double</code> wraps <code>double</code></li><li><code>Boolean</code> wraps <code>boolean</code></li><li><code>String</code> is not a wrapper class</li></ul>",
+                                "hint": "Consider object-oriented features for primitive types",
+                                "options": [
+                                    "To make primitive types into objects - enable OOP features",
+                                    "To make objects into primitive types - improve performance",
+                                    "To create new data types - extend functionality",
+                                    "To replace primitive types - modern alternative"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "Java Control Flow",
+                        "description": "Learn conditional statements and loops in Java.",
+                        "tags": [
+                            "control-flow",
+                            "java",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "If Statement",
+                                "question": "<p>Write a Java program that uses an if statement to check if a number is positive.</p><p>Your program should:</p><ul><li>Declare an <code>int</code> variable</li><li>Use <code>if</code> statement to check if the number is greater than 0</li><li>Print \"Positive\" if true, \"Negative or Zero\" if false</li><li>Handle the conditional logic properly</li></ul>",
+                                "hint": "Use if-else statement with comparison operator",
+                                "input": "5",
+                                "output": "Positive"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Comparison Operators",
+                                "question": "<p>Which comparison operator checks for equality in Java?</p><p>Consider these operators:</p><ul><li><code>==</code> - equality operator</li><li><code>=</code> - assignment operator</li><li><code>!=</code> - inequality operator</li><li><code>===</code> - not valid in Java</li></ul>",
+                                "hint": "Consider equality vs assignment",
+                                "options": [
+                                    "= - assignment operator",
+                                    "== - equality operator",
+                                    "=== - strict equality operator",
+                                    "!= - inequality operator"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Switch Statement",
+                                "question": "<p>Write a Java program that uses a switch statement to determine the day of the week.</p><p>Your program should:</p><ul><li>Declare an <code>int</code> variable for day number (1-7)</li><li>Use <code>switch</code> statement with <code>case</code> labels</li><li>Print the corresponding day name</li><li>Use <code>default</code> for invalid numbers</li></ul>",
+                                "hint": "Use switch statement with case and default",
+                                "input": "3",
+                                "output": "Wednesday"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "For Loop",
+                                "question": "<p>What is the syntax for a for loop in Java?</p><p>Consider this for loop:</p><pre><code>for (int i = 0; i < 5; i++) {<br>  System.out.println(i);<br>}</code></pre>",
+                                "hint": "Consider initialization, condition, and increment",
+                                "options": [
+                                    "for (initialization; condition; increment) - three parts separated by semicolons",
+                                    "for (condition) - only condition is required",
+                                    "for (initialization, condition, increment) - three parts separated by commas",
+                                    "for (start; end; step) - start, end, and step values"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "While Loop",
+                                "question": "<p>Write a Java program that uses a while loop to count down from a number.</p><p>Your program should:</p><ul><li>Declare an <code>int</code> variable for the starting number</li><li>Use <code>while</code> loop to count down</li><li>Print each number in the countdown</li><li>Stop when reaching 0</li></ul>",
+                                "hint": "Use while loop with decrement operator",
+                                "input": "5",
+                                "output": "5\n4\n3\n2\n1\n0"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Do-While Loop",
+                                "question": "<p>What is the difference between while and do-while loops?</p><p>Consider these examples:</p><pre><code>// While loop<br>while (condition) {<br>  // code<br>}<br><br>// Do-while loop<br>do {<br>  // code<br>} while (condition);</code></pre>",
+                                "hint": "Consider when the condition is checked",
+                                "options": [
+                                    "Do-while executes at least once, while may not execute at all",
+                                    "While is faster, do-while is slower",
+                                    "While is newer, do-while is older",
+                                    "There is no difference between them"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Nested Loops",
+                                "question": "<p>Write a Java program that uses nested loops to print a pattern.</p><p>Your program should:</p><ul><li>Use nested <code>for</code> loops</li><li>Print asterisks (*) in a rectangular pattern</li><li>Take the number of rows and columns as input</li><li>Create the pattern correctly</li></ul>",
+                                "hint": "Use nested for loops with proper row and column logic",
+                                "input": "3\n4",
+                                "output": "****\n****\n****"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Break Statement",
+                                "question": "<p>What does the <code>break</code> statement do in a loop?</p><p>Consider this example:</p><pre><code>for (int i = 0; i < 10; i++) {<br>  if (i == 5) {<br>    break;<br>  }<br>  System.out.println(i);<br>}</code></pre>",
+                                "hint": "Consider loop termination",
+                                "options": [
+                                    "Skips the current iteration - continues to next iteration",
+                                    "Terminates the loop immediately - exits the loop",
+                                    "Pauses the loop temporarily - resumes later",
+                                    "Reverses the loop direction - goes backwards"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Continue Statement",
+                                "question": "<p>Write a Java program that uses continue to skip even numbers in a loop.</p><p>Your program should:</p><ul><li>Use a <code>for</code> loop to iterate from 1 to 10</li><li>Use <code>continue</code> to skip even numbers</li><li>Print only odd numbers</li><li>Handle the logic correctly</li></ul>",
+                                "hint": "Use continue statement with modulo operator",
+                                "input": "10",
+                                "output": "1\n3\n5\n7\n9"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Ternary Operator",
+                                "question": "<p>What is the syntax of the ternary operator in Java?</p><p>Consider this example:</p><pre><code>int result = (a > b) ? a : b;</code></pre>",
+                                "hint": "Consider conditional expression syntax",
+                                "options": [
+                                    "condition ? value1 : value2 - condition, then value, else value",
+                                    "condition : value1 ? value2 - condition, else value, then value",
+                                    "value1 ? condition : value2 - first value, condition, second value",
+                                    "condition ? value1 ? value2 - condition, then value, then value"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "Java Arrays",
+                        "description": "Learn array declaration, initialization, and manipulation in Java.",
+                        "tags": [
+                            "arrays",
+                            "java",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Array Declaration",
+                                "question": "<p>Write a Java program that declares and initializes an array of integers.</p><p>Your program should:</p><ul><li>Declare an <code>int</code> array with size 5</li><li>Initialize it with values 1, 2, 3, 4, 5</li><li>Print all elements using a loop</li><li>Use proper array syntax</li></ul>",
+                                "hint": "Use int[] arrayName = {values} syntax",
+                                "input": "1 2 3 4 5",
+                                "output": "1 2 3 4 5"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Array Length",
+                                "question": "<p>How do you get the length of an array in Java?</p><p>Consider this example:</p><pre><code>int[] numbers = {1, 2, 3, 4, 5};<br>int length = numbers.length;<br>System.out.println(length);</code></pre>",
+                                "hint": "Consider array property access",
+                                "options": [
+                                    "Using length() method - numbers.length()",
+                                    "Using length property - numbers.length",
+                                    "Using size() method - numbers.size()",
+                                    "Using count() method - numbers.count()"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Array Sum",
+                                "question": "<p>Write a Java program that calculates the sum of all elements in an array.</p><p>Your program should:</p><ul><li>Declare an array of integers</li><li>Use a loop to iterate through the array</li><li>Calculate the sum of all elements</li><li>Print the result</li></ul>",
+                                "hint": "Use for loop to iterate and accumulate sum",
+                                "input": "1 2 3 4 5 6 7 8 9 10",
+                                "output": "55"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Array Indexing",
+                                "question": "<p>What is the index of the first element in a Java array?</p><p>Consider this array:</p><pre><code>int[] arr = {10, 20, 30, 40, 50};<br>// What is arr[0]?</code></pre>",
+                                "hint": "Consider zero-based indexing",
+                                "options": [
+                                    "0 - arrays use zero-based indexing",
+                                    "1 - arrays use one-based indexing",
+                                    "-1 - arrays use negative indexing",
+                                    "It depends on the array size"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Array Maximum",
+                                "question": "<p>Write a Java program that finds the maximum value in an array.</p><p>Your program should:</p><ul><li>Declare an array of integers</li><li>Use a loop to find the maximum value</li><li>Compare each element with the current maximum</li><li>Print the maximum value</li></ul>",
+                                "hint": "Use loop to compare elements and track maximum",
+                                "input": "64 34 25 12 22 11 90",
+                                "output": "90"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Array Copy",
+                                "question": "<p>How do you copy an array in Java?</p><p>Consider these methods:</p><ul><li><code>System.arraycopy()</code> - built-in method</li><li><code>Arrays.copyOf()</code> - utility method</li><li><code>clone()</code> - object method</li><li>Manual loop copying</li></ul>",
+                                "hint": "Consider built-in array copying methods",
+                                "options": [
+                                    "Only manual loop copying is possible",
+                                    "Multiple methods: System.arraycopy(), Arrays.copyOf(), clone()",
+                                    "Only System.arraycopy() method",
+                                    "Only Arrays.copyOf() method"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Array Sorting",
+                                "question": "<p>Write a Java program that sorts an array in ascending order.</p><p>Your program should:</p><ul><li>Declare an array of integers</li><li>Use <code>Arrays.sort()</code> method</li><li>Print the sorted array</li><li>Handle the sorting properly</li></ul>",
+                                "hint": "Use Arrays.sort() method from java.util.Arrays",
+                                "input": "64 34 25 12 22 11 90",
+                                "output": "11 12 22 25 34 64 90"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Multi-dimensional Arrays",
+                                "question": "<p>How do you declare a 2D array in Java?</p><p>Consider these syntax options:</p><ul><li><code>int[][] matrix;</code> - 2D array declaration</li><li><code>int matrix[][];</code> - alternative syntax</li><li><code>int[] matrix[];</code> - another alternative</li></ul>",
+                                "hint": "Consider 2D array declaration syntax",
+                                "options": [
+                                    "int[][] matrix; - recommended syntax",
+                                    "int matrix[][]; - alternative syntax",
+                                    "int[] matrix[]; - another alternative",
+                                    "All of the above are valid"
+                                ],
+                                "correct_answer": 3
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Array Search",
+                                "question": "<p>Write a Java program that searches for an element in an array.</p><p>Your program should:</p><ul><li>Declare an array of integers</li><li>Use a loop to search for a target value</li><li>Return the index if found, -1 if not found</li><li>Print the result</li></ul>",
+                                "hint": "Use linear search with loop and comparison",
+                                "input": "1 3 5 7 9\n5",
+                                "output": "2"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Array vs ArrayList",
+                                "question": "<p>What is the main difference between arrays and ArrayList in Java?</p><p>Consider these characteristics:</p><ul><li>Arrays have fixed size, ArrayList can grow</li><li>Arrays are faster, ArrayList has overhead</li><li>Arrays store primitives directly, ArrayList stores objects</li><li>Arrays are older, ArrayList is newer</li></ul>",
+                                "hint": "Consider size flexibility and performance",
+                                "options": [
+                                    "Arrays have fixed size, ArrayList can grow dynamically",
+                                    "Arrays are slower, ArrayList is faster",
+                                    "Arrays can only store objects, ArrayList can store primitives",
+                                    "There is no difference between them"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

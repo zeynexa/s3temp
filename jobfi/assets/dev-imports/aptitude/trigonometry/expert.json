@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Aptitude",
+            "slug": "aptitude",
+            "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Trigonometry",
+                "slug": "trigonometry",
+                "description": "Master trigonometric functions, identities, and applications.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/trigonometry.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "Complex Trigonometric Analysis",
+                        "description": "Master complex trigonometric analysis and advanced applications.",
+                        "tags": [
+                            "complex-analysis",
+                            "advanced",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Fourier Transform",
+                                "question": "<p>What is the Fourier Transform used for?</p><p>Consider: Signal processing and frequency analysis</p>",
+                                "hint": "Think about converting between time and frequency domains",
+                                "options": [
+                                    "Solving triangles",
+                                    "Converting signals between time and frequency domains",
+                                    "Finding angles",
+                                    "Calculating areas"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Complex Trigonometric Functions",
+                                "question": "<p>What is Euler's formula?</p><p>Consider: Relationship between exponential and trigonometric functions</p>",
+                                "hint": "e^(iθ) = cos(θ) + i sin(θ)",
+                                "options": [
+                                    "e^(iθ) = cos(θ) + i sin(θ) - Euler's formula",
+                                    "e^(iθ) = cos(θ) - i sin(θ)",
+                                    "e^(iθ) = sin(θ) + i cos(θ)",
+                                    "e^(iθ) = cos(θ) × sin(θ)"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Spherical Trigonometry",
+                                "question": "<p>What is spherical trigonometry used for?</p><p>Consider: Applications on curved surfaces</p>",
+                                "hint": "Think about navigation and astronomy",
+                                "options": [
+                                    "Solving flat triangles",
+                                    "Solving triangles on curved surfaces like Earth",
+                                    "Finding areas of circles",
+                                    "Calculating volumes"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "Advanced Trigonometric Applications",
+                        "description": "Apply advanced trigonometric concepts to complex problems.",
+                        "tags": [
+                            "advanced-applications",
+                            "complex-problems",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Signal Processing",
+                                "question": "<p>What is the Nyquist frequency?</p><p>Consider: Sampling theory and signal processing</p>",
+                                "hint": "Think about the minimum sampling rate",
+                                "options": [
+                                    "The highest frequency in a signal",
+                                    "Half the sampling rate - minimum required",
+                                    "The lowest frequency in a signal",
+                                    "The average frequency"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Harmonic Analysis",
+                                "question": "<p>What is a harmonic in signal analysis?</p><p>Consider: Frequency components of a signal</p>",
+                                "hint": "Think about integer multiples of a fundamental frequency",
+                                "options": [
+                                    "Any frequency component",
+                                    "An integer multiple of the fundamental frequency",
+                                    "The lowest frequency",
+                                    "The highest frequency"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Phase and Amplitude",
+                                "question": "<p>What is the relationship between phase and amplitude in trigonometric functions?</p><p>Consider: How phase affects the function</p>",
+                                "hint": "Think about horizontal and vertical shifts",
+                                "options": [
+                                    "They are the same thing",
+                                    "Phase affects horizontal position, amplitude affects height",
+                                    "They are inversely related",
+                                    "They are independent"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

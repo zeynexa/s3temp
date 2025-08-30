@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Aptitude",
+            "slug": "aptitude",
+            "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Series",
+                "slug": "series",
+                "description": "Master number series, sequences, and pattern recognition techniques.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/series.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "Advanced Series Patterns",
+                        "description": "Identify and solve complex series patterns and sequences.",
+                        "tags": [
+                            "advanced-patterns",
+                            "complex-series",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Mixed Series Recognition",
+                                "question": "<p>What is the pattern in the series: 1, 2, 4, 7, 11, 16?</p><p>Consider: Look at the differences between consecutive terms</p>",
+                                "hint": "Calculate differences: 1, 2, 3, 4, 5",
+                                "options": [
+                                    "Arithmetic with difference 1",
+                                    "Geometric with ratio 2",
+                                    "Differences increase by 1 each time",
+                                    "Fibonacci sequence"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Series Convergence Tests",
+                                "question": "<p>Which test is most appropriate for the series Σ(1/n)?</p><p>Consider: The harmonic series and its convergence properties</p>",
+                                "hint": "Think about comparing with known divergent series",
+                                "options": [
+                                    "Ratio test - for geometric-like series",
+                                    "Comparison test - compare with harmonic series",
+                                    "Root test - for power series",
+                                    "Integral test - for positive decreasing series"
+                                ],
+                                "correct_answer": 3
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Power Series Radius",
+                                "question": "<p>What is the radius of convergence for the power series Σ(x^n/n!)?</p><p>Consider: The exponential series</p>",
+                                "hint": "Think about the exponential function's convergence",
+                                "options": [
+                                    "0 - no convergence",
+                                    "1 - finite radius",
+                                    "∞ - converges for all x",
+                                    "2 - finite radius"
+                                ],
+                                "correct_answer": 2
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "Series Convergence Analysis",
+                        "description": "Analyze series convergence and divergence properties.",
+                        "tags": [
+                            "convergence",
+                            "analysis",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Alternating Series Test",
+                                "question": "<p>What is the Alternating Series Test used for?</p><p>Consider: Series with alternating positive and negative terms</p>",
+                                "hint": "Think about series like Σ((-1)^n/n)",
+                                "options": [
+                                    "Testing any series",
+                                    "Testing alternating series for convergence",
+                                    "Testing geometric series",
+                                    "Testing power series"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Ratio Test",
+                                "question": "<p>What does the ratio test tell us about a series?</p><p>Consider: The limit of |aₙ₊₁/aₙ|</p>",
+                                "hint": "Think about comparing consecutive terms",
+                                "options": [
+                                    "The sum of the series",
+                                    "Whether the series converges or diverges",
+                                    "The exact value of the series",
+                                    "The number of terms"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Comparison Test",
+                                "question": "<p>When can the Comparison Test be used?</p><p>Consider: Comparing with known series</p>",
+                                "hint": "Think about comparing with series whose convergence is known",
+                                "options": [
+                                    "For any series",
+                                    "For positive series with known comparison series",
+                                    "For alternating series only",
+                                    "For geometric series only"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

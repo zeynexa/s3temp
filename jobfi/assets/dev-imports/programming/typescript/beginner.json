@@ -1,0 +1,371 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "TypeScript",
+                "slug": "typescript",
+                "description": "Learn TypeScript for type-safe JavaScript development.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/typescript.svg",
+                "exercises": [
+                    {
+                        "level": "Beginner",
+                        "title": "TypeScript Basic Types",
+                        "description": "Learn TypeScript basic types, type annotations, and type safety.",
+                        "tags": [
+                            "types",
+                            "typescript",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Variable Declarations",
+                                "question": "<p>Write TypeScript code that declares variables with explicit type annotations.</p><p>Your code should:</p><ul><li>Declare a <code>string</code> variable for name</li><li>Declare a <code>number</code> variable for age</li><li>Declare a <code>boolean</code> variable for isStudent</li><li>Declare an <code>array</code> of numbers</li><li>Print all variables with their types</li></ul>",
+                                "hint": "Use explicit type annotations with colon syntax",
+                                "input": "John\n25\ntrue\n1 2 3 4 5",
+                                "output": "Name: John (string)\nAge: 25 (number)\nIs Student: true (boolean)\nNumbers: [1, 2, 3, 4, 5] (number[])"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Type Annotations",
+                                "question": "<p>What is the correct syntax for type annotations in TypeScript?</p><p>Consider these examples:</p><ul><li><code>let name: string = \"John\";</code> - explicit type annotation</li><li><code>let age = 25;</code> - type inference</li><li><code>let isActive: boolean = true;</code> - boolean type</li><li><code>let numbers: number[] = [1, 2, 3];</code> - array type</li></ul>",
+                                "hint": "Consider the colon syntax for type annotations",
+                                "options": [
+                                    "variableName: type = value - using colon syntax",
+                                    "variableName = value: type - using equals syntax",
+                                    "type variableName = value - using type first",
+                                    "variableName type = value - using space syntax"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Type Inference",
+                                "question": "<p>Write TypeScript code that demonstrates type inference.</p><p>Your code should:</p><ul><li>Declare variables without explicit type annotations</li><li>Let TypeScript infer the types automatically</li><li>Use different data types (string, number, boolean)</li><li>Check the inferred types</li><li>Return the type information</li></ul>",
+                                "hint": "Declare variables without type annotations and let TypeScript infer",
+                                "input": "Hello\n42\ntrue",
+                                "output": "Inferred types:\nmessage: string\ncount: number\nisValid: boolean"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Primitive Types",
+                                "question": "<p>Which of the following is NOT a primitive type in TypeScript?</p><p>Consider these TypeScript types:</p><ul><li><code>string</code> - text values</li><li><code>number</code> - numeric values</li><li><code>boolean</code> - true/false values</li><li><code>object</code> - object values (not primitive)</li></ul>",
+                                "hint": "Consider which types are primitive vs reference types",
+                                "options": [
+                                    "string - primitive type",
+                                    "number - primitive type",
+                                    "object - reference type, not primitive",
+                                    "boolean - primitive type"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Array Types",
+                                "question": "<p>Write TypeScript code that demonstrates different array type declarations.</p><p>Your code should:</p><ul><li>Declare an array of strings using <code>string[]</code> syntax</li><li>Declare an array of numbers using <code>Array&lt;number&gt;</code> syntax</li><li>Declare a mixed array using <code>any[]</code> syntax</li><li>Access and modify array elements</li><li>Return the array operations</li></ul>",
+                                "hint": "Use string[], Array&lt;number&gt;, and any[] syntax",
+                                "input": "apple orange banana\n1 2 3 4 5\nhello 42 true",
+                                "output": "String array: [\"apple\", \"orange\", \"banana\"]\nNumber array: [1, 2, 3, 4, 5]\nMixed array: [\"hello\", 42, true]"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Tuple Types",
+                                "question": "<p>What is a tuple in TypeScript?</p><p>Consider this example:</p><pre><code>let person: [string, number] = [\"John\", 25];<br>let coordinates: [number, number] = [10, 20];</code></pre>",
+                                "hint": "Consider fixed-length arrays with specific types",
+                                "options": [
+                                    "A fixed-length array with elements of specific types",
+                                    "A variable-length array with any types",
+                                    "A function that returns multiple values",
+                                    "A type that can hold any value"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Object Types",
+                                "question": "<p>Write TypeScript code that defines and uses object types.</p><p>Your code should:</p><ul><li>Define an object type with specific properties</li><li>Create an object that matches the type</li><li>Access object properties with type safety</li><li>Add new properties to the object</li><li>Return the object operations</li></ul>",
+                                "hint": "Use interface or type alias to define object structure",
+                                "input": "John\n25\nEngineer",
+                                "output": "Person: { name: \"John\", age: 25, profession: \"Engineer\" }\nName: John\nAge: 25"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Union Types",
+                                "question": "<p>What is a union type in TypeScript?</p><p>Consider this example:</p><pre><code>let value: string | number = \"hello\";<br>value = 42; // Also valid</code></pre>",
+                                "hint": "Consider multiple possible types",
+                                "options": [
+                                    "A type that can be one of several types - using | operator",
+                                    "A type that combines multiple types into one",
+                                    "A type that excludes certain types",
+                                    "A type that only accepts primitive types"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Type Aliases",
+                                "question": "<p>Write TypeScript code that uses type aliases to create custom types.</p><p>Your code should:</p><ul><li>Use <code>type</code> keyword to create type aliases</li><li>Define a custom type for a person</li><li>Define a custom type for coordinates</li><li>Use the type aliases in variable declarations</li><li>Return the type alias usage</li></ul>",
+                                "hint": "Use type keyword to create custom type definitions",
+                                "input": "Alice\n30\n10\n20",
+                                "output": "Person: { name: \"Alice\", age: 30 }\nCoordinates: { x: 10, y: 20 }"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Literal Types",
+                                "question": "<p>What are literal types in TypeScript?</p><p>Consider this example:</p><pre><code>let direction: \"north\" | \"south\" | \"east\" | \"west\" = \"north\";<br>let status: \"success\" | \"error\" | \"loading\" = \"success\";</code></pre>",
+                                "hint": "Consider specific string or number values as types",
+                                "options": [
+                                    "Types that represent specific literal values - exact strings or numbers",
+                                    "Types that represent any string or number",
+                                    "Types that represent only boolean values",
+                                    "Types that represent only object values"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "TypeScript Functions",
+                        "description": "Learn function types, parameters, and return types in TypeScript.",
+                        "tags": [
+                            "functions",
+                            "typescript",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Function Declarations",
+                                "question": "<p>Write TypeScript functions with explicit type annotations.</p><p>Your functions should:</p><ul><li>Declare a function with typed parameters</li><li>Specify the return type</li><li>Use <code>function</code> keyword</li><li>Handle different parameter types</li><li>Return the function results</li></ul>",
+                                "hint": "Use function keyword with parameter and return type annotations",
+                                "input": "5\n3\nHello",
+                                "output": "Sum: 8\nGreeting: Hello, World!"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Function Types",
+                                "question": "<p>What is the correct syntax for function type annotations in TypeScript?</p><p>Consider these examples:</p><ul><li><code>function add(a: number, b: number): number</code> - function declaration</li><li><code>let multiply: (a: number, b: number) => number</code> - function type</li><li><code>const greet = (name: string): string =></code> - arrow function</li></ul>",
+                                "hint": "Consider parameter and return type syntax",
+                                "options": [
+                                    "function name(param: type): returnType - parameter types and return type",
+                                    "function name(type param): returnType - type first, then parameter",
+                                    "function name(param): type - parameter first, then type",
+                                    "function name(type): param - type and parameter reversed"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Arrow Functions",
+                                "question": "<p>Write TypeScript arrow functions with type annotations.</p><p>Your arrow functions should:</p><ul><li>Use arrow function syntax <code>=&gt;</code></li><li>Include parameter type annotations</li><li>Include return type annotations</li><li>Handle different data types</li><li>Return the arrow function results</li></ul>",
+                                "hint": "Use const name = (param: type): returnType => syntax",
+                                "input": "10\n5\nTypeScript",
+                                "output": "Difference: 5\nLength: 10\nUppercase: TYPESCRIPT"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Optional Parameters",
+                                "question": "<p>How do you make a parameter optional in TypeScript?</p><p>Consider this example:</p><pre><code>function greet(name: string, greeting?: string): string {<br>  return greeting ? `${greeting}, ${name}!` : `Hello, ${name}!`;<br>}</code></pre>",
+                                "hint": "Consider the question mark syntax",
+                                "options": [
+                                    "Add ? after the parameter name - parameterName?: type",
+                                    "Add ? before the parameter name - ?parameterName: type",
+                                    "Add ? after the type - parameterName: type?",
+                                    "Add ? before the type - parameterName: ?type"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Default Parameters",
+                                "question": "<p>Write TypeScript functions with default parameter values.</p><p>Your functions should:</p><ul><li>Use default parameter syntax <code>param: type = defaultValue</code></li><li>Handle multiple default parameters</li><li>Call functions with and without parameters</li><li>Demonstrate default value usage</li><li>Return the function results</li></ul>",
+                                "hint": "Use parameter: type = defaultValue syntax",
+                                "input": "John\nAlice\nBob",
+                                "output": "Greeting 1: Hello, John!\nGreeting 2: Hi, Alice!\nGreeting 3: Hello, Bob!"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Rest Parameters",
+                                "question": "<p>What are rest parameters in TypeScript?</p><p>Consider this example:</p><pre><code>function sum(...numbers: number[]): number {<br>  return numbers.reduce((total, num) => total + num, 0);<br>}</code></pre>",
+                                "hint": "Consider variable number of arguments",
+                                "options": [
+                                    "Parameters that collect multiple arguments into an array - using ... syntax",
+                                    "Parameters that are optional and have default values",
+                                    "Parameters that are typed as any",
+                                    "Parameters that are automatically inferred"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Function Overloading",
+                                "question": "<p>Write TypeScript function overloads for different parameter types.</p><p>Your overloads should:</p><ul><li>Define multiple function signatures</li><li>Handle different parameter types</li><li>Implement a single function body</li><li>Use type checking in the implementation</li><li>Return the overloaded function results</li></ul>",
+                                "hint": "Define multiple signatures before the implementation",
+                                "input": "5\nHello\n10\nWorld",
+                                "output": "Number result: 25\nString result: HelloHello\nCombined result: 10World"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Void Return Type",
+                                "question": "<p>What does the <code>void</code> return type indicate in TypeScript?</p><p>Consider this example:</p><pre><code>function logMessage(message: string): void {<br>  console.log(message);<br>}</code></pre>",
+                                "hint": "Consider functions that don't return values",
+                                "options": [
+                                    "The function does not return any value - undefined return",
+                                    "The function returns a value of type void",
+                                    "The function returns null",
+                                    "The function returns any value"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Function Types as Parameters",
+                                "question": "<p>Write TypeScript code that passes functions as parameters.</p><p>Your code should:</p><ul><li>Define function types using <code>(param: type) => returnType</code> syntax</li><li>Create functions that accept function parameters</li><li>Pass different functions as arguments</li><li>Execute the passed functions</li><li>Return the function execution results</li></ul>",
+                                "hint": "Use function type syntax for parameters",
+                                "input": "5\n3\nHello",
+                                "output": "Operation result: 8\nTransform result: HELLO"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Never Return Type",
+                                "question": "<p>What does the <code>never</code> return type indicate in TypeScript?</p><p>Consider this example:</p><pre><code>function throwError(message: string): never {<br>  throw new Error(message);<br>}</code></pre>",
+                                "hint": "Consider functions that never return normally",
+                                "options": [
+                                    "The function never returns normally - always throws or loops infinitely",
+                                    "The function returns a value of type never",
+                                    "The function returns null",
+                                    "The function returns undefined"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "TypeScript Interfaces",
+                        "description": "Learn interface definitions, object shapes, and type contracts in TypeScript.",
+                        "tags": [
+                            "interfaces",
+                            "typescript",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Interface Definition",
+                                "question": "<p>Write TypeScript interfaces to define object shapes.</p><p>Your interfaces should:</p><ul><li>Use <code>interface</code> keyword</li><li>Define properties with types</li><li>Create objects that implement the interface</li><li>Access interface properties</li><li>Return the interface usage</li></ul>",
+                                "hint": "Use interface keyword with property definitions",
+                                "input": "John\n25\nEngineer",
+                                "output": "Person: { name: \"John\", age: 25, profession: \"Engineer\" }\nName: John\nAge: 25"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Interface vs Type",
+                                "question": "<p>What is the main difference between interfaces and type aliases in TypeScript?</p><p>Consider these characteristics:</p><ul><li>Interfaces can be extended and merged</li><li>Type aliases can represent unions and primitives</li><li>Interfaces are more flexible for object shapes</li><li>Type aliases are more flexible for complex types</li></ul>",
+                                "hint": "Consider extensibility and flexibility",
+                                "options": [
+                                    "Interfaces can be extended and merged, type aliases cannot",
+                                    "Type aliases can be extended and merged, interfaces cannot",
+                                    "Both can be extended and merged equally",
+                                    "Neither can be extended or merged"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Optional Properties",
+                                "question": "<p>Write TypeScript interfaces with optional properties.</p><p>Your interfaces should:</p><ul><li>Use <code>propertyName?: type</code> syntax for optional properties</li><li>Define both required and optional properties</li><li>Create objects with and without optional properties</li><li>Handle missing optional properties</li><li>Return the interface usage</li></ul>",
+                                "hint": "Use ? after property name for optional properties",
+                                "input": "Alice\n30\nBob\n25\nManager",
+                                "output": "Person 1: { name: \"Alice\", age: 30 }\nPerson 2: { name: \"Bob\", age: 25, profession: \"Manager\" }"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Readonly Properties",
+                                "question": "<p>How do you make a property readonly in a TypeScript interface?</p><p>Consider this example:</p><pre><code>interface User {<br>  readonly id: number;<br>  name: string;<br>}</code></pre>",
+                                "hint": "Consider the readonly keyword",
+                                "options": [
+                                    "Add readonly keyword before the property name - readonly propertyName: type",
+                                    "Add readonly keyword after the property name - propertyName readonly: type",
+                                    "Add readonly keyword after the type - propertyName: type readonly",
+                                    "Add readonly keyword before the type - readonly type propertyName"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Interface Extension",
+                                "question": "<p>Write TypeScript interfaces that extend other interfaces.</p><p>Your interfaces should:</p><ul><li>Use <code>extends</code> keyword to inherit from another interface</li><li>Add new properties to the extended interface</li><li>Override properties if needed</li><li>Create objects that implement the extended interface</li><li>Return the interface extension usage</li></ul>",
+                                "hint": "Use interface NewInterface extends BaseInterface syntax",
+                                "input": "John\n25\nEngineer\nA",
+                                "output": "Student: { name: \"John\", age: 25, profession: \"Engineer\", grade: \"A\" }\nName: John\nGrade: A"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Interface Merging",
+                                "question": "<p>What is interface merging in TypeScript?</p><p>Consider this example:</p><pre><code>interface User {<br>  name: string;<br>}<br>interface User {<br>  age: number;<br>}</code></pre>",
+                                "hint": "Consider multiple declarations of the same interface",
+                                "options": [
+                                    "Multiple declarations of the same interface are automatically merged",
+                                    "Multiple declarations of the same interface cause errors",
+                                    "Multiple declarations of the same interface are ignored",
+                                    "Multiple declarations of the same interface are overwritten"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Function Interfaces",
+                                "question": "<p>Write TypeScript interfaces that define function signatures.</p><p>Your interfaces should:</p><ul><li>Define function types using <code>(param: type) => returnType</code> syntax</li><li>Create functions that implement the interface</li><li>Use the function interface as a type</li><li>Call functions through the interface</li><li>Return the function interface usage</li></ul>",
+                                "hint": "Use interface with function signature syntax",
+                                "input": "5\n3\nHello",
+                                "output": "Calculator result: 8\nGreeter result: Hello, World!"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Index Signatures",
+                                "question": "<p>What are index signatures in TypeScript interfaces?</p><p>Consider this example:</p><pre><code>interface Dictionary {<br>  [key: string]: number;<br>}</code></pre>",
+                                "hint": "Consider dynamic property access",
+                                "options": [
+                                    "Allow objects to have properties with dynamic names - using [key: type]: valueType",
+                                    "Allow objects to have properties with fixed names",
+                                    "Allow objects to have properties with any names",
+                                    "Allow objects to have properties with numeric names only"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Interface Implementation",
+                                "question": "<p>Write TypeScript classes that implement interfaces.</p><p>Your classes should:</p><ul><li>Use <code>implements</code> keyword to implement an interface</li><li>Implement all required interface properties and methods</li><li>Add additional properties and methods</li><li>Create instances of the implementing class</li><li>Return the interface implementation usage</li></ul>",
+                                "hint": "Use class ClassName implements InterfaceName syntax",
+                                "input": "John\n25\nHello",
+                                "output": "Person: { name: \"John\", age: 25 }\nGreeting: Hello, John!"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Interface vs Class",
+                                "question": "<p>What is the main difference between interfaces and classes in TypeScript?</p><p>Consider these characteristics:</p><ul><li>Interfaces define contracts, classes provide implementation</li><li>Interfaces are compile-time constructs, classes are runtime constructs</li><li>Interfaces can be implemented by multiple classes</li><li>Classes can have constructors and methods</li></ul>",
+                                "hint": "Consider contracts vs implementation",
+                                "options": [
+                                    "Interfaces define contracts without implementation, classes provide implementation",
+                                    "Classes define contracts without implementation, interfaces provide implementation",
+                                    "Both define contracts and provide implementation",
+                                    "Neither defines contracts or provides implementation"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

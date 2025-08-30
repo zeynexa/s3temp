@@ -1,0 +1,371 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "C++",
+                "slug": "c-plus-plus",
+                "description": "Learn C++ for system programming, game development, and high-performance applications.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/c-plus-plus.svg",
+                "exercises": [
+                    {
+                        "level": "Beginner",
+                        "title": "C++ Basic Syntax",
+                        "description": "Learn C++ basic syntax, variables, data types, and input/output operations.",
+                        "tags": [
+                            "syntax",
+                            "c++",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Hello World Program",
+                                "question": "<p>Write a C++ program that prints \"Hello, World!\" to the console.</p><p>Your program should:</p><ul><li>Include the necessary header <code>#include &lt;iostream&gt;</code></li><li>Use the <code>std::cout</code> object for output</li><li>Use the <code>std::endl</code> or <code>\\n</code> for newline</li><li>Return 0 from the main function</li><li>Print the required message</li></ul>",
+                                "hint": "Use #include &lt;iostream&gt; and std::cout",
+                                "input": "",
+                                "output": "Hello, World!"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "C++ Program Structure",
+                                "question": "<p>What is the basic structure of a C++ program?</p><p>Consider these components:</p><ul><li><code>#include</code> directives for headers</li><li><code>using namespace std;</code> (optional)</li><li><code>int main()</code> function</li><li>Program statements</li><li><code>return 0;</code> statement</li></ul>",
+                                "hint": "Consider the essential components of a C++ program",
+                                "options": [
+                                    "Headers, main function, program statements, and return statement",
+                                    "Only main function and program statements",
+                                    "Only headers and program statements",
+                                    "Only main function and return statement"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Variable Declarations",
+                                "question": "<p>Write a C++ program that declares and initializes different types of variables.</p><p>Your program should:</p><ul><li>Declare an <code>int</code> variable for age</li><li>Declare a <code>double</code> variable for height</li><li>Declare a <code>string</code> variable for name</li><li>Declare a <code>bool</code> variable for student status</li><li>Print all variables</li></ul>",
+                                "hint": "Use int, double, string, and bool data types",
+                                "input": "John\n25\n5.8\ntrue",
+                                "output": "Name: John\nAge: 25\nHeight: 5.8\nStudent: true"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Data Types",
+                                "question": "<p>Which of the following is NOT a fundamental data type in C++?</p><p>Consider these C++ data types:</p><ul><li><code>int</code> - integer type</li><li><code>double</code> - floating-point type</li><li><code>char</code> - character type</li><li><code>string</code> - string type (not fundamental)</li></ul>",
+                                "hint": "Consider which types are fundamental vs library types",
+                                "options": [
+                                    "int - fundamental type",
+                                    "double - fundamental type",
+                                    "string - library type, not fundamental",
+                                    "char - fundamental type"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Input Operations",
+                                "question": "<p>Write a C++ program that reads input from the user.</p><p>Your program should:</p><ul><li>Use <code>std::cin</code> for input</li><li>Read different data types (int, double, string)</li><li>Handle input properly</li><li>Display the input values</li><li>Return the input operations</li></ul>",
+                                "hint": "Use std::cin with different data types",
+                                "input": "Alice\n25\n3.14",
+                                "output": "Name: Alice\nAge: 25\nValue: 3.14"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Namespace",
+                                "question": "<p>What is the purpose of <code>using namespace std;</code> in C++?</p><p>Consider these effects:</p><ul><li>Allows using <code>cout</code> instead of <code>std::cout</code></li><li>Allows using <code>cin</code> instead of <code>std::cin</code></li><li>Makes all std namespace members available</li><li>Can cause naming conflicts</li></ul>",
+                                "hint": "Consider namespace resolution and convenience",
+                                "options": [
+                                    "Makes all std namespace members available without std:: prefix",
+                                    "Makes the program run faster",
+                                    "Makes the program use less memory",
+                                    "Makes the program more secure"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Arithmetic Operations",
+                                "question": "<p>Write a C++ program that performs basic arithmetic operations.</p><p>Your program should:</p><ul><li>Declare two integer variables</li><li>Perform addition, subtraction, multiplication, and division</li><li>Use the modulo operator <code>%</code></li><li>Print all results</li><li>Handle the operations properly</li></ul>",
+                                "hint": "Use +, -, *, /, % operators for arithmetic",
+                                "input": "10\n3",
+                                "output": "Addition: 13\nSubtraction: 7\nMultiplication: 30\nDivision: 3\nModulo: 1"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Operator Precedence",
+                                "question": "<p>What is the result of <code>2 + 3 * 4</code> in C++?</p><p>Consider operator precedence:</p><ul><li>Multiplication and division have higher precedence than addition and subtraction</li><li>Operators with same precedence are evaluated left to right</li><li>Parentheses can override precedence</li></ul>",
+                                "hint": "Consider which operation is performed first",
+                                "options": [
+                                    "20 - addition is performed first",
+                                    "14 - multiplication is performed first",
+                                    "24 - all operations are performed left to right",
+                                    "Error - invalid expression"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Type Conversion",
+                                "question": "<p>Write a C++ program that demonstrates type conversion (casting).</p><p>Your program should:</p><ul><li>Declare variables of different types</li><li>Use explicit casting with <code>(type)</code> syntax</li><li>Use implicit conversion</li><li>Demonstrate both types of conversion</li><li>Print the conversion results</li></ul>",
+                                "hint": "Use (int), (double) for explicit casting",
+                                "input": "3.14\n42",
+                                "output": "Double: 3.14\nCasted to int: 3\nInt: 42\nCasted to double: 42.0"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Constants",
+                                "question": "<p>How do you declare a constant in C++?</p><p>Consider these methods:</p><ul><li><code>const int MAX_SIZE = 100;</code> - const keyword</li><li><code>#define MAX_SIZE 100</code> - preprocessor directive</li><li><code>constexpr int MAX_SIZE = 100;</code> - constexpr keyword</li></ul>",
+                                "hint": "Consider different ways to declare constants",
+                                "options": [
+                                    "Using const keyword - const type name = value",
+                                    "Using var keyword - var type name = value",
+                                    "Using let keyword - let type name = value",
+                                    "Using final keyword - final type name = value"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "C++ Control Flow",
+                        "description": "Learn conditional statements and loops in C++.",
+                        "tags": [
+                            "control-flow",
+                            "c++",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "If Statement",
+                                "question": "<p>Write a C++ program that uses an if statement to check if a number is positive.</p><p>Your program should:</p><ul><li>Declare an integer variable</li><li>Use <code>if</code> statement with condition</li><li>Use <code>else</code> clause for negative case</li><li>Print appropriate messages</li><li>Handle the conditional logic properly</li></ul>",
+                                "hint": "Use if-else statement with comparison operator",
+                                "input": "5",
+                                "output": "Positive"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Comparison Operators",
+                                "question": "<p>Which comparison operator checks for equality in C++?</p><p>Consider these operators:</p><ul><li><code>==</code> - equality operator</li><li><code>=</code> - assignment operator</li><li><code>!=</code> - inequality operator</li><li><code>===</code> - not valid in C++</li></ul>",
+                                "hint": "Consider equality vs assignment",
+                                "options": [
+                                    "= - assignment operator",
+                                    "== - equality operator",
+                                    "=== - strict equality operator",
+                                    "!= - inequality operator"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Switch Statement",
+                                "question": "<p>Write a C++ program that uses a switch statement to determine the day of the week.</p><p>Your program should:</p><ul><li>Declare an integer variable for day number (1-7)</li><li>Use <code>switch</code> statement with <code>case</code> labels</li><li>Print the corresponding day name</li><li>Use <code>default</code> for invalid numbers</li><li>Handle the switch logic properly</li></ul>",
+                                "hint": "Use switch statement with case and default",
+                                "input": "3",
+                                "output": "Wednesday"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "For Loop",
+                                "question": "<p>What is the syntax for a for loop in C++?</p><p>Consider this for loop:</p><pre><code>for (int i = 0; i < 5; i++) {<br>  cout << i << endl;<br>}</code></pre>",
+                                "hint": "Consider initialization, condition, and increment",
+                                "options": [
+                                    "for (initialization; condition; increment) - three parts separated by semicolons",
+                                    "for (condition) - only condition is required",
+                                    "for (initialization, condition, increment) - three parts separated by commas",
+                                    "for (start; end; step) - start, end, and step values"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "While Loop",
+                                "question": "<p>Write a C++ program that uses a while loop to count down from a number.</p><p>Your program should:</p><ul><li>Declare an integer variable for the starting number</li><li>Use <code>while</code> loop to count down</li><li>Print each number in the countdown</li><li>Stop when reaching 0</li><li>Handle the loop logic properly</li></ul>",
+                                "hint": "Use while loop with decrement operator",
+                                "input": "5",
+                                "output": "5\n4\n3\n2\n1\n0"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Do-While Loop",
+                                "question": "<p>What is the difference between while and do-while loops?</p><p>Consider these examples:</p><pre><code>// While loop<br>while (condition) {<br>  // code<br>}<br><br>// Do-while loop<br>do {<br>  // code<br>} while (condition);</code></pre>",
+                                "hint": "Consider when the condition is checked",
+                                "options": [
+                                    "Do-while executes at least once, while may not execute at all",
+                                    "While is faster, do-while is slower",
+                                    "While is newer, do-while is older",
+                                    "There is no difference between them"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Nested Loops",
+                                "question": "<p>Write a C++ program that uses nested loops to print a pattern.</p><p>Your program should:</p><ul><li>Use nested <code>for</code> loops</li><li>Print asterisks (*) in a rectangular pattern</li><li>Take the number of rows and columns as input</li><li>Create the pattern correctly</li><li>Handle the nested loop logic</li></ul>",
+                                "hint": "Use nested for loops with proper row and column logic",
+                                "input": "3\n4",
+                                "output": "****\n****\n****"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Break Statement",
+                                "question": "<p>What does the <code>break</code> statement do in a loop?</p><p>Consider this example:</p><pre><code>for (int i = 0; i < 10; i++) {<br>  if (i == 5) {<br>    break;<br>  }<br>  cout << i << endl;<br>}</code></pre>",
+                                "hint": "Consider loop termination",
+                                "options": [
+                                    "Skips the current iteration - continues to next iteration",
+                                    "Terminates the loop immediately - exits the loop",
+                                    "Pauses the loop temporarily - resumes later",
+                                    "Reverses the loop direction - goes backwards"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Continue Statement",
+                                "question": "<p>Write a C++ program that uses continue to skip even numbers in a loop.</p><p>Your program should:</p><ul><li>Use a <code>for</code> loop to iterate from 1 to 10</li><li>Use <code>continue</code> to skip even numbers</li><li>Print only odd numbers</li><li>Handle the logic correctly</li><li>Return the continue statement usage</li></ul>",
+                                "hint": "Use continue statement with modulo operator",
+                                "input": "10",
+                                "output": "1\n3\n5\n7\n9"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Ternary Operator",
+                                "question": "<p>What is the syntax of the ternary operator in C++?</p><p>Consider this example:</p><pre><code>int result = (a > b) ? a : b;</code></pre>",
+                                "hint": "Consider conditional expression syntax",
+                                "options": [
+                                    "condition ? value1 : value2 - condition, then value, else value",
+                                    "condition : value1 ? value2 - condition, else value, then value",
+                                    "value1 ? condition : value2 - first value, condition, second value",
+                                    "condition ? value1 ? value2 - condition, then value, then value"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "C++ Functions",
+                        "description": "Learn function declaration, definition, and usage in C++.",
+                        "tags": [
+                            "functions",
+                            "c++",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Function Definition",
+                                "question": "<p>Write a C++ function that calculates the sum of two numbers.</p><p>Your function should:</p><ul><li>Have a return type <code>int</code></li><li>Take two <code>int</code> parameters</li><li>Return the sum of the parameters</li><li>Be called from the main function</li><li>Print the result</li></ul>",
+                                "hint": "Use int functionName(int param1, int param2) syntax",
+                                "input": "5\n3",
+                                "output": "Sum: 8"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Function Declaration",
+                                "question": "<p>What is the difference between function declaration and definition in C++?</p><p>Consider these aspects:</p><ul><li>Declaration provides function signature without body</li><li>Definition provides function signature with body</li><li>Declaration is also called function prototype</li><li>Definition implements the function</li></ul>",
+                                "hint": "Consider signature vs implementation",
+                                "options": [
+                                    "Declaration provides signature, definition provides implementation with body",
+                                    "Definition provides signature, declaration provides implementation with body",
+                                    "Both provide signature and implementation",
+                                    "Neither provides signature or implementation"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Function Overloading",
+                                "question": "<p>Write C++ functions that demonstrate function overloading.</p><p>Your functions should:</p><ul><li>Have the same name but different parameters</li><li>Overload for different data types (int, double)</li><li>Perform different operations based on types</li><li>Be called with different arguments</li><li>Return the overloaded function results</li></ul>",
+                                "hint": "Use same function name with different parameter types",
+                                "input": "5\n3.14",
+                                "output": "Integer sum: 5\nDouble value: 3.14"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Default Parameters",
+                                "question": "<p>How do you specify default parameters in C++ functions?</p><p>Consider this example:</p><pre><code>int add(int a, int b = 0) {<br>  return a + b;<br>}</code></pre>",
+                                "hint": "Consider parameter initialization",
+                                "options": [
+                                    "Using = value in parameter declaration - parameter = defaultValue",
+                                    "Using : value in parameter declaration - parameter : defaultValue",
+                                    "Using -> value in parameter declaration - parameter -> defaultValue",
+                                    "Using => value in parameter declaration - parameter => defaultValue"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Pass by Reference",
+                                "question": "<p>Write a C++ function that uses pass by reference to modify a variable.</p><p>Your function should:</p><ul><li>Use <code>&amp;</code> operator in parameter declaration</li><li>Modify the original variable</li><li>Not return any value (void function)</li><li>Be called with a variable</li><li>Demonstrate the modification</li></ul>",
+                                "hint": "Use &amp; operator for reference parameters",
+                                "input": "10",
+                                "output": "Original value: 10\nModified value: 20"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Pass by Value vs Reference",
+                                "question": "<p>What is the difference between pass by value and pass by reference?</p><p>Consider these characteristics:</p><ul><li>Pass by value creates a copy of the argument</li><li>Pass by reference uses the original variable</li><li>Pass by value cannot modify the original</li><li>Pass by reference can modify the original</li></ul>",
+                                "hint": "Consider copying vs direct access",
+                                "options": [
+                                    "Pass by value creates a copy, pass by reference uses the original variable",
+                                    "Pass by reference creates a copy, pass by value uses the original variable",
+                                    "Both create copies of the arguments",
+                                    "Both use the original variables directly"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Inline Functions",
+                                "question": "<p>Write a C++ inline function for a simple calculation.</p><p>Your function should:</p><ul><li>Use <code>inline</code> keyword</li><li>Perform a simple operation</li><li>Be defined in the header or before use</li><li>Be called multiple times</li><li>Return the inline function results</li></ul>",
+                                "hint": "Use inline keyword before function definition",
+                                "input": "5\n3",
+                                "output": "Square of 5: 25\nSquare of 3: 9"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Function Scope",
+                                "question": "<p>What is function scope in C++?</p><p>Consider this example:</p><pre><code>void myFunction() {<br>  int x = 10;<br>  cout << x << endl;<br>}<br>// Can we access x here?</code></pre>",
+                                "hint": "Consider where variables are accessible",
+                                "options": [
+                                    "Variables declared inside a function are only accessible within that function",
+                                    "Variables declared inside a function are accessible everywhere",
+                                    "Variables declared inside a function are accessible in other functions",
+                                    "Variables declared inside a function are accessible globally"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Recursive Functions",
+                                "question": "<p>Write a C++ recursive function to calculate factorial.</p><p>Your function should:</p><ul><li>Call itself with a smaller value</li><li>Have a base case to stop recursion</li><li>Calculate factorial of a number</li><li>Handle the recursive logic properly</li><li>Return the factorial result</li></ul>",
+                                "hint": "Use base case (n <= 1) and recursive case (n * factorial(n-1))",
+                                "input": "5",
+                                "output": "Factorial of 5: 120"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Function Templates",
+                                "question": "<p>What are function templates in C++?</p><p>Consider this example:</p><pre><code>template &lt;typename T&gt;<br>T add(T a, T b) {<br>  return a + b;<br>}</code></pre>",
+                                "hint": "Consider generic programming",
+                                "options": [
+                                    "Functions that can work with different data types using template parameters",
+                                    "Functions that only work with specific data types",
+                                    "Functions that are automatically generated",
+                                    "Functions that are always inline"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

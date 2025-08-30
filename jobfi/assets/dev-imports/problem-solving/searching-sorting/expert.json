@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Problem Solving",
+            "slug": "problem-solving",
+            "description": "Develop analytical thinking and problem-solving skills through algorithmic challenges.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/problem-solving.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Searching & Sorting",
+                "slug": "searching-sorting",
+                "description": "Master fundamental searching and sorting algorithms and their implementations.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/searching-sorting.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "Advanced Search Optimization",
+                        "description": "Master advanced search optimization techniques and algorithms.",
+                        "tags": [
+                            "searching",
+                            "optimization",
+                            "advanced"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Jump Search",
+                                "question": "<p>What is the optimal jump size for jump search in an array of size n?</p><p>Consider: Balancing jump size and linear search</p>",
+                                "hint": "Think about minimizing total comparisons",
+                                "options": [
+                                    "√n - square root of array size",
+                                    "n/2 - half of array size",
+                                    "log n - logarithmic jump size",
+                                    "n - full array size"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Fibonacci Search",
+                                "question": "<p>What is the time complexity of Fibonacci search?</p><p>Consider: How Fibonacci search divides the search space</p>",
+                                "hint": "Think about the Fibonacci sequence and search space reduction",
+                                "options": [
+                                    "O(1) - constant time",
+                                    "O(log n) - logarithmic time",
+                                    "O(n) - linear time",
+                                    "O(n log n) - linearithmic time"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Hash Table Search",
+                                "question": "<p>What is the average case time complexity of search in a hash table?</p><p>Consider: Hash function distribution and collision handling</p>",
+                                "hint": "Think about direct access using hash function",
+                                "options": [
+                                    "O(1) - constant time average case",
+                                    "O(log n) - logarithmic time",
+                                    "O(n) - linear time",
+                                    "O(n²) - quadratic time"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "Advanced Sorting Algorithms",
+                        "description": "Master advanced sorting algorithms and their applications.",
+                        "tags": [
+                            "sorting",
+                            "advanced",
+                            "algorithms"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Counting Sort",
+                                "question": "<p>What is the time complexity of counting sort?</p><p>Consider: Range of elements and counting process</p>",
+                                "hint": "Think about counting occurrences and placing elements",
+                                "options": [
+                                    "O(n) - linear time",
+                                    "O(n + k) - where k is range of elements",
+                                    "O(n log n) - linearithmic time",
+                                    "O(n²) - quadratic time"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Radix Sort",
+                                "question": "<p>What is the time complexity of radix sort for n numbers with d digits?</p><p>Consider: Processing each digit position</p>",
+                                "hint": "Think about the number of passes and operations per pass",
+                                "options": [
+                                    "O(n) - linear time",
+                                    "O(d(n + k)) - where k is base (usually 10)",
+                                    "O(n log n) - linearithmic time",
+                                    "O(n²) - quadratic time"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Bucket Sort",
+                                "question": "<p>When is bucket sort most efficient?</p><p>Consider: Distribution of elements and bucket usage</p>",
+                                "hint": "Think about uniform distribution across buckets",
+                                "options": [
+                                    "When elements are uniformly distributed",
+                                    "When elements are already sorted",
+                                    "When elements are all equal",
+                                    "When elements are in reverse order"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

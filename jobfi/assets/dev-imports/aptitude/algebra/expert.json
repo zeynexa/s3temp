@@ -1,0 +1,102 @@
+[
+    {
+        "category": {
+            "name": "Aptitude",
+            "slug": "aptitude",
+            "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Algebra",
+                "slug": "algebra",
+                "description": "Master algebraic concepts, equations, and mathematical problem-solving techniques.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/algebra.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "Advanced Linear Algebra",
+                        "description": "Solve complex linear algebra problems and matrix operations.",
+                        "tags": [
+                            "linear-algebra",
+                            "matrices",
+                            "advanced"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Eigenvalue Calculator",
+                                "question": "<p>Implement an eigenvalue and eigenvector calculator for square matrices.</p><p>Your function should:</p><ul><li>Find eigenvalues using characteristic equation</li><li>Calculate corresponding eigenvectors</li><li>Handle complex eigenvalues</li><li>Support diagonalization</li><li>Return eigenvalues and eigenvectors</li></ul>",
+                                "hint": "Solve det(A - λI) = 0 for eigenvalues, then solve (A - λI)v = 0 for eigenvectors",
+                                "input": "Matrix: [[4,1],[2,3]]",
+                                "output": "Eigenvalues: 5, 2; Eigenvectors: [1,1], [1,-2]"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Matrix Diagonalization",
+                                "question": "<p>When is a matrix diagonalizable?</p><p>Consider: Conditions for a matrix to be similar to a diagonal matrix</p>",
+                                "hint": "Think about the relationship between eigenvalues and eigenvectors",
+                                "options": [
+                                    "Always - all matrices are diagonalizable",
+                                    "When it has n linearly independent eigenvectors - sufficient condition",
+                                    "Only when all eigenvalues are real - necessary condition",
+                                    "Only when matrix is symmetric - sufficient but not necessary"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Singular Value Decomposition",
+                                "question": "<p>Implement Singular Value Decomposition (SVD) for matrices.</p><p>Your function should:</p><ul><li>Decompose matrix A into UΣV^T</li><li>Calculate singular values</li><li>Find left and right singular vectors</li><li>Handle rectangular matrices</li><li>Return U, Σ, and V matrices</li></ul>",
+                                "hint": "Use eigendecomposition of A^T A and AA^T, then construct U, Σ, V",
+                                "input": "Matrix: [[1,2],[3,4],[5,6]]",
+                                "output": "U: 3x3, Σ: 3x2, V: 2x2 matrices"
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "Abstract Algebra Concepts",
+                        "description": "Work with abstract algebraic structures and concepts.",
+                        "tags": [
+                            "abstract-algebra",
+                            "groups",
+                            "rings"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Group Theory Calculator",
+                                "question": "<p>Create a calculator for basic group theory operations.</p><p>Your calculator should:</p><ul><li>Check if a set with operation forms a group</li><li>Find group generators</li><li>Calculate group order and element orders</li><li>Identify subgroups</li><li>Handle cyclic and permutation groups</li></ul>",
+                                "hint": "Check closure, associativity, identity, and inverse properties for groups",
+                                "input": "Set: {1,2,3,4}, Operation: multiplication mod 5",
+                                "output": "Group: true, Order: 4, Generators: [2,3]"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Group Properties",
+                                "question": "<p>What is the order of the symmetric group S₃?</p><p>Consider: Sₙ is the group of all permutations of n elements</p>",
+                                "hint": "Count the number of possible permutations of 3 elements",
+                                "options": [
+                                    "3 - number of elements",
+                                    "6 - 3! permutations",
+                                    "9 - 3² elements",
+                                    "12 - 3×4 elements"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Ring Theory Operations",
+                                "question": "<p>Implement basic ring theory operations and checks.</p><p>Your functions should:</p><ul><li>Verify ring properties (addition and multiplication)</li><li>Find ring units and zero divisors</li><li>Check if ring is commutative or has identity</li><li>Calculate ring characteristics</li><li>Handle polynomial rings</li></ul>",
+                                "hint": "Check ring axioms, find elements with multiplicative inverses for units",
+                                "input": "Ring: Z₆ (integers modulo 6)",
+                                "output": "Units: [1,5], Zero divisors: [2,3,4], Characteristic: 6"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

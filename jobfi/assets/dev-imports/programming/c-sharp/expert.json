@@ -1,0 +1,377 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "C#",
+                "slug": "c-sharp",
+                "description": "Learn C# for .NET development, Windows applications, and enterprise software.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/c-sharp.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "C# Advanced Language Features",
+                        "description": "Learn advanced C# features like delegates, events, reflection, and attributes.",
+                        "tags": [
+                            "delegates",
+                            "events",
+                            "reflection",
+                            "c-sharp",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Delegate Implementation",
+                                "question": "<p>Write a C# program that demonstrates delegate usage.</p><p>Your program should:</p><ul><li>Define a delegate type</li><li>Create methods that match the delegate signature</li><li>Assign methods to delegate variables</li><li>Invoke delegates</li><li>Demonstrate delegate usage</li></ul>",
+                                "hint": "Use delegate keyword and method assignment",
+                                "input": "add\nmultiply\n10\n5",
+                                "output": "Delegate result (add): 15\nDelegate result (multiply): 50"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Delegate vs Function Pointer",
+                                "question": "<p>What is the main difference between delegates and function pointers?</p><p>Consider these characteristics:</p><ul><li>Delegates are type-safe</li><li>Delegates can hold multiple methods</li><li>Delegates support events</li><li>Function pointers are unsafe and low-level</li></ul>",
+                                "hint": "Consider type safety and functionality",
+                                "options": [
+                                    "Delegates are type-safe and can hold multiple methods - function pointers are unsafe",
+                                    "Delegates are faster, function pointers are slower",
+                                    "Delegates are larger, function pointers are smaller",
+                                    "Delegates are newer, function pointers are older"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Event Implementation",
+                                "question": "<p>Write a C# program that demonstrates event usage.</p><p>Your program should:</p><ul><li>Define an event using <code>event</code> keyword</li><li>Create event handlers</li><li>Subscribe to events using <code>+=</code></li><li>Raise events using <code>Invoke()</code></li><li>Demonstrate event-driven programming</li></ul>",
+                                "hint": "Use event keyword and += for subscription",
+                                "input": "Button Clicked\nUser Logged In",
+                                "output": "Event: Button Clicked\nEvent: User Logged In"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Action and Func Delegates",
+                                "question": "<p>What are Action and Func delegates in C#?</p><p>Consider these characteristics:</p><ul><li>Action - delegate for methods that return void</li><li>Func - delegate for methods that return a value</li><li>Built-in generic delegate types</li><li>Part of System namespace</li></ul>",
+                                "hint": "Consider return type differences",
+                                "options": [
+                                    "Built-in generic delegates - Action for void return, Func for value return",
+                                    "Built-in generic classes",
+                                    "Built-in generic interfaces",
+                                    "Built-in generic attributes"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Reflection Usage",
+                                "question": "<p>Write a C# program that demonstrates reflection.</p><p>Your program should:</p><ul><li>Use <code>typeof()</code> to get type information</li><li>Use <code>GetType()</code> to get runtime type</li><li>Use <code>GetMethods()</code> to get method information</li><li>Use <code>GetProperties()</code> to get property information</li><li>Demonstrate reflection capabilities</li></ul>",
+                                "hint": "Use typeof(), GetType(), GetMethods(), GetProperties()",
+                                "input": "System.String",
+                                "output": "Type: System.String\nMethods: 100+\nProperties: 10+\nReflection completed"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Attribute Usage",
+                                "question": "<p>What are attributes in C#?</p><p>Consider these characteristics:</p><ul><li>Metadata about code elements</li><li>Use square bracket syntax <code>[AttributeName]</code></li><li>Can be retrieved using reflection</li><li>Used for documentation, validation, etc.</li></ul>",
+                                "hint": "Consider metadata and code decoration",
+                                "options": [
+                                    "Metadata about code elements - provide information about code",
+                                    "Code comments",
+                                    "Code documentation",
+                                    "Code formatting"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Custom Attribute Creation",
+                                "question": "<p>Write a C# program that creates and uses custom attributes.</p><p>Your program should:</p><ul><li>Create a custom attribute class that inherits from <code>Attribute</code></li><li>Add properties to the custom attribute</li><li>Apply the attribute to classes or methods</li><li>Use reflection to retrieve attribute information</li><li>Demonstrate custom attribute usage</li></ul>",
+                                "hint": "Inherit from Attribute class and use reflection to retrieve",
+                                "input": "Author\nJohn Doe\n2024",
+                                "output": "Custom attribute: Author=John Doe, Year=2024"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Dynamic Type",
+                                "question": "<p>What is the <code>dynamic</code> type in C#?</p><p>Consider these characteristics:</p><ul><li>Bypasses compile-time type checking</li><li>Type checking occurs at runtime</li><li>Uses <code>dynamic</code> keyword</li><li>Enables late binding</li></ul>",
+                                "hint": "Consider runtime vs compile-time type checking",
+                                "options": [
+                                    "Bypasses compile-time type checking - type checking at runtime",
+                                    "Makes code run faster",
+                                    "Makes code use less memory",
+                                    "Makes code more secure"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Expression Trees",
+                                "question": "<p>Write a C# program that demonstrates expression trees.</p><p>Your program should:</p><ul><li>Use <code>Expression&lt;T&gt;</code> type</li><li>Create expression trees programmatically</li><li>Compile expression trees to delegates</li><li>Use expression trees for dynamic queries</li><li>Demonstrate expression tree usage</li></ul>",
+                                "hint": "Use Expression&lt;Func&lt;T, TResult&gt;&gt; and Compile()",
+                                "input": "x\nx * 2\n5",
+                                "output": "Expression: x => x * 2\nCompiled result: 10"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Anonymous Types",
+                                "question": "<p>What are anonymous types in C#?</p><p>Consider these characteristics:</p><ul><li>Created using <code>new { }</code> syntax</li><li>Compiler generates the type automatically</li><li>Read-only properties</li><li>Used for temporary data structures</li></ul>",
+                                "hint": "Consider automatic type generation",
+                                "options": [
+                                    "Compiler-generated types - created using new { } syntax",
+                                    "User-defined types",
+                                    "Built-in types",
+                                    "Generic types"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "C# Asynchronous Programming",
+                        "description": "Learn async/await patterns, Task Parallel Library, and concurrent programming.",
+                        "tags": [
+                            "async-await",
+                            "tasks",
+                            "concurrency",
+                            "c-sharp",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Async/Await Pattern",
+                                "question": "<p>Write a C# program that demonstrates async/await pattern.</p><p>Your program should:</p><ul><li>Use <code>async</code> keyword for methods</li><li>Use <code>await</code> keyword for asynchronous operations</li><li>Return <code>Task</code> or <code>Task&lt;T&gt;</code></li><li>Handle asynchronous operations properly</li><li>Demonstrate async/await usage</li></ul>",
+                                "hint": "Use async/await keywords and Task return types",
+                                "input": "Hello World\n2000",
+                                "output": "Starting async operation\nAsync operation completed: Hello World"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Task vs Thread",
+                                "question": "<p>What is the difference between Task and Thread in C#?</p><p>Consider these characteristics:</p><ul><li>Task is higher-level abstraction</li><li>Task uses thread pool by default</li><li>Task supports async/await</li><li>Thread is lower-level and more resource-intensive</li></ul>",
+                                "hint": "Consider abstraction level and resource usage",
+                                "options": [
+                                    "Task is higher-level abstraction - uses thread pool, supports async/await",
+                                    "Task is faster, Thread is slower",
+                                    "Task is larger, Thread is smaller",
+                                    "Task is newer, Thread is older"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Task Parallel Library",
+                                "question": "<p>Write a C# program that uses Task Parallel Library (TPL).</p><p>Your program should:</p><ul><li>Use <code>Task.Run()</code> to start tasks</li><li>Use <code>Task.WaitAll()</code> to wait for multiple tasks</li><li>Use <code>Task.WhenAll()</code> for async waiting</li><li>Handle task results</li><li>Demonstrate TPL usage</li></ul>",
+                                "hint": "Use Task.Run(), Task.WaitAll(), Task.WhenAll()",
+                                "input": "3\nTask1\nTask2\nTask3",
+                                "output": "Started 3 tasks\nAll tasks completed\nResults: Task1, Task2, Task3"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "ConfigureAwait",
+                                "question": "<p>What is the purpose of <code>ConfigureAwait(false)</code> in C#?</p><p>Consider these aspects:</p><ul><li>Prevents deadlocks in certain scenarios</li><li>Improves performance in some cases</li><li>Changes continuation behavior</li><li>Used in library code</li></ul>",
+                                "hint": "Consider deadlock prevention and performance",
+                                "options": [
+                                    "Prevents deadlocks and improves performance - changes continuation behavior",
+                                    "Makes async operations faster",
+                                    "Makes async operations slower",
+                                    "Makes async operations more secure"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "CancellationToken Usage",
+                                "question": "<p>Write a C# program that demonstrates CancellationToken usage.</p><p>Your program should:</p><ul><li>Create a <code>CancellationTokenSource</code></li><li>Pass <code>CancellationToken</code> to async methods</li><li>Check for cancellation using <code>ThrowIfCancellationRequested()</code></li><li>Cancel operations using <code>Cancel()</code></li><li>Demonstrate cancellation handling</li></ul>",
+                                "hint": "Use CancellationTokenSource and ThrowIfCancellationRequested()",
+                                "input": "LongOperation\n5000\n2000",
+                                "output": "Operation started\nOperation cancelled after 2 seconds"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Async Void",
+                                "question": "<p>When should you use <code>async void</code> in C#?</p><p>Consider these scenarios:</p><ul><li>Only for event handlers</li><li>Never for regular methods</li><li>Cannot be awaited</li><li>Exceptions cannot be caught</li></ul>",
+                                "hint": "Consider event handlers and exception handling",
+                                "options": [
+                                    "Only for event handlers - never for regular methods",
+                                    "For all async methods",
+                                    "For methods that return void",
+                                    "For methods that don't need to be awaited"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Parallel Processing",
+                                "question": "<p>Write a C# program that demonstrates parallel processing.</p><p>Your program should:</p><ul><li>Use <code>Parallel.For()</code> for parallel loops</li><li>Use <code>Parallel.ForEach()</code> for parallel iteration</li><li>Use <code>Parallel.Invoke()</code> for parallel method execution</li><li>Handle thread-safe operations</li><li>Demonstrate parallel processing</li></ul>",
+                                "hint": "Use Parallel.For(), Parallel.ForEach(), Parallel.Invoke()",
+                                "input": "10\n1 2 3 4 5",
+                                "output": "Parallel loop: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9\nParallel foreach: 1, 2, 3, 4, 5"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "SynchronizationContext",
+                                "question": "<p>What is SynchronizationContext in C#?</p><p>Consider these aspects:</p><ul><li>Captures the current execution context</li><li>Used by async/await for continuation</li><li>Ensures proper thread marshaling</li><li>Important for UI applications</li></ul>",
+                                "hint": "Consider execution context and thread marshaling",
+                                "options": [
+                                    "Captures execution context - used by async/await for proper thread marshaling",
+                                    "Makes async operations faster",
+                                    "Makes async operations slower",
+                                    "Makes async operations more secure"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "ValueTask Usage",
+                                "question": "<p>Write a C# program that demonstrates ValueTask usage.</p><p>Your program should:</p><ul><li>Use <code>ValueTask&lt;T&gt;</code> for high-performance scenarios</li><li>Return <code>ValueTask</code> from async methods</li><li>Compare performance with <code>Task&lt;T&gt;</code></li><li>Use <code>ValueTask</code> for synchronous results</li><li>Demonstrate ValueTask usage</li></ul>",
+                                "hint": "Use ValueTask&lt;T&gt; for performance optimization",
+                                "input": "42\n1000",
+                                "output": "ValueTask result: 42\nPerformance comparison: ValueTask is faster for synchronous results"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Async Streams",
+                                "question": "<p>What are async streams in C# 8.0+?</p><p>Consider these characteristics:</p><ul><li>Use <code>IAsyncEnumerable&lt;T&gt;</code></li><li>Support <code>await foreach</code></li><li>Enable asynchronous iteration</li><li>Use <code>yield return</code> with <code>await</code></li></ul>",
+                                "hint": "Consider asynchronous iteration",
+                                "options": [
+                                    "Asynchronous iteration - use IAsyncEnumerable&lt;T&gt; and await foreach",
+                                    "Asynchronous collections",
+                                    "Asynchronous arrays",
+                                    "Asynchronous lists"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "C# Memory Management and Performance",
+                        "description": "Learn garbage collection, memory optimization, and performance tuning in C#.",
+                        "tags": [
+                            "memory-management",
+                            "performance",
+                            "garbage-collection",
+                            "c-sharp",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Garbage Collection Control",
+                                "question": "<p>Write a C# program that demonstrates garbage collection control.</p><p>Your program should:</p><ul><li>Use <code>GC.Collect()</code> to force garbage collection</li><li>Use <code>GC.WaitForPendingFinalizers()</code> to wait for finalizers</li><li>Use <code>GC.GetTotalMemory()</code> to get memory usage</li><li>Monitor garbage collection behavior</li><li>Demonstrate GC control</li></ul>",
+                                "hint": "Use GC.Collect(), GC.WaitForPendingFinalizers(), GC.GetTotalMemory()",
+                                "input": "1000000",
+                                "output": "Memory before: 1000000 bytes\nForcing garbage collection\nMemory after: 500000 bytes"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "IDisposable Pattern",
+                                "question": "<p>What is the IDisposable pattern in C#?</p><p>Consider these characteristics:</p><ul><li>Implements <code>IDisposable</code> interface</li><li>Provides <code>Dispose()</code> method</li><li>Used for resource cleanup</li><li>Supports <code>using</code> statement</li></ul>",
+                                "hint": "Consider resource management and cleanup",
+                                "options": [
+                                    "Resource cleanup pattern - implements IDisposable with Dispose() method",
+                                    "Memory allocation pattern",
+                                    "Garbage collection pattern",
+                                    "Performance optimization pattern"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Memory Profiling",
+                                "question": "<p>Write a C# program that demonstrates memory profiling techniques.</p><p>Your program should:</p><ul><li>Use <code>GC.GetTotalMemory()</code> to measure memory</li><li>Use <code>GC.GetGeneration()</code> to check object generations</li><li>Use <code>GC.CollectionCount()</code> to count collections</li><li>Monitor memory allocation patterns</li><li>Demonstrate memory profiling</li></ul>",
+                                "hint": "Use GC methods for memory monitoring",
+                                "input": "1000\n100",
+                                "output": "Memory allocated: 1000 bytes\nObject generation: 0\nCollection count: 1"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Boxing and Unboxing",
+                                "question": "<p>What is boxing and unboxing in C#?</p><p>Consider these operations:</p><ul><li>Boxing - converting value type to reference type</li><li>Unboxing - converting reference type back to value type</li><li>Performance overhead</li><li>Automatic and explicit operations</li></ul>",
+                                "hint": "Consider value type to reference type conversion",
+                                "options": [
+                                    "Boxing converts value type to reference type, unboxing converts back - performance overhead",
+                                    "Boxing converts reference type to value type, unboxing converts back",
+                                    "Boxing is faster, unboxing is slower",
+                                    "Boxing is newer, unboxing is older"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "StringBuilder Optimization",
+                                "question": "<p>Write a C# program that demonstrates StringBuilder optimization.</p><p>Your program should:</p><ul><li>Compare string concatenation vs StringBuilder</li><li>Use <code>StringBuilder</code> for multiple concatenations</li><li>Measure performance differences</li><li>Use <code>Append()</code> and <code>ToString()</code> methods</li><li>Demonstrate StringBuilder usage</li></ul>",
+                                "hint": "Use StringBuilder for multiple concatenations",
+                                "input": "1000\nHello\nWorld",
+                                "output": "String concatenation: 5000 ms\nStringBuilder: 100 ms\nStringBuilder is 50x faster"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Weak References",
+                                "question": "<p>What are weak references in C#?</p><p>Consider these characteristics:</p><ul><li>Use <code>WeakReference&lt;T&gt;</code> class</li><li>Allow garbage collection of referenced objects</li><li>Useful for caching scenarios</li><li>Prevent memory leaks</li></ul>",
+                                "hint": "Consider garbage collection and memory management",
+                                "options": [
+                                    "Allow garbage collection of referenced objects - useful for caching",
+                                    "Make references stronger",
+                                    "Make references faster",
+                                    "Make references smaller"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Memory-Mapped Files",
+                                "question": "<p>Write a C# program that demonstrates memory-mapped files.</p><p>Your program should:</p><ul><li>Use <code>MemoryMappedFile</code> class</li><li>Create memory-mapped files</li><li>Read and write to mapped memory</li><li>Use <code>MemoryMappedViewAccessor</code></li><li>Demonstrate memory-mapped file usage</li></ul>",
+                                "hint": "Use MemoryMappedFile and MemoryMappedViewAccessor",
+                                "input": "test.dat\nHello World\n1024",
+                                "output": "Memory-mapped file created\nData written: Hello World\nData read: Hello World"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Large Object Heap",
+                                "question": "<p>What is the Large Object Heap (LOH) in C#?</p><p>Consider these characteristics:</p><ul><li>Separate heap for objects larger than 85KB</li><li>Different garbage collection behavior</li><li>Can cause memory fragmentation</li><li>Affects performance</li></ul>",
+                                "hint": "Consider large object management",
+                                "options": [
+                                    "Separate heap for objects larger than 85KB - different GC behavior",
+                                    "Separate heap for all objects",
+                                    "Separate heap for small objects",
+                                    "Separate heap for reference types"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Performance Counters",
+                                "question": "<p>Write a C# program that uses performance counters.</p><p>Your program should:</p><ul><li>Use <code>PerformanceCounter</code> class</li><li>Monitor CPU usage</li><li>Monitor memory usage</li><li>Monitor garbage collection</li><li>Demonstrate performance monitoring</li></ul>",
+                                "hint": "Use PerformanceCounter class for system monitoring",
+                                "input": "Processor\n% Processor Time\nMemory\nAvailable MBytes",
+                                "output": "CPU Usage: 25%\nAvailable Memory: 8192 MB\nPerformance monitoring active"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Finalizers vs Dispose",
+                                "question": "<p>What is the difference between finalizers and Dispose in C#?</p><p>Consider these aspects:</p><ul><li>Finalizers are called by garbage collector</li><li>Dispose is called explicitly</li><li>Finalizers are not guaranteed to run</li><li>Dispose provides immediate cleanup</li></ul>",
+                                "hint": "Consider garbage collection vs explicit cleanup",
+                                "options": [
+                                    "Finalizers called by GC (not guaranteed), Dispose called explicitly (immediate)",
+                                    "Finalizers are faster, Dispose is slower",
+                                    "Finalizers are newer, Dispose is older",
+                                    "Finalizers are safer, Dispose is less safe"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

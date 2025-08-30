@@ -1,0 +1,373 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "C",
+                "slug": "c",
+                "description": "Learn C for system programming, embedded systems, and low-level development.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/c.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "C Advanced Memory Management",
+                        "description": "Learn advanced memory management techniques, memory pools, and optimization.",
+                        "tags": [
+                            "memory-management",
+                            "c",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Memory Pool Implementation",
+                                "question": "<p>Write a C program that implements a simple memory pool.</p><p>Your program should:</p><ul><li>Create a memory pool with fixed-size blocks</li><li>Implement allocation and deallocation functions</li><li>Track allocated and free blocks</li><li>Handle memory pool exhaustion</li><li>Demonstrate memory pool usage</li></ul>",
+                                "hint": "Use a linked list to track free blocks",
+                                "input": "10\n5\n3",
+                                "output": "Memory pool created with 10 blocks\nAllocated 5 blocks\n3 blocks remaining"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Memory Fragmentation",
+                                "question": "<p>What is memory fragmentation in C?</p><p>Consider these scenarios:</p><ul><li>Memory becomes divided into small, non-contiguous blocks</li><li>Available memory exists but cannot be allocated</li><li>External fragmentation affects heap memory</li><li>Internal fragmentation occurs within allocated blocks</li></ul>",
+                                "hint": "Consider memory allocation patterns and efficiency",
+                                "options": [
+                                    "Memory becomes divided into small, non-contiguous blocks - reduces efficiency",
+                                    "Memory becomes too large for the program",
+                                    "Memory becomes corrupted",
+                                    "Memory becomes encrypted"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Custom malloc Implementation",
+                                "question": "<p>Write a C program that implements a basic malloc function.</p><p>Your program should:</p><ul><li>Use sbrk() to request memory from the system</li><li>Implement a simple first-fit allocation algorithm</li><li>Track allocated and free memory blocks</li><li>Handle memory coalescing</li><li>Demonstrate custom malloc usage</li></ul>",
+                                "hint": "Use linked list to track memory blocks and first-fit algorithm",
+                                "input": "100\n200\n50",
+                                "output": "Allocated 100 bytes\nAllocated 200 bytes\nAllocated 50 bytes\nTotal allocated: 350 bytes"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Memory Alignment",
+                                "question": "<p>Why is memory alignment important in C?</p><p>Consider these factors:</p><ul><li>CPU access aligned data more efficiently</li><li>Some architectures require alignment</li><li>Misaligned access can cause performance penalties</li><li>Alignment affects cache performance</li></ul>",
+                                "hint": "Consider CPU architecture and performance",
+                                "options": [
+                                    "CPU access aligned data more efficiently - improves performance",
+                                    "Makes memory usage more predictable",
+                                    "Reduces memory consumption",
+                                    "Makes debugging easier"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Garbage Collection Simulation",
+                                "question": "<p>Write a C program that simulates basic garbage collection.</p><p>Your program should:</p><ul><li>Track object references</li><li>Implement mark-and-sweep algorithm</li><li>Identify unreachable objects</li><li>Free unreachable memory</li><li>Demonstrate garbage collection process</li></ul>",
+                                "hint": "Use reference counting and mark-and-sweep algorithm",
+                                "input": "obj1\nobj2\nobj3\nunref obj2",
+                                "output": "Created objects: obj1, obj2, obj3\nMarking reachable objects\nSweeping unreachable objects\nFreed obj2"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Memory Leak Detection",
+                                "question": "<p>What are common techniques for detecting memory leaks in C?</p><p>Consider these approaches:</p><ul><li>Using tools like Valgrind or AddressSanitizer</li><li>Implementing custom memory tracking</li><li>Using smart pointers (not available in C)</li><li>Manual code review and testing</li></ul>",
+                                "hint": "Consider debugging and analysis tools",
+                                "options": [
+                                    "Using tools like Valgrind or AddressSanitizer - automated detection",
+                                    "Only manual code review",
+                                    "Only compiler warnings",
+                                    "Only runtime checks"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Memory Mapping",
+                                "question": "<p>Write a C program that uses memory mapping (mmap).</p><p>Your program should:</p><ul><li>Use mmap() to map a file into memory</li><li>Read and write to the mapped memory</li><li>Use msync() to synchronize changes</li><li>Use munmap() to unmap memory</li><li>Demonstrate memory mapping operations</li></ul>",
+                                "hint": "Use mmap(), msync(), and munmap() system calls",
+                                "input": "testfile.txt\nHello World",
+                                "output": "File mapped to memory\nData written: Hello World\nChanges synchronized\nMemory unmapped"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Stack vs Heap Memory",
+                                "question": "<p>What is the main difference between stack and heap memory in C?</p><p>Consider these characteristics:</p><ul><li>Stack is automatically managed, heap requires manual management</li><li>Stack has limited size, heap can grow dynamically</li><li>Stack is faster, heap is slower</li><li>Stack is thread-local, heap is shared</li></ul>",
+                                "hint": "Consider memory management and scope",
+                                "options": [
+                                    "Stack is automatically managed, heap requires manual allocation/deallocation",
+                                    "Stack is larger, heap is smaller",
+                                    "Stack is slower, heap is faster",
+                                    "Stack is shared, heap is private"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Memory Copy Optimization",
+                                "question": "<p>Write a C program that implements optimized memory copy functions.</p><p>Your program should:</p><ul><li>Implement word-aligned memory copy</li><li>Use SIMD instructions if available</li><li>Handle unaligned memory access</li><li>Compare performance with standard memcpy</li><li>Demonstrate optimization techniques</li></ul>",
+                                "hint": "Use word-aligned copying and SIMD instructions",
+                                "input": "source_data\ndestination_buffer\n1024",
+                                "output": "Standard memcpy: 1000 ns\nOptimized copy: 250 ns\n4x performance improvement"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Memory Barriers",
+                                "question": "<p>What is the purpose of memory barriers in C?</p><p>Consider these aspects:</p><ul><li>Ensure memory operations complete in specific order</li><li>Prevent compiler and CPU reordering</li><li>Important for multi-threaded programming</li><li>Affect memory consistency</li></ul>",
+                                "hint": "Consider memory ordering and concurrency",
+                                "options": [
+                                    "Ensure memory operations complete in specific order - prevents reordering",
+                                    "Make memory access faster",
+                                    "Make memory access slower",
+                                    "Make memory access more secure"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "C Advanced Pointers and Data Structures",
+                        "description": "Learn advanced pointer techniques, complex data structures, and optimization.",
+                        "tags": [
+                            "pointers",
+                            "data-structures",
+                            "c",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Binary Search Tree Implementation",
+                                "question": "<p>Write a C program that implements a binary search tree.</p><p>Your program should:</p><ul><li>Define a tree node structure</li><li>Implement insert function</li><li>Implement search function</li><li>Implement inorder traversal</li><li>Demonstrate BST operations</li></ul>",
+                                "hint": "Use recursive functions for tree operations",
+                                "input": "50\n30\n70\n20\n40\n60\n80",
+                                "output": "Inserted: 50, 30, 70, 20, 40, 60, 80\nInorder traversal: 20 30 40 50 60 70 80"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Pointer to Function Arrays",
+                                "question": "<p>What is an array of function pointers in C?</p><p>Consider this example:</p><pre><code>int (*func_array[3])(int, int);</code></pre>",
+                                "hint": "Consider function pointer syntax and arrays",
+                                "options": [
+                                    "Array that stores addresses of functions - enables function selection",
+                                    "Array that stores function results",
+                                    "Array that stores function names",
+                                    "Array that stores function parameters"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Linked List with Function Pointers",
+                                "question": "<p>Write a C program that implements a linked list with function pointers.</p><p>Your program should:</p><ul><li>Define a node structure with function pointer</li><li>Store different functions in nodes</li><li>Execute functions through the list</li><li>Demonstrate function pointer usage</li><li>Show dynamic function selection</li></ul>",
+                                "hint": "Use function pointers as node data",
+                                "input": "add\nmultiply\nsubtract\n10\n5",
+                                "output": "Function 1 result: 15\nFunction 2 result: 50\nFunction 3 result: 5"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Void Pointer Casting",
+                                "question": "<p>What is the purpose of casting void pointers in C?</p><p>Consider these aspects:</p><ul><li>Void pointers cannot be dereferenced directly</li><li>Casting provides type information</li><li>Enables generic programming</li><li>Required for memory access</li></ul>",
+                                "hint": "Consider type safety and generic programming",
+                                "options": [
+                                    "Provides type information for dereferencing - enables generic programming",
+                                    "Makes pointers faster",
+                                    "Makes pointers smaller",
+                                    "Makes pointers more secure"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Hash Table Implementation",
+                                "question": "<p>Write a C program that implements a hash table.</p><p>Your program should:</p><ul><li>Define hash table structure</li><li>Implement hash function</li><li>Implement insert and search operations</li><li>Handle hash collisions</li><li>Demonstrate hash table usage</li></ul>",
+                                "hint": "Use chaining or open addressing for collision resolution",
+                                "input": "apple\nbanana\ncherry\napple\nbanana",
+                                "output": "Inserted: apple, banana, cherry\nSearch 'apple': found\nSearch 'orange': not found"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Pointer Arithmetic with Structures",
+                                "question": "<p>What happens when you perform pointer arithmetic on structure pointers?</p><p>Consider this example:</p><pre><code>struct Point { int x, y; };<br>struct Point *ptr;<br>ptr++; // What happens?</code></pre>",
+                                "hint": "Consider structure size and pointer arithmetic",
+                                "options": [
+                                    "Pointer moves by size of structure - not by 1 byte",
+                                    "Pointer moves by 1 byte",
+                                    "Pointer becomes invalid",
+                                    "Pointer points to the same location"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Circular Buffer Implementation",
+                                "question": "<p>Write a C program that implements a circular buffer.</p><p>Your program should:</p><ul><li>Define circular buffer structure</li><li>Implement enqueue and dequeue operations</li><li>Handle buffer full and empty conditions</li><li>Use modulo arithmetic for wraparound</li><li>Demonstrate circular buffer usage</li></ul>",
+                                "hint": "Use head and tail pointers with modulo arithmetic",
+                                "input": "5\n1\n2\n3\n4\n5\n6",
+                                "output": "Buffer size: 5\nEnqueued: 1, 2, 3, 4, 5\nBuffer full, cannot enqueue 6\nDequeued: 1, 2, 3"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Function Pointer vs Function Call",
+                                "question": "<p>What is the performance difference between function pointers and direct function calls?</p><p>Consider these factors:</p><ul><li>Function pointers have indirect call overhead</li><li>Direct calls can be inlined by compiler</li><li>Function pointers enable dynamic dispatch</li><li>Performance depends on compiler optimization</li></ul>",
+                                "hint": "Consider indirect vs direct calls",
+                                "options": [
+                                    "Function pointers have indirect call overhead - slightly slower",
+                                    "Function pointers are always faster",
+                                    "Function pointers are always slower",
+                                    "There is no performance difference"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Red-Black Tree Implementation",
+                                "question": "<p>Write a C program that implements a red-black tree.</p><p>Your program should:</p><ul><li>Define red-black tree node structure</li><li>Implement insert with color balancing</li><li>Implement rotation operations</li><li>Maintain red-black tree properties</li><li>Demonstrate red-black tree operations</li></ul>",
+                                "hint": "Use color field and rotation functions for balancing",
+                                "input": "10\n20\n30\n40\n50",
+                                "output": "Inserted: 10, 20, 30, 40, 50\nRed-black tree properties maintained\nTree is balanced"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Pointer Aliasing",
+                                "question": "<p>What is pointer aliasing in C?</p><p>Consider these scenarios:</p><ul><li>Multiple pointers point to the same memory location</li><li>Can affect compiler optimization</li><li>May cause unexpected behavior</li><li>Can be prevented with restrict keyword</li></ul>",
+                                "hint": "Consider multiple pointers to same memory",
+                                "options": [
+                                    "Multiple pointers point to the same memory location - affects optimization",
+                                    "Pointers point to different memory locations",
+                                    "Pointers are null",
+                                    "Pointers are invalid"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "C System Programming and Optimization",
+                        "description": "Learn system programming techniques, performance optimization, and low-level programming.",
+                        "tags": [
+                            "system-programming",
+                            "optimization",
+                            "c",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Signal Handler Implementation",
+                                "question": "<p>Write a C program that implements signal handlers.</p><p>Your program should:</p><ul><li>Use <code>signal()</code> to register signal handlers</li><li>Handle SIGINT (Ctrl+C) signal</li><li>Handle SIGTERM signal</li><li>Implement graceful shutdown</li><li>Demonstrate signal handling</li></ul>",
+                                "hint": "Use signal() function and signal handler functions",
+                                "input": "running\nSIGINT",
+                                "output": "Program started\nSignal handler registered\nReceived SIGINT, shutting down gracefully"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Inline Assembly",
+                                "question": "<p>What is inline assembly in C?</p><p>Consider these aspects:</p><ul><li>Allows assembly code within C programs</li><li>Uses __asm__ keyword</li><li>Enables low-level optimization</li><li>Platform-specific implementation</li></ul>",
+                                "hint": "Consider assembly code integration",
+                                "options": [
+                                    "Assembly code written within C programs - enables low-level optimization",
+                                    "Assembly code that is automatically generated",
+                                    "Assembly code that is compiled separately",
+                                    "Assembly code that is interpreted"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Thread Implementation with pthreads",
+                                "question": "<p>Write a C program that uses pthreads for multithreading.</p><p>Your program should:</p><ul><li>Include <code>&lt;pthread.h&gt;</code> header</li><li>Create threads using <code>pthread_create()</code></li><li>Join threads using <code>pthread_join()</code></li><li>Use thread-safe operations</li><li>Demonstrate multithreading</li></ul>",
+                                "hint": "Use pthread_create(), pthread_join(), and thread functions",
+                                "input": "3\nthread1\nthread2\nthread3",
+                                "output": "Created 3 threads\nThread 1: thread1\nThread 2: thread2\nThread 3: thread3\nAll threads completed"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Cache Optimization",
+                                "question": "<p>What is cache optimization in C programming?</p><p>Consider these techniques:</p><ul><li>Improving data locality</li><li>Reducing cache misses</li><li>Using cache-friendly data structures</li><li>Optimizing memory access patterns</li></ul>",
+                                "hint": "Consider memory access patterns and performance",
+                                "options": [
+                                    "Optimizing memory access patterns to improve cache performance",
+                                    "Making programs use more cache",
+                                    "Making programs use less cache",
+                                    "Making programs ignore cache"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Inter-Process Communication",
+                                "question": "<p>Write a C program that demonstrates inter-process communication using pipes.</p><p>Your program should:</p><ul><li>Use <code>pipe()</code> to create a pipe</li><li>Use <code>fork()</code> to create child process</li><li>Send data from parent to child</li><li>Receive data in child process</li><li>Demonstrate IPC communication</li></ul>",
+                                "hint": "Use pipe(), fork(), read(), and write() system calls",
+                                "input": "Hello from parent process",
+                                "output": "Pipe created\nChild process created\nParent sent: Hello from parent process\nChild received: Hello from parent process"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Compiler Optimizations",
+                                "question": "<p>What are common compiler optimizations in C?</p><p>Consider these optimizations:</p><ul><li>Loop unrolling</li><li>Function inlining</li><li>Dead code elimination</li><li>Constant folding</li></ul>",
+                                "hint": "Consider automatic code improvements",
+                                "options": [
+                                    "Automatic code improvements like loop unrolling and function inlining",
+                                    "Manual code improvements",
+                                    "Runtime optimizations",
+                                    "Debugging optimizations"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Memory-Mapped I/O",
+                                "question": "<p>Write a C program that demonstrates memory-mapped I/O.</p><p>Your program should:</p><ul><li>Use <code>mmap()</code> to map device memory</li><li>Access hardware registers through memory</li><li>Use <code>volatile</code> keyword for hardware access</li><li>Demonstrate low-level hardware interaction</li><li>Show memory-mapped I/O operations</li></ul>",
+                                "hint": "Use mmap() with device file and volatile pointers",
+                                "input": "/dev/mem\n0x1000\n0x42",
+                                "output": "Memory mapped at address 0x1000\nHardware register value: 0x42\nMemory-mapped I/O completed"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Volatile Keyword",
+                                "question": "<p>What is the purpose of the <code>volatile</code> keyword in C?</p><p>Consider these aspects:</p><ul><li>Prevents compiler optimization of variable access</li><li>Used for hardware registers</li><li>Used for variables shared between threads</li><li>Ensures memory access is not optimized away</li></ul>",
+                                "hint": "Consider compiler optimization prevention",
+                                "options": [
+                                    "Prevents compiler optimization of variable access - ensures memory access",
+                                    "Makes variables faster",
+                                    "Makes variables slower",
+                                    "Makes variables constant"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Performance Profiling",
+                                "question": "<p>Write a C program that implements basic performance profiling.</p><p>Your program should:</p><ul><li>Use <code>clock()</code> or <code>gettimeofday()</code> for timing</li><li>Measure function execution time</li><li>Compare different algorithm implementations</li><li>Generate performance reports</li><li>Demonstrate profiling techniques</li></ul>",
+                                "hint": "Use clock() or gettimeofday() for timing measurements",
+                                "input": "bubble_sort\nquick_sort\n1000",
+                                "output": "Bubble sort time: 15.2 ms\nQuick sort time: 2.1 ms\nQuick sort is 7.2x faster"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "System Calls",
+                                "question": "<p>What are system calls in C?</p><p>Consider these characteristics:</p><ul><li>Interface between user space and kernel</li><li>Provide access to operating system services</li><li>Examples: open(), read(), write(), fork()</li><li>More expensive than library function calls</li></ul>",
+                                "hint": "Consider user space to kernel interface",
+                                "options": [
+                                    "Interface between user space and kernel - provides OS services",
+                                    "Interface between different user programs",
+                                    "Interface between different libraries",
+                                    "Interface between different compilers"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

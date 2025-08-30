@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Problem Solving",
+            "slug": "problem-solving",
+            "description": "Develop analytical thinking and problem-solving skills through algorithmic challenges.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/problem-solving.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Arrays & Strings",
+                "slug": "arrays-strings",
+                "description": "Master fundamental operations on arrays and string manipulation techniques.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/arrays-strings.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "Array Algorithms",
+                        "description": "Implement intermediate array algorithms and optimization techniques.",
+                        "tags": [
+                            "arrays",
+                            "algorithms",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Two Pointers Technique",
+                                "question": "<p>What is the main advantage of using the two pointers technique?</p><p>Consider: Time and space complexity improvements</p>",
+                                "hint": "Think about reducing the number of nested loops",
+                                "options": [
+                                    "Reduces time complexity from O(n²) to O(n)",
+                                    "Increases memory usage",
+                                    "Makes code more readable",
+                                    "Reduces code length"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Sliding Window Complexity",
+                                "question": "<p>What is the time complexity of the sliding window technique for finding maximum sum of k consecutive elements?</p><p>Consider: How many elements are processed</p>",
+                                "hint": "Each element is processed at most twice",
+                                "options": [
+                                    "O(n²) - quadratic time",
+                                    "O(n) - linear time",
+                                    "O(n log n) - linearithmic time",
+                                    "O(k) - constant time"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Kadane's Algorithm",
+                                "question": "<p>What does Kadane's algorithm find in an array?</p><p>Consider: The problem it solves</p>",
+                                "hint": "Think about subarrays and their sums",
+                                "options": [
+                                    "Maximum element in array",
+                                    "Maximum sum of contiguous subarray",
+                                    "Minimum element in array",
+                                    "Average of all elements"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "String Algorithms",
+                        "description": "Master intermediate string manipulation and pattern matching algorithms.",
+                        "tags": [
+                            "strings",
+                            "algorithms",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Palindrome Properties",
+                                "question": "<p>Which of the following is true about palindromes?</p><p>Consider: Character symmetry and reading direction</p>",
+                                "hint": "Think about reading forwards and backwards",
+                                "options": [
+                                    "All palindromes have even length",
+                                    "Palindromes read the same forwards and backwards",
+                                    "Palindromes must contain only letters",
+                                    "Palindromes cannot contain spaces"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Anagram Detection",
+                                "question": "<p>What is the most efficient way to check if two strings are anagrams?</p><p>Consider: Character frequency comparison</p>",
+                                "hint": "Think about counting character occurrences",
+                                "options": [
+                                    "Sort both strings and compare - O(n log n)",
+                                    "Use character frequency array - O(n)",
+                                    "Compare each character - O(n²)",
+                                    "Use hash table - O(n)"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "String Matching",
+                                "question": "<p>What is the time complexity of the naive string matching algorithm?</p><p>Consider: Nested loops for pattern matching</p>",
+                                "hint": "Think about comparing pattern at each position",
+                                "options": [
+                                    "O(n) - linear time",
+                                    "O(nm) - where n is text length, m is pattern length",
+                                    "O(n log m) - logarithmic pattern time",
+                                    "O(n²) - quadratic time"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

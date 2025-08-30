@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Problem Solving",
+            "slug": "problem-solving",
+            "description": "Develop analytical thinking and problem-solving skills through algorithmic challenges.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/problem-solving.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Recursion & Backtracking",
+                "slug": "recursion-backtracking",
+                "description": "Master recursive algorithms and backtracking techniques for complex problem solving.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/recursion-backtracking.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "Advanced Recursion",
+                        "description": "Master advanced recursive algorithms and optimization techniques.",
+                        "tags": [
+                            "recursion",
+                            "advanced",
+                            "optimization"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Tail Recursion",
+                                "question": "<p>What is the main advantage of tail recursion?</p><p>Consider: How tail recursion can be optimized</p>",
+                                "hint": "Think about stack space and compiler optimization",
+                                "options": [
+                                    "Faster execution",
+                                    "Can be optimized to use constant stack space",
+                                    "More readable code",
+                                    "Better memory usage"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Memoization",
+                                "question": "<p>What is memoization used for in recursive functions?</p><p>Consider: Avoiding redundant calculations</p>",
+                                "hint": "Think about storing and reusing computed results",
+                                "options": [
+                                    "To make code more readable",
+                                    "To avoid recalculating same subproblems",
+                                    "To reduce function parameters",
+                                    "To increase recursion depth"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Recursive Tree Traversal",
+                                "question": "<p>What is the time complexity of recursive tree traversal?</p><p>Consider: Visiting each node exactly once</p>",
+                                "hint": "Think about the number of nodes in the tree",
+                                "options": [
+                                    "O(1) - constant time",
+                                    "O(n) - linear time, visits each node once",
+                                    "O(n log n) - linearithmic time",
+                                    "O(n²) - quadratic time"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "Advanced Backtracking",
+                        "description": "Master advanced backtracking techniques and constraint satisfaction.",
+                        "tags": [
+                            "backtracking",
+                            "advanced",
+                            "constraints"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Constraint Satisfaction",
+                                "question": "<p>What is a constraint in backtracking problems?</p><p>Consider: Rules that must be satisfied</p>",
+                                "hint": "Think about conditions that limit valid solutions",
+                                "options": [
+                                    "A programming language feature",
+                                    "A rule that must be satisfied for a valid solution",
+                                    "A data structure",
+                                    "An algorithm optimization"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Pruning in Backtracking",
+                                "question": "<p>What is pruning in backtracking algorithms?</p><p>Consider: Eliminating invalid search paths</p>",
+                                "hint": "Think about stopping exploration of certain branches",
+                                "options": [
+                                    "Removing tree branches",
+                                    "Eliminating invalid search paths early",
+                                    "Sorting the search space",
+                                    "Compressing the solution"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Backtracking vs DFS",
+                                "question": "<p>How is backtracking related to Depth-First Search (DFS)?</p><p>Consider: Search strategy and exploration</p>",
+                                "hint": "Think about the exploration pattern",
+                                "options": [
+                                    "They are completely different algorithms",
+                                    "Backtracking is a systematic DFS with pruning",
+                                    "DFS is a type of backtracking",
+                                    "They have no relationship"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

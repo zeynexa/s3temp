@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Aptitude",
+            "slug": "aptitude",
+            "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Arithmetic",
+                "slug": "arithmetic",
+                "description": "Master arithmetic operations, number theory, and mathematical problem-solving techniques.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/arithmetic.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "Number Theory",
+                        "description": "Master number theory concepts and applications.",
+                        "tags": [
+                            "number-theory",
+                            "intermediate",
+                            "mathematics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Prime Factorization",
+                                "question": "<p>What is the prime factorization of 84?</p><p>Consider: Breaking down into prime factors</p>",
+                                "hint": "84 = 2 × 2 × 3 × 7",
+                                "options": [
+                                    "2 × 3 × 7",
+                                    "2² × 3 × 7",
+                                    "2 × 3² × 7",
+                                    "2² × 3² × 7"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "GCD and LCM",
+                                "question": "<p>What is the GCD of 48 and 60?</p><p>Consider: Greatest common divisor</p>",
+                                "hint": "Find the largest number that divides both 48 and 60",
+                                "options": [
+                                    "6 - incorrect",
+                                    "12 - correct GCD",
+                                    "24 - incorrect",
+                                    "48 - incorrect"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Modular Arithmetic",
+                                "question": "<p>What is 17 mod 5?</p><p>Consider: Remainder when 17 is divided by 5</p>",
+                                "hint": "17 ÷ 5 = 3 remainder 2",
+                                "options": [
+                                    "2 - correct remainder",
+                                    "3 - quotient, not remainder",
+                                    "5 - incorrect",
+                                    "17 - incorrect"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "Percentage and Profit Loss",
+                        "description": "Master percentage calculations and profit/loss problems.",
+                        "tags": [
+                            "percentage",
+                            "profit-loss",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Percentage Increase",
+                                "question": "<p>If a price increases from $80 to $100, what is the percentage increase?</p><p>Consider: Calculate the increase and express as percentage</p>",
+                                "hint": "Increase = $20, percentage = (20/80) × 100",
+                                "options": [
+                                    "20% - incorrect calculation",
+                                    "25% - correct percentage",
+                                    "30% - incorrect",
+                                    "40% - incorrect"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Profit Percentage",
+                                "question": "<p>If cost price is $50 and selling price is $65, what is the profit percentage?</p><p>Consider: Profit = SP - CP, percentage = (profit/CP) × 100</p>",
+                                "hint": "Profit = $15, percentage = (15/50) × 100",
+                                "options": [
+                                    "15% - incorrect",
+                                    "25% - incorrect",
+                                    "30% - correct percentage",
+                                    "35% - incorrect"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Compound Interest",
+                                "question": "<p>What is the compound interest on $1000 at 10% for 2 years?</p><p>Consider: Use compound interest formula</p>",
+                                "hint": "CI = P(1 + r)^n - P",
+                                "options": [
+                                    "$100 - simple interest",
+                                    "$200 - incorrect",
+                                    "$210 - correct compound interest",
+                                    "$300 - incorrect"
+                                ],
+                                "correct_answer": 2
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

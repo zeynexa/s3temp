@@ -1,0 +1,376 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "C#",
+                "slug": "c-sharp",
+                "description": "Learn C# for .NET development, Windows applications, and enterprise software.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/c-sharp.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "C# Object-Oriented Programming",
+                        "description": "Learn classes, inheritance, polymorphism, and encapsulation in C#.",
+                        "tags": [
+                            "oop",
+                            "classes",
+                            "inheritance",
+                            "c-sharp",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Class Definition",
+                                "question": "<p>Write a C# class that represents a Person with properties and methods.</p><p>Your class should:</p><ul><li>Use <code>class</code> keyword</li><li>Have properties for name, age, and email</li><li>Have a constructor that accepts parameters</li><li>Have a method that returns person information</li><li>Demonstrate class usage</li></ul>",
+                                "hint": "Use class keyword, properties, constructor, and methods",
+                                "input": "John Doe\n30\njohn@example.com",
+                                "output": "Person: John Doe, Age: 30, Email: john@example.com"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Access Modifiers",
+                                "question": "<p>What is the default access modifier for class members in C#?</p><p>Consider these access modifiers:</p><ul><li><code>public</code> - accessible from anywhere</li><li><code>private</code> - accessible only within the class</li><li><code>protected</code> - accessible within class and derived classes</li><li><code>internal</code> - accessible within the assembly</li></ul>",
+                                "hint": "Consider the most restrictive access level",
+                                "options": [
+                                    "public - accessible from anywhere",
+                                    "private - accessible only within the class",
+                                    "protected - accessible within class and derived classes",
+                                    "internal - accessible within the assembly"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Inheritance",
+                                "question": "<p>Write C# classes that demonstrate inheritance.</p><p>Your classes should:</p><ul><li>Create a base class <code>Animal</code></li><li>Create a derived class <code>Dog</code> that inherits from <code>Animal</code></li><li>Use <code>base</code> keyword to call parent constructor</li><li>Override methods from the base class</li><li>Demonstrate inheritance usage</li></ul>",
+                                "hint": "Use : syntax for inheritance and base keyword",
+                                "input": "Buddy\nGolden Retriever",
+                                "output": "Animal: Buddy\nDog: Buddy, Breed: Golden Retriever\nDog makes sound: Woof!"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Virtual and Override",
+                                "question": "<p>What is the purpose of <code>virtual</code> and <code>override</code> keywords in C#?</p><p>Consider this example:</p><pre><code>public virtual void MakeSound() { }<br>public override void MakeSound() { }</code></pre>",
+                                "hint": "Consider method overriding and polymorphism",
+                                "options": [
+                                    "Enable method overriding - virtual allows override, override implements it",
+                                    "Make methods faster",
+                                    "Make methods private",
+                                    "Make methods static"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Abstract Classes",
+                                "question": "<p>Write a C# abstract class with abstract and concrete methods.</p><p>Your abstract class should:</p><ul><li>Use <code>abstract</code> keyword</li><li>Have an abstract method that must be implemented</li><li>Have a concrete method with implementation</li><li>Be inherited by a concrete class</li><li>Demonstrate abstract class usage</li></ul>",
+                                "hint": "Use abstract keyword for class and methods",
+                                "input": "Circle\n5",
+                                "output": "Shape: Circle\nArea: 78.54"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Interfaces",
+                                "question": "<p>What is an interface in C#?</p><p>Consider these characteristics:</p><ul><li>Defines a contract that classes must implement</li><li>Contains only method signatures, no implementation</li><li>Enables multiple inheritance</li><li>Uses <code>interface</code> keyword</li></ul>",
+                                "hint": "Consider contract definition and implementation",
+                                "options": [
+                                    "Defines a contract that classes must implement - contains only signatures",
+                                    "Defines a class with implementation",
+                                    "Defines a method with implementation",
+                                    "Defines a property with implementation"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Interface Implementation",
+                                "question": "<p>Write C# code that implements an interface.</p><p>Your code should:</p><ul><li>Define an interface with method signatures</li><li>Create a class that implements the interface</li><li>Use <code>:</code> syntax for interface implementation</li><li>Implement all interface methods</li><li>Demonstrate interface usage</li></ul>",
+                                "hint": "Use interface keyword and : syntax for implementation",
+                                "input": "Calculator\n10\n5",
+                                "output": "Calculator: 10 + 5 = 15\nCalculator: 10 - 5 = 5"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Sealed Classes",
+                                "question": "<p>What is a sealed class in C#?</p><p>Consider these characteristics:</p><ul><li>Cannot be inherited by other classes</li><li>Uses <code>sealed</code> keyword</li><li>Prevents further inheritance</li><li>Improves performance slightly</li></ul>",
+                                "hint": "Consider inheritance prevention",
+                                "options": [
+                                    "Cannot be inherited by other classes - prevents further inheritance",
+                                    "Cannot be instantiated",
+                                    "Cannot be modified",
+                                    "Cannot be accessed"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Properties",
+                                "question": "<p>Write a C# class that demonstrates different types of properties.</p><p>Your class should:</p><ul><li>Use auto-implemented properties</li><li>Use full properties with backing fields</li><li>Use read-only properties</li><li>Use write-only properties</li><li>Demonstrate property usage</li></ul>",
+                                "hint": "Use { get; set; } for auto-properties and backing fields for full properties",
+                                "input": "John Doe\n30\njohn@example.com",
+                                "output": "Name: John Doe\nAge: 30\nEmail: john@example.com\nID: 1001"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Static Classes",
+                                "question": "<p>What is a static class in C#?</p><p>Consider these characteristics:</p><ul><li>Cannot be instantiated</li><li>Contains only static members</li><li>Uses <code>static</code> keyword</li><li>Used for utility functions</li></ul>",
+                                "hint": "Consider instantiation and member types",
+                                "options": [
+                                    "Cannot be instantiated - contains only static members",
+                                    "Cannot be inherited",
+                                    "Cannot be modified",
+                                    "Cannot be accessed"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "C# Collections and LINQ",
+                        "description": "Learn collections, generics, and LINQ operations in C#.",
+                        "tags": [
+                            "collections",
+                            "linq",
+                            "generics",
+                            "c-sharp",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "List Operations",
+                                "question": "<p>Write a C# program that demonstrates List operations.</p><p>Your program should:</p><ul><li>Create a <code>List&lt;int&gt;</code></li><li>Add elements using <code>Add()</code> method</li><li>Remove elements using <code>Remove()</code> method</li><li>Access elements by index</li><li>Demonstrate List usage</li></ul>",
+                                "hint": "Use List&lt;T&gt; and Add(), Remove(), indexing",
+                                "input": "1 2 3 4 5\n3",
+                                "output": "List: 1, 2, 3, 4, 5\nAfter removing 3: 1, 2, 4, 5"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Generic Collections",
+                                "question": "<p>What is the advantage of generic collections in C#?</p><p>Consider these benefits:</p><ul><li>Type safety at compile time</li><li>No boxing/unboxing for value types</li><li>Better performance</li><li>IntelliSense support</li></ul>",
+                                "hint": "Consider type safety and performance",
+                                "options": [
+                                    "Type safety at compile time - prevents runtime type errors",
+                                    "Smaller memory usage",
+                                    "Faster compilation",
+                                    "Easier debugging"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Dictionary Operations",
+                                "question": "<p>Write a C# program that demonstrates Dictionary operations.</p><p>Your program should:</p><ul><li>Create a <code>Dictionary&lt;string, int&gt;</code></li><li>Add key-value pairs using <code>Add()</code> method</li><li>Access values using keys</li><li>Check if key exists using <code>ContainsKey()</code></li><li>Demonstrate Dictionary usage</li></ul>",
+                                "hint": "Use Dictionary&lt;K, V&gt; and Add(), ContainsKey(), indexing",
+                                "input": "apple\n5\nbanana\n3\ncherry\n7",
+                                "output": "Dictionary: apple=5, banana=3, cherry=7\nValue for 'banana': 3"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "LINQ Basics",
+                                "question": "<p>What is LINQ in C#?</p><p>Consider these aspects:</p><ul><li>Language Integrated Query</li><li>Provides query capabilities for collections</li><li>Uses SQL-like syntax</li><li>Supports method syntax and query syntax</li></ul>",
+                                "hint": "Consider query capabilities and syntax",
+                                "options": [
+                                    "Language Integrated Query - provides query capabilities for collections",
+                                    "Language Independent Query",
+                                    "Language Internal Query",
+                                    "Language Interface Query"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "LINQ Where and Select",
+                                "question": "<p>Write a C# program that uses LINQ Where and Select methods.</p><p>Your program should:</p><ul><li>Create a list of integers</li><li>Use <code>Where()</code> to filter even numbers</li><li>Use <code>Select()</code> to transform numbers</li><li>Use method syntax for LINQ</li><li>Demonstrate LINQ operations</li></ul>",
+                                "hint": "Use Where() for filtering and Select() for transformation",
+                                "input": "1 2 3 4 5 6 7 8 9 10",
+                                "output": "Original: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10\nEven numbers: 2, 4, 6, 8, 10\nSquared: 4, 16, 36, 64, 100"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "LINQ Query Syntax",
+                                "question": "<p>What is LINQ query syntax?</p><p>Consider this example:</p><pre><code>var result = from num in numbers<br>             where num % 2 == 0<br>             select num * num;</code></pre>",
+                                "hint": "Consider SQL-like syntax",
+                                "options": [
+                                    "SQL-like syntax for LINQ queries - from, where, select keywords",
+                                    "Method call syntax for LINQ queries",
+                                    "Lambda expression syntax for LINQ queries",
+                                    "Extension method syntax for LINQ queries"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "LINQ Aggregation",
+                                "question": "<p>Write a C# program that uses LINQ aggregation methods.</p><p>Your program should:</p><ul><li>Create a list of numbers</li><li>Use <code>Sum()</code> to calculate total</li><li>Use <code>Average()</code> to calculate mean</li><li>Use <code>Max()</code> and <code>Min()</code> for extremes</li><li>Demonstrate aggregation operations</li></ul>",
+                                "hint": "Use Sum(), Average(), Max(), Min() methods",
+                                "input": "10 20 30 40 50",
+                                "output": "Numbers: 10, 20, 30, 40, 50\nSum: 150\nAverage: 30\nMax: 50\nMin: 10"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "HashSet vs List",
+                                "question": "<p>What is the main difference between HashSet and List in C#?</p><p>Consider these characteristics:</p><ul><li>List allows duplicate elements</li><li>HashSet does not allow duplicate elements</li><li>List maintains insertion order</li><li>HashSet does not guarantee order</li></ul>",
+                                "hint": "Consider duplicate handling and ordering",
+                                "options": [
+                                    "HashSet does not allow duplicates, List allows duplicates",
+                                    "HashSet is faster, List is slower",
+                                    "HashSet is larger, List is smaller",
+                                    "HashSet is newer, List is older"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Queue and Stack",
+                                "question": "<p>Write a C# program that demonstrates Queue and Stack operations.</p><p>Your program should:</p><ul><li>Create a <code>Queue&lt;int&gt;</code> and add elements</li><li>Use <code>Dequeue()</code> to remove elements</li><li>Create a <code>Stack&lt;int&gt;</code> and add elements</li><li>Use <code>Pop()</code> to remove elements</li><li>Demonstrate FIFO vs LIFO behavior</li></ul>",
+                                "hint": "Use Queue&lt;T&gt; for FIFO and Stack&lt;T&gt; for LIFO",
+                                "input": "1 2 3 4 5",
+                                "output": "Queue (FIFO): 1, 2, 3, 4, 5\nStack (LIFO): 5, 4, 3, 2, 1"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "IEnumerable Interface",
+                                "question": "<p>What is the IEnumerable interface in C#?</p><p>Consider these characteristics:</p><ul><li>Defines a method to iterate over a collection</li><li>Used by foreach loops</li><li>Implemented by all collections</li><li>Enables LINQ operations</li></ul>",
+                                "hint": "Consider iteration and collection support",
+                                "options": [
+                                    "Defines iteration over collections - enables foreach and LINQ",
+                                    "Defines collection sorting",
+                                    "Defines collection filtering",
+                                    "Defines collection transformation"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "C# Exception Handling",
+                        "description": "Learn exception handling, custom exceptions, and error management in C#.",
+                        "tags": [
+                            "exceptions",
+                            "error-handling",
+                            "c-sharp",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Try-Catch Block",
+                                "question": "<p>Write a C# program that demonstrates try-catch exception handling.</p><p>Your program should:</p><ul><li>Use <code>try</code> block for code that might throw exceptions</li><li>Use <code>catch</code> block to handle exceptions</li><li>Use <code>finally</code> block for cleanup</li><li>Handle different types of exceptions</li><li>Demonstrate exception handling</li></ul>",
+                                "hint": "Use try-catch-finally blocks",
+                                "input": "10\n0",
+                                "output": "Division result: 2\nError: Division by zero\nCleanup completed"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Exception Types",
+                                "question": "<p>What is the base class for all exceptions in C#?</p><p>Consider these exception types:</p><ul><li><code>Exception</code> - base class for all exceptions</li><li><code>SystemException</code> - base for system exceptions</li><li><code>ApplicationException</code> - base for application exceptions</li><li><code>ArgumentException</code> - for invalid arguments</li></ul>",
+                                "hint": "Consider the root exception class",
+                                "options": [
+                                    "Exception - base class for all exceptions",
+                                    "SystemException - base for system exceptions",
+                                    "ApplicationException - base for application exceptions",
+                                    "ArgumentException - for invalid arguments"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Multiple Catch Blocks",
+                                "question": "<p>Write a C# program that uses multiple catch blocks for different exception types.</p><p>Your program should:</p><ul><li>Use specific catch blocks for different exception types</li><li>Use general catch block as fallback</li><li>Handle <code>DivideByZeroException</code></li><li>Handle <code>FormatException</code></li><li>Demonstrate multiple exception handling</li></ul>",
+                                "hint": "Use specific exception types in catch blocks",
+                                "input": "invalid\n10\n0",
+                                "output": "Format error: Input string was not in correct format\nDivision error: Attempted to divide by zero"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Throw Statement",
+                                "question": "<p>What does the <code>throw</code> statement do in C#?</p><p>Consider this example:</p><pre><code>if (value < 0) {<br>  throw new ArgumentException(\"Value cannot be negative\");<br>}</code></pre>",
+                                "hint": "Consider exception creation and propagation",
+                                "options": [
+                                    "Throws an exception - creates and propagates an exception",
+                                    "Catches an exception",
+                                    "Handles an exception",
+                                    "Ignores an exception"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Custom Exceptions",
+                                "question": "<p>Write a C# program that creates and uses custom exceptions.</p><p>Your program should:</p><ul><li>Create a custom exception class that inherits from <code>Exception</code></li><li>Add custom properties to the exception</li><li>Use <code>throw</code> to throw the custom exception</li><li>Use <code>catch</code> to handle the custom exception</li><li>Demonstrate custom exception usage</li></ul>",
+                                "hint": "Inherit from Exception class and add custom properties",
+                                "input": "InvalidAgeException\n-5",
+                                "output": "Custom exception: InvalidAgeException - Age cannot be negative: -5"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Using Statement",
+                                "question": "<p>What is the purpose of the <code>using</code> statement in C#?</p><p>Consider these characteristics:</p><ul><li>Ensures proper disposal of resources</li><li>Automatically calls Dispose() method</li><li>Used for IDisposable objects</li><li>Prevents resource leaks</li></ul>",
+                                "hint": "Consider resource management and disposal",
+                                "options": [
+                                    "Ensures proper disposal of resources - automatically calls Dispose()",
+                                    "Makes code run faster",
+                                    "Makes code use less memory",
+                                    "Makes code more readable"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Exception Propagation",
+                                "question": "<p>Write a C# program that demonstrates exception propagation.</p><p>Your program should:</p><ul><li>Create a method that throws an exception</li><li>Call the method from another method</li><li>Let the exception propagate up the call stack</li><li>Handle the exception at the top level</li><li>Demonstrate exception propagation</li></ul>",
+                                "hint": "Let exceptions bubble up through call stack",
+                                "input": "DivideByZero",
+                                "output": "Method called\nException propagated: System.DivideByZeroException"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Finally Block",
+                                "question": "<p>When is the <code>finally</code> block executed in C#?</p><p>Consider these scenarios:</p><ul><li>Always executed after try-catch blocks</li><li>Executed even if exception is thrown</li><li>Used for cleanup operations</li><li>Cannot be skipped</li></ul>",
+                                "hint": "Consider execution guarantees",
+                                "options": [
+                                    "Always executed after try-catch - even if exception is thrown",
+                                    "Only executed if no exception occurs",
+                                    "Only executed if exception is caught",
+                                    "Only executed if exception is not caught"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Exception Filters",
+                                "question": "<p>Write a C# program that uses exception filters (C# 6.0+).</p><p>Your program should:</p><ul><li>Use <code>when</code> clause in catch blocks</li><li>Filter exceptions based on conditions</li><li>Handle different scenarios with same exception type</li><li>Demonstrate exception filtering</li><li>Show conditional exception handling</li></ul>",
+                                "hint": "Use when clause in catch blocks for filtering",
+                                "input": "ArgumentException\nnegative\nArgumentException\nzero",
+                                "output": "Handled negative argument\nHandled zero argument"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Exception vs Error",
+                                "question": "<p>What is the difference between exceptions and errors in C#?</p><p>Consider these aspects:</p><ul><li>Exceptions are recoverable runtime problems</li><li>Errors are usually unrecoverable problems</li><li>Exceptions can be caught and handled</li><li>Errors typically terminate the program</li></ul>",
+                                "hint": "Consider recoverability and handling",
+                                "options": [
+                                    "Exceptions are recoverable and can be handled, errors are usually unrecoverable",
+                                    "Exceptions are faster, errors are slower",
+                                    "Exceptions are smaller, errors are larger",
+                                    "Exceptions are newer, errors are older"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

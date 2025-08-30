@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Aptitude",
+            "slug": "aptitude",
+            "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Series",
+                "slug": "series",
+                "description": "Master number series, sequences, and pattern recognition techniques.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/series.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "Advanced Series Analysis",
+                        "description": "Analyze complex series and advanced mathematical sequences.",
+                        "tags": [
+                            "advanced-analysis",
+                            "complex-series",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Fourier Series Properties",
+                                "question": "<p>What is the fundamental frequency of a Fourier series with period 2π?</p><p>Consider: Relationship between period and fundamental frequency</p>",
+                                "hint": "Fundamental frequency = 1/period",
+                                "options": [
+                                    "1/π - inverse of period",
+                                    "1/(2π) - fundamental frequency",
+                                    "π - half period",
+                                    "2π - full period"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Zeta Function Values",
+                                "question": "<p>What is ζ(2) where ζ is the Riemann zeta function?</p><p>Consider: Special values of the zeta function</p>",
+                                "hint": "ζ(2) = π²/6",
+                                "options": [
+                                    "π/6 - incorrect",
+                                    "π²/6 - correct value",
+                                    "π/2 - incorrect",
+                                    "π²/2 - incorrect"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Laurent Series Convergence",
+                                "question": "<p>What is the region of convergence for a Laurent series around z₀?</p><p>Consider: Annular region between two circles</p>",
+                                "hint": "Think about the distance from the center of expansion",
+                                "options": [
+                                    "Inside a circle - like Taylor series",
+                                    "Outside a circle - exterior region",
+                                    "Annular region - between two circles",
+                                    "Entire complex plane - everywhere"
+                                ],
+                                "correct_answer": 2
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "Complex Series Theory",
+                        "description": "Work with complex series and advanced mathematical concepts.",
+                        "tags": [
+                            "complex-series",
+                            "mathematical-theory",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Generating Functions",
+                                "question": "<p>What is the generating function for the Fibonacci sequence?</p><p>Consider: The closed form of the generating function</p>",
+                                "hint": "G(x) = x/(1-x-x²)",
+                                "options": [
+                                    "1/(1-x) - geometric series",
+                                    "x/(1-x-x²) - Fibonacci generating function",
+                                    "1/(1-x²) - even powers",
+                                    "x/(1-x) - arithmetic series"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Power Series Operations",
+                                "question": "<p>What happens when you multiply two power series?</p><p>Consider: The Cauchy product of series</p>",
+                                "hint": "Think about the convolution of coefficients",
+                                "options": [
+                                    "Add the coefficients",
+                                    "Multiply the coefficients",
+                                    "Convolve the coefficients",
+                                    "Divide the coefficients"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Series Convergence Tests",
+                                "question": "<p>Which test is most powerful for determining series convergence?</p><p>Consider: The most general convergence test</p>",
+                                "hint": "Think about the most comprehensive test",
+                                "options": [
+                                    "Ratio test",
+                                    "Root test",
+                                    "Comparison test",
+                                    "Integral test"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

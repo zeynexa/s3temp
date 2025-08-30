@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Aptitude",
+            "slug": "aptitude",
+            "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Puzzles",
+                "slug": "puzzles",
+                "description": "Solve logical puzzles, brain teasers, and analytical thinking problems.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/puzzles.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "Advanced Logic Puzzles",
+                        "description": "Solve complex logic puzzles requiring systematic reasoning.",
+                        "tags": [
+                            "logic",
+                            "reasoning",
+                            "systematic"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Constraint Satisfaction",
+                                "question": "<p>What is the time complexity of the backtracking Sudoku solver?</p><p>Consider: How many possibilities need to be explored</p>",
+                                "hint": "Think about the branching factor and depth of the search tree",
+                                "options": [
+                                    "O(n) - linear time",
+                                    "O(9^n²) - exponential time for n² empty cells",
+                                    "O(n²) - quadratic time",
+                                    "O(n log n) - linearithmic time"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "N-Queens Problem",
+                                "question": "<p>How many solutions exist for the 4-Queens problem?</p><p>Consider: Placing 4 queens on 4x4 board without threats</p>",
+                                "hint": "Think about the number of valid configurations",
+                                "options": [
+                                    "1 solution",
+                                    "2 solutions",
+                                    "4 solutions",
+                                    "8 solutions"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Knapsack Problem",
+                                "question": "<p>What is the main challenge in the 0/1 Knapsack problem?</p><p>Consider: The optimization nature of the problem</p>",
+                                "hint": "Think about choosing items optimally",
+                                "options": [
+                                    "Finding the heaviest item",
+                                    "Maximizing value within weight constraint",
+                                    "Minimizing the number of items",
+                                    "Finding the lightest items"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "Mathematical Puzzles",
+                        "description": "Solve mathematical puzzles and optimization problems.",
+                        "tags": [
+                            "mathematical-puzzles",
+                            "optimization",
+                            "algorithms"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Dynamic Programming",
+                                "question": "<p>What is the time complexity of the 0/1 Knapsack DP solution?</p><p>Consider: Size of the DP table and computation</p>",
+                                "hint": "Think about the number of subproblems that need to be solved",
+                                "options": [
+                                    "O(n) - linear time",
+                                    "O(nW) - where n is items, W is capacity",
+                                    "O(n²) - quadratic time",
+                                    "O(2^n) - exponential time"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Traveling Salesman Problem",
+                                "question": "<p>What is the main characteristic of the Traveling Salesman Problem?</p><p>Consider: The nature of the optimization</p>",
+                                "hint": "Think about visiting all cities once",
+                                "options": [
+                                    "Finding the shortest path between two points",
+                                    "Finding the shortest tour visiting all cities exactly once",
+                                    "Finding the longest path",
+                                    "Finding the cheapest route"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Graph Coloring",
+                                "question": "<p>What is the minimum number of colors needed to color a planar graph?</p><p>Consider: The Four Color Theorem</p>",
+                                "hint": "Think about the famous theorem about map coloring",
+                                "options": [
+                                    "2 colors",
+                                    "3 colors",
+                                    "4 colors - Four Color Theorem",
+                                    "5 colors"
+                                ],
+                                "correct_answer": 2
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

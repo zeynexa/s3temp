@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Aptitude",
+            "slug": "aptitude",
+            "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Algebra",
+                "slug": "algebra",
+                "description": "Master algebraic concepts, equations, and mathematical problem-solving techniques.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/algebra.svg",
+                "exercises": [
+                    {
+                        "level": "Beginner",
+                        "title": "Linear Equations",
+                        "description": "Learn fundamental linear equations and their solutions.",
+                        "tags": [
+                            "linear-equations",
+                            "basics",
+                            "fundamentals"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Linear Equation Definition",
+                                "question": "<p>What is a linear equation?</p><p>Consider: The form and degree of the equation</p>",
+                                "hint": "Think about the highest power of the variable",
+                                "options": [
+                                    "Any equation with variables",
+                                    "An equation where the highest power of variable is 1",
+                                    "An equation with only numbers",
+                                    "An equation with fractions"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Solving Linear Equations",
+                                "question": "<p>What is the solution to 2x + 3 = 7?</p><p>Consider: Isolating the variable</p>",
+                                "hint": "Subtract 3 from both sides, then divide by 2",
+                                "options": [
+                                    "x = 1",
+                                    "x = 2",
+                                    "x = 3",
+                                    "x = 4"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Linear Equation Properties",
+                                "question": "<p>How many solutions does a linear equation have?</p><p>Consider: The nature of linear equations</p>",
+                                "hint": "Think about the graph of a linear equation",
+                                "options": [
+                                    "No solutions",
+                                    "Exactly one solution",
+                                    "Two solutions",
+                                    "Infinite solutions"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "Quadratic Equations",
+                        "description": "Learn fundamental quadratic equations and their solutions.",
+                        "tags": [
+                            "quadratic-equations",
+                            "basics",
+                            "fundamentals"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Quadratic Equation Form",
+                                "question": "<p>What is the standard form of a quadratic equation?</p><p>Consider: The general form with coefficients</p>",
+                                "hint": "Think about the highest power of x",
+                                "options": [
+                                    "ax + b = 0",
+                                    "ax² + bx + c = 0",
+                                    "ax³ + bx² + cx + d = 0",
+                                    "ax + by = c"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Quadratic Formula",
+                                "question": "<p>What is the quadratic formula?</p><p>Consider: The formula to solve any quadratic equation</p>",
+                                "hint": "Think about the formula that gives both solutions",
+                                "options": [
+                                    "x = -b/a",
+                                    "x = (-b ± √(b² - 4ac)) / 2a",
+                                    "x = b/a",
+                                    "x = √(b² - 4ac)"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Discriminant",
+                                "question": "<p>What does the discriminant (b² - 4ac) tell us about a quadratic equation?</p><p>Consider: The nature of the roots</p>",
+                                "hint": "Think about how many real solutions exist",
+                                "options": [
+                                    "The value of x",
+                                    "The number and nature of real roots",
+                                    "The coefficient of x²",
+                                    "The constant term"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

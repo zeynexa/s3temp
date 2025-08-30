@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Problem Solving",
+            "slug": "problem-solving",
+            "description": "Develop analytical thinking and problem-solving skills through algorithmic challenges.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/problem-solving.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Recursion & Backtracking",
+                "slug": "recursion-backtracking",
+                "description": "Master recursive algorithms and backtracking techniques for complex problem solving.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/recursion-backtracking.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "Advanced Recursive Algorithms",
+                        "description": "Master complex recursive algorithms and advanced optimization techniques.",
+                        "tags": [
+                            "recursion",
+                            "advanced",
+                            "complex"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Mutual Recursion",
+                                "question": "<p>What is mutual recursion?</p><p>Consider: Functions calling each other recursively</p>",
+                                "hint": "Think about two or more functions calling each other",
+                                "options": [
+                                    "A single function calling itself",
+                                    "Two or more functions calling each other recursively",
+                                    "A recursive function with multiple parameters",
+                                    "A function with multiple base cases"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Recursive Descent Parsing",
+                                "question": "<p>What is recursive descent parsing used for?</p><p>Consider: Parsing structured data</p>",
+                                "hint": "Think about analyzing and processing text or code",
+                                "options": [
+                                    "Sorting algorithms",
+                                    "Parsing and analyzing structured text or code",
+                                    "Search algorithms",
+                                    "Data compression"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Recursive Algorithm Optimization",
+                                "question": "<p>What is the main technique for optimizing recursive algorithms?</p><p>Consider: Avoiding redundant calculations</p>",
+                                "hint": "Think about storing and reusing computed results",
+                                "options": [
+                                    "Loop unrolling",
+                                    "Memoization - storing computed results",
+                                    "Function inlining",
+                                    "Code optimization"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "Complex Backtracking Problems",
+                        "description": "Solve complex backtracking problems with multiple constraints and advanced techniques.",
+                        "tags": [
+                            "backtracking",
+                            "complex",
+                            "advanced"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Constraint Propagation",
+                                "question": "<p>What is constraint propagation in backtracking?</p><p>Consider: Reducing search space by enforcing constraints</p>",
+                                "hint": "Think about eliminating invalid choices early",
+                                "options": [
+                                    "Adding more constraints",
+                                    "Eliminating invalid choices by enforcing constraints early",
+                                    "Removing all constraints",
+                                    "Changing constraint types"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Backtracking with Heuristics",
+                                "question": "<p>How do heuristics improve backtracking performance?</p><p>Consider: Guiding the search process</p>",
+                                "hint": "Think about making better choices during search",
+                                "options": [
+                                    "By making random choices",
+                                    "By guiding search toward promising solutions",
+                                    "By eliminating all choices",
+                                    "By increasing search space"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Backtracking Space Complexity",
+                                "question": "<p>What is the space complexity of backtracking algorithms?</p><p>Consider: Stack space for recursive calls</p>",
+                                "hint": "Think about the depth of the search tree",
+                                "options": [
+                                    "O(1) - constant space",
+                                    "O(n) - linear space, depth of search tree",
+                                    "O(n²) - quadratic space",
+                                    "O(2^n) - exponential space"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

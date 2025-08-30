@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Aptitude",
+            "slug": "aptitude",
+            "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Puzzles",
+                "slug": "puzzles",
+                "description": "Solve logical puzzles, brain teasers, and analytical thinking problems.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/puzzles.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "Complex Algorithmic Puzzles",
+                        "description": "Solve complex algorithmic puzzles requiring advanced problem-solving techniques.",
+                        "tags": [
+                            "algorithms",
+                            "complex-puzzles",
+                            "optimization"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "State Space Search",
+                                "question": "<p>What is the branching factor of a Rubik's Cube search tree?</p><p>Consider: How many possible moves can be made from any state</p>",
+                                "hint": "Think about the number of different moves available at each step",
+                                "options": [
+                                    "6 - one for each face",
+                                    "12 - 6 faces × 2 directions",
+                                    "18 - 6 faces × 3 rotations",
+                                    "24 - 6 faces × 4 possible moves"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "15-Puzzle Solvability",
+                                "question": "<p>What determines if a 15-puzzle configuration is solvable?</p><p>Consider: The number of inversions</p>",
+                                "hint": "Think about the parity of inversions and the position of the empty space",
+                                "options": [
+                                    "The number of tiles",
+                                    "The parity of inversions and position of empty space",
+                                    "The size of the puzzle",
+                                    "The colors of tiles"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Magic Square Properties",
+                                "question": "<p>What is the magic constant for a 3x3 magic square using numbers 1-9?</p><p>Consider: Sum of all numbers divided by number of rows</p>",
+                                "hint": "Calculate sum of 1+2+...+9 and divide by 3",
+                                "options": [
+                                    "12 - average of numbers",
+                                    "15 - magic constant for 3x3",
+                                    "18 - sum of corner numbers",
+                                    "21 - sum of edge numbers"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "Advanced Mathematical Puzzles",
+                        "description": "Solve complex mathematical puzzles requiring deep analytical thinking.",
+                        "tags": [
+                            "mathematical-puzzles",
+                            "advanced",
+                            "analytical"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Latin Square Properties",
+                                "question": "<p>What is the minimum number of filled cells needed to uniquely determine a Latin square?</p><p>Consider: The constraints of Latin squares</p>",
+                                "hint": "Think about the minimum information needed to complete the square",
+                                "options": [
+                                    "n cells - one per row",
+                                    "2n-1 cells - minimum for uniqueness",
+                                    "n² cells - complete square",
+                                    "n/2 cells - half the square"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Knight's Tour Problem",
+                                "question": "<p>What is a closed Knight's Tour?</p><p>Consider: The knight's movement pattern</p>",
+                                "hint": "Think about the knight returning to its starting position",
+                                "options": [
+                                    "A tour that visits every square once",
+                                    "A tour that visits every square once and returns to start",
+                                    "A tour that visits half the squares",
+                                    "A tour that uses the shortest path"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Graph Theory Puzzles",
+                                "question": "<p>What is the minimum number of colors needed to color any map so that no adjacent regions have the same color?</p><p>Consider: The Four Color Theorem</p>",
+                                "hint": "Think about the famous theorem about map coloring",
+                                "options": [
+                                    "3 colors",
+                                    "4 colors - Four Color Theorem",
+                                    "5 colors",
+                                    "6 colors"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,374 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Python",
+                "slug": "python",
+                "description": "Learn Python for data science, web development, and automation.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/python.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "Python Metaclasses & Metaprogramming",
+                        "description": "Master advanced Python concepts including metaclasses, descriptors, and metaprogramming.",
+                        "tags": [
+                            "metaclasses",
+                            "metaprogramming",
+                            "python",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Metaclass Definition",
+                                "question": "<p>Write a metaclass that automatically adds a class attribute to all classes it creates.</p><p>Your metaclass should:</p><ul><li>Inherit from <code>type</code></li><li>Override the <code>__new__</code> method</li><li>Add a custom attribute to the class</li><li>Return the modified class</li><li>Demonstrate the metaclass behavior</li></ul>",
+                                "hint": "Use type as base class and override __new__",
+                                "input": "MyClass",
+                                "output": "Class created with metaclass\nCustom attribute: True"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Metaclass vs Class",
+                                "question": "<p>What is the relationship between metaclasses and classes?</p><p>Consider this hierarchy:</p><ul><li>Metaclasses are classes for classes</li><li>Classes are instances of metaclasses</li><li>Objects are instances of classes</li><li>type is the default metaclass</li></ul>",
+                                "hint": "Consider the class creation hierarchy",
+                                "options": [
+                                    "Metaclasses create classes, classes create objects",
+                                    "Classes create metaclasses, metaclasses create objects",
+                                    "Both create objects directly",
+                                    "There is no relationship between them"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Descriptor Protocol",
+                                "question": "<p>Write a descriptor class that validates and stores values.</p><p>Your descriptor should:</p><ul><li>Implement <code>__get__</code>, <code>__set__</code>, and <code>__delete__</code> methods</li><li>Add validation logic in <code>__set__</code></li><li>Store values in the instance dictionary</li><li>Handle attribute access properly</li><li>Return the descriptor behavior</li></ul>",
+                                "hint": "Implement descriptor protocol methods",
+                                "input": "age\n25\n-5\n30",
+                                "output": "Age: 25\nInvalid age\nAge: 30"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Property vs Descriptor",
+                                "question": "<p>What is the difference between properties and descriptors?</p><p>Consider these characteristics:</p><ul><li>Properties are a simplified form of descriptors</li><li>Descriptors provide more control over attribute access</li><li>Properties use decorators, descriptors use classes</li><li>Both implement the descriptor protocol</li></ul>",
+                                "hint": "Consider implementation complexity and control",
+                                "options": [
+                                    "Properties are simpler, descriptors provide more control and flexibility",
+                                    "Descriptors are simpler, properties provide more control and flexibility",
+                                    "Both are equally complex and provide the same control",
+                                    "Properties and descriptors are completely different concepts"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Class Decorator with Metaclass",
+                                "question": "<p>Write a class decorator that uses metaclasses to modify class behavior.</p><p>Your decorator should:</p><ul><li>Create a metaclass dynamically</li><li>Modify the class creation process</li><li>Add methods or attributes to the class</li><li>Return the modified class</li><li>Demonstrate the modification</li></ul>",
+                                "hint": "Use type() to create metaclass dynamically",
+                                "input": "TestClass",
+                                "output": "Class modified by decorator\nAdded method: new_method"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Abstract Base Classes",
+                                "question": "<p>What is the purpose of Abstract Base Classes (ABC) in Python?</p><p>Consider these benefits:</p><ul><li>Define interfaces that subclasses must implement</li><li>Provide common functionality for related classes</li><li>Enable isinstance() and issubclass() checks</li><li>Prevent instantiation of abstract classes</li></ul>",
+                                "hint": "Consider interface definition and enforcement",
+                                "options": [
+                                    "To define interfaces and enforce implementation in subclasses",
+                                    "To create classes that cannot be instantiated",
+                                    "To provide common functionality for all classes",
+                                    "To optimize class performance"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Dynamic Class Creation",
+                                "question": "<p>Write a function that dynamically creates classes using <code>type()</code>.</p><p>Your function should:</p><ul><li>Use <code>type(name, bases, dict)</code> syntax</li><li>Create a class with custom attributes</li><li>Add methods to the class dictionary</li><li>Return the dynamically created class</li><li>Demonstrate the dynamic creation</li></ul>",
+                                "hint": "Use type(name, bases, dict) for dynamic class creation",
+                                "input": "DynamicClass\nvalue",
+                                "output": "Class created: DynamicClass\nValue: value"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Monkey Patching",
+                                "question": "<p>What is monkey patching in Python?</p><p>Consider this example:</p><pre><code>class MyClass:<br>  pass<br><br>def new_method(self):<br>  return \"patched\"<br><br>MyClass.new_method = new_method</code></pre>",
+                                "hint": "Consider runtime modification of classes",
+                                "options": [
+                                    "Modifying classes or modules at runtime by adding or replacing attributes",
+                                    "Creating new classes from existing ones",
+                                    "Optimizing code performance",
+                                    "Debugging code execution"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Context Manager Protocol",
+                                "question": "<p>Write a context manager class that implements the context manager protocol.</p><p>Your class should:</p><ul><li>Implement <code>__enter__</code> and <code>__exit__</code> methods</li><li>Handle resource setup in <code>__enter__</code></li><li>Handle resource cleanup in <code>__exit__</code></li><li>Work with <code>with</code> statement</li><li>Return the context manager behavior</li></ul>",
+                                "hint": "Implement __enter__ and __exit__ methods",
+                                "input": "test",
+                                "output": "Entering context\nProcessing: test\nExiting context"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Slots",
+                                "question": "<p>What is the purpose of <code>__slots__</code> in Python classes?</p><p>Consider these benefits:</p><ul><li>Reduces memory usage by preventing dynamic attribute creation</li><li>Improves attribute access speed</li><li>Prevents accidental attribute creation</li><li>Limits the attributes a class can have</li></ul>",
+                                "hint": "Consider memory optimization and attribute control",
+                                "options": [
+                                    "To reduce memory usage and improve performance by limiting attributes",
+                                    "To make classes more readable",
+                                    "To prevent inheritance",
+                                    "To make classes immutable"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "Python Concurrency & Async",
+                        "description": "Master asynchronous programming, asyncio, and concurrent execution patterns.",
+                        "tags": [
+                            "concurrency",
+                            "async",
+                            "python",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Async Function",
+                                "question": "<p>Write an async function that simulates an asynchronous operation.</p><p>Your function should:</p><ul><li>Use <code>async def</code> syntax</li><li>Use <code>await asyncio.sleep()</code> for async delay</li><li>Return a result after the delay</li><li>Be callable with <code>await</code></li><li>Return the async result</li></ul>",
+                                "hint": "Use async def and await asyncio.sleep()",
+                                "input": "hello\n1",
+                                "output": "Starting async operation\nResult: hello"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Async vs Sync",
+                                "question": "<p>What is the main difference between async and synchronous functions?</p><p>Consider these characteristics:</p><ul><li>Async functions can be paused and resumed</li><li>Async functions use <code>await</code> for non-blocking operations</li><li>Sync functions block until completion</li><li>Async functions enable concurrent execution</li></ul>",
+                                "hint": "Consider execution flow and blocking behavior",
+                                "options": [
+                                    "Async functions can be paused and resumed, sync functions run to completion",
+                                    "Sync functions can be paused and resumed, async functions run to completion",
+                                    "Both work exactly the same way",
+                                    "Async functions are faster than sync functions"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Async Context Manager",
+                                "question": "<p>Write an async context manager that handles async resources.</p><p>Your context manager should:</p><ul><li>Implement <code>__aenter__</code> and <code>__aexit__</code> methods</li><li>Use <code>async with</code> syntax</li><li>Handle async setup and cleanup</li><li>Work with async operations</li><li>Return the async context behavior</li></ul>",
+                                "hint": "Implement __aenter__ and __aexit__ methods",
+                                "input": "resource",
+                                "output": "Async entering context\nProcessing: resource\nAsync exiting context"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Event Loop",
+                                "question": "<p>What is the event loop in asyncio?</p><p>Consider these characteristics:</p><ul><li>Manages and coordinates async tasks</li><li>Schedules coroutines for execution</li><li>Handles I/O operations efficiently</li><li>Provides the foundation for async programming</li></ul>",
+                                "hint": "Consider task management and coordination",
+                                "options": [
+                                    "A loop that manages and coordinates the execution of async tasks",
+                                    "A loop that runs synchronous functions",
+                                    "A loop that handles file operations",
+                                    "A loop that manages memory allocation"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Task Creation",
+                                "question": "<p>Write code that creates and manages asyncio tasks.</p><p>Your code should:</p><ul><li>Use <code>asyncio.create_task()</code> to create tasks</li><li>Use <code>await</code> to wait for task completion</li><li>Handle multiple concurrent tasks</li><li>Return task results</li><li>Demonstrate task management</li></ul>",
+                                "hint": "Use asyncio.create_task() and await",
+                                "input": "task1\ntask2",
+                                "output": "Task 1 completed: task1\nTask 2 completed: task2"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Gather vs Wait",
+                                "question": "<p>What is the difference between <code>asyncio.gather()</code> and <code>asyncio.wait()</code>?</p><p>Consider these differences:</p><ul><li>gather() returns results in order, wait() returns completed tasks</li><li>gather() waits for all tasks, wait() can wait for some</li><li>gather() is simpler, wait() provides more control</li><li>Both handle multiple coroutines</li></ul>",
+                                "hint": "Consider result handling and control",
+                                "options": [
+                                    "gather() returns ordered results, wait() returns completed tasks with more control",
+                                    "wait() returns ordered results, gather() returns completed tasks with more control",
+                                    "Both return the same type of results",
+                                    "gather() is deprecated, wait() is the modern approach"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Async Generator",
+                                "question": "<p>Write an async generator that yields values asynchronously.</p><p>Your async generator should:</p><ul><li>Use <code>async def</code> with <code>yield</code></li><li>Use <code>await</code> for async operations</li><li>Yield values asynchronously</li><li>Be iterable with <code>async for</code></li><li>Return the async generator values</li></ul>",
+                                "hint": "Use async def with yield and async for",
+                                "input": "3",
+                                "output": "1\n2\n3"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Threading vs Asyncio",
+                                "question": "<p>When should you use threading vs asyncio?</p><p>Consider these scenarios:</p><ul><li>Use threading for CPU-bound tasks</li><li>Use asyncio for I/O-bound tasks</li><li>Threading provides true parallelism</li><li>Asyncio provides concurrency with single thread</li></ul>",
+                                "hint": "Consider task types and execution model",
+                                "options": [
+                                    "Use threading for CPU-bound tasks, asyncio for I/O-bound tasks",
+                                    "Use asyncio for CPU-bound tasks, threading for I/O-bound tasks",
+                                    "Use threading for all tasks, asyncio is deprecated",
+                                    "Use asyncio for all tasks, threading is deprecated"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Semaphore",
+                                "question": "<p>Write code that uses asyncio.Semaphore to limit concurrent operations.</p><p>Your code should:</p><ul><li>Create an asyncio.Semaphore with a limit</li><li>Use <code>async with semaphore:</code> to acquire and release</li><li>Limit the number of concurrent operations</li><li>Demonstrate the semaphore behavior</li><li>Return the controlled execution results</li></ul>",
+                                "hint": "Use asyncio.Semaphore with async with",
+                                "input": "3\n5",
+                                "output": "Operation 1 started\nOperation 2 started\nOperation 3 started\nOperation 1 completed\nOperation 4 started"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Future Objects",
+                                "question": "<p>What is a Future object in asyncio?</p><p>Consider these characteristics:</p><ul><li>Represents a computation that will complete in the future</li><li>Can be awaited to get the result</li><li>Can be cancelled before completion</li><li>Provides a way to handle async results</li></ul>",
+                                "hint": "Consider deferred computation and results",
+                                "options": [
+                                    "An object that represents a computation that will complete in the future",
+                                    "An object that represents a completed computation",
+                                    "An object that represents a cancelled computation",
+                                    "An object that represents a synchronous computation"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "Python Performance & Optimization",
+                        "description": "Master Python performance optimization, profiling, and advanced techniques.",
+                        "tags": [
+                            "performance",
+                            "optimization",
+                            "python",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Profiling with cProfile",
+                                "question": "<p>Write code that uses cProfile to profile a function's performance.</p><p>Your code should:</p><ul><li>Import <code>cProfile</code> module</li><li>Use <code>cProfile.run()</code> or <code>Profile()</code> class</li><li>Profile a target function</li><li>Print profiling statistics</li><li>Return the profiling results</li></ul>",
+                                "hint": "Use cProfile.run() or Profile class",
+                                "input": "factorial\n5",
+                                "output": "Profiling factorial function\nFunction calls: 6\nTotal time: 0.001s"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Performance Bottlenecks",
+                                "question": "<p>What are common performance bottlenecks in Python?</p><p>Consider these issues:</p><ul><li>Excessive function calls</li><li>Inefficient data structures</li><li>Unnecessary object creation</li><li>Poor algorithm complexity</li></ul>",
+                                "hint": "Consider common performance issues",
+                                "options": [
+                                    "Excessive function calls, inefficient data structures, poor algorithms",
+                                    "Too many comments, long variable names, excessive whitespace",
+                                    "Using built-in functions, using standard library, using OOP",
+                                    "Using async programming, using generators, using decorators"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Memory Profiling",
+                                "question": "<p>Write code that demonstrates memory usage profiling.</p><p>Your code should:</p><ul><li>Use <code>sys.getsizeof()</code> to measure object size</li><li>Compare memory usage of different data structures</li><li>Show memory efficiency differences</li><li>Print memory usage statistics</li><li>Return the memory analysis</li></ul>",
+                                "hint": "Use sys.getsizeof() to measure memory usage",
+                                "input": "1000",
+                                "output": "List size: 9016 bytes\nGenerator size: 88 bytes\nMemory saved: 8928 bytes"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "GIL (Global Interpreter Lock)",
+                                "question": "<p>What is the Global Interpreter Lock (GIL) in Python?</p><p>Consider these characteristics:</p><ul><li>Allows only one thread to execute Python code at a time</li><li>Affects multi-threaded CPU-bound programs</li><li>Does not affect I/O-bound programs significantly</li><li>Is a limitation of CPython implementation</li></ul>",
+                                "hint": "Consider thread execution and limitations",
+                                "options": [
+                                    "A lock that allows only one thread to execute Python code at a time",
+                                    "A lock that prevents all threads from executing",
+                                    "A lock that allows unlimited thread execution",
+                                    "A lock that only affects I/O operations"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Caching with functools.lru_cache",
+                                "question": "<p>Write a function that uses <code>@functools.lru_cache</code> for performance optimization.</p><p>Your function should:</p><ul><li>Use <code>@lru_cache</code> decorator</li><li>Implement an expensive computation</li><li>Demonstrate caching benefits</li><li>Show cache hits and misses</li><li>Return the optimized results</li></ul>",
+                                "hint": "Use @functools.lru_cache decorator",
+                                "input": "5\n5\n3",
+                                "output": "Computing factorial of 5\nResult: 120\nCached result for 5: 120\nComputing factorial of 3\nResult: 6"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Cython vs Python",
+                                "question": "<p>What is the main advantage of using Cython over pure Python?</p><p>Consider these benefits:</p><ul><li>Faster execution through C compilation</li><li>Static typing for better performance</li><li>Direct C library access</li><li>Better memory management</li></ul>",
+                                "hint": "Consider performance and compilation",
+                                "options": [
+                                    "Faster execution through C compilation and static typing",
+                                    "Easier syntax and better readability",
+                                    "Better error handling and debugging",
+                                    "More built-in functions and libraries"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Vectorization with NumPy",
+                                "question": "<p>Write code that demonstrates NumPy vectorization for performance improvement.</p><p>Your code should:</p><ul><li>Compare NumPy operations with Python loops</li><li>Use vectorized operations</li><li>Measure performance differences</li><li>Show the speed improvement</li><li>Return the vectorized results</li></ul>",
+                                "hint": "Use NumPy arrays and vectorized operations",
+                                "input": "1000000",
+                                "output": "Python loop time: 0.5s\nNumPy vectorized time: 0.01s\nSpeedup: 50x"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "JIT Compilation",
+                                "question": "<p>What is JIT (Just-In-Time) compilation in Python?</p><p>Consider these characteristics:</p><ul><li>Compiles code at runtime for better performance</li><li>Used by PyPy and Numba</li><li>Optimizes frequently executed code paths</li><li>Provides significant speed improvements</li></ul>",
+                                "hint": "Consider runtime compilation and optimization",
+                                "options": [
+                                    "Compilation of code at runtime for better performance",
+                                    "Compilation of code before runtime for better performance",
+                                    "Interpretation of code at runtime",
+                                    "Static analysis of code for errors"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Multiprocessing",
+                                "question": "<p>Write code that uses multiprocessing to parallelize CPU-bound tasks.</p><p>Your code should:</p><ul><li>Use <code>multiprocessing.Pool</code></li><li>Apply a function to multiple inputs in parallel</li><li>Handle process creation and management</li><li>Demonstrate performance improvement</li><li>Return the parallel processing results</li></ul>",
+                                "hint": "Use multiprocessing.Pool for parallel processing",
+                                "input": "4\n1000000",
+                                "output": "Sequential time: 2.0s\nParallel time: 0.5s\nSpeedup: 4x"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Memory Views",
+                                "question": "<p>What is the purpose of memory views in Python?</p><p>Consider these benefits:</p><ul><li>Provide direct access to memory of other objects</li><li>Enable efficient memory sharing</li><li>Support zero-copy operations</li><li>Improve performance for large data</li></ul>",
+                                "hint": "Consider memory access and sharing",
+                                "options": [
+                                    "To provide direct access to memory of other objects without copying",
+                                    "To create copies of memory for safety",
+                                    "To allocate new memory for objects",
+                                    "To free memory from objects"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

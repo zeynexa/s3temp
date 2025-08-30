@@ -1,0 +1,371 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "JavaScript",
+                "slug": "javascript",
+                "description": "Master JavaScript for web development and dynamic applications.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/javascript.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "JavaScript Promises",
+                        "description": "Master asynchronous programming with Promises.",
+                        "tags": [
+                            "promises",
+                            "javascript",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Promise Creation",
+                                "question": "<p>Write a function that returns a Promise that resolves with 'Success' if the input is positive, otherwise rejects with 'Error'.</p><p>Your function should:</p><ul><li>Use the <code>new Promise()</code> constructor</li><li>Accept a number as input</li><li>Resolve with 'Success' if the number is positive</li><li>Reject with 'Error' if the number is negative or zero</li><li>Handle both cases properly</li></ul>",
+                                "hint": "Use new Promise() constructor with resolve and reject functions",
+                                "input": "5\n-3",
+                                "output": "Success\nError"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Promise States",
+                                "question": "<p>What are the three states of a Promise?</p><p>Consider the Promise lifecycle:</p><ul><li>When a Promise is created, it starts in a specific state</li><li>It can transition to one of two final states</li><li>Once in a final state, it cannot change</li></ul>",
+                                "hint": "Consider Promise lifecycle states",
+                                "options": [
+                                    "pending, fulfilled, rejected - the three possible states",
+                                    "waiting, done, failed - alternative state names",
+                                    "loading, success, error - common state descriptions",
+                                    "start, middle, end - execution phases"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Promise Then",
+                                "question": "<p>Write a function that chains a Promise with <code>.then()</code> to double a number.</p><p>The function should:</p><ul><li>Create a Promise that resolves with a number</li><li>Use <code>.then()</code> to double the resolved value</li><li>Return the final result</li><li>Handle the Promise chain correctly</li></ul>",
+                                "hint": "Use .then() to handle Promise resolution",
+                                "input": "5",
+                                "output": "10"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Promise Catch",
+                                "question": "<p>What does <code>.catch()</code> handle in Promises?</p><p>Consider this Promise chain:</p><pre><code>somePromise()<br>  .then(result => console.log(result))<br>  .catch(error => console.error(error));</code></pre><p>When does the catch block execute?</p>",
+                                "hint": "Consider error handling in Promises",
+                                "options": [
+                                    "Only when there's an error - catches rejected Promises",
+                                    "Only when there's no error - handles successful results",
+                                    "Both success and failure - handles all cases",
+                                    "Nothing - it's just for decoration"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Promise All",
+                                "question": "<p>Write a function that uses <code>Promise.all()</code> to wait for multiple Promises.</p><p>The function should:</p><ul><li>Create an array of Promises</li><li>Use <code>Promise.all()</code> to wait for all to resolve</li><li>Return the results as a space-separated string</li><li>Handle the array of results properly</li></ul>",
+                                "hint": "Use Promise.all() with an array of Promises",
+                                "input": "2\n3\n4",
+                                "output": "2 3 4"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Promise Race",
+                                "question": "<p>What does <code>Promise.race()</code> do?</p><p>Consider this scenario:</p><ul><li>You have multiple Promises running</li><li>Some might resolve quickly, others slowly</li><li>You only care about the first one to complete</li><li>You want to get the result as soon as possible</li></ul>",
+                                "hint": "Consider racing multiple Promises",
+                                "options": [
+                                    "Waits for all Promises to complete - returns all results",
+                                    "Returns the first Promise to resolve or reject - fastest wins",
+                                    "Returns the fastest Promise - only successful ones",
+                                    "Returns the slowest Promise - last to complete"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Promise Finally",
+                                "question": "<p>Write a function that uses <code>.finally()</code> to log completion regardless of outcome.</p><p>The function should:</p><ul><li>Create a Promise that resolves or rejects</li><li>Use <code>.finally()</code> to log completion</li><li>Return 'Operation completed' regardless of success/failure</li><li>Handle both resolve and reject cases</li></ul>",
+                                "hint": "Use .finally() for cleanup operations",
+                                "input": "success",
+                                "output": "Operation completed"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Promise Chaining",
+                                "question": "<p>What is Promise chaining used for?</p><p>Consider this pattern:</p><pre><code>fetchUser(id)<br>  .then(user => fetchPosts(user.id))<br>  .then(posts => console.log(posts))<br>  .catch(error => console.error(error));</code></pre><p>What is the benefit of this approach?</p>",
+                                "hint": "Consider sequential async operations",
+                                "options": [
+                                    "To make Promises faster - improves performance",
+                                    "To execute async operations sequentially - one after another",
+                                    "To make Promises synchronous - removes async nature",
+                                    "To cancel Promises - stops execution"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Promise Resolve",
+                                "question": "<p>Write a function that uses <code>Promise.resolve()</code> to create a resolved Promise.</p><p>The function should:</p><ul><li>Use <code>Promise.resolve()</code> static method</li><li>Accept any value as input</li><li>Return a Promise that resolves with that value</li><li>Handle the resolved value properly</li></ul>",
+                                "hint": "Use Promise.resolve() static method",
+                                "input": "hello",
+                                "output": "hello"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Promise Reject",
+                                "question": "<p>What does <code>Promise.reject()</code> do?</p><p>Consider when you might want to:</p><ul><li>Immediately create a failed Promise</li><li>Simulate an error condition</li><li>Test error handling code</li><li>Return a Promise that will never succeed</li></ul>",
+                                "hint": "Consider creating rejected Promises",
+                                "options": [
+                                    "Creates a resolved Promise - always succeeds",
+                                    "Creates a rejected Promise - always fails",
+                                    "Cancels a Promise - stops execution",
+                                    "Pauses a Promise - delays execution"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "JavaScript Async/Await",
+                        "description": "Learn modern async programming with async/await syntax.",
+                        "tags": [
+                            "async-await",
+                            "javascript",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Async Function",
+                                "question": "<p>Write an async function that returns a Promise that resolves after 1 second.</p><p>The function should:</p><ul><li>Use the <code>async</code> keyword</li><li>Use <code>setTimeout</code> wrapped in a Promise</li><li>Accept a value as input</li><li>Return the input value after the delay</li></ul>",
+                                "hint": "Use async keyword and setTimeout with Promise",
+                                "input": "hello",
+                                "output": "hello"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Async Return",
+                                "question": "<p>What does an async function always return?</p><p>Consider this async function:</p><pre><code>async function getData() {<br>  return 'Hello World';<br>}<br>const result = getData();<br>console.log(result); // What is logged?</code></pre>",
+                                "hint": "Consider the return type of async functions",
+                                "options": [
+                                    "A value - the actual return value",
+                                    "A Promise - async functions always return Promises",
+                                    "An object - a special async object",
+                                    "Nothing - async functions don't return anything"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Await Keyword",
+                                "question": "<p>Write a function that uses <code>await</code> to wait for a Promise to resolve.</p><p>The function should:</p><ul><li>Be declared as <code>async</code></li><li>Use <code>await</code> to wait for a Promise</li><li>Double the resolved value</li><li>Return the result</li></ul>",
+                                "hint": "Use await keyword inside async function",
+                                "input": "5",
+                                "output": "10"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Await Usage",
+                                "question": "<p>Where can you use the <code>await</code> keyword?</p><p>Consider these scenarios:</p><ul><li>Inside a regular function</li><li>Inside an async function</li><li>At the top level of a script</li><li>Inside a callback function</li></ul>",
+                                "hint": "Consider the context requirements for await",
+                                "options": [
+                                    "Anywhere in JavaScript - no restrictions",
+                                    "Only inside async functions - requires async context",
+                                    "Only in loops - for iteration",
+                                    "Only in try-catch blocks - for error handling"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Multiple Await",
+                                "question": "<p>Write a function that awaits multiple Promises sequentially.</p><p>The function should:</p><ul><li>Use multiple <code>await</code> statements</li><li>Process each Promise one after another</li><li>Double each result</li><li>Return space-separated results</li></ul>",
+                                "hint": "Use multiple await statements",
+                                "input": "2\n3",
+                                "output": "4 6"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Await vs Then",
+                                "question": "<p>What is the main advantage of <code>await</code> over <code>.then()</code>?</p><p>Compare these approaches:</p><pre><code>// Using .then()<br>fetchData().then(data => {<br>  processData(data).then(result => {<br>    console.log(result);<br>  });<br>});<br><br>// Using await<br>async function handleData() {<br>  const data = await fetchData();<br>  const result = await processData(data);<br>  console.log(result);<br>}</code></pre>",
+                                "hint": "Consider code readability and structure",
+                                "options": [
+                                    "It's faster - better performance",
+                                    "It's more readable - looks like synchronous code",
+                                    "It uses less memory - more efficient",
+                                    "It's shorter - less code to write"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Async Error Handling",
+                                "question": "<p>Write an async function that handles errors using try-catch.</p><p>The function should:</p><ul><li>Use <code>try-catch</code> inside the async function</li><li>Simulate an error condition</li><li>Return 'Error occurred' when an error happens</li><li>Handle the error gracefully</li></ul>",
+                                "hint": "Use try-catch inside async function",
+                                "input": "error",
+                                "output": "Error occurred"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Async Loops",
+                                "question": "<p>What happens when you use <code>await</code> in a for loop?</p><p>Consider this code:</p><pre><code>async function processItems(items) {<br>  for (let item of items) {<br>    const result = await processItem(item);<br>    console.log(result);<br>  }<br>}</code></pre><p>How are the items processed?</p>",
+                                "hint": "Consider sequential vs parallel execution",
+                                "options": [
+                                    "All iterations run in parallel - all items processed simultaneously",
+                                    "Iterations run sequentially - one item at a time",
+                                    "Only the first iteration runs - others are skipped",
+                                    "The loop is skipped - no processing occurs"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Promise All with Await",
+                                "question": "<p>Write a function that uses <code>await</code> with <code>Promise.all()</code> for parallel execution.</p><p>The function should:</p><ul><li>Create an array of Promises</li><li>Use <code>await Promise.all()</code> for parallel execution</li><li>Double each result</li><li>Return space-separated results</li></ul>",
+                                "hint": "Use await with Promise.all()",
+                                "input": "1 2 3",
+                                "output": "2 4 6"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Async Arrow Functions",
+                                "question": "<p>Can arrow functions be async?</p><p>Consider these function declarations:</p><ul><li><code>async function regular() {}</code></li><li><code>const arrow = async () => {}</code></li><li><code>const expression = async function() {}</code></li></ul>",
+                                "hint": "Consider async syntax with arrow functions",
+                                "options": [
+                                    "No, never - arrow functions cannot be async",
+                                    "Yes, by adding async keyword - const func = async () => {}",
+                                    "Only if they return a Promise - automatic conversion",
+                                    "Only in strict mode - requires 'use strict'"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "JavaScript DOM Manipulation",
+                        "description": "Learn to manipulate the Document Object Model dynamically.",
+                        "tags": [
+                            "dom",
+                            "javascript",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Element Selection",
+                                "question": "<p>Write a function that selects an element by ID and changes its text content.</p><p>Your function should:</p><ul><li>Use <code>document.getElementById()</code> to select an element</li><li>Change the <code>textContent</code> property</li><li>Return the new text content</li><li>Handle the DOM manipulation properly</li></ul>",
+                                "hint": "Use getElementById() and textContent property",
+                                "input": "myElement\nNew Text",
+                                "output": "New Text"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "DOM Selection Methods",
+                                "question": "<p>What is the difference between <code>getElementById()</code> and <code>querySelector()</code>?</p><p>Consider these methods:</p><ul><li><code>getElementById('myId')</code> - selects by ID</li><li><code>querySelector('#myId')</code> - selects by CSS selector</li><li><code>querySelector('.myClass')</code> - selects by class</li><li><code>querySelector('div')</code> - selects by tag name</li></ul>",
+                                "hint": "Consider selector flexibility and specificity",
+                                "options": [
+                                    "getElementById() is faster, querySelector() is more flexible",
+                                    "getElementById() only works with IDs, querySelector() works with any CSS selector",
+                                    "getElementById() returns multiple elements, querySelector() returns one",
+                                    "There is no difference between them"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Element Creation",
+                                "question": "<p>Write a function that creates a new paragraph element and adds it to the document.</p><p>Your function should:</p><ul><li>Use <code>document.createElement()</code> to create a paragraph</li><li>Set the text content of the paragraph</li><li>Use <code>appendChild()</code> to add it to the body</li><li>Return the created element's text content</li></ul>",
+                                "hint": "Use createElement() and appendChild() methods",
+                                "input": "This is a new paragraph",
+                                "output": "This is a new paragraph"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Event Handling",
+                                "question": "<p>What is the purpose of <code>addEventListener()</code>?</p><p>Consider this example:</p><pre><code>const button = document.getElementById('myButton');<br>button.addEventListener('click', function() {<br>  console.log('Button clicked!');<br>});</code></pre>",
+                                "hint": "Consider user interaction handling",
+                                "options": [
+                                    "To add elements to the DOM - creates new elements",
+                                    "To handle user interactions - responds to events",
+                                    "To remove elements from the DOM - deletes elements",
+                                    "To style elements - applies CSS"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Class Manipulation",
+                                "question": "<p>Write a function that toggles a CSS class on an element.</p><p>Your function should:</p><ul><li>Use <code>classList.toggle()</code> method</li><li>Toggle a specific class name</li><li>Return the current state (true if class is present)</li><li>Handle the class manipulation properly</li></ul>",
+                                "hint": "Use classList.toggle() method",
+                                "input": "myElement\nactive",
+                                "output": "true"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "DOM Traversal",
+                                "question": "<p>What does <code>parentNode</code> property return?</p><p>Consider this DOM structure:</p><pre><code>&lt;div id=\"parent\"&gt;<br>  &lt;p id=\"child\"&gt;Text&lt;/p&gt;<br>&lt;/div&gt;</code></pre><p>If you select the paragraph, what does <code>child.parentNode</code> return?</p>",
+                                "hint": "Consider parent-child relationships in DOM",
+                                "options": [
+                                    "The child element - the paragraph itself",
+                                    "The parent element - the div container",
+                                    "The text content - \"Text\"",
+                                    "null - no parent exists"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Attribute Manipulation",
+                                "question": "<p>Write a function that sets and gets an attribute on an element.</p><p>Your function should:</p><ul><li>Use <code>setAttribute()</code> to set an attribute</li><li>Use <code>getAttribute()</code> to retrieve the attribute</li><li>Handle both setting and getting operations</li><li>Return the attribute value</li></ul>",
+                                "hint": "Use setAttribute() and getAttribute() methods",
+                                "input": "myElement\ndata-value\n123",
+                                "output": "123"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Event Bubbling",
+                                "question": "<p>What is event bubbling in JavaScript?</p><p>Consider this nested structure:</p><pre><code>&lt;div onclick=\"console.log('div')\"&gt;<br>  &lt;button onclick=\"console.log('button')\"&gt;Click me&lt;/button&gt;<br>&lt;/div&gt;</code></pre><p>When you click the button, what is logged?</p>",
+                                "hint": "Consider event propagation through DOM hierarchy",
+                                "options": [
+                                    "Only 'button' - only the clicked element",
+                                    "Only 'div' - only the parent element",
+                                    "Both 'button' and 'div' - event bubbles up",
+                                    "Nothing - no events are triggered"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Element Removal",
+                                "question": "<p>Write a function that removes an element from the DOM.</p><p>Your function should:</p><ul><li>Select an element by ID</li><li>Use <code>remove()</code> method or <code>parentNode.removeChild()</code></li><li>Return 'Element removed' after successful removal</li><li>Handle the removal properly</li></ul>",
+                                "hint": "Use remove() method or parentNode.removeChild()",
+                                "input": "myElement",
+                                "output": "Element removed"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "innerHTML vs textContent",
+                                "question": "<p>What is the difference between <code>innerHTML</code> and <code>textContent</code>?</p><p>Consider this example:</p><pre><code>element.innerHTML = \"&lt;strong&gt;Bold text&lt;/strong&gt;\";<br>element.textContent = \"&lt;strong&gt;Bold text&lt;/strong&gt;\";</code></pre>",
+                                "hint": "Consider HTML parsing vs text rendering",
+                                "options": [
+                                    "innerHTML parses HTML, textContent treats content as plain text",
+                                    "textContent parses HTML, innerHTML treats content as plain text",
+                                    "Both parse HTML the same way",
+                                    "There is no difference between them"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

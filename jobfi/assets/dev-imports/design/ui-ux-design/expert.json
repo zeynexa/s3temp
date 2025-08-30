@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Design",
+            "slug": "design",
+            "description": "Master design principles, user experience, and visual communication techniques.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/design.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "UI/UX Design",
+                "slug": "ui-ux-design",
+                "description": "Learn user interface and user experience design principles and best practices.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/ui-ux-design.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "Design Systems & Architecture",
+                        "description": "Master design system architecture and advanced design patterns.",
+                        "tags": [
+                            "design-systems",
+                            "architecture",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Design Tokens",
+                                "question": "<p>What are design tokens in a design system?</p><p>Consider: Reusable design decisions</p>",
+                                "hint": "Think about storing design values as variables",
+                                "options": [
+                                    "Visual elements only",
+                                    "Reusable design decisions stored as variables",
+                                    "Color palettes only",
+                                    "Typography rules only"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Component Architecture",
+                                "question": "<p>What is atomic design methodology?</p><p>Consider: Building design systems from small to large</p>",
+                                "hint": "Think about atoms, molecules, organisms, templates, and pages",
+                                "options": [
+                                    "Designing only for atoms",
+                                    "Building design systems from atoms to pages",
+                                    "Using only atomic elements",
+                                    "Designing for molecules only"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Design System Governance",
+                                "question": "<p>What is design system governance?</p><p>Consider: Managing and maintaining design systems</p>",
+                                "hint": "Think about processes for maintaining consistency",
+                                "options": [
+                                    "Creating new designs",
+                                    "Processes for maintaining and evolving design systems",
+                                    "Deleting old components",
+                                    "Changing colors only"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "Advanced UX Research & Analytics",
+                        "description": "Master advanced UX research methods and analytics techniques.",
+                        "tags": [
+                            "ux-research",
+                            "analytics",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "User Behavior Analytics",
+                                "question": "<p>What is heatmap analysis used for?</p><p>Consider: Visualizing user interactions</p>",
+                                "hint": "Think about showing where users click and scroll",
+                                "options": [
+                                    "Measuring temperature",
+                                    "Visualizing user interaction patterns on web pages",
+                                    "Analyzing colors only",
+                                    "Measuring page speed"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Conversion Rate Optimization",
+                                "question": "<p>What is conversion rate optimization (CRO)?</p><p>Consider: Improving user actions</p>",
+                                "hint": "Think about increasing desired user behaviors",
+                                "options": [
+                                    "Making websites faster",
+                                    "Improving the percentage of users who take desired actions",
+                                    "Changing colors only",
+                                    "Adding more content"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "User Experience Metrics",
+                                "question": "<p>What is the Net Promoter Score (NPS)?</p><p>Consider: Measuring user satisfaction and loyalty</p>",
+                                "hint": "Think about asking users how likely they are to recommend",
+                                "options": [
+                                    "A website speed metric",
+                                    "A measure of user satisfaction and likelihood to recommend",
+                                    "A color measurement",
+                                    "A typography score"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

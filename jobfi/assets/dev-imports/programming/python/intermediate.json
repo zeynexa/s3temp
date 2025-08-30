@@ -1,0 +1,371 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Python",
+                "slug": "python",
+                "description": "Learn Python for data science, web development, and automation.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/python.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "Python Object-Oriented Programming",
+                        "description": "Master classes, objects, inheritance, and polymorphism in Python.",
+                        "tags": [
+                            "oop",
+                            "python",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Class Definition",
+                                "question": "<p>Write a Python class that represents a Person with name and age properties.</p><p>Your class should:</p><ul><li>Use the <code>class</code> keyword</li><li>Have an <code>__init__</code> method (constructor)</li><li>Store name and age as instance attributes</li><li>Have a method that returns person information</li><li>Return the formatted string</li></ul>",
+                                "hint": "Use class keyword and __init__ method",
+                                "input": "John\n25",
+                                "output": "Person: John, Age: 25"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Instance vs Class Variables",
+                                "question": "<p>What is the difference between instance variables and class variables in Python?</p><p>Consider this example:</p><pre><code>class Person:<br>  species = \"Human\"  # Class variable<br>  def __init__(self, name):<br>    self.name = name  # Instance variable</code></pre>",
+                                "hint": "Consider scope and sharing",
+                                "options": [
+                                    "Instance variables belong to each object, class variables are shared by all instances",
+                                    "Class variables belong to each object, instance variables are shared by all instances",
+                                    "Both belong to each object individually",
+                                    "Both are shared by all instances"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Inheritance",
+                                "question": "<p>Write a Student class that inherits from Person and adds a grade property.</p><p>Your class should:</p><ul><li>Use <code>class Student(Person):</code> for inheritance</li><li>Call <code>super().__init__()</code> in the constructor</li><li>Add a grade attribute to the Student class</li><li>Override or extend parent methods if needed</li><li>Return the student's information including grade</li></ul>",
+                                "hint": "Use class Student(Person) and super().__init__()",
+                                "input": "Alice\n20\nA",
+                                "output": "Student: Alice, Age: 20, Grade: A"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Method Overriding",
+                                "question": "<p>What is method overriding in Python?</p><p>Consider this example:</p><pre><code>class Parent:<br>  def display(self):<br>    return \"Parent\"<br>class Child(Parent):<br>  def display(self):<br>    return \"Child\"</code></pre>",
+                                "hint": "Consider runtime polymorphism",
+                                "options": [
+                                    "A child class provides a specific implementation of a method defined in the parent class",
+                                    "A parent class provides a specific implementation of a method defined in the child class",
+                                    "Both classes provide the same implementation of a method",
+                                    "A method is hidden and cannot be accessed"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Abstract Classes",
+                                "question": "<p>Write an abstract class Shape with an abstract method calculate_area().</p><p>Your abstract class should:</p><ul><li>Import <code>ABC</code> and <code>abstractmethod</code> from abc module</li><li>Inherit from <code>ABC</code></li><li>Use <code>@abstractmethod</code> decorator</li><li>Define the abstract method</li><li>Return the area calculation result</li></ul>",
+                                "hint": "Use ABC and @abstractmethod decorator",
+                                "input": "5\n3",
+                                "output": "Rectangle area: 15.0"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Encapsulation",
+                                "question": "<p>How is encapsulation achieved in Python?</p><p>Consider these techniques:</p><ul><li>Using single underscore prefix for protected attributes</li><li>Using double underscore prefix for private attributes</li><li>Using property decorators for controlled access</li><li>Using getter and setter methods</li></ul>",
+                                "hint": "Consider data hiding and access control",
+                                "options": [
+                                    "Through naming conventions and property decorators - Python doesn't have true private attributes",
+                                    "Through private and public keywords like other languages",
+                                    "Through access modifiers like public, private, protected",
+                                    "Through inheritance only"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Properties",
+                                "question": "<p>Write a class with properties using the <code>@property</code> decorator.</p><p>Your class should:</p><ul><li>Use <code>@property</code> decorator for getter</li><li>Use <code>@property_name.setter</code> for setter</li><li>Add validation in the setter method</li><li>Handle the property access properly</li><li>Return the property value</li></ul>",
+                                "hint": "Use @property and @property_name.setter decorators",
+                                "input": "25\n-5\n30",
+                                "output": "Age: 25\nInvalid age\nAge: 30"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Static Methods",
+                                "question": "<p>What is the difference between static methods and instance methods?</p><p>Consider this example:</p><pre><code>class MathUtils:<br>  @staticmethod<br>  def add(a, b):<br>    return a + b<br>  def multiply(self, a, b):<br>    return a * b</code></pre>",
+                                "hint": "Consider object creation requirements",
+                                "options": [
+                                    "Static methods don't require an instance, instance methods require self parameter",
+                                    "Instance methods don't require an instance, static methods require self parameter",
+                                    "Both require object creation",
+                                    "Neither requires object creation"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Class Methods",
+                                "question": "<p>Write a class with a class method using the <code>@classmethod</code> decorator.</p><p>Your class should:</p><ul><li>Use <code>@classmethod</code> decorator</li><li>Accept <code>cls</code> as the first parameter</li><li>Create and return an instance of the class</li><li>Be callable on the class itself</li><li>Return the created instance</li></ul>",
+                                "hint": "Use @classmethod decorator with cls parameter",
+                                "input": "Bob\n30",
+                                "output": "Person: Bob, Age: 30"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Multiple Inheritance",
+                                "question": "<p>What is multiple inheritance in Python?</p><p>Consider this example:</p><pre><code>class A:<br>  pass<br>class B:<br>  pass<br>class C(A, B):<br>  pass</code></pre>",
+                                "hint": "Consider inheriting from multiple classes",
+                                "options": [
+                                    "A class can inherit from multiple parent classes",
+                                    "A class can only inherit from one parent class",
+                                    "Multiple classes can inherit from one parent class",
+                                    "A class cannot inherit from any parent class"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "Python Decorators",
+                        "description": "Learn function decorators, class decorators, and advanced decorator patterns.",
+                        "tags": [
+                            "decorators",
+                            "python",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Function Decorator",
+                                "question": "<p>Write a simple function decorator that logs function calls.</p><p>Your decorator should:</p><ul><li>Accept a function as a parameter</li><li>Define a wrapper function</li><li>Log before and after the function call</li><li>Return the wrapper function</li><li>Use the <code>@decorator</code> syntax</li></ul>",
+                                "hint": "Use nested function with wrapper pattern",
+                                "input": "hello",
+                                "output": "Calling function\nFunction called with: hello\nFunction returned: HELLO"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Decorator Syntax",
+                                "question": "<p>What is the equivalent of <code>@decorator</code> syntax?</p><p>Consider these two approaches:</p><pre><code>@decorator<br>def func():<br>  pass<br><br># Equivalent to:<br>def func():<br>  pass<br>func = decorator(func)</code></pre>",
+                                "hint": "Consider function assignment",
+                                "options": [
+                                    "func = decorator(func) - direct function assignment",
+                                    "func = func(decorator) - reverse assignment",
+                                    "decorator = func(decorator) - decorator assignment",
+                                    "There is no equivalent syntax"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Decorator with Parameters",
+                                "question": "<p>Write a decorator that accepts parameters.</p><p>Your decorator should:</p><ul><li>Accept parameters in the decorator function</li><li>Return a decorator function</li><li>Use the decorator with parameters</li><li>Apply the parameters to the decorated function</li><li>Return the modified result</li></ul>",
+                                "hint": "Use nested functions for parameterized decorators",
+                                "input": "hello\n3",
+                                "output": "Repeated 3 times: hello hello hello"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Built-in Decorators",
+                                "question": "<p>Which of the following is NOT a built-in decorator in Python?</p><p>Consider these decorators:</p><ul><li><code>@property</code> - creates a property</li><li><code>@staticmethod</code> - creates a static method</li><li><code>@classmethod</code> - creates a class method</li><li><code>@abstractmethod</code> - creates an abstract method</li></ul>",
+                                "hint": "Consider which decorators are built-in vs from modules",
+                                "options": [
+                                    "@property - built-in decorator",
+                                    "@staticmethod - built-in decorator",
+                                    "@abstractmethod - from abc module, not built-in",
+                                    "@classmethod - built-in decorator"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Class Decorator",
+                                "question": "<p>Write a class decorator that adds methods to a class.</p><p>Your decorator should:</p><ul><li>Accept a class as a parameter</li><li>Add new methods to the class</li><li>Modify the class dynamically</li><li>Return the modified class</li><li>Demonstrate the added functionality</li></ul>",
+                                "hint": "Use class decorator to modify class attributes",
+                                "input": "test",
+                                "output": "Original method: test\nAdded method: additional functionality"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Decorator Chaining",
+                                "question": "<p>How do decorators work when chained together?</p><p>Consider this example:</p><pre><code>@decorator1<br>@decorator2<br>def func():<br>  pass</code></pre>",
+                                "hint": "Consider the order of application",
+                                "options": [
+                                    "decorator1(decorator2(func)) - decorators are applied from bottom to top",
+                                    "decorator2(decorator1(func)) - decorators are applied from top to bottom",
+                                    "Both decorators are applied simultaneously",
+                                    "Only the first decorator is applied"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Timing Decorator",
+                                "question": "<p>Write a decorator that measures the execution time of a function.</p><p>Your decorator should:</p><ul><li>Use <code>time.time()</code> or <code>time.perf_counter()</code></li><li>Record start and end times</li><li>Calculate the execution time</li><li>Print the timing information</li><li>Return the function result</li></ul>",
+                                "hint": "Use time.time() to measure execution time",
+                                "input": "sleep",
+                                "output": "Function executed in 1.0 seconds\nResult: done"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "functools.wraps",
+                                "question": "<p>What is the purpose of <code>functools.wraps</code> in decorators?</p><p>Consider this example:</p><pre><code>from functools import wraps<br>def decorator(func):<br>  @wraps(func)<br>  def wrapper(*args, **kwargs):<br>    return func(*args, **kwargs)<br>  return wrapper</code></pre>",
+                                "hint": "Consider metadata preservation",
+                                "options": [
+                                    "To preserve the original function's metadata (name, docstring, etc.)",
+                                    "To make the decorator run faster",
+                                    "To make the decorator more readable",
+                                    "To make the decorator work with classes"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Caching Decorator",
+                                "question": "<p>Write a decorator that caches function results.</p><p>Your decorator should:</p><ul><li>Store function results in a dictionary</li><li>Use function arguments as cache keys</li><li>Return cached results if available</li><li>Call the function and cache new results</li><li>Return the cached or computed result</li></ul>",
+                                "hint": "Use dictionary to store cached results",
+                                "input": "5\n5\n3",
+                                "output": "Computing factorial of 5\nResult: 120\nCached result for 5: 120\nComputing factorial of 3\nResult: 6"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Decorator vs Function",
+                                "question": "<p>What is the main advantage of using decorators over regular functions?</p><p>Consider these benefits:</p><ul><li>Cleaner syntax with @decorator</li><li>Separation of concerns</li><li>Reusability across multiple functions</li><li>Non-intrusive modification of functions</li></ul>",
+                                "hint": "Consider code organization and reusability",
+                                "options": [
+                                    "Cleaner syntax and separation of concerns - decorators provide a clean way to modify functions",
+                                    "Better performance - decorators run faster than regular functions",
+                                    "More memory efficient - decorators use less memory",
+                                    "Easier debugging - decorators are easier to debug"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "Python Generators",
+                        "description": "Learn generator functions, generator expressions, and memory-efficient iteration.",
+                        "tags": [
+                            "generators",
+                            "python",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Generator Function",
+                                "question": "<p>Write a generator function that yields numbers from 1 to n.</p><p>Your generator should:</p><ul><li>Use the <code>yield</code> keyword</li><li>Accept a parameter n for the upper limit</li><li>Yield numbers from 1 to n</li><li>Use a for loop to generate values</li><li>Return the generator object</li></ul>",
+                                "hint": "Use yield keyword in a function",
+                                "input": "5",
+                                "output": "1 2 3 4 5"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Generator vs Function",
+                                "question": "<p>What is the main difference between a generator function and a regular function?</p><p>Consider these characteristics:</p><ul><li>Generator functions use <code>yield</code> instead of <code>return</code></li><li>Generators return values one at a time</li><li>Generators maintain their state between calls</li><li>Generators are memory efficient for large datasets</li></ul>",
+                                "hint": "Consider memory usage and value generation",
+                                "options": [
+                                    "Generators yield values one at a time and maintain state, functions return all values at once",
+                                    "Functions yield values one at a time, generators return all values at once",
+                                    "Both work exactly the same way",
+                                    "Generators are faster but use more memory"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Generator Expression",
+                                "question": "<p>Write a generator expression that creates squares of even numbers.</p><p>Your generator expression should:</p><ul><li>Use parentheses <code>()</code> instead of square brackets</li><li>Filter for even numbers</li><li>Square each even number</li><li>Use the range function</li><li>Return the generator object</li></ul>",
+                                "hint": "Use (expression for item in iterable if condition) syntax",
+                                "input": "10",
+                                "output": "4 16 36 64 100"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Memory Efficiency",
+                                "question": "<p>Why are generators memory efficient?</p><p>Consider this example:</p><pre><code># List comprehension - creates all values in memory<br>numbers = [x**2 for x in range(1000000)]<br><br># Generator expression - creates values on demand<br>numbers = (x**2 for x in range(1000000))</code></pre>",
+                                "hint": "Consider memory allocation and lazy evaluation",
+                                "options": [
+                                    "They generate values on demand instead of storing all values in memory",
+                                    "They use less CPU cycles than regular functions",
+                                    "They are implemented in C instead of Python",
+                                    "They automatically free memory after each yield"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Infinite Generator",
+                                "question": "<p>Write an infinite generator that yields Fibonacci numbers.</p><p>Your generator should:</p><ul><li>Use an infinite loop</li><li>Generate Fibonacci sequence</li><li>Use <code>yield</code> to return each number</li><li>Maintain state between calls</li><li>Return the first n Fibonacci numbers</li></ul>",
+                                "hint": "Use while True loop with yield",
+                                "input": "8",
+                                "output": "1 1 2 3 5 8 13 21"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Generator State",
+                                "question": "<p>What happens to a generator's state when it's exhausted?</p><p>Consider this example:</p><pre><code>gen = (x for x in range(3))<br>print(list(gen))  # [0, 1, 2]<br>print(list(gen))  # []</code></pre>",
+                                "hint": "Consider what happens after all values are yielded",
+                                "options": [
+                                    "The generator is exhausted and cannot yield more values",
+                                    "The generator resets and starts over",
+                                    "The generator raises an exception",
+                                    "The generator continues from where it left off"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Generator Pipeline",
+                                "question": "<p>Write a generator pipeline that processes data through multiple generators.</p><p>Your pipeline should:</p><ul><li>Create multiple generator functions</li><li>Chain them together</li><li>Process data through each stage</li><li>Use generator expressions</li><li>Return the final processed result</li></ul>",
+                                "hint": "Chain multiple generators together",
+                                "input": "1 2 3 4 5",
+                                "output": "2 4 6 8 10"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "send() Method",
+                                "question": "<p>What does the <code>send()</code> method do in generators?</p><p>Consider this example:</p><pre><code>def counter():<br>  count = 0<br>  while True:<br>    received = yield count<br>    if received is not None:<br>      count = received<br>    else:<br>      count += 1</code></pre>",
+                                "hint": "Consider two-way communication",
+                                "options": [
+                                    "Sends a value to the generator and resumes execution",
+                                    "Sends a value to the generator and stops execution",
+                                    "Receives a value from the generator",
+                                    "Sends a value to the generator and resets it"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Generator with send()",
+                                "question": "<p>Write a generator that uses the <code>send()</code> method for two-way communication.</p><p>Your generator should:</p><ul><li>Use <code>yield</code> to send values</li><li>Use <code>send()</code> to receive values</li><li>Handle the received values</li><li>Maintain state between communications</li><li>Return the communication results</li></ul>",
+                                "hint": "Use yield to send and receive values",
+                                "input": "start\n10\nstop",
+                                "output": "Received: start\nCounter: 10\nReceived: stop"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "itertools Module",
+                                "question": "<p>What is the purpose of the <code>itertools</code> module in Python?</p><p>Consider these itertools functions:</p><ul><li><code>itertools.count()</code> - infinite counter</li><li><code>itertools.cycle()</code> - cycles through iterable</li><li><code>itertools.repeat()</code> - repeats element</li><li><code>itertools.chain()</code> - chains iterables</li></ul>",
+                                "hint": "Consider iterator tools and utilities",
+                                "options": [
+                                    "To provide tools for working with iterators and creating efficient iterables",
+                                    "To provide tools for working with lists and dictionaries",
+                                    "To provide tools for working with functions and classes",
+                                    "To provide tools for working with files and directories"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

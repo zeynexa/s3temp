@@ -1,0 +1,372 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Java",
+                "slug": "java",
+                "description": "Master Java for enterprise development and Android applications.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/java.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "Java Multithreading & Concurrency",
+                        "description": "Master advanced multithreading concepts and concurrent programming.",
+                        "tags": [
+                            "multithreading",
+                            "concurrency",
+                            "java",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Thread Creation",
+                                "question": "<p>Write a Java program that creates and starts multiple threads.</p><p>Your program should:</p><ul><li>Create a class that extends <code>Thread</code></li><li>Override the <code>run()</code> method</li><li>Create multiple thread instances</li><li>Start threads using <code>start()</code> method</li><li>Print thread information</li></ul>",
+                                "hint": "Extend Thread class and override run() method",
+                                "input": "3",
+                                "output": "Thread-0 started\nThread-1 started\nThread-2 started"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Thread States",
+                                "question": "<p>What are the different states of a Thread in Java?</p><p>Consider these thread states:</p><ul><li>NEW - thread created but not started</li><li>RUNNABLE - thread is executing or ready to execute</li><li>BLOCKED - thread is waiting for a monitor lock</li><li>WAITING - thread is waiting indefinitely</li><li>TIMED_WAITING - thread is waiting for a specified time</li><li>TERMINATED - thread has completed execution</li></ul>",
+                                "hint": "Consider thread lifecycle states",
+                                "options": [
+                                    "NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, TERMINATED",
+                                    "START, RUN, STOP, END",
+                                    "CREATED, EXECUTING, FINISHED",
+                                    "READY, RUNNING, WAITING, DONE"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Synchronized Methods",
+                                "question": "<p>Write a Java class with synchronized methods to ensure thread safety.</p><p>Your class should:</p><ul><li>Use <code>synchronized</code> keyword for methods</li><li>Have a shared counter variable</li><li>Implement increment and decrement methods</li><li>Ensure thread-safe access to shared data</li><li>Return the final counter value</li></ul>",
+                                "hint": "Use synchronized keyword for thread safety",
+                                "input": "5\n3",
+                                "output": "Final counter: 2"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Race Condition",
+                                "question": "<p>What is a race condition in multithreaded programming?</p><p>Consider this scenario:</p><ul><li>Multiple threads access shared data simultaneously</li><li>The final result depends on the timing of thread execution</li><li>Inconsistent results may occur</li><li>Data corruption can happen</li></ul>",
+                                "hint": "Consider concurrent access to shared resources",
+                                "options": [
+                                    "A condition where the outcome depends on the sequence of thread execution",
+                                    "A condition where threads race to finish first",
+                                    "A condition where threads are blocked indefinitely",
+                                    "A condition where threads are terminated unexpectedly"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Wait and Notify",
+                                "question": "<p>Write a Java program that demonstrates wait() and notify() methods.</p><p>Your program should:</p><ul><li>Use <code>wait()</code> method to pause a thread</li><li>Use <code>notify()</code> method to wake up a waiting thread</li><li>Implement producer-consumer pattern</li><li>Handle thread communication properly</li><li>Return the result of the communication</li></ul>",
+                                "hint": "Use wait() and notify() for thread communication",
+                                "input": "producer\nconsumer",
+                                "output": "Producer: data produced\nConsumer: data consumed"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Thread Priority",
+                                "question": "<p>What is the range of thread priorities in Java?</p><p>Consider these priority constants:</p><ul><li><code>Thread.MIN_PRIORITY</code> - minimum priority (1)</li><li><code>Thread.NORM_PRIORITY</code> - normal priority (5)</li><li><code>Thread.MAX_PRIORITY</code> - maximum priority (10)</li></ul>",
+                                "hint": "Consider priority range and constants",
+                                "options": [
+                                    "1 to 10 - with MIN_PRIORITY=1, NORM_PRIORITY=5, MAX_PRIORITY=10",
+                                    "0 to 9 - with MIN_PRIORITY=0, NORM_PRIORITY=5, MAX_PRIORITY=9",
+                                    "1 to 100 - with MIN_PRIORITY=1, NORM_PRIORITY=50, MAX_PRIORITY=100",
+                                    "0 to 100 - with MIN_PRIORITY=0, NORM_PRIORITY=50, MAX_PRIORITY=100"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "ExecutorService",
+                                "question": "<p>Write a Java program that uses ExecutorService for thread pool management.</p><p>Your program should:</p><ul><li>Create an <code>ExecutorService</code> with fixed thread pool</li><li>Submit tasks using <code>submit()</code> method</li><li>Shutdown the executor using <code>shutdown()</code></li><li>Wait for completion using <code>awaitTermination()</code></li><li>Return the results of task execution</li></ul>",
+                                "hint": "Use Executors.newFixedThreadPool() and submit()",
+                                "input": "3\n5",
+                                "output": "Task 0 completed\nTask 1 completed\nTask 2 completed"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Deadlock",
+                                "question": "<p>What is a deadlock in multithreaded programming?</p><p>Consider this scenario:</p><ul><li>Thread A holds lock on resource 1 and waits for resource 2</li><li>Thread B holds lock on resource 2 and waits for resource 1</li><li>Both threads are blocked indefinitely</li><li>No progress can be made</li></ul>",
+                                "hint": "Consider circular waiting condition",
+                                "options": [
+                                    "A situation where two or more threads are blocked forever waiting for each other",
+                                    "A situation where threads are terminated unexpectedly",
+                                    "A situation where threads are running too fast",
+                                    "A situation where threads are not synchronized properly"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Atomic Variables",
+                                "question": "<p>Write a Java program that uses AtomicInteger for thread-safe operations.</p><p>Your program should:</p><ul><li>Use <code>AtomicInteger</code> instead of regular int</li><li>Use <code>incrementAndGet()</code> method</li><li>Use <code>decrementAndGet()</code> method</li><li>Ensure thread-safe operations without synchronization</li><li>Return the final atomic value</li></ul>",
+                                "hint": "Use AtomicInteger for thread-safe operations",
+                                "input": "5\n3",
+                                "output": "Final atomic value: 2"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Volatile Keyword",
+                                "question": "<p>What does the <code>volatile</code> keyword do in Java?</p><p>Consider these characteristics:</p><ul><li>Ensures visibility of changes across threads</li><li>Prevents instruction reordering</li><li>Does not provide atomicity</li><li>Useful for simple flags and counters</li></ul>",
+                                "hint": "Consider memory visibility and ordering",
+                                "options": [
+                                    "Ensures that changes to the variable are immediately visible to other threads",
+                                    "Makes the variable thread-safe for all operations",
+                                    "Prevents the variable from being modified",
+                                    "Makes the variable accessible from any thread"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "Java Design Patterns",
+                        "description": "Master advanced design patterns and architectural concepts.",
+                        "tags": [
+                            "design-patterns",
+                            "java",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Singleton Pattern",
+                                "question": "<p>Write a thread-safe Singleton class in Java.</p><p>Your Singleton should:</p><ul><li>Use private constructor to prevent instantiation</li><li>Use private static instance variable</li><li>Use synchronized method or double-checked locking</li><li>Ensure only one instance is created</li><li>Return the same instance for all calls</li></ul>",
+                                "hint": "Use private constructor and synchronized getInstance()",
+                                "input": "config1\nconfig2",
+                                "output": "Same instance: true"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Factory Pattern",
+                                "question": "<p>What is the main purpose of the Factory pattern?</p><p>Consider these benefits:</p><ul><li>Encapsulates object creation logic</li><li>Provides a common interface for creating objects</li><li>Allows for easy extension of object types</li><li>Reduces coupling between classes</li></ul>",
+                                "hint": "Consider object creation abstraction",
+                                "options": [
+                                    "To abstract object creation and provide a common interface",
+                                    "To create multiple instances of the same object",
+                                    "To destroy objects when they are no longer needed",
+                                    "To copy objects efficiently"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Observer Pattern",
+                                "question": "<p>Write a Java implementation of the Observer pattern.</p><p>Your implementation should:</p><ul><li>Create a Subject interface with register/remove/notify methods</li><li>Create an Observer interface with update method</li><li>Implement concrete Subject and Observer classes</li><li>Demonstrate the observer-subject relationship</li><li>Return the notification results</li></ul>",
+                                "hint": "Use interfaces for Subject and Observer",
+                                "input": "observer1\nobserver2\nevent",
+                                "output": "Observer1 notified: event\nObserver2 notified: event"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Strategy Pattern",
+                                "question": "<p>What is the Strategy pattern used for?</p><p>Consider this example:</p><ul><li>Different algorithms for the same operation</li><li>Algorithms can be selected at runtime</li><li>Easy to add new algorithms</li><li>Algorithms are encapsulated in separate classes</li></ul>",
+                                "hint": "Consider algorithm selection and encapsulation",
+                                "options": [
+                                    "To define a family of algorithms and make them interchangeable",
+                                    "To create a single algorithm that works for all cases",
+                                    "To optimize algorithm performance",
+                                    "To reduce algorithm complexity"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Builder Pattern",
+                                "question": "<p>Write a Java implementation of the Builder pattern.</p><p>Your Builder should:</p><ul><li>Create a complex object step by step</li><li>Use fluent interface (method chaining)</li><li>Provide a build() method to create the final object</li><li>Handle optional parameters</li><li>Return the constructed object</li></ul>",
+                                "hint": "Use method chaining and build() method",
+                                "input": "John\n25\nEngineer",
+                                "output": "Person{name='John', age=25, profession='Engineer'}"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Adapter Pattern",
+                                "question": "<p>What is the purpose of the Adapter pattern?</p><p>Consider this scenario:</p><ul><li>You have an existing class with an incompatible interface</li><li>You need to use it with a new system</li><li>The adapter acts as a bridge between incompatible interfaces</li><li>It allows classes to work together that couldn't otherwise</li></ul>",
+                                "hint": "Consider interface compatibility",
+                                "options": [
+                                    "To make incompatible interfaces work together",
+                                    "To create new interfaces from scratch",
+                                    "To replace existing interfaces",
+                                    "To optimize interface performance"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Decorator Pattern",
+                                "question": "<p>Write a Java implementation of the Decorator pattern.</p><p>Your Decorator should:</p><ul><li>Create a base interface or abstract class</li><li>Create concrete component classes</li><li>Create abstract decorator class</li><li>Create concrete decorator classes</li><li>Demonstrate dynamic behavior addition</li></ul>",
+                                "hint": "Use composition and inheritance for decoration",
+                                "input": "coffee\nmilk\nsugar",
+                                "output": "Cost: 3.5\nDescription: Coffee with milk and sugar"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Command Pattern",
+                                "question": "<p>What is the Command pattern used for?</p><p>Consider these characteristics:</p><ul><li>Encapsulates a request as an object</li><li>Allows parameterization of clients</li><li>Supports undo operations</li><li>Enables queuing and logging of requests</li></ul>",
+                                "hint": "Consider request encapsulation and parameterization",
+                                "options": [
+                                    "To encapsulate a request as an object and parameterize clients",
+                                    "To create commands that can be executed immediately",
+                                    "To optimize command execution performance",
+                                    "To reduce command complexity"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Template Method Pattern",
+                                "question": "<p>Write a Java implementation of the Template Method pattern.</p><p>Your Template should:</p><ul><li>Create an abstract class with template method</li><li>Define abstract methods for subclasses to implement</li><li>Define concrete methods with common behavior</li><li>Use final keyword for template method</li><li>Demonstrate the algorithm structure</li></ul>",
+                                "hint": "Use abstract class with final template method",
+                                "input": "algorithm1\nalgorithm2",
+                                "output": "Algorithm1: step1, step2, step3\nAlgorithm2: step1, step2, step3"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "MVC Pattern",
+                                "question": "<p>What does MVC stand for in design patterns?</p><p>Consider these components:</p><ul><li>Model - represents data and business logic</li><li>View - represents the user interface</li><li>Controller - handles user input and coordinates</li><li>Separation of concerns for maintainability</li></ul>",
+                                "hint": "Consider architectural pattern components",
+                                "options": [
+                                    "Model View Controller - separates application into three interconnected components",
+                                    "Main View Component - organizes main application components",
+                                    "Module View Class - structures application modules",
+                                    "Method View Constructor - organizes application methods"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "Java Advanced Features",
+                        "description": "Master advanced Java features including reflection, annotations, and generics.",
+                        "tags": [
+                            "advanced-features",
+                            "java",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Reflection API",
+                                "question": "<p>Write a Java program that uses reflection to inspect a class.</p><p>Your program should:</p><ul><li>Use <code>Class.forName()</code> to get Class object</li><li>Use <code>getDeclaredMethods()</code> to get methods</li><li>Use <code>getDeclaredFields()</code> to get fields</li><li>Use <code>getModifiers()</code> to get access modifiers</li><li>Return the class information</li></ul>",
+                                "hint": "Use Class.forName() and reflection methods",
+                                "input": "java.lang.String",
+                                "output": "Class: java.lang.String\nMethods: 100+\nFields: 2"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Annotations",
+                                "question": "<p>What is the purpose of annotations in Java?</p><p>Consider these annotation types:</p><ul><li><code>@Override</code> - indicates method overriding</li><li><code>@Deprecated</code> - marks deprecated elements</li><li><code>@SuppressWarnings</code> - suppresses compiler warnings</li><li><code>@FunctionalInterface</code> - marks functional interfaces</li></ul>",
+                                "hint": "Consider metadata and compiler instructions",
+                                "options": [
+                                    "To provide metadata about program elements to the compiler and runtime",
+                                    "To create new data types",
+                                    "To optimize program performance",
+                                    "To create new programming languages"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Custom Annotations",
+                                "question": "<p>Write a custom annotation in Java.</p><p>Your annotation should:</p><ul><li>Use <code>@interface</code> keyword</li><li>Define annotation elements</li><li>Use <code>@Retention</code> to specify retention policy</li><li>Use <code>@Target</code> to specify target elements</li><li>Be used to mark methods or classes</li></ul>",
+                                "hint": "Use @interface and annotation meta-annotations",
+                                "input": "testMethod\nimportant",
+                                "output": "Method testMethod is marked as important"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Generics",
+                                "question": "<p>What is the purpose of generics in Java?</p><p>Consider these benefits:</p><ul><li>Type safety at compile time</li><li>Elimination of type casting</li><li>Better code reusability</li><li>Prevention of runtime errors</li></ul>",
+                                "hint": "Consider type safety and code reuse",
+                                "options": [
+                                    "To provide type safety and eliminate type casting",
+                                    "To make code run faster",
+                                    "To reduce code size",
+                                    "To create new data types"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Generic Classes",
+                                "question": "<p>Write a generic class in Java.</p><p>Your generic class should:</p><ul><li>Use type parameter <code>&lt;T&gt;</code></li><li>Have a field of type T</li><li>Have methods that work with type T</li><li>Demonstrate type safety</li><li>Return the generic value</li></ul>",
+                                "hint": "Use &lt;T&gt; type parameter in class declaration",
+                                "input": "Hello World",
+                                "output": "Value: Hello World\nType: class java.lang.String"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Wildcards",
+                                "question": "<p>What are wildcards in Java generics?</p><p>Consider these wildcard types:</p><ul><li><code>?</code> - unbounded wildcard</li><li><code>? extends T</code> - upper bounded wildcard</li><li><code>? super T</code> - lower bounded wildcard</li></ul>",
+                                "hint": "Consider generic type flexibility",
+                                "options": [
+                                    "Special symbols that represent unknown types in generics",
+                                    "Special symbols that represent known types in generics",
+                                    "Special symbols that represent primitive types",
+                                    "Special symbols that represent array types"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Lambda Expressions",
+                                "question": "<p>Write a Java program that uses lambda expressions.</p><p>Your program should:</p><ul><li>Use lambda expressions for functional interfaces</li><li>Demonstrate different lambda syntax</li><li>Use lambda with collections</li><li>Use method references where appropriate</li><li>Return the results of lambda operations</li></ul>",
+                                "hint": "Use -> syntax for lambda expressions",
+                                "input": "1 2 3 4 5",
+                                "output": "Sum: 15\nEven numbers: 2 4"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Stream API",
+                                "question": "<p>What is the Stream API in Java?</p><p>Consider these characteristics:</p><ul><li>Provides functional-style operations on collections</li><li>Supports parallel processing</li><li>Enables declarative programming</li><li>Supports lazy evaluation</li></ul>",
+                                "hint": "Consider functional programming and collections",
+                                "options": [
+                                    "A sequence of elements supporting functional-style operations",
+                                    "A way to read and write files",
+                                    "A way to handle network connections",
+                                    "A way to manage database connections"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Optional Class",
+                                "question": "<p>Write a Java program that uses the Optional class.</p><p>Your program should:</p><ul><li>Use <code>Optional.of()</code> to create Optional</li><li>Use <code>Optional.empty()</code> for empty Optional</li><li>Use <code>isPresent()</code> to check if value exists</li><li>Use <code>orElse()</code> for default values</li><li>Return the Optional result</li></ul>",
+                                "hint": "Use Optional.of(), isPresent(), orElse()",
+                                "input": "value\nempty",
+                                "output": "Present: true\nValue: value\nDefault: default"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Modules (Java 9+)",
+                                "question": "<p>What are modules in Java 9+?</p><p>Consider these characteristics:</p><ul><li>Provide strong encapsulation</li><li>Enable better dependency management</li><li>Reduce the size of runtime images</li><li>Improve security and maintainability</li></ul>",
+                                "hint": "Consider encapsulation and dependency management",
+                                "options": [
+                                    "A way to organize code and dependencies with strong encapsulation",
+                                    "A way to create new programming languages",
+                                    "A way to optimize code performance",
+                                    "A way to create new data types"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

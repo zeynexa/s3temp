@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Aptitude",
+            "slug": "aptitude",
+            "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Series",
+                "slug": "series",
+                "description": "Master number series, sequences, and pattern recognition techniques.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/series.svg",
+                "exercises": [
+                    {
+                        "level": "Beginner",
+                        "title": "Basic Number Series",
+                        "description": "Identify and complete basic number series patterns.",
+                        "tags": [
+                            "number-series",
+                            "patterns",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Arithmetic Series Properties",
+                                "question": "<p>What is the common difference in the series: 3, 7, 11, 15, 19?</p><p>Consider: Difference between consecutive terms</p>",
+                                "hint": "Subtract any term from the next term",
+                                "options": [
+                                    "2 - small difference",
+                                    "4 - correct common difference",
+                                    "6 - large difference",
+                                    "8 - very large difference"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Arithmetic Series Sum",
+                                "question": "<p>What is the sum of the first 10 terms of the arithmetic series: 2, 5, 8, 11, ...?</p><p>Consider: Use the sum formula for arithmetic series</p>",
+                                "hint": "Sum = n/2 × (first term + last term)",
+                                "options": [
+                                    "155 - correct sum",
+                                    "150 - incorrect",
+                                    "160 - incorrect",
+                                    "165 - incorrect"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Series Pattern Recognition",
+                                "question": "<p>What type of series is: 2, 4, 8, 16, 32?</p><p>Consider: Look for the relationship between consecutive terms</p>",
+                                "hint": "Each term is multiplied by 2 to get the next",
+                                "options": [
+                                    "Arithmetic series",
+                                    "Geometric series - common ratio 2",
+                                    "Fibonacci series",
+                                    "Harmonic series"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "Geometric Series",
+                        "description": "Work with geometric series and their properties.",
+                        "tags": [
+                            "geometric-series",
+                            "sequences",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Geometric Series Convergence",
+                                "question": "<p>When does an infinite geometric series converge?</p><p>Consider: Conditions for the sum to approach a finite value</p>",
+                                "hint": "Think about what happens when the common ratio is between -1 and 1",
+                                "options": [
+                                    "Always - all series converge",
+                                    "When |r| < 1 - absolute value of ratio less than 1",
+                                    "When r > 0 - positive ratio",
+                                    "When r < 1 - ratio less than 1"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Geometric Series Sum",
+                                "question": "<p>What is the sum of the infinite geometric series: 1 + 1/2 + 1/4 + 1/8 + ...?</p><p>Consider: Use the infinite sum formula</p>",
+                                "hint": "Sum = a/(1-r) where a=1, r=1/2",
+                                "options": [
+                                    "1 - incorrect",
+                                    "2 - correct sum",
+                                    "1.5 - incorrect",
+                                    "3 - incorrect"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Geometric Series nth Term",
+                                "question": "<p>What is the 5th term of the geometric series: 3, 6, 12, 24, ...?</p><p>Consider: Use the nth term formula</p>",
+                                "hint": "aₙ = a₁ × r^(n-1) where r=2",
+                                "options": [
+                                    "48 - correct 5th term",
+                                    "36 - incorrect",
+                                    "60 - incorrect",
+                                    "72 - incorrect"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Design",
+            "slug": "design",
+            "description": "Master design principles, user experience, and visual communication techniques.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/design.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Graphic Design",
+                "slug": "graphic-design",
+                "description": "Learn graphic design principles and visual communication techniques.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/graphic-design.svg",
+                "exercises": [
+                    {
+                        "level": "Beginner",
+                        "title": "Design Principles",
+                        "description": "Learn fundamental graphic design principles and concepts.",
+                        "tags": [
+                            "design-principles",
+                            "fundamentals",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Balance in Design",
+                                "question": "<p>What is balance in graphic design?</p><p>Consider: Visual weight distribution</p>",
+                                "hint": "Think about how elements are distributed in a design",
+                                "options": [
+                                    "Using only one color",
+                                    "Distribution of visual weight to create stability",
+                                    "Making everything the same size",
+                                    "Using only text elements"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Contrast in Design",
+                                "question": "<p>What is the purpose of contrast in graphic design?</p><p>Consider: Making elements stand out</p>",
+                                "hint": "Think about creating visual interest and hierarchy",
+                                "options": [
+                                    "Making everything the same",
+                                    "Creating visual interest and emphasizing differences",
+                                    "Using only dark colors",
+                                    "Making everything small"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Proximity in Design",
+                                "question": "<p>What does proximity refer to in design?</p><p>Consider: How close elements are to each other</p>",
+                                "hint": "Think about grouping related elements together",
+                                "options": [
+                                    "Using similar colors",
+                                    "Grouping related elements together",
+                                    "Making elements far apart",
+                                    "Using only one font"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "Typography Fundamentals",
+                        "description": "Learn fundamental typography principles and techniques.",
+                        "tags": [
+                            "typography",
+                            "fundamentals",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Typeface vs Font",
+                                "question": "<p>What is the difference between a typeface and a font?</p><p>Consider: Design vs. digital file</p>",
+                                "hint": "Think about the design vs. the digital implementation",
+                                "options": [
+                                    "They are the same thing",
+                                    "Typeface is the design, font is the digital file",
+                                    "Font is the design, typeface is the digital file",
+                                    "They are completely different"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Serif vs Sans Serif",
+                                "question": "<p>What is the main difference between serif and sans serif fonts?</p><p>Consider: Decorative elements</p>",
+                                "hint": "Think about the small decorative strokes",
+                                "options": [
+                                    "Serif fonts are always larger",
+                                    "Serif fonts have decorative strokes, sans serif don't",
+                                    "Sans serif fonts are always bold",
+                                    "There is no difference"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Typography Hierarchy",
+                                "question": "<p>What is typography hierarchy used for?</p><p>Consider: Organizing information</p>",
+                                "hint": "Think about guiding the reader's eye",
+                                "options": [
+                                    "Making all text the same size",
+                                    "Organizing information to guide the reader's eye",
+                                    "Using only one font",
+                                    "Making text as small as possible"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

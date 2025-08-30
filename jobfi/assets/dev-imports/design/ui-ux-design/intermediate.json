@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Design",
+            "slug": "design",
+            "description": "Master design principles, user experience, and visual communication techniques.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/design.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "UI/UX Design",
+                "slug": "ui-ux-design",
+                "description": "Learn user interface and user experience design principles and best practices.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/ui-ux-design.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "Advanced UI Components",
+                        "description": "Master advanced UI component design and implementation.",
+                        "tags": [
+                            "ui-components",
+                            "advanced",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Component Design Systems",
+                                "question": "<p>What is a design system?</p><p>Consider: Consistent design language and reusable components</p>",
+                                "hint": "Think about creating a unified design language",
+                                "options": [
+                                    "A single design file",
+                                    "A collection of reusable components and design guidelines",
+                                    "A color palette only",
+                                    "A typography guide only"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Responsive Design",
+                                "question": "<p>What is the mobile-first approach in responsive design?</p><p>Consider: Starting with mobile and scaling up</p>",
+                                "hint": "Think about designing for the smallest screen first",
+                                "options": [
+                                    "Designing only for mobile devices",
+                                    "Starting with mobile design and scaling up to larger screens",
+                                    "Making everything smaller on mobile",
+                                    "Using only mobile-friendly fonts"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Accessibility Standards",
+                                "question": "<p>What does WCAG stand for in accessibility?</p><p>Consider: Web accessibility guidelines</p>",
+                                "hint": "Think about web content accessibility",
+                                "options": [
+                                    "Web Content Accessibility Guidelines",
+                                    "Web Coding and Graphics",
+                                    "Web Color and Graphics",
+                                    "Web Content and Graphics"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "User Research & Testing",
+                        "description": "Master user research methods and usability testing techniques.",
+                        "tags": [
+                            "user-research",
+                            "testing",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "User Research Methods",
+                                "question": "<p>What is the difference between qualitative and quantitative research?</p><p>Consider: Types of data collected</p>",
+                                "hint": "Think about numbers vs. descriptive data",
+                                "options": [
+                                    "Qualitative uses numbers, quantitative uses descriptions",
+                                    "Qualitative uses descriptions, quantitative uses numbers",
+                                    "Both use only numbers",
+                                    "Both use only descriptions"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Usability Testing",
+                                "question": "<p>What is the main purpose of usability testing?</p><p>Consider: Identifying user problems</p>",
+                                "hint": "Think about finding issues with the user experience",
+                                "options": [
+                                    "To make the design beautiful",
+                                    "To identify usability problems and improve user experience",
+                                    "To increase website speed",
+                                    "To reduce development costs"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "A/B Testing",
+                                "question": "<p>What is A/B testing used for?</p><p>Consider: Comparing two versions</p>",
+                                "hint": "Think about testing different versions to see which performs better",
+                                "options": [
+                                    "Testing only one version",
+                                    "Comparing two versions to see which performs better",
+                                    "Testing all versions at once",
+                                    "Testing without users"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

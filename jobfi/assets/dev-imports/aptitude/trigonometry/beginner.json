@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Aptitude",
+            "slug": "aptitude",
+            "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Trigonometry",
+                "slug": "trigonometry",
+                "description": "Master trigonometric functions, identities, and applications.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/trigonometry.svg",
+                "exercises": [
+                    {
+                        "level": "Beginner",
+                        "title": "Basic Trigonometric Functions",
+                        "description": "Learn fundamental trigonometric functions and their properties.",
+                        "tags": [
+                            "trigonometric-functions",
+                            "basics",
+                            "fundamentals"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Trigonometric Values",
+                                "question": "<p>What is the value of cos(60°)?</p><p>Consider: Special angle values in trigonometry</p>",
+                                "hint": "Remember the special triangle with angles 30°, 60°, 90°",
+                                "options": [
+                                    "0.5 - correct value",
+                                    "0.7071 - sin(45°)",
+                                    "0.8660 - cos(30°)",
+                                    "1.0 - cos(0°)"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Unit Circle",
+                                "question": "<p>What are the coordinates of the point on the unit circle at angle 45°?</p><p>Consider: Unit circle coordinates</p>",
+                                "hint": "At 45°, both x and y coordinates are equal",
+                                "options": [
+                                    "(0.5, 0.5)",
+                                    "(0.7071, 0.7071) - correct coordinates",
+                                    "(1, 1)",
+                                    "(0.8660, 0.5)"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Trigonometric Functions",
+                                "question": "<p>What is the range of the sine function?</p><p>Consider: The possible values of sin(x)</p>",
+                                "hint": "Think about the unit circle and y-coordinates",
+                                "options": [
+                                    "[0, 1] - only positive values",
+                                    "[-1, 1] - correct range",
+                                    "[0, ∞) - all non-negative values",
+                                    "(-∞, ∞) - all real numbers"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "Trigonometric Identities",
+                        "description": "Work with basic trigonometric identities and equations.",
+                        "tags": [
+                            "trigonometric-identities",
+                            "equations",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Pythagorean Identity",
+                                "question": "<p>What is the Pythagorean identity in trigonometry?</p><p>Consider: Relationship between sin and cos functions</p>",
+                                "hint": "Think about the unit circle and the Pythagorean theorem",
+                                "options": [
+                                    "sin θ + cos θ = 1 - sum identity",
+                                    "sin²θ + cos²θ = 1 - Pythagorean identity",
+                                    "sin θ × cos θ = 1 - product identity",
+                                    "sin θ - cos θ = 1 - difference identity"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Quotient Identity",
+                                "question": "<p>What is the quotient identity for tangent?</p><p>Consider: Relationship between tan, sin, and cos</p>",
+                                "hint": "Think about the definition of tangent",
+                                "options": [
+                                    "tan θ = sin θ + cos θ",
+                                    "tan θ = sin θ/cos θ - quotient identity",
+                                    "tan θ = sin θ × cos θ",
+                                    "tan θ = sin θ - cos θ"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Reciprocal Identities",
+                                "question": "<p>What is the reciprocal of sine?</p><p>Consider: Reciprocal trigonometric functions</p>",
+                                "hint": "Think about 1/sin θ",
+                                "options": [
+                                    "cosine",
+                                    "cosecant - correct reciprocal",
+                                    "secant",
+                                    "cotangent"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

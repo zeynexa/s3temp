@@ -1,0 +1,372 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "C++",
+                "slug": "c-plus-plus",
+                "description": "Learn C++ for system programming, game development, and high-performance applications.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/c-plus-plus.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "C++ Object-Oriented Programming",
+                        "description": "Master classes, objects, inheritance, and polymorphism in C++.",
+                        "tags": [
+                            "oop",
+                            "c++",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Class Definition",
+                                "question": "<p>Write a C++ class that represents a Person with name and age properties.</p><p>Your class should:</p><ul><li>Declare private member variables for name and age</li><li>Create a constructor that accepts name and age</li><li>Create getter and setter methods</li><li>Override the <code>toString()</code> method or create a display method</li><li>Return the formatted string representation</li></ul>",
+                                "hint": "Use private members, constructor, getters, setters, and display method",
+                                "input": "John\n25",
+                                "output": "Person: John, Age: 25"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Access Specifiers",
+                                "question": "<p>What are the three access specifiers in C++?</p><p>Consider these access levels:</p><ul><li><code>public</code> - accessible from anywhere</li><li><code>private</code> - accessible only within the class</li><li><code>protected</code> - accessible within the class and derived classes</li></ul>",
+                                "hint": "Consider member accessibility and inheritance",
+                                "options": [
+                                    "public, private, protected - control member accessibility",
+                                    "public, private, internal - control member accessibility",
+                                    "public, private, friend - control member accessibility",
+                                    "public, private, static - control member accessibility"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Inheritance",
+                                "question": "<p>Write a Student class that inherits from Person and adds a grade property.</p><p>Your class should:</p><ul><li>Use <code>class Student : public Person</code> for inheritance</li><li>Call the parent constructor using <code>Person(name, age)</code></li><li>Add a grade property to the Student class</li><li>Override the display method</li><li>Return the student's information including grade</li></ul>",
+                                "hint": "Use class Student : public Person and call parent constructor",
+                                "input": "Alice\n20\nA",
+                                "output": "Student: Alice, Age: 20, Grade: A"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Virtual Functions",
+                                "question": "<p>What is the purpose of virtual functions in C++?</p><p>Consider this example:</p><pre><code>class Base {<br>  virtual void display() { cout << \"Base\"; }<br>};<br>class Derived : public Base {<br>  void display() { cout << \"Derived\"; }<br>};</code></pre>",
+                                "hint": "Consider runtime polymorphism",
+                                "options": [
+                                    "To enable runtime polymorphism - allow derived classes to override base class methods",
+                                    "To make functions run faster",
+                                    "To make functions use less memory",
+                                    "To make functions static"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Abstract Classes",
+                                "question": "<p>Write an abstract class Shape with a pure virtual function calculateArea().</p><p>Your abstract class should:</p><ul><li>Use <code>virtual double calculateArea() = 0;</code> for pure virtual function</li><li>Include a virtual destructor</li><li>Have concrete methods if needed</li><li>Be designed for inheritance</li><li>Return the area calculation result</li></ul>",
+                                "hint": "Use virtual double calculateArea() = 0; for pure virtual function",
+                                "input": "5\n3",
+                                "output": "Rectangle area: 15.0"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Multiple Inheritance",
+                                "question": "<p>What is multiple inheritance in C++?</p><p>Consider this example:</p><pre><code>class A { /* ... */ };<br>class B { /* ... */ };<br>class C : public A, public B { /* ... */ };</code></pre>",
+                                "hint": "Consider inheriting from multiple base classes",
+                                "options": [
+                                    "A class can inherit from multiple base classes - using comma-separated base classes",
+                                    "A class can only inherit from one base class",
+                                    "Multiple classes can inherit from one base class",
+                                    "A class cannot inherit from any base class"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Polymorphism",
+                                "question": "<p>Write a program that demonstrates polymorphism with different shapes.</p><p>Your program should:</p><ul><li>Create an array of Shape pointers</li><li>Include different shape types (Circle, Rectangle)</li><li>Use polymorphism to call <code>calculateArea()</code> on each shape</li><li>Print the area of each shape</li><li>Demonstrate runtime polymorphism</li></ul>",
+                                "hint": "Use Shape* array with virtual function calls",
+                                "input": "5\n3\n4",
+                                "output": "Circle area: 78.54\nRectangle area: 12.0"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Static Members",
+                                "question": "<p>What is the difference between static and non-static members in C++?</p><p>Consider these characteristics:</p><ul><li>Static members belong to the class, not individual objects</li><li>Non-static members belong to each object instance</li><li>Static members can be accessed without creating an object</li><li>Non-static members require an object instance</li></ul>",
+                                "hint": "Consider class-level vs object-level members",
+                                "options": [
+                                    "Static members belong to the class, non-static members belong to each object",
+                                    "Non-static members belong to the class, static members belong to each object",
+                                    "Both belong to the class",
+                                    "Both belong to each object"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Friend Functions",
+                                "question": "<p>Write a C++ class with friend functions that can access private members.</p><p>Your class should:</p><ul><li>Declare private member variables</li><li>Use <code>friend</code> keyword to declare friend functions</li><li>Allow friend functions to access private members</li><li>Demonstrate friend function usage</li><li>Return the friend function results</li></ul>",
+                                "hint": "Use friend keyword to declare friend functions",
+                                "input": "10\n20",
+                                "output": "Friend function accessed private members: 10, 20\nSum: 30"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Constructor Types",
+                                "question": "<p>What are the different types of constructors in C++?</p><p>Consider these constructor types:</p><ul><li>Default constructor - no parameters</li><li>Parameterized constructor - with parameters</li><li>Copy constructor - copies another object</li><li>Move constructor - moves from another object</li></ul>",
+                                "hint": "Consider constructor parameter types and purposes",
+                                "options": [
+                                    "Default, parameterized, copy, and move constructors",
+                                    "Only default and parameterized constructors",
+                                    "Only copy and move constructors",
+                                    "Only default constructor"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "C++ Templates",
+                        "description": "Learn function templates, class templates, and generic programming in C++.",
+                        "tags": [
+                            "templates",
+                            "c++",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Function Templates",
+                                "question": "<p>Write C++ function templates that work with different data types.</p><p>Your templates should:</p><ul><li>Use <code>template &lt;typename T&gt;</code> syntax</li><li>Create a function that returns the maximum of two values</li><li>Create a function that swaps two values</li><li>Use the template functions with different types</li><li>Return the template function results</li></ul>",
+                                "hint": "Use template &lt;typename T&gt; syntax for function templates",
+                                "input": "5\n3\nHello\nWorld",
+                                "output": "Max: 5\nSwapped: World, Hello"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Template Specialization",
+                                "question": "<p>What is template specialization in C++?</p><p>Consider this example:</p><pre><code>template &lt;typename T&gt;<br>T add(T a, T b) { return a + b; }<br><br>template &lt;&gt;<br>string add(string a, string b) { return a + \" \" + b; }</code></pre>",
+                                "hint": "Consider specific implementations for specific types",
+                                "options": [
+                                    "Providing a specific implementation for a specific data type",
+                                    "Making templates work with all data types",
+                                    "Making templates work faster",
+                                    "Making templates use less memory"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Class Templates",
+                                "question": "<p>Write a C++ class template for a generic Stack container.</p><p>Your template should:</p><ul><li>Use <code>template &lt;typename T&gt;</code> syntax</li><li>Implement push and pop methods</li><li>Include a size method</li><li>Use the template class with different types</li><li>Return the template class usage</li></ul>",
+                                "hint": "Use template &lt;typename T&gt; class ClassName syntax",
+                                "input": "1 2 3\nHello World",
+                                "output": "Int stack: 1, 2, 3\nString stack: Hello, World"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Template Parameters",
+                                "question": "<p>What are the different types of template parameters in C++?</p><p>Consider these parameter types:</p><ul><li>Type parameters - <code>typename T</code></li><li>Non-type parameters - <code>int size</code></li><li>Template template parameters - <code>template &lt;typename&gt; class Container</code></li></ul>",
+                                "hint": "Consider different ways to parameterize templates",
+                                "options": [
+                                    "Type parameters, non-type parameters, and template template parameters",
+                                    "Only type parameters",
+                                    "Only non-type parameters",
+                                    "Only template template parameters"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Template Constraints",
+                                "question": "<p>Write C++ template functions with constraints using concepts (C++20) or SFINAE.</p><p>Your templates should:</p><ul><li>Use concepts to constrain template parameters</li><li>Create functions that work only with numeric types</li><li>Create functions that work only with comparable types</li><li>Handle the constraints properly</li><li>Return the constrained template results</li></ul>",
+                                "hint": "Use requires clause or concepts for constraints",
+                                "input": "5\n3.14",
+                                "output": "Numeric sum: 8.14\nComparable max: 5"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Variadic Templates",
+                                "question": "<p>What are variadic templates in C++?</p><p>Consider this example:</p><pre><code>template &lt;typename... Args&gt;<br>void print(Args... args) {<br>  (cout << ... << args);<br>}</code></pre>",
+                                "hint": "Consider variable number of template parameters",
+                                "options": [
+                                    "Templates that can accept a variable number of template parameters",
+                                    "Templates that can only accept one parameter",
+                                    "Templates that can only accept two parameters",
+                                    "Templates that cannot accept any parameters"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Template Metaprogramming",
+                                "question": "<p>Write C++ template metaprogramming examples for compile-time calculations.</p><p>Your examples should:</p><ul><li>Use template specialization for base cases</li><li>Use recursive templates for calculations</li><li>Calculate factorial at compile time</li><li>Use <code>constexpr</code> for compile-time evaluation</li><li>Return the metaprogramming results</li></ul>",
+                                "hint": "Use template specialization and recursive templates",
+                                "input": "5\n3",
+                                "output": "Compile-time factorial of 5: 120\nCompile-time factorial of 3: 6"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "SFINAE",
+                                "question": "<p>What does SFINAE stand for in C++?</p><p>Consider this technique:</p><ul><li>Substitution Failure Is Not An Error</li><li>Used for template overload resolution</li><li>Allows conditional template instantiation</li><li>Enables compile-time type checking</li></ul>",
+                                "hint": "Consider template substitution and error handling",
+                                "options": [
+                                    "Substitution Failure Is Not An Error - template substitution technique",
+                                    "Substitution Failure Is An Error - template substitution technique",
+                                    "Substitution Failure Is Never An Error - template substitution technique",
+                                    "Substitution Failure Is Always An Error - template substitution technique"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Template Aliases",
+                                "question": "<p>Write C++ template aliases using <code>using</code> declarations.</p><p>Your aliases should:</p><ul><li>Use <code>using</code> keyword for template aliases</li><li>Create aliases for common template instantiations</li><li>Simplify complex template types</li><li>Use the template aliases in code</li><li>Return the template alias usage</li></ul>",
+                                "hint": "Use using keyword for template aliases",
+                                "input": "vector\nmap",
+                                "output": "IntVector: vector of integers\nStringMap: map with string keys"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Template vs Generic",
+                                "question": "<p>What is the difference between templates and generics in C++?</p><p>Consider these characteristics:</p><ul><li>Templates are compile-time constructs</li><li>Templates support specialization</li><li>Templates can use non-type parameters</li><li>Templates are more powerful than generics</li></ul>",
+                                "hint": "Consider compile-time vs runtime features",
+                                "options": [
+                                    "Templates are compile-time constructs with more features than generics",
+                                    "Generics are compile-time constructs with more features than templates",
+                                    "Templates and generics are the same thing",
+                                    "Templates are runtime constructs"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "C++ STL Containers",
+                        "description": "Master Standard Template Library containers and algorithms in C++.",
+                        "tags": [
+                            "stl",
+                            "containers",
+                            "c++",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Vector Operations",
+                                "question": "<p>Write C++ code that demonstrates vector operations from the STL.</p><p>Your code should:</p><ul><li>Include <code>&lt;vector&gt;</code> header</li><li>Create a vector and add elements using <code>push_back()</code></li><li>Access elements using <code>at()</code> and <code>[]</code></li><li>Use <code>size()</code> and <code>empty()</code> methods</li><li>Return the vector operations</li></ul>",
+                                "hint": "Use #include &lt;vector&gt; and vector methods",
+                                "input": "1 2 3 4 5",
+                                "output": "Vector size: 5\nFirst element: 1\nLast element: 5\nVector is not empty"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "STL Container Types",
+                                "question": "<p>What are the main categories of STL containers?</p><p>Consider these categories:</p><ul><li>Sequence containers - vector, list, deque</li><li>Associative containers - set, map, multiset, multimap</li><li>Unordered containers - unordered_set, unordered_map</li><li>Container adaptors - stack, queue, priority_queue</li></ul>",
+                                "hint": "Consider different container organizations",
+                                "options": [
+                                    "Sequence, associative, unordered, and container adaptors",
+                                    "Only sequence containers",
+                                    "Only associative containers",
+                                    "Only unordered containers"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Map Operations",
+                                "question": "<p>Write C++ code that demonstrates map operations from the STL.</p><p>Your code should:</p><ul><li>Include <code>&lt;map&gt;</code> header</li><li>Create a map and insert key-value pairs</li><li>Access values using <code>find()</code> and <code>[]</code></li><li>Check if keys exist using <code>count()</code></li><li>Return the map operations</li></ul>",
+                                "hint": "Use #include &lt;map&gt; and map methods",
+                                "input": "apple\n5\norange\n3\nbanana\n7",
+                                "output": "Map size: 3\nValue for apple: 5\nKey 'orange' exists: true"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Iterator Types",
+                                "question": "<p>What are the different types of iterators in C++ STL?</p><p>Consider these iterator categories:</p><ul><li>Input iterators - read-only, forward-only</li><li>Output iterators - write-only, forward-only</li><li>Forward iterators - read/write, forward-only</li><li>Bidirectional iterators - read/write, forward/backward</li><li>Random access iterators - read/write, random access</li></ul>",
+                                "hint": "Consider iterator capabilities and access patterns",
+                                "options": [
+                                    "Input, output, forward, bidirectional, and random access iterators",
+                                    "Only input and output iterators",
+                                    "Only forward and bidirectional iterators",
+                                    "Only random access iterators"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "STL Algorithms",
+                                "question": "<p>Write C++ code that uses STL algorithms on containers.</p><p>Your code should:</p><ul><li>Include <code>&lt;algorithm&gt;</code> header</li><li>Use <code>sort()</code> to sort a vector</li><li>Use <code>find()</code> to search for elements</li><li>Use <code>count()</code> to count occurrences</li><li>Return the algorithm results</li></ul>",
+                                "hint": "Use #include &lt;algorithm&gt; and algorithm functions",
+                                "input": "5 2 8 1 9 2 3",
+                                "output": "Sorted: 1 2 2 3 5 8 9\nFound 2 at position: 1\nCount of 2: 2"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Container Performance",
+                                "question": "<p>What is the time complexity of common operations in STL containers?</p><p>Consider these complexities:</p><ul><li>Vector: O(1) access, O(n) insertion/deletion</li><li>List: O(n) access, O(1) insertion/deletion</li><li>Map: O(log n) access, insertion, deletion</li><li>Unordered_map: O(1) average access, insertion, deletion</li></ul>",
+                                "hint": "Consider time complexity of different operations",
+                                "options": [
+                                    "Varies by container and operation - vector O(1) access, map O(log n) operations",
+                                    "All containers have O(1) for all operations",
+                                    "All containers have O(n) for all operations",
+                                    "All containers have O(log n) for all operations"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Set Operations",
+                                "question": "<p>Write C++ code that demonstrates set operations from the STL.</p><p>Your code should:</p><ul><li>Include <code>&lt;set&gt;</code> header</li><li>Create a set and insert elements</li><li>Use <code>find()</code> to check membership</li><li>Use <code>insert()</code> and <code>erase()</code> methods</li><li>Return the set operations</li></ul>",
+                                "hint": "Use #include &lt;set&gt; and set methods",
+                                "input": "apple orange banana apple grape",
+                                "output": "Set size: 4\nUnique elements: apple, banana, grape, orange\nContains 'apple': true"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Container Adaptors",
+                                "question": "<p>What are container adaptors in C++ STL?</p><p>Consider these adaptors:</p><ul><li>Stack - LIFO (Last In, First Out) container</li><li>Queue - FIFO (First In, First Out) container</li><li>Priority_queue - ordered container with priority</li></ul>",
+                                "hint": "Consider specialized container interfaces",
+                                "options": [
+                                    "Containers that provide specialized interfaces on top of other containers",
+                                    "Containers that adapt to different data types",
+                                    "Containers that adapt to different memory sizes",
+                                    "Containers that adapt to different operating systems"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Custom Comparators",
+                                "question": "<p>Write C++ code that uses custom comparators with STL containers.</p><p>Your code should:</p><ul><li>Define a custom comparator function or functor</li><li>Use the comparator with <code>sort()</code> algorithm</li><li>Use the comparator with <code>set</code> or <code>map</code></li><li>Demonstrate different sorting orders</li><li>Return the custom comparator results</li></ul>",
+                                "hint": "Use function objects or lambda expressions as comparators",
+                                "input": "5 2 8 1 9",
+                                "output": "Ascending: 1 2 5 8 9\nDescending: 9 8 5 2 1"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "STL vs Manual Implementation",
+                                "question": "<p>What are the advantages of using STL containers over manual implementations?</p><p>Consider these benefits:</p><ul><li>Well-tested and optimized code</li><li>Consistent interface across containers</li><li>Automatic memory management</li><li>Integration with STL algorithms</li></ul>",
+                                "hint": "Consider reliability, consistency, and integration",
+                                "options": [
+                                    "Well-tested code, consistent interface, automatic memory management, algorithm integration",
+                                    "Only faster execution",
+                                    "Only smaller code size",
+                                    "Only easier debugging"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

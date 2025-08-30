@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Aptitude",
+            "slug": "aptitude",
+            "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Arithmetic",
+                "slug": "arithmetic",
+                "description": "Master arithmetic operations, number theory, and mathematical problem-solving techniques.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/arithmetic.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "Advanced Number Theory",
+                        "description": "Master advanced number theory concepts and applications.",
+                        "tags": [
+                            "advanced-number-theory",
+                            "expert",
+                            "mathematics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Euler's Totient Function",
+                                "question": "<p>What is φ(12) where φ is Euler's totient function?</p><p>Consider: Count numbers less than 12 that are coprime to 12</p>",
+                                "hint": "Numbers coprime to 12: 1, 5, 7, 11",
+                                "options": [
+                                    "2 - incorrect count",
+                                    "4 - correct totient value",
+                                    "6 - incorrect",
+                                    "8 - incorrect"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Modular Arithmetic",
+                                "question": "<p>What is the multiplicative inverse of 3 modulo 7?</p><p>Consider: Find x such that 3x ≡ 1 (mod 7)</p>",
+                                "hint": "3 × 5 = 15 ≡ 1 (mod 7)",
+                                "options": [
+                                    "2 - incorrect",
+                                    "3 - incorrect",
+                                    "5 - correct inverse",
+                                    "6 - incorrect"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Chinese Remainder Theorem",
+                                "question": "<p>What is the smallest positive integer that leaves remainder 2 when divided by 3 and remainder 3 when divided by 5?</p><p>Consider: Find x such that x ≡ 2 (mod 3) and x ≡ 3 (mod 5)</p>",
+                                "hint": "Check numbers: 8 ≡ 2 (mod 3) and 8 ≡ 3 (mod 5)",
+                                "options": [
+                                    "5 - incorrect",
+                                    "8 - correct answer",
+                                    "11 - incorrect",
+                                    "13 - incorrect"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "Complex Financial Mathematics",
+                        "description": "Master complex financial calculations and applications.",
+                        "tags": [
+                            "financial-mathematics",
+                            "expert",
+                            "advanced"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Investment Portfolio Analysis",
+                                "question": "<p>If you invest $1000 in a stock that grows 20% in year 1 and loses 10% in year 2, what is your final investment value?</p><p>Consider: Compound the percentage changes</p>",
+                                "hint": "Final value = 1000 × 1.20 × 0.90",
+                                "options": [
+                                    "$1080 - correct final value",
+                                    "$1100 - simple addition",
+                                    "$1200 - year 1 only",
+                                    "$900 - year 2 only"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Option Pricing (Black-Scholes)",
+                                "question": "<p>What factors affect the price of a call option in the Black-Scholes model?</p><p>Consider: Key variables in option pricing</p>",
+                                "hint": "Think about stock price, strike price, time, volatility, and interest rate",
+                                "options": [
+                                    "Only stock price",
+                                    "Stock price, strike price, time to expiration, volatility, and risk-free rate",
+                                    "Only time to expiration",
+                                    "Only volatility"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Present Value",
+                                "question": "<p>What is the present value of $1000 received 3 years from now at a discount rate of 5%?</p><p>Consider: PV = FV / (1 + r)^n</p>",
+                                "hint": "PV = 1000 / (1.05)^3",
+                                "options": [
+                                    "$863.84 - correct present value",
+                                    "$950 - simple subtraction",
+                                    "$1000 - no discounting",
+                                    "$1157.63 - incorrect"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

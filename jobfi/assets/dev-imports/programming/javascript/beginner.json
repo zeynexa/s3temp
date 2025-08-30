@@ -1,0 +1,372 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "JavaScript",
+                "slug": "javascript",
+                "description": "Master JavaScript for web development and dynamic applications.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/javascript.svg",
+                "exercises": [
+                    {
+                        "level": "Beginner",
+                        "title": "JavaScript Variables & Data Types",
+                        "description": "Learn about variables, primitive data types, and basic operations in JavaScript.",
+                        "tags": [
+                            "variables",
+                            "data-types",
+                            "javascript",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Variable Declaration",
+                                "question": "<p>Write a function that declares variables using <code>let</code>, <code>const</code>, and <code>var</code> and returns their values.</p><p>Your function should:</p><ul><li>Use <code>let</code> for a name variable</li><li>Use <code>const</code> for an age variable</li><li>Use <code>var</code> for a boolean variable</li><li>Return all three values</li></ul>",
+                                "hint": "Use let for block-scoped variables, const for constants, var for function-scoped variables",
+                                "input": "John\n25\ntrue",
+                                "output": "John\n25\ntrue"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Variable Scope",
+                                "question": "<p>What is the scope of a variable declared with <code>let</code>?</p><p>Consider the following code:</p><pre><code>if (true) {<br>  let x = 10;<br>}<br>console.log(x); // What happens here?</code></pre>",
+                                "hint": "Consider block-level scoping in JavaScript",
+                                "options": [
+                                    "Function scope - accessible anywhere in the function",
+                                    "Block scope - only accessible within the block",
+                                    "Global scope - accessible anywhere in the program",
+                                    "Module scope - only accessible within the module"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Type Checking",
+                                "question": "<p>Write a function that takes a value and returns its type as a string.</p><p>The function should:</p><ul><li>Accept any JavaScript value as input</li><li>Use the <code>typeof</code> operator</li><li>Return the type as a lowercase string</li><li>Handle multiple inputs and return each type on a new line</li></ul>",
+                                "hint": "Use typeof operator to check data types",
+                                "input": "42\nhello\ntrue\nnull\nundefined",
+                                "output": "number\nstring\nboolean\nobject\nundefined"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Primitive Types",
+                                "question": "<p>Which of the following is NOT a primitive data type in JavaScript?</p><p>JavaScript has 7 primitive data types:</p><ul><li>string</li><li>number</li><li>boolean</li><li>undefined</li><li>null</li><li>symbol</li><li>bigint</li></ul>",
+                                "hint": "Consider the 7 primitive types in JavaScript",
+                                "options": [
+                                    "string - represents textual data",
+                                    "number - represents numeric values",
+                                    "object - represents complex data structures",
+                                    "boolean - represents true/false values"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Type Conversion",
+                                "question": "<p>Write a function that converts a string to number and a number to string.</p><p>Your function should:</p><ul><li>Use <code>parseInt()</code> or <code>Number()</code> for string to number conversion</li><li>Use <code>toString()</code> for number to string conversion</li><li>Handle the conversions properly</li><li>Return the converted values</li></ul>",
+                                "hint": "Use parseInt(), parseFloat(), toString() methods",
+                                "input": "123\n456",
+                                "output": "123\n456"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Hoisting",
+                                "question": "<p>What happens to variable declarations during hoisting?</p><p>Consider this code:</p><pre><code>console.log(x);<br>var x = 5;</code></pre><p>What will be logged?</p>",
+                                "hint": "Consider how JavaScript processes declarations",
+                                "options": [
+                                    "Both declaration and initialization are hoisted - logs 5",
+                                    "Only declaration is hoisted, not initialization - logs undefined",
+                                    "Nothing is hoisted - throws ReferenceError",
+                                    "Only function declarations are hoisted - throws ReferenceError"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Template Literals",
+                                "question": "<p>Write a function that uses template literals to create a greeting message.</p><p>The function should:</p><ul><li>Use backticks (`) for template literals</li><li>Use <code>${}</code> for variable interpolation</li><li>Create a personalized greeting with name and age</li><li>Return the formatted string</li></ul>",
+                                "hint": "Use backticks and ${} for template literals",
+                                "input": "Alice\n25",
+                                "output": "Hello Alice, you are 25 years old!"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Undefined vs Null",
+                                "question": "<p>What is the difference between <code>undefined</code> and <code>null</code>?</p><p>Consider these examples:</p><ul><li><code>let x;</code> - x is undefined</li><li><code>let y = null;</code> - y is null</li><li><code>typeof undefined</code> returns \"undefined\"</li><li><code>typeof null</code> returns \"object\"</li></ul>",
+                                "hint": "Consider their types and usage",
+                                "options": [
+                                    "They are exactly the same - both represent absence of value",
+                                    "undefined is a type, null is an object - they're different types",
+                                    "null is a type, undefined is an object - they're different types",
+                                    "Both are primitive types but represent different concepts - undefined is unassigned, null is intentional absence"
+                                ],
+                                "correct_answer": 3
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Boolean Operations",
+                                "question": "<p>Write a function that performs logical AND operation on two boolean values.</p><p>The function should:</p><ul><li>Accept two boolean parameters</li><li>Use the <code>&&</code> operator</li><li>Return the result of the logical AND operation</li><li>Handle true/false combinations correctly</li></ul>",
+                                "hint": "Use && operator for logical AND",
+                                "input": "true\ntrue",
+                                "output": "true"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Truthy/Falsy Values",
+                                "question": "<p>Which of the following is a falsy value in JavaScript?</p><p>JavaScript has 6 falsy values:</p><ul><li>false</li><li>0</li><li>-0</li><li>0n (BigInt)</li><li>\"\" (empty string)</li><li>null</li><li>undefined</li><li>NaN</li></ul>",
+                                "hint": "Consider values that evaluate to false in boolean context",
+                                "options": [
+                                    "1 - any non-zero number is truthy",
+                                    "[] - empty array is truthy",
+                                    "0 - zero is falsy",
+                                    "'hello' - non-empty string is truthy"
+                                ],
+                                "correct_answer": 2
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "JavaScript Functions",
+                        "description": "Master function declaration, expressions, and arrow functions.",
+                        "tags": [
+                            "functions",
+                            "javascript",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Function Declaration",
+                                "question": "<p>Write a function that adds two numbers and returns the result.</p><p>Your function should:</p><ul><li>Use the <code>function</code> keyword for declaration</li><li>Accept two numeric parameters</li><li>Return the sum of the parameters</li><li>Handle basic arithmetic correctly</li></ul>",
+                                "hint": "Use function keyword or arrow function syntax",
+                                "input": "5\n3",
+                                "output": "8"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Function Hoisting",
+                                "question": "<p>Are function declarations hoisted in JavaScript?</p><p>Consider this code:</p><pre><code>sayHello();<br>function sayHello() {<br>  console.log('Hello!');<br>}</code></pre><p>What happens when this code runs?</p>",
+                                "hint": "Consider how function declarations are processed",
+                                "options": [
+                                    "Yes, completely - the function can be called before declaration",
+                                    "No, never - throws ReferenceError",
+                                    "Only in strict mode - works only with 'use strict'",
+                                    "Only arrow functions - regular functions are not hoisted"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Arrow Functions",
+                                "question": "<p>Write an arrow function that multiplies two numbers.</p><p>The function should:</p><ul><li>Use arrow function syntax <code>=></code></li><li>Accept two parameters</li><li>Return the product of the parameters</li><li>Use implicit return if possible</li></ul>",
+                                "hint": "Arrow functions use => syntax and implicit return",
+                                "input": "4\n7",
+                                "output": "28"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Arrow Function Context",
+                                "question": "<p>What is the value of <code>this</code> inside an arrow function?</p><p>Consider this example:</p><pre><code>const obj = {<br>  name: 'John',<br>  greet: () => {<br>    console.log(this.name);<br>  }<br>};<br>obj.greet(); // What is logged?</code></pre>",
+                                "hint": "Consider lexical scoping of arrow functions",
+                                "options": [
+                                    "Always undefined - arrow functions don't have their own this",
+                                    "Always the global object - this refers to window/global",
+                                    "The same as the enclosing scope - this is lexically bound",
+                                    "The object that called the function - this refers to obj"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Default Parameters",
+                                "question": "<p>Write a function with default parameters that greets a person.</p><p>The function should:</p><ul><li>Accept a name parameter with a default value</li><li>Return a greeting message</li><li>Handle both cases: when name is provided and when it's not</li><li>Use template literals for the greeting</li></ul>",
+                                "hint": "Set default values in function parameters",
+                                "input": "Alice\n",
+                                "output": "Hello Alice!\nHello Guest!"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Rest Parameters",
+                                "question": "<p>What is the purpose of rest parameters in JavaScript?</p><p>Consider this function:</p><pre><code>function sum(...numbers) {<br>  return numbers.reduce((total, num) => total + num, 0);<br>}<br>sum(1, 2, 3, 4, 5); // What does this do?</code></pre>",
+                                "hint": "Consider how rest parameters handle multiple arguments",
+                                "options": [
+                                    "To stop function execution - prevents further execution",
+                                    "To collect multiple arguments into an array - gathers all arguments",
+                                    "To make parameters optional - allows undefined parameters",
+                                    "To validate function parameters - checks argument types"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Function Expression",
+                                "question": "<p>Write a function expression that calculates the square of a number.</p><p>The function should:</p><ul><li>Use function expression syntax (assigning to a variable)</li><li>Accept a single numeric parameter</li><li>Return the square of the input number</li><li>Use proper mathematical calculation</li></ul>",
+                                "hint": "Assign an anonymous function to a variable",
+                                "input": "6",
+                                "output": "36"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Immediately Invoked Function",
+                                "question": "<p>What is an IIFE (Immediately Invoked Function Expression)?</p><p>Consider this pattern:</p><pre><code>(function() {<br>  const privateVar = 'hidden';<br>  console.log(privateVar);<br>})();</code></pre><p>What are the benefits of this pattern?</p>",
+                                "hint": "Consider the purpose of self-executing functions",
+                                "options": [
+                                    "A function that runs automatically - executes immediately",
+                                    "A function that can only be called once - single execution",
+                                    "A function that creates a new scope - provides encapsulation",
+                                    "All of the above - combines all these benefits"
+                                ],
+                                "correct_answer": 3
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Higher Order Function",
+                                "question": "<p>Write a higher-order function that takes a function and applies it to a number.</p><p>The function should:</p><ul><li>Accept a function as its first parameter</li><li>Accept a number as its second parameter</li><li>Apply the function to the number</li><li>Return the result</li></ul>",
+                                "hint": "A function that takes another function as an argument",
+                                "input": "5",
+                                "output": "25"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Closure",
+                                "question": "<p>What is a closure in JavaScript?</p><p>Consider this example:</p><pre><code>function outer() {<br>  const message = 'Hello';<br>  return function inner() {<br>    console.log(message);<br>  };<br>}<br>const innerFunc = outer();<br>innerFunc(); // What happens?</code></pre>",
+                                "hint": "Consider function scope and variable access",
+                                "options": [
+                                    "A function that closes the browser - terminates the application",
+                                    "A function with access to variables in its outer scope - maintains access to outer variables",
+                                    "A function that returns immediately - executes and returns quickly",
+                                    "A function that cannot be called - is permanently closed"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "JavaScript Arrays",
+                        "description": "Learn array methods, manipulation, and iteration techniques.",
+                        "tags": [
+                            "arrays",
+                            "javascript",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Array Creation",
+                                "question": "<p>Write a function that creates an array with the given elements and returns its length.</p><p>Your function should:</p><ul><li>Use square brackets <code>[]</code> to create an array</li><li>Accept space-separated values as input</li><li>Split the input string into array elements</li><li>Return the length of the created array</li></ul>",
+                                "hint": "Use array literal syntax or split() method",
+                                "input": "apple orange banana grape",
+                                "output": "4"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Array Methods",
+                                "question": "<p>What does the <code>push()</code> method do to an array?</p><p>Consider this example:</p><pre><code>const fruits = ['apple', 'banana'];<br>fruits.push('orange');<br>console.log(fruits); // What is printed?</code></pre>",
+                                "hint": "Consider adding elements to the end of an array",
+                                "options": [
+                                    "Adds an element to the beginning of the array",
+                                    "Adds an element to the end of the array",
+                                    "Removes the last element from the array",
+                                    "Sorts the array in alphabetical order"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Array Sum",
+                                "question": "<p>Write a function that calculates the sum of all numbers in an array.</p><p>Your function should:</p><ul><li>Accept an array of numbers as input</li><li>Use <code>reduce()</code> method or loop through elements</li><li>Calculate the total sum</li><li>Return the result</li></ul>",
+                                "hint": "Use reduce() method or forEach() to accumulate sum",
+                                "input": "1 2 3 4 5 6 7 8 9 10",
+                                "output": "55"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Array Iteration",
+                                "question": "<p>Which method is best for transforming array elements?</p><p>Consider these array methods:</p><ul><li><code>forEach()</code> - executes a function for each element</li><li><code>map()</code> - creates a new array with transformed elements</li><li><code>filter()</code> - creates a new array with filtered elements</li><li><code>reduce()</code> - reduces array to a single value</li></ul>",
+                                "hint": "Consider which method returns a new array with modified elements",
+                                "options": [
+                                    "forEach() - executes for each element",
+                                    "map() - transforms elements and returns new array",
+                                    "filter() - filters elements and returns new array",
+                                    "reduce() - reduces to single value"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Array Filtering",
+                                "question": "<p>Write a function that filters an array to return only even numbers.</p><p>Your function should:</p><ul><li>Use the <code>filter()</code> method</li><li>Check if each number is even using modulo operator</li><li>Return only the even numbers</li><li>Handle the filtering properly</li></ul>",
+                                "hint": "Use filter() with condition num % 2 === 0",
+                                "input": "1 2 3 4 5 6 7 8 9 10",
+                                "output": "2 4 6 8 10"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Array Destructuring",
+                                "question": "<p>What is array destructuring in JavaScript?</p><p>Consider this example:</p><pre><code>const colors = ['red', 'green', 'blue'];<br>const [first, second] = colors;<br>console.log(first, second); // What is printed?</code></pre>",
+                                "hint": "Consider extracting values from arrays into variables",
+                                "options": [
+                                    "A way to destroy arrays - removes elements",
+                                    "A way to extract values into variables - unpacking array elements",
+                                    "A way to combine arrays - merging multiple arrays",
+                                    "A way to sort arrays - organizing elements"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Array Sorting",
+                                "question": "<p>Write a function that sorts an array of numbers in ascending order.</p><p>Your function should:</p><ul><li>Use the <code>sort()</code> method</li><li>Sort the numbers in ascending order</li><li>Handle numeric sorting correctly</li><li>Return the sorted array</li></ul>",
+                                "hint": "Use sort() with (a, b) => a - b for numeric sorting",
+                                "input": "64 34 25 12 22 11 90",
+                                "output": "11 12 22 25 34 64 90"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Array vs Object",
+                                "question": "<p>What is the main difference between arrays and objects?</p><p>Consider these examples:</p><pre><code>const arr = [1, 2, 3];        // Array<br>const obj = {a: 1, b: 2, c: 3}; // Object</code></pre>",
+                                "hint": "Consider indexing and key-value pairs",
+                                "options": [
+                                    "Arrays use numeric indices, objects use key-value pairs",
+                                    "Arrays are faster, objects are slower",
+                                    "Arrays can only contain numbers, objects can contain anything",
+                                    "There is no difference between them"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Array Find",
+                                "question": "<p>Write a function that finds the first number greater than 10 in an array.</p><p>Your function should:</p><ul><li>Use the <code>find()</code> method</li><li>Check if each number is greater than 10</li><li>Return the first number that meets the condition</li><li>Handle cases where no number is found</li></ul>",
+                                "hint": "Use find() method with condition num > 10",
+                                "input": "5 8 12 3 15 7",
+                                "output": "12"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Array Includes",
+                                "question": "<p>What does the <code>includes()</code> method return?</p><p>Consider this example:</p><pre><code>const numbers = [1, 2, 3, 4, 5];<br>console.log(numbers.includes(3)); // true<br>console.log(numbers.includes(10)); // false</code></pre>",
+                                "hint": "Consider checking for element existence",
+                                "options": [
+                                    "The index of the element if found",
+                                    "A boolean indicating if the element exists",
+                                    "The element itself if found",
+                                    "The length of the array"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

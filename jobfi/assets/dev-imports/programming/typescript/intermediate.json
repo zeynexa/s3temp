@@ -1,0 +1,372 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "TypeScript",
+                "slug": "typescript",
+                "description": "Learn TypeScript for type-safe JavaScript development.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/typescript.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "TypeScript Advanced Types",
+                        "description": "Master advanced TypeScript types including generics, mapped types, and conditional types.",
+                        "tags": [
+                            "advanced-types",
+                            "typescript",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Generic Functions",
+                                "question": "<p>Write TypeScript generic functions that work with different data types.</p><p>Your functions should:</p><ul><li>Use <code>&lt;T&gt;</code> syntax for type parameters</li><li>Create a function that returns the first element of an array</li><li>Create a function that swaps two values</li><li>Use the generic functions with different types</li><li>Return the generic function results</li></ul>",
+                                "hint": "Use &lt;T&gt; syntax for generic type parameters",
+                                "input": "1 2 3 4 5\nHello World\n10\n20",
+                                "output": "First element: 1\nSwapped values: 20, 10"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Generic Constraints",
+                                "question": "<p>What are generic constraints in TypeScript?</p><p>Consider this example:</p><pre><code>function getLength&lt;T extends { length: number }&gt;(arg: T): number {<br>  return arg.length;<br>}</code></pre>",
+                                "hint": "Consider limiting generic types to specific interfaces",
+                                "options": [
+                                    "Restrictions on generic types using extends keyword - limiting T to specific interfaces",
+                                    "Restrictions on function parameters using extends keyword",
+                                    "Restrictions on return types using extends keyword",
+                                    "Restrictions on variable declarations using extends keyword"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Generic Classes",
+                                "question": "<p>Write TypeScript generic classes that can work with different data types.</p><p>Your classes should:</p><ul><li>Use <code>class ClassName&lt;T&gt;</code> syntax</li><li>Create a generic Stack class</li><li>Implement push and pop methods</li><li>Use the generic class with different types</li><li>Return the generic class usage</li></ul>",
+                                "hint": "Use class ClassName&lt;T&gt; syntax for generic classes",
+                                "input": "1 2 3\nHello World",
+                                "output": "Number stack: [1, 2, 3]\nString stack: [\"Hello\", \"World\"]"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Mapped Types",
+                                "question": "<p>What are mapped types in TypeScript?</p><p>Consider this example:</p><pre><code>type Readonly&lt;T&gt; = {<br>  readonly [P in keyof T]: T[P];<br>};</code></pre>",
+                                "hint": "Consider transforming object types using keyof",
+                                "options": [
+                                    "Types that transform existing types by mapping over their properties - using [P in keyof T]",
+                                    "Types that map arrays to objects",
+                                    "Types that map functions to values",
+                                    "Types that map strings to numbers"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Conditional Types",
+                                "question": "<p>Write TypeScript conditional types that change based on input types.</p><p>Your conditional types should:</p><ul><li>Use <code>T extends U ? X : Y</code> syntax</li><li>Create a type that checks if T is a string</li><li>Create a type that extracts array element types</li><li>Use the conditional types with different inputs</li><li>Return the conditional type results</li></ul>",
+                                "hint": "Use T extends U ? X : Y syntax for conditional types",
+                                "input": "string\nnumber\narray",
+                                "output": "IsString: true\nIsString: false\nElementType: number"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Utility Types",
+                                "question": "<p>Which of the following is NOT a built-in utility type in TypeScript?</p><p>Consider these utility types:</p><ul><li><code>Partial&lt;T&gt;</code> - makes all properties optional</li><li><code>Required&lt;T&gt;</code> - makes all properties required</li><li><code>Pick&lt;T, K&gt;</code> - picks specific properties</li><li><code>Custom&lt;T&gt;</code> - not a built-in utility type</li></ul>",
+                                "hint": "Consider which utility types are built-in vs custom",
+                                "options": [
+                                    "Partial&lt;T&gt; - built-in utility type",
+                                    "Required&lt;T&gt; - built-in utility type",
+                                    "Custom&lt;T&gt; - not a built-in utility type",
+                                    "Pick&lt;T, K&gt; - built-in utility type"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Template Literal Types",
+                                "question": "<p>Write TypeScript template literal types for string manipulation.</p><p>Your template literal types should:</p><ul><li>Use <code>`${T}`</code> syntax for template literals</li><li>Create types that prefix strings</li><li>Create types that suffix strings</li><li>Use the template literal types with different inputs</li><li>Return the template literal type results</li></ul>",
+                                "hint": "Use template literal syntax with type parameters",
+                                "input": "user\nadmin\nconfig",
+                                "output": "Prefixed: api_user\nSuffixed: user_id\nCombined: api_config_id"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Infer Keyword",
+                                "question": "<p>What is the <code>infer</code> keyword used for in TypeScript?</p><p>Consider this example:</p><pre><code>type ElementType&lt;T&gt; = T extends Array&lt;infer U&gt; ? U : never;</code></pre>",
+                                "hint": "Consider extracting types from other types",
+                                "options": [
+                                    "To extract and infer types from other types in conditional types",
+                                    "To infer types from function parameters",
+                                    "To infer types from class properties",
+                                    "To infer types from interface definitions"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Type Guards",
+                                "question": "<p>Write TypeScript type guards to narrow down types at runtime.</p><p>Your type guards should:</p><ul><li>Use <code>typeof</code> and <code>instanceof</code> operators</li><li>Create custom type guard functions</li><li>Use <code>is</code> keyword for return type</li><li>Narrow down types in conditional blocks</li><li>Return the type guard usage</li></ul>",
+                                "hint": "Use function name(param): param is Type syntax",
+                                "input": "Hello\n42\ntrue",
+                                "output": "String: Hello\nNumber: 42\nBoolean: true"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Discriminated Unions",
+                                "question": "<p>What are discriminated unions in TypeScript?</p><p>Consider this example:</p><pre><code>type Shape =<br>  | { kind: \"circle\"; radius: number }<br>  | { kind: \"rectangle\"; width: number; height: number };</code></pre>",
+                                "hint": "Consider union types with common discriminant property",
+                                "options": [
+                                    "Union types with a common property that can be used to distinguish between variants",
+                                    "Union types that can only contain primitive types",
+                                    "Union types that can only contain object types",
+                                    "Union types that can only contain function types"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "TypeScript Decorators",
+                        "description": "Learn TypeScript decorators for class and method modification.",
+                        "tags": [
+                            "decorators",
+                            "typescript",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Class Decorators",
+                                "question": "<p>Write TypeScript class decorators that modify class behavior.</p><p>Your decorators should:</p><ul><li>Use <code>@decorator</code> syntax</li><li>Accept a constructor function as parameter</li><li>Modify the class constructor or prototype</li><li>Add new properties or methods</li><li>Return the modified class</li></ul>",
+                                "hint": "Use function decorator(constructor: Function) syntax",
+                                "input": "TestClass",
+                                "output": "Class decorated: TestClass\nAdded property: decorated = true"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Decorator Factory",
+                                "question": "<p>What is a decorator factory in TypeScript?</p><p>Consider this example:</p><pre><code>function log(target: any, propertyKey: string, descriptor: PropertyDescriptor) {<br>  // decorator logic<br>}<br><br>function logWithPrefix(prefix: string) {<br>  return log; // returns a decorator<br>}</code></pre>",
+                                "hint": "Consider functions that return decorators",
+                                "options": [
+                                    "A function that returns a decorator - allows passing parameters to decorators",
+                                    "A function that creates new classes",
+                                    "A function that modifies existing decorators",
+                                    "A function that removes decorators"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Method Decorators",
+                                "question": "<p>Write TypeScript method decorators that modify method behavior.</p><p>Your decorators should:</p><ul><li>Use <code>@decorator</code> syntax on methods</li><li>Accept target, propertyKey, and descriptor parameters</li><li>Modify the method descriptor</li><li>Add logging or validation logic</li><li>Return the modified method</li></ul>",
+                                "hint": "Use function decorator(target: any, propertyKey: string, descriptor: PropertyDescriptor)",
+                                "input": "testMethod\nHello",
+                                "output": "Calling method: testMethod\nMethod result: Hello\nMethod completed"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Property Decorators",
+                                "question": "<p>What parameters do property decorators receive in TypeScript?</p><p>Consider this example:</p><pre><code>function propertyDecorator(target: any, propertyKey: string) {<br>  // decorator logic<br>}</code></pre>",
+                                "hint": "Consider property decorator parameters",
+                                "options": [
+                                    "target (prototype) and propertyKey (property name) - no descriptor for properties",
+                                    "target, propertyKey, and descriptor - same as method decorators",
+                                    "target and descriptor only - no propertyKey",
+                                    "propertyKey and descriptor only - no target"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Parameter Decorators",
+                                "question": "<p>Write TypeScript parameter decorators for method parameters.</p><p>Your decorators should:</p><ul><li>Use <code>@decorator</code> syntax on parameters</li><li>Accept target, propertyKey, and parameterIndex parameters</li><li>Validate or transform parameter values</li><li>Add metadata to parameters</li><li>Return the parameter decorator usage</li></ul>",
+                                "hint": "Use function decorator(target: any, propertyKey: string, parameterIndex: number)",
+                                "input": "testMethod\n0\nHello",
+                                "output": "Parameter 0 decorated in testMethod\nParameter value: Hello"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Decorator Metadata",
+                                "question": "<p>What is the purpose of decorator metadata in TypeScript?</p><p>Consider these use cases:</p><ul><li>Storing configuration information</li><li>Adding validation rules</li><li>Defining routing information</li><li>Storing dependency injection metadata</li></ul>",
+                                "hint": "Consider storing additional information with decorators",
+                                "options": [
+                                    "To store additional information about classes, methods, or properties",
+                                    "To store only type information about decorators",
+                                    "To store only runtime information about decorators",
+                                    "To store only compile-time information about decorators"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Validation Decorators",
+                                "question": "<p>Write TypeScript validation decorators for method parameters.</p><p>Your decorators should:</p><ul><li>Create decorators that validate parameter types</li><li>Check for required parameters</li><li>Validate parameter ranges or formats</li><li>Throw errors for invalid parameters</li><li>Return the validation results</li></ul>",
+                                "hint": "Use decorators to add validation logic to methods",
+                                "input": "age\n25\n-5\nname\nJohn",
+                                "output": "Valid age: 25\nInvalid age: -5\nValid name: John"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Decorator Composition",
+                                "question": "<p>How do multiple decorators work when applied to the same target?</p><p>Consider this example:</p><pre><code>@decorator1<br>@decorator2<br>class MyClass {<br>  @decorator3<br>  @decorator4<br>  method() {}<br>}</code></pre>",
+                                "hint": "Consider the order of decorator execution",
+                                "options": [
+                                    "Decorators are executed from bottom to top (decorator4, decorator3, decorator2, decorator1)",
+                                    "Decorators are executed from top to bottom (decorator1, decorator2, decorator3, decorator4)",
+                                    "Decorators are executed in random order",
+                                    "Only the first decorator is executed"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Timing Decorators",
+                                "question": "<p>Write TypeScript decorators that measure method execution time.</p><p>Your decorators should:</p><ul><li>Record start and end times</li><li>Calculate execution duration</li><li>Log timing information</li><li>Work with async methods</li><li>Return the timing results</li></ul>",
+                                "hint": "Use performance.now() or Date.now() to measure time",
+                                "input": "slowMethod\nfastMethod",
+                                "output": "slowMethod executed in 1000ms\nfastMethod executed in 5ms"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Experimental Decorators",
+                                "question": "<p>What is the difference between experimental and legacy decorators in TypeScript?</p><p>Consider these differences:</p><ul><li>Experimental decorators use the new TC39 proposal</li><li>Legacy decorators use the old TypeScript implementation</li><li>Experimental decorators have different parameter signatures</li><li>Experimental decorators are more standardized</li></ul>",
+                                "hint": "Consider TC39 proposal vs legacy implementation",
+                                "options": [
+                                    "Experimental decorators follow the TC39 proposal, legacy decorators use the old TypeScript implementation",
+                                    "Legacy decorators follow the TC39 proposal, experimental decorators use the old TypeScript implementation",
+                                    "Both follow the same TC39 proposal",
+                                    "Both use the old TypeScript implementation"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "TypeScript Modules & Namespaces",
+                        "description": "Master TypeScript module systems, namespaces, and module resolution.",
+                        "tags": [
+                            "modules",
+                            "namespaces",
+                            "typescript",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Module Exports",
+                                "question": "<p>Write TypeScript modules with different export types.</p><p>Your modules should:</p><ul><li>Use <code>export</code> keyword for named exports</li><li>Use <code>export default</code> for default exports</li><li>Export functions, classes, and types</li><li>Import and use the exported items</li><li>Return the module usage</li></ul>",
+                                "hint": "Use export and export default keywords",
+                                "input": "add\nmultiply\nCalculator",
+                                "output": "Add result: 8\nMultiply result: 15\nCalculator instance created"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Import Types",
+                                "question": "<p>What are the different ways to import modules in TypeScript?</p><p>Consider these import types:</p><ul><li><code>import { name } from 'module'</code> - named import</li><li><code>import defaultExport from 'module'</code> - default import</li><li><code>import * as namespace from 'module'</code> - namespace import</li><li><code>import type { Type } from 'module'</code> - type-only import</li></ul>",
+                                "hint": "Consider different import syntax patterns",
+                                "options": [
+                                    "Named imports, default imports, namespace imports, and type-only imports",
+                                    "Only named imports and default imports",
+                                    "Only namespace imports and type-only imports",
+                                    "Only default imports and namespace imports"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Namespace Declarations",
+                                "question": "<p>Write TypeScript namespaces to organize related code.</p><p>Your namespaces should:</p><ul><li>Use <code>namespace</code> keyword</li><li>Define functions, classes, and interfaces</li><li>Use <code>export</code> to make items accessible</li><li>Access namespace members using dot notation</li><li>Return the namespace usage</li></ul>",
+                                "hint": "Use namespace keyword with export statements",
+                                "input": "Math\nadd\n5\n3",
+                                "output": "Math.add(5, 3) = 8\nMath.multiply(5, 3) = 15"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Module vs Namespace",
+                                "question": "<p>What is the main difference between modules and namespaces in TypeScript?</p><p>Consider these characteristics:</p><ul><li>Modules are file-based and support tree-shaking</li><li>Namespaces are global and don't support tree-shaking</li><li>Modules use import/export syntax</li><li>Namespaces use namespace keyword</li></ul>",
+                                "hint": "Consider file-based vs global organization",
+                                "options": [
+                                    "Modules are file-based and support tree-shaking, namespaces are global and don't support tree-shaking",
+                                    "Namespaces are file-based and support tree-shaking, modules are global and don't support tree-shaking",
+                                    "Both are file-based and support tree-shaking",
+                                    "Both are global and don't support tree-shaking"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Barrel Exports",
+                                "question": "<p>Write TypeScript barrel exports to simplify module imports.</p><p>Your barrel exports should:</p><ul><li>Create an index file that re-exports from multiple modules</li><li>Use <code>export * from 'module'</code> syntax</li><li>Use <code>export { name } from 'module'</code> syntax</li><li>Simplify import statements</li><li>Return the barrel export usage</li></ul>",
+                                "hint": "Use export * from and export { name } from syntax",
+                                "input": "utils\nmath\nstring",
+                                "output": "Utils: formatString, validateEmail\nMath: add, multiply\nString: capitalize, reverse"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Module Resolution",
+                                "question": "<p>What is module resolution in TypeScript?</p><p>Consider these resolution strategies:</p><ul><li>Node.js resolution strategy</li><li>Classic resolution strategy</li><li>Resolution based on moduleResolution setting</li><li>Resolution of .ts, .tsx, .js, .jsx files</li></ul>",
+                                "hint": "Consider how TypeScript finds module files",
+                                "options": [
+                                    "The process of finding and loading module files based on import statements",
+                                    "The process of compiling TypeScript files to JavaScript",
+                                    "The process of bundling multiple files together",
+                                    "The process of optimizing module imports"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Dynamic Imports",
+                                "question": "<p>Write TypeScript code that uses dynamic imports for lazy loading.</p><p>Your code should:</p><ul><li>Use <code>import()</code> function for dynamic imports</li><li>Handle async module loading</li><li>Use try-catch for error handling</li><li>Load modules conditionally</li><li>Return the dynamic import results</li></ul>",
+                                "hint": "Use import() function with async/await",
+                                "input": "math\nutils",
+                                "output": "Math module loaded: add, multiply\nUtils module loaded: format, validate"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Path Mapping",
+                                "question": "<p>What is path mapping in TypeScript configuration?</p><p>Consider this tsconfig.json example:</p><pre><code>{\n  \"compilerOptions\": {\n    \"baseUrl\": \"./\",\n    \"paths\": {\n      \"@/*\": [\"src/*\"]\n    }\n  }\n}</code></pre>",
+                                "hint": "Consider mapping import paths to file system paths",
+                                "options": [
+                                    "Mapping import paths to file system paths using baseUrl and paths configuration",
+                                    "Mapping file names to different file names",
+                                    "Mapping module names to different module names",
+                                    "Mapping export names to different export names"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Ambient Modules",
+                                "question": "<p>Write TypeScript ambient module declarations for external libraries.</p><p>Your declarations should:</p><ul><li>Use <code>declare module</code> syntax</li><li>Define module structure without implementation</li><li>Declare functions, classes, and types</li><li>Use the ambient module in code</li><li>Return the ambient module usage</li></ul>",
+                                "hint": "Use declare module 'moduleName' syntax",
+                                "input": "external-lib\nformat\nvalidate",
+                                "output": "ExternalLib.format: function\nExternalLib.validate: function"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Triple-Slash Directives",
+                                "question": "<p>What are triple-slash directives in TypeScript?</p><p>Consider these directives:</p><ul><li><code>/// &lt;reference path=\"file.ts\" /&gt;</code> - reference directive</li><li><code>/// &lt;reference types=\"node\" /&gt;</code> - types directive</li><li><code>/// &lt;reference lib=\"es2015\" /&gt;</code> - lib directive</li></ul>",
+                                "hint": "Consider file references and type declarations",
+                                "options": [
+                                    "Special comments that provide instructions to the TypeScript compiler",
+                                    "Special comments that provide instructions to the JavaScript runtime",
+                                    "Special comments that provide instructions to the module bundler",
+                                    "Special comments that provide instructions to the linter"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

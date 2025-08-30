@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Problem Solving",
+            "slug": "problem-solving",
+            "description": "Develop analytical thinking and problem-solving skills through algorithmic challenges.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/problem-solving.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Searching & Sorting",
+                "slug": "searching-sorting",
+                "description": "Master fundamental searching and sorting algorithms and their implementations.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/searching-sorting.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "Advanced Searching",
+                        "description": "Master advanced searching algorithms and optimization techniques.",
+                        "tags": [
+                            "searching",
+                            "advanced",
+                            "optimization"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Interpolation Search",
+                                "question": "<p>What is the time complexity of interpolation search in the best case?</p><p>Consider: When elements are uniformly distributed</p>",
+                                "hint": "Think about how interpolation search estimates position",
+                                "options": [
+                                    "O(1) - constant time",
+                                    "O(log log n) - double logarithmic time",
+                                    "O(log n) - logarithmic time",
+                                    "O(n) - linear time"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Exponential Search",
+                                "question": "<p>What is the main advantage of exponential search over binary search?</p><p>Consider: When you don't know the array bounds</p>",
+                                "hint": "Think about finding the range before searching",
+                                "options": [
+                                    "Faster time complexity",
+                                    "Works on unbounded arrays - finds range first",
+                                    "Uses less memory",
+                                    "Simpler implementation"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Ternary Search",
+                                "question": "<p>What is the time complexity of ternary search?</p><p>Consider: How ternary search divides the search space</p>",
+                                "hint": "Think about dividing into three parts",
+                                "options": [
+                                    "O(log₃ n) - base 3 logarithm",
+                                    "O(log n) - same as binary search",
+                                    "O(n/3) - linear time",
+                                    "O(n log n) - linearithmic time"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "Advanced Sorting",
+                        "description": "Master advanced sorting algorithms and their optimizations.",
+                        "tags": [
+                            "sorting",
+                            "advanced",
+                            "algorithms"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Quick Sort Complexity",
+                                "question": "<p>What is the average case time complexity of quick sort?</p><p>Consider: How quick sort partitions the array</p>",
+                                "hint": "Think about the divide and conquer approach",
+                                "options": [
+                                    "O(n) - linear time",
+                                    "O(n log n) - linearithmic time",
+                                    "O(n²) - quadratic time",
+                                    "O(log n) - logarithmic time"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Merge Sort Stability",
+                                "question": "<p>Is merge sort a stable sorting algorithm?</p><p>Consider: How merge sort handles equal elements</p>",
+                                "hint": "Think about the merging process and relative order",
+                                "options": [
+                                    "Yes - preserves relative order of equal elements",
+                                    "No - may change relative order",
+                                    "Sometimes - depends on implementation",
+                                    "Only for small arrays"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Heap Sort",
+                                "question": "<p>What is the time complexity of heap sort?</p><p>Consider: Building heap and extracting elements</p>",
+                                "hint": "Think about heapify operation and extraction",
+                                "options": [
+                                    "O(n) - linear time",
+                                    "O(n log n) - linearithmic time",
+                                    "O(n²) - quadratic time",
+                                    "O(log n) - logarithmic time"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

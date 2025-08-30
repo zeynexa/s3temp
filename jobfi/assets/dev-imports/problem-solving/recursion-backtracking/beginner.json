@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Problem Solving",
+            "slug": "problem-solving",
+            "description": "Develop analytical thinking and problem-solving skills through algorithmic challenges.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/problem-solving.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Recursion & Backtracking",
+                "slug": "recursion-backtracking",
+                "description": "Master recursive algorithms and backtracking techniques for complex problem solving.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/recursion-backtracking.svg",
+                "exercises": [
+                    {
+                        "level": "Beginner",
+                        "title": "Basic Recursion",
+                        "description": "Learn fundamental recursive algorithms and their applications.",
+                        "tags": [
+                            "recursion",
+                            "basics",
+                            "algorithms"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Recursion Base Case",
+                                "question": "<p>What is the purpose of a base case in recursion?</p><p>Consider: What happens without a base case</p>",
+                                "hint": "Think about stopping the recursive calls",
+                                "options": [
+                                    "To make the function faster",
+                                    "To stop infinite recursion - provides termination condition",
+                                    "To reduce memory usage",
+                                    "To make the code more readable"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Recursive Function Structure",
+                                "question": "<p>What are the essential components of a recursive function?</p><p>Consider: What makes a function recursive</p>",
+                                "hint": "Think about the recursive call and stopping condition",
+                                "options": [
+                                    "Base case and recursive case",
+                                    "Loop and condition",
+                                    "Variable declaration and assignment",
+                                    "Input and output parameters"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Recursion vs Iteration",
+                                "question": "<p>What is the main advantage of recursion over iteration?</p><p>Consider: Code structure and problem-solving approach</p>",
+                                "hint": "Think about how recursion naturally models certain problems",
+                                "options": [
+                                    "Better performance",
+                                    "More intuitive for problems with recursive structure",
+                                    "Less memory usage",
+                                    "Faster execution"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "Simple Backtracking",
+                        "description": "Learn basic backtracking techniques and their applications.",
+                        "tags": [
+                            "backtracking",
+                            "basics",
+                            "algorithms"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Backtracking Definition",
+                                "question": "<p>What is backtracking?</p><p>Consider: The systematic search approach</p>",
+                                "hint": "Think about trying options and undoing when they don't work",
+                                "options": [
+                                    "A sorting algorithm",
+                                    "A systematic search that tries options and undoes when they fail",
+                                    "A data structure",
+                                    "A programming language"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Backtracking Applications",
+                                "question": "<p>Which of the following is a common application of backtracking?</p><p>Consider: Problems with multiple possible solutions</p>",
+                                "hint": "Think about problems where you need to try different combinations",
+                                "options": [
+                                    "Linear search",
+                                    "N-Queens problem - placing queens on chessboard",
+                                    "Bubble sort",
+                                    "Binary search"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Backtracking Efficiency",
+                                "question": "<p>What is the typical time complexity of backtracking algorithms?</p><p>Consider: Exploring all possible combinations</p>",
+                                "hint": "Think about the number of possible states to explore",
+                                "options": [
+                                    "O(n) - linear time",
+                                    "O(n²) - quadratic time",
+                                    "O(2^n) - exponential time - explores many combinations",
+                                    "O(log n) - logarithmic time"
+                                ],
+                                "correct_answer": 2
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

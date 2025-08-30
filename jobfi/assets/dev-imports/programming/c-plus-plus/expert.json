@@ -1,0 +1,373 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "C++",
+                "slug": "c-plus-plus",
+                "description": "Learn C++ for system programming, game development, and high-performance applications.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/c-plus-plus.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "C++ Advanced Memory Management",
+                        "description": "Master smart pointers, move semantics, and advanced memory management techniques.",
+                        "tags": [
+                            "memory-management",
+                            "c++",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Smart Pointers",
+                                "question": "<p>Write C++ code that demonstrates smart pointer usage.</p><p>Your code should:</p><ul><li>Use <code>std::unique_ptr</code> for exclusive ownership</li><li>Use <code>std::shared_ptr</code> for shared ownership</li><li>Use <code>std::weak_ptr</code> to break circular references</li><li>Demonstrate automatic memory management</li><li>Return the smart pointer usage</li></ul>",
+                                "hint": "Use #include &lt;memory&gt; and smart pointer types",
+                                "input": "Resource1\nResource2",
+                                "output": "Unique pointer: Resource1\nShared pointer: Resource2\nReference count: 1"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Move Semantics",
+                                "question": "<p>What is move semantics in C++?</p><p>Consider these characteristics:</p><ul><li>Uses <code>std::move()</code> to transfer ownership</li><li>Uses rvalue references <code>&amp;&amp;</code></li><li>Avoids unnecessary copying</li><li>Improves performance</li></ul>",
+                                "hint": "Consider ownership transfer and performance",
+                                "options": [
+                                    "A way to transfer ownership of resources without copying - using rvalue references",
+                                    "A way to copy resources efficiently",
+                                    "A way to share resources between objects",
+                                    "A way to delete resources automatically"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Move Constructor",
+                                "question": "<p>Write a C++ class with a move constructor and move assignment operator.</p><p>Your class should:</p><ul><li>Implement move constructor <code>ClassName(ClassName&amp;&amp; other)</code></li><li>Implement move assignment operator <code>ClassName&amp; operator=(ClassName&amp;&amp; other)</code></li><li>Transfer resources from the source object</li><li>Set the source object to a valid but unspecified state</li><li>Return the move semantics usage</li></ul>",
+                                "hint": "Use ClassName(ClassName&amp;&amp; other) for move constructor",
+                                "input": "Resource1\nResource2",
+                                "output": "Original: Resource1\nMoved: Resource1\nSource is now empty"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Perfect Forwarding",
+                                "question": "<p>What is perfect forwarding in C++?</p><p>Consider this example:</p><pre><code>template &lt;typename T&gt;<br>void wrapper(T&amp;&amp; arg) {<br>  func(std::forward&lt;T&gt;(arg));<br>}</code></pre>",
+                                "hint": "Consider preserving value categories",
+                                "options": [
+                                    "Preserving the value category (lvalue/rvalue) of arguments when forwarding them",
+                                    "Always forwarding arguments as lvalues",
+                                    "Always forwarding arguments as rvalues",
+                                    "Copying arguments when forwarding them"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "RAII Pattern",
+                                "question": "<p>Write C++ code that demonstrates the RAII (Resource Acquisition Is Initialization) pattern.</p><p>Your code should:</p><ul><li>Create a resource manager class</li><li>Acquire resources in the constructor</li><li>Release resources in the destructor</li><li>Handle exceptions safely</li><li>Return the RAII pattern usage</li></ul>",
+                                "hint": "Use constructor for acquisition, destructor for release",
+                                "input": "file.txt\nDatabase",
+                                "output": "File opened: file.txt\nDatabase connected: Database\nResources automatically released"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Exception Safety",
+                                "question": "<p>What are the three levels of exception safety in C++?</p><p>Consider these guarantees:</p><ul><li>Basic guarantee - no resource leaks</li><li>Strong guarantee - all-or-nothing semantics</li><li>No-throw guarantee - operation never throws</li></ul>",
+                                "hint": "Consider resource management and state consistency",
+                                "options": [
+                                    "Basic guarantee, strong guarantee, and no-throw guarantee",
+                                    "Only basic guarantee",
+                                    "Only strong guarantee",
+                                    "Only no-throw guarantee"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Custom Allocators",
+                                "question": "<p>Write a C++ custom allocator for STL containers.</p><p>Your allocator should:</p><ul><li>Implement the required allocator interface</li><li>Override <code>allocate()</code> and <code>deallocate()</code> methods</li><li>Use custom memory management</li><li>Work with STL containers</li><li>Return the custom allocator usage</li></ul>",
+                                "hint": "Implement allocate() and deallocate() methods",
+                                "input": "10\n20",
+                                "output": "Custom allocator used\nAllocated 10 elements\nAllocated 20 elements"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Memory Pools",
+                                "question": "<p>What is a memory pool in C++?</p><p>Consider these characteristics:</p><ul><li>Pre-allocates memory blocks</li><li>Reduces allocation overhead</li><li>Improves performance for frequent allocations</li><li>Reduces memory fragmentation</li></ul>",
+                                "hint": "Consider pre-allocation and performance",
+                                "options": [
+                                    "A technique that pre-allocates memory blocks to reduce allocation overhead",
+                                    "A technique that always uses dynamic allocation",
+                                    "A technique that never allocates memory",
+                                    "A technique that only uses stack memory"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Reference Counting",
+                                "question": "<p>Write C++ code that implements reference counting for a custom class.</p><p>Your implementation should:</p><ul><li>Use a reference counter</li><li>Increment counter on copy construction</li><li>Decrement counter on destruction</li><li>Delete object when counter reaches zero</li><li>Return the reference counting usage</li></ul>",
+                                "hint": "Use a reference counter with increment/decrement operations",
+                                "input": "Resource1\nResource2",
+                                "output": "Reference count: 1\nReference count: 2\nReference count: 1\nResource deleted"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Memory Leaks",
+                                "question": "<p>What are common causes of memory leaks in C++?</p><p>Consider these causes:</p><ul><li>Not deleting dynamically allocated memory</li><li>Circular references with raw pointers</li><li>Exception throwing before cleanup</li><li>Forgetting to call delete in destructors</li></ul>",
+                                "hint": "Consider memory allocation and deallocation",
+                                "options": [
+                                    "Not deleting allocated memory, circular references, exceptions, and missing cleanup",
+                                    "Only using smart pointers",
+                                    "Only using stack allocation",
+                                    "Only using static allocation"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "C++ Concurrency & Threading",
+                        "description": "Master multi-threading, synchronization, and concurrent programming in C++.",
+                        "tags": [
+                            "concurrency",
+                            "threading",
+                            "c++",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Thread Creation",
+                                "question": "<p>Write C++ code that creates and manages threads using the standard library.</p><p>Your code should:</p><ul><li>Include <code>&lt;thread&gt;</code> header</li><li>Create threads using <code>std::thread</code></li><li>Pass functions or lambdas to threads</li><li>Join threads using <code>join()</code></li><li>Return the thread creation results</li></ul>",
+                                "hint": "Use #include &lt;thread&gt; and std::thread",
+                                "input": "worker1\nworker2",
+                                "output": "Thread 1 started: worker1\nThread 2 started: worker2\nAll threads completed"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Thread Safety",
+                                "question": "<p>What is thread safety in C++?</p><p>Consider these aspects:</p><ul><li>Protecting shared data from race conditions</li><li>Using synchronization primitives</li><li>Ensuring correct behavior with multiple threads</li><li>Preventing data corruption</li></ul>",
+                                "hint": "Consider concurrent access to shared resources",
+                                "options": [
+                                    "Ensuring that shared data is accessed safely by multiple threads without race conditions",
+                                    "Making threads run faster",
+                                    "Making threads use less memory",
+                                    "Making threads communicate with each other"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Mutex and Lock Guards",
+                                "question": "<p>Write C++ code that uses mutex and lock guards for thread synchronization.</p><p>Your code should:</p><ul><li>Include <code>&lt;mutex&gt;</code> header</li><li>Use <code>std::mutex</code> for synchronization</li><li>Use <code>std::lock_guard</code> for automatic locking</li><li>Protect shared data access</li><li>Return the mutex usage</li></ul>",
+                                "hint": "Use std::mutex and std::lock_guard for synchronization",
+                                "input": "thread1\nthread2\n100",
+                                "output": "Thread 1 acquired lock\nThread 2 acquired lock\nShared counter: 200"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Condition Variables",
+                                "question": "<p>What are condition variables used for in C++ threading?</p><p>Consider these use cases:</p><ul><li>Thread synchronization and signaling</li><li>Waiting for specific conditions</li><li>Implementing producer-consumer patterns</li><li>Avoiding busy waiting</li></ul>",
+                                "hint": "Consider thread communication and waiting",
+                                "options": [
+                                    "To allow threads to wait for specific conditions and be notified when they change",
+                                    "To make threads run faster",
+                                    "To make threads use less memory",
+                                    "To make threads communicate directly"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Atomic Operations",
+                                "question": "<p>Write C++ code that uses atomic operations for thread-safe operations.</p><p>Your code should:</p><ul><li>Include <code>&lt;atomic&gt;</code> header</li><li>Use <code>std::atomic&lt;int&gt;</code> for atomic variables</li><li>Perform atomic increment and decrement</li><li>Use atomic compare-and-swap operations</li><li>Return the atomic operations</li></ul>",
+                                "hint": "Use std::atomic&lt;T&gt; for atomic operations",
+                                "input": "10\n5",
+                                "output": "Atomic counter: 10\nAfter increment: 15\nAfter decrement: 10"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Future and Promise",
+                                "question": "<p>What are std::future and std::promise used for in C++?</p><p>Consider these features:</p><ul><li>Asynchronous result retrieval</li><li>Thread communication</li><li>Exception propagation between threads</li><li>Non-blocking result access</li></ul>",
+                                "hint": "Consider asynchronous programming and result handling",
+                                "options": [
+                                    "To handle asynchronous results and communicate between threads",
+                                    "To make threads run faster",
+                                    "To make threads use less memory",
+                                    "To make threads communicate directly"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Async Tasks",
+                                "question": "<p>Write C++ code that uses <code>std::async</code> for asynchronous task execution.</p><p>Your code should:</p><ul><li>Include <code>&lt;future&gt;</code> header</li><li>Use <code>std::async</code> to launch tasks</li><li>Use <code>std::future</code> to get results</li><li>Handle exceptions from async tasks</li><li>Return the async task results</li></ul>",
+                                "hint": "Use std::async and std::future for asynchronous execution",
+                                "input": "task1\ntask2",
+                                "output": "Async task 1 started\nAsync task 2 started\nTask 1 result: completed\nTask 2 result: completed"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Thread Pools",
+                                "question": "<p>What is a thread pool in C++?</p><p>Consider these characteristics:</p><ul><li>Pre-created pool of worker threads</li><li>Reuses threads for multiple tasks</li><li>Reduces thread creation overhead</li><li>Manages thread lifecycle</li></ul>",
+                                "hint": "Consider thread reuse and management",
+                                "options": [
+                                    "A collection of pre-created threads that can be reused for multiple tasks",
+                                    "A collection of tasks that can be executed",
+                                    "A collection of memory pools",
+                                    "A collection of mutexes"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Read-Write Locks",
+                                "question": "<p>Write C++ code that implements read-write locks for concurrent access.</p><p>Your code should:</p><ul><li>Use <code>std::shared_mutex</code> for read-write locks</li><li>Use <code>std::shared_lock</code> for read access</li><li>Use <code>std::unique_lock</code> for write access</li><li>Allow multiple readers or single writer</li><li>Return the read-write lock usage</li></ul>",
+                                "hint": "Use std::shared_mutex with shared_lock and unique_lock",
+                                "input": "reader1\nreader2\nwriter1",
+                                "output": "Reader 1 acquired shared lock\nReader 2 acquired shared lock\nWriter 1 acquired exclusive lock"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Deadlock Prevention",
+                                "question": "<p>What are common strategies for preventing deadlocks in C++?</p><p>Consider these strategies:</p><ul><li>Lock ordering - always acquire locks in the same order</li><li>Lock timeout - use try_lock with timeout</li><li>Resource allocation graph - detect cycles</li><li>Lock hierarchy - establish lock ordering</li></ul>",
+                                "hint": "Consider lock ordering and resource management",
+                                "options": [
+                                    "Lock ordering, timeout mechanisms, resource allocation graphs, and lock hierarchies",
+                                    "Only using single locks",
+                                    "Only using atomic operations",
+                                    "Only using condition variables"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "C++ Performance Optimization",
+                        "description": "Master C++ performance optimization techniques and profiling.",
+                        "tags": [
+                            "performance",
+                            "optimization",
+                            "c++",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Inline Functions",
+                                "question": "<p>Write C++ code that demonstrates inline function optimization.</p><p>Your code should:</p><ul><li>Use <code>inline</code> keyword for small functions</li><li>Define functions in header files</li><li>Measure performance differences</li><li>Use <code>constexpr</code> for compile-time evaluation</li><li>Return the inline optimization results</li></ul>",
+                                "hint": "Use inline keyword and constexpr for optimization",
+                                "input": "5\n3",
+                                "output": "Inline function result: 8\nConstexpr result: 15\nPerformance improved"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Cache Optimization",
+                                "question": "<p>What is cache optimization in C++?</p><p>Consider these techniques:</p><ul><li>Data locality - keeping related data close together</li><li>Cache line alignment - aligning data to cache lines</li><li>Prefetching - loading data before it's needed</li><li>Reducing cache misses</li></ul>",
+                                "hint": "Consider memory access patterns and cache behavior",
+                                "options": [
+                                    "Techniques to improve cache performance by optimizing memory access patterns",
+                                    "Techniques to make code run faster",
+                                    "Techniques to make code use less memory",
+                                    "Techniques to make code more readable"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Loop Optimization",
+                                "question": "<p>Write C++ code that demonstrates loop optimization techniques.</p><p>Your code should:</p><ul><li>Use loop unrolling for performance</li><li>Optimize loop bounds and conditions</li><li>Use vectorization-friendly loops</li><li>Measure performance improvements</li><li>Return the loop optimization results</li></ul>",
+                                "hint": "Use loop unrolling and vectorization-friendly patterns",
+                                "input": "1000000",
+                                "output": "Standard loop time: 10ms\nOptimized loop time: 3ms\nSpeedup: 3.3x"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Compiler Optimizations",
+                                "question": "<p>What are common compiler optimizations in C++?</p><p>Consider these optimizations:</p><ul><li>Constant folding - evaluate constants at compile time</li><li>Dead code elimination - remove unused code</li><li>Loop optimization - unroll and vectorize loops</li><li>Function inlining - inline small functions</li></ul>",
+                                "hint": "Consider compile-time and runtime optimizations",
+                                "options": [
+                                    "Constant folding, dead code elimination, loop optimization, and function inlining",
+                                    "Only runtime optimizations",
+                                    "Only memory optimizations",
+                                    "Only code size optimizations"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Memory Pool Implementation",
+                                "question": "<p>Write a C++ memory pool implementation for performance optimization.</p><p>Your implementation should:</p><ul><li>Pre-allocate memory blocks</li><li>Implement fast allocation and deallocation</li><li>Reduce memory fragmentation</li><li>Measure performance improvements</li><li>Return the memory pool usage</li></ul>",
+                                "hint": "Use pre-allocated blocks for fast allocation",
+                                "input": "1000\n100",
+                                "output": "Memory pool allocated 1000 blocks\nAllocated 100 objects in 0.1ms\nStandard allocator took 1.0ms"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Branch Prediction",
+                                "question": "<p>What is branch prediction optimization in C++?</p><p>Consider these techniques:</p><ul><li>Likely/unlikely attributes - hint branch probability</li><li>Branchless programming - avoid conditional branches</li><li>Loop optimization - predictable loop patterns</li><li>Data-driven design - organize data for predictable access</li></ul>",
+                                "hint": "Consider CPU branch prediction and conditional execution",
+                                "options": [
+                                    "Techniques to help CPU predict branch outcomes and optimize execution",
+                                    "Techniques to make code run faster",
+                                    "Techniques to make code use less memory",
+                                    "Techniques to make code more readable"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "SIMD Optimization",
+                                "question": "<p>Write C++ code that uses SIMD (Single Instruction, Multiple Data) optimization.</p><p>Your code should:</p><ul><li>Use vector intrinsics for SIMD operations</li><li>Process multiple data elements simultaneously</li><li>Optimize array operations</li><li>Measure SIMD performance gains</li><li>Return the SIMD optimization results</li></ul>",
+                                "hint": "Use vector intrinsics for parallel data processing",
+                                "input": "1000000",
+                                "output": "Standard array sum: 500000500000\nSIMD array sum: 500000500000\nSIMD speedup: 4x"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Profiling Tools",
+                                "question": "<p>What are common profiling tools for C++ performance analysis?</p><p>Consider these tools:</p><ul><li>gprof - GNU profiler for function-level profiling</li><li>Valgrind - memory and performance analysis</li><li>perf - Linux performance analysis</li><li>Intel VTune - advanced performance analysis</li></ul>",
+                                "hint": "Consider performance measurement and analysis tools",
+                                "options": [
+                                    "gprof, Valgrind, perf, Intel VTune - tools for performance measurement and analysis",
+                                    "Only gprof",
+                                    "Only Valgrind",
+                                    "Only perf"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Lock-Free Programming",
+                                "question": "<p>Write C++ code that demonstrates lock-free programming techniques.</p><p>Your code should:</p><ul><li>Use atomic operations for synchronization</li><li>Implement lock-free data structures</li><li>Avoid mutexes and locks</li><li>Measure lock-free performance</li><li>Return the lock-free programming results</li></ul>",
+                                "hint": "Use std::atomic and lock-free algorithms",
+                                "input": "1000000",
+                                "output": "Lock-free counter: 1000000\nLock-free time: 5ms\nMutex time: 25ms\nSpeedup: 5x"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Performance vs Maintainability",
+                                "question": "<p>What is the trade-off between performance and maintainability in C++?</p><p>Consider these factors:</p><ul><li>Optimized code may be harder to read and maintain</li><li>Premature optimization can lead to complex code</li><li>Profile first, optimize second</li><li>Balance performance needs with code clarity</li></ul>",
+                                "hint": "Consider code complexity and optimization timing",
+                                "options": [
+                                    "Optimized code may be harder to maintain, so profile first and optimize carefully",
+                                    "Performance and maintainability are always in conflict",
+                                    "Performance and maintainability are always aligned",
+                                    "Performance and maintainability are unrelated"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

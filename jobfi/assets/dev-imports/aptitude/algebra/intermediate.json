@@ -1,0 +1,102 @@
+[
+    {
+        "category": {
+            "name": "Aptitude",
+            "slug": "aptitude",
+            "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Algebra",
+                "slug": "algebra",
+                "description": "Master algebraic concepts, equations, and mathematical problem-solving techniques.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/algebra.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "Systems of Equations",
+                        "description": "Solve systems of linear equations using various methods.",
+                        "tags": [
+                            "systems-of-equations",
+                            "linear-algebra",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Gaussian Elimination",
+                                "question": "<p>Implement Gaussian elimination to solve a system of linear equations.</p><p>Your function should:</p><ul><li>Accept a coefficient matrix and constant vector</li><li>Perform row operations to get row-echelon form</li><li>Use back substitution to find solutions</li><li>Handle cases with no solution or infinite solutions</li><li>Return the solution vector</li></ul>",
+                                "hint": "Use row operations to create zeros below pivots, then back substitute",
+                                "input": "2x + 3y = 8\n4x + y = 9",
+                                "output": "x = 2, y = 1"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "System Solution Types",
+                                "question": "<p>How many solutions does a system of 3 equations with 3 variables have if the determinant is zero?</p><p>Consider: Determinant indicates whether the system has a unique solution</p>",
+                                "hint": "Think about what a zero determinant means for the coefficient matrix",
+                                "options": [
+                                    "Exactly one solution - unique solution",
+                                    "No solution or infinite solutions - depends on consistency",
+                                    "Exactly three solutions - multiple solutions",
+                                    "No solution - inconsistent system"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Matrix Operations",
+                                "question": "<p>Create functions for basic matrix operations.</p><p>Your functions should:</p><ul><li>Add and subtract matrices</li><li>Multiply matrices</li><li>Calculate matrix determinant</li><li>Find matrix inverse</li><li>Handle matrix validation</li></ul>",
+                                "hint": "Use nested loops for operations, cofactor expansion for determinant, and adjoint for inverse",
+                                "input": "Matrix A: [[2,1],[3,4]], Matrix B: [[1,2],[0,1]]",
+                                "output": "A+B: [[3,3],[3,5]], A*B: [[2,5],[3,10]]"
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "Polynomial Functions",
+                        "description": "Work with polynomial functions and their properties.",
+                        "tags": [
+                            "polynomials",
+                            "functions",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Polynomial Evaluation",
+                                "question": "<p>Implement polynomial evaluation using Horner's method.</p><p>Your function should:</p><ul><li>Accept coefficients and a value x</li><li>Use Horner's method for efficient evaluation</li><li>Handle polynomials of any degree</li><li>Return the polynomial value</li><li>Include error handling</li></ul>",
+                                "hint": "Use Horner's rule: a₀ + a₁x + a₂x² + ... = a₀ + x(a₁ + x(a₂ + ...))",
+                                "input": "Coefficients: [2, -3, 1], x = 4",
+                                "output": "P(4) = 30"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Polynomial Degree",
+                                "question": "<p>What is the degree of the polynomial 3x⁴ - 2x² + 5x - 1?</p><p>Consider: Degree is the highest power of x with non-zero coefficient</p>",
+                                "hint": "Look for the term with the highest exponent",
+                                "options": [
+                                    "2 - highest visible power",
+                                    "4 - highest power with non-zero coefficient",
+                                    "5 - sum of all powers",
+                                    "1 - constant term"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Polynomial Division",
+                                "question": "<p>Implement polynomial long division.</p><p>Your function should:</p><ul><li>Divide one polynomial by another</li><li>Return quotient and remainder</li><li>Handle cases where divisor degree > dividend degree</li><li>Use synthetic division for efficiency</li><li>Validate input polynomials</li></ul>",
+                                "hint": "Use polynomial long division algorithm, subtract multiples of divisor",
+                                "input": "Dividend: x³ + 2x² - 3x + 1, Divisor: x - 1",
+                                "output": "Quotient: x² + 3x, Remainder: 1"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

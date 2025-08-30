@@ -1,0 +1,373 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "C",
+                "slug": "c",
+                "description": "Learn C for system programming, embedded systems, and low-level development.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/c.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "C Arrays and Pointers",
+                        "description": "Learn array manipulation, pointer arithmetic, and dynamic memory allocation.",
+                        "tags": [
+                            "arrays",
+                            "pointers",
+                            "c",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Array Declaration and Initialization",
+                                "question": "<p>Write a C program that declares and initializes arrays of different types.</p><p>Your program should:</p><ul><li>Declare an integer array with 5 elements</li><li>Declare a character array for a string</li><li>Initialize arrays with values</li><li>Print array elements</li><li>Demonstrate array indexing</li></ul>",
+                                "hint": "Use int array[size] and char array[size] syntax",
+                                "input": "1 2 3 4 5\nHello",
+                                "output": "Integer array: 1 2 3 4 5\nCharacter array: Hello"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Array vs Pointer",
+                                "question": "<p>What is the relationship between arrays and pointers in C?</p><p>Consider these aspects:</p><ul><li>Array name decays to pointer to first element</li><li>Arrays and pointers can be used interchangeably in many contexts</li><li>Arrays have size information, pointers don't</li><li>Both support pointer arithmetic</li></ul>",
+                                "hint": "Consider array name behavior and pointer arithmetic",
+                                "options": [
+                                    "Array name is a pointer to the first element - they are closely related",
+                                    "Arrays and pointers are completely different types",
+                                    "Arrays are always larger than pointers",
+                                    "Pointers cannot access array elements"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Pointer Arithmetic",
+                                "question": "<p>Write a C program that demonstrates pointer arithmetic.</p><p>Your program should:</p><ul><li>Declare an integer array</li><li>Create a pointer to the array</li><li>Use pointer arithmetic to traverse the array</li><li>Demonstrate increment, decrement, and addition</li><li>Print values using pointer arithmetic</li></ul>",
+                                "hint": "Use ptr++, ptr--, ptr+n for pointer arithmetic",
+                                "input": "10 20 30 40 50",
+                                "output": "First element: 10\nSecond element: 20\nThird element: 30\nFourth element: 40\nFifth element: 50"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Dynamic Memory Allocation",
+                                "question": "<p>Which function is used to allocate memory dynamically in C?</p><p>Consider these memory allocation functions:</p><ul><li><code>malloc()</code> - allocates memory</li><li><code>calloc()</code> - allocates and initializes memory</li><li><code>realloc()</code> - reallocates memory</li><li><code>free()</code> - deallocates memory</li></ul>",
+                                "hint": "Consider the most common memory allocation function",
+                                "options": [
+                                    "malloc() - allocates memory dynamically",
+                                    "new() - allocates memory dynamically",
+                                    "allocate() - allocates memory dynamically",
+                                    "create() - allocates memory dynamically"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "malloc and free",
+                                "question": "<p>Write a C program that uses malloc() and free() for dynamic memory management.</p><p>Your program should:</p><ul><li>Use <code>malloc()</code> to allocate memory for an integer</li><li>Use <code>malloc()</code> to allocate memory for an array</li><li>Initialize the allocated memory</li><li>Use the allocated memory</li><li>Free the memory with <code>free()</code></li></ul>",
+                                "hint": "Use malloc(size) and free(ptr) functions",
+                                "input": "42\n5\n1 2 3 4 5",
+                                "output": "Allocated integer: 42\nAllocated array: 1 2 3 4 5\nMemory freed successfully"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Memory Leaks",
+                                "question": "<p>What is a memory leak in C?</p><p>Consider these scenarios:</p><ul><li>Allocating memory with malloc() but not freeing it</li><li>Losing pointer to allocated memory</li><li>Memory that cannot be accessed or freed</li><li>Memory that accumulates over time</li></ul>",
+                                "hint": "Consider what happens when allocated memory is not freed",
+                                "options": [
+                                    "Memory that is allocated but never freed - causing waste",
+                                    "Memory that is too small for the data",
+                                    "Memory that is accessed too quickly",
+                                    "Memory that is shared between programs"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "2D Arrays",
+                                "question": "<p>Write a C program that works with 2D arrays.</p><p>Your program should:</p><ul><li>Declare a 2D integer array</li><li>Initialize the array with values</li><li>Access elements using row and column indices</li><li>Print the 2D array in matrix format</li><li>Demonstrate nested loops for 2D array traversal</li></ul>",
+                                "hint": "Use array[row][column] syntax and nested for loops",
+                                "input": "3\n3\n1 2 3\n4 5 6\n7 8 9",
+                                "output": "Matrix:\n1 2 3\n4 5 6\n7 8 9"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Function Pointers",
+                                "question": "<p>What is a function pointer in C?</p><p>Consider these characteristics:</p><ul><li>Pointer that stores address of a function</li><li>Can be used to call functions indirectly</li><li>Enables callback mechanisms</li><li>Supports function as parameter</li></ul>",
+                                "hint": "Consider what a function pointer stores",
+                                "options": [
+                                    "A pointer that stores the address of a function",
+                                    "A pointer that stores the address of a variable",
+                                    "A pointer that stores the address of an array",
+                                    "A pointer that stores the address of a structure"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "String Manipulation",
+                                "question": "<p>Write a C program that manipulates strings using pointer arithmetic.</p><p>Your program should:</p><ul><li>Declare a character array for a string</li><li>Use pointer arithmetic to find string length</li><li>Use pointer arithmetic to copy strings</li><li>Use pointer arithmetic to reverse a string</li><li>Print the string manipulation results</li></ul>",
+                                "hint": "Use pointer arithmetic with character arrays",
+                                "input": "Hello World",
+                                "output": "Original: Hello World\nLength: 11\nReversed: dlroW olleH"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Void Pointers",
+                                "question": "<p>What is a void pointer in C?</p><p>Consider these characteristics:</p><ul><li>Generic pointer type that can point to any data type</li><li>Cannot be dereferenced directly</li><li>Must be cast to specific type before use</li><li>Used for generic programming</li></ul>",
+                                "hint": "Consider generic pointer behavior",
+                                "options": [
+                                    "A generic pointer that can point to any data type",
+                                    "A pointer that points to nothing",
+                                    "A pointer that is always null",
+                                    "A pointer that cannot be used"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "C Structures and Unions",
+                        "description": "Learn structure definition, nested structures, and union usage.",
+                        "tags": [
+                            "structures",
+                            "unions",
+                            "c",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Structure Definition",
+                                "question": "<p>Write a C program that defines and uses a structure.</p><p>Your program should:</p><ul><li>Define a structure for a Person with name, age, and salary</li><li>Declare a structure variable</li><li>Initialize structure members</li><li>Access structure members using dot operator</li><li>Print structure information</li></ul>",
+                                "hint": "Use struct keyword and dot operator for member access",
+                                "input": "John Doe\n30\n50000",
+                                "output": "Name: John Doe\nAge: 30\nSalary: 50000"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Structure vs Array",
+                                "question": "<p>What is the main difference between structures and arrays in C?</p><p>Consider these aspects:</p><ul><li>Arrays store elements of the same type</li><li>Structures can store elements of different types</li><li>Arrays use index access, structures use member names</li><li>Structures provide better data organization</li></ul>",
+                                "hint": "Consider data type homogeneity and access methods",
+                                "options": [
+                                    "Structures can hold different data types, arrays hold same type",
+                                    "Arrays are faster, structures are slower",
+                                    "Structures are larger, arrays are smaller",
+                                    "Arrays are newer, structures are older"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Structure Pointers",
+                                "question": "<p>Write a C program that uses pointers to structures.</p><p>Your program should:</p><ul><li>Define a structure</li><li>Create a pointer to the structure</li><li>Allocate memory for the structure</li><li>Access structure members using arrow operator (->)</li><li>Free the allocated memory</li></ul>",
+                                "hint": "Use -> operator for pointer to structure member access",
+                                "input": "Alice Smith\n25\n40000",
+                                "output": "Name: Alice Smith\nAge: 25\nSalary: 40000"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Arrow Operator",
+                                "question": "<p>What does the arrow operator (->) do in C?</p><p>Consider this example:</p><pre><code>struct Person *ptr;<br>ptr->name = \"John\";</code></pre>",
+                                "hint": "Consider pointer to structure member access",
+                                "options": [
+                                    "Accesses structure members through a pointer - equivalent to (*ptr).member",
+                                    "Creates a new structure",
+                                    "Deletes a structure",
+                                    "Copies a structure"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Nested Structures",
+                                "question": "<p>Write a C program that uses nested structures.</p><p>Your program should:</p><ul><li>Define a structure for Address (street, city, zip)</li><li>Define a structure for Person that contains Address</li><li>Create and initialize nested structure</li><li>Access nested structure members</li><li>Print the nested structure information</li></ul>",
+                                "hint": "Use structure within structure definition",
+                                "input": "John Doe\n123 Main St\nNew York\n10001",
+                                "output": "Name: John Doe\nAddress: 123 Main St, New York, 10001"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Structure Padding",
+                                "question": "<p>What is structure padding in C?</p><p>Consider these aspects:</p><ul><li>Compiler adds unused bytes between structure members</li><li>Improves memory access performance</li><li>Aligns data to memory boundaries</li><li>Can be controlled with pragma directives</li></ul>",
+                                "hint": "Consider memory alignment and performance",
+                                "options": [
+                                    "Compiler adds unused bytes for memory alignment - improves performance",
+                                    "Structure members are compressed to save space",
+                                    "Structure members are expanded to use more space",
+                                    "Structure members are reordered automatically"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Unions",
+                                "question": "<p>Write a C program that demonstrates union usage.</p><p>Your program should:</p><ul><li>Define a union that can store int, float, or char</li><li>Use the union to store different data types</li><li>Demonstrate that only one member can be active at a time</li><li>Show memory sharing between union members</li><li>Print union usage examples</li></ul>",
+                                "hint": "Use union keyword and demonstrate memory sharing",
+                                "input": "42\n3.14\nA",
+                                "output": "Integer: 42\nFloat: 3.14\nCharacter: A"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Union vs Structure",
+                                "question": "<p>What is the main difference between unions and structures?</p><p>Consider these characteristics:</p><ul><li>Structures allocate memory for all members</li><li>Unions allocate memory for the largest member only</li><li>Structures can access all members simultaneously</li><li>Unions can access only one member at a time</li></ul>",
+                                "hint": "Consider memory allocation and member access",
+                                "options": [
+                                    "Unions share memory between members, structures allocate separate memory",
+                                    "Structures are faster, unions are slower",
+                                    "Unions are larger, structures are smaller",
+                                    "Structures are newer, unions are older"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Structure Arrays",
+                                "question": "<p>Write a C program that uses arrays of structures.</p><p>Your program should:</p><ul><li>Define a structure for Student (name, id, grade)</li><li>Create an array of Student structures</li><li>Initialize multiple students</li><li>Access array elements using index</li><li>Print all student information</li></ul>",
+                                "hint": "Use struct Student students[size] syntax",
+                                "input": "3\nAlice\n101\nA\nBob\n102\nB\nCharlie\n103\nA",
+                                "output": "Student 1: Alice (ID: 101, Grade: A)\nStudent 2: Bob (ID: 102, Grade: B)\nStudent 3: Charlie (ID: 103, Grade: A)"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Typedef with Structures",
+                                "question": "<p>What is the purpose of typedef with structures?</p><p>Consider this example:</p><pre><code>typedef struct {<br>  int x, y;<br>} Point;</code></pre>",
+                                "hint": "Consider type aliasing and code readability",
+                                "options": [
+                                    "Creates a type alias - makes code more readable and portable",
+                                    "Makes structures faster",
+                                    "Makes structures smaller",
+                                    "Makes structures global"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "C File Operations",
+                        "description": "Learn file I/O operations, text and binary file handling.",
+                        "tags": [
+                            "file-io",
+                            "c",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "File Opening and Closing",
+                                "question": "<p>Write a C program that opens and closes a file.</p><p>Your program should:</p><ul><li>Use <code>fopen()</code> to open a file in read mode</li><li>Check if file opened successfully</li><li>Use <code>fclose()</code> to close the file</li><li>Handle file operation errors</li><li>Print file operation status</li></ul>",
+                                "hint": "Use fopen(filename, mode) and fclose(fileptr)",
+                                "input": "test.txt",
+                                "output": "File opened successfully\nFile closed successfully"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "File Modes",
+                                "question": "<p>What does the \"w\" mode do when opening a file with fopen()?</p><p>Consider these file modes:</p><ul><li><code>\"r\"</code> - read mode (file must exist)</li><li><code>\"w\"</code> - write mode (creates or truncates file)</li><li><code>\"a\"</code> - append mode (creates or appends to file)</li><li><code>\"r+\"</code> - read and write mode</li></ul>",
+                                "hint": "Consider file creation and truncation behavior",
+                                "options": [
+                                    "Opens file for writing - creates new file or truncates existing file",
+                                    "Opens file for reading only",
+                                    "Opens file for appending only",
+                                    "Opens file for both reading and writing"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Text File Reading",
+                                "question": "<p>Write a C program that reads from a text file.</p><p>Your program should:</p><ul><li>Open a text file in read mode</li><li>Use <code>fgets()</code> to read lines</li><li>Use <code>fscanf()</code> to read formatted data</li><li>Check for end of file</li><li>Print the read data</li></ul>",
+                                "hint": "Use fgets(buffer, size, fileptr) and fscanf(fileptr, format, variables)",
+                                "input": "Hello World\nThis is a test file\n123 456",
+                                "output": "Line 1: Hello World\nLine 2: This is a test file\nNumbers: 123 456"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "EOF Constant",
+                                "question": "<p>What is EOF in C file operations?</p><p>Consider these aspects:</p><ul><li>EOF is a constant that indicates end of file</li><li>Returned by file reading functions when end is reached</li><li>Usually has value -1</li><li>Used to detect end of file condition</li></ul>",
+                                "hint": "Consider end of file detection",
+                                "options": [
+                                    "End of File constant - indicates end of file has been reached",
+                                    "End of Function constant - indicates end of function",
+                                    "End of Program constant - indicates end of program",
+                                    "End of Data constant - indicates end of data"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Text File Writing",
+                                "question": "<p>Write a C program that writes to a text file.</p><p>Your program should:</p><ul><li>Open a file in write mode</li><li>Use <code>fprintf()</code> to write formatted data</li><li>Use <code>fputs()</code> to write strings</li><li>Write multiple lines of data</li><li>Close the file properly</li></ul>",
+                                "hint": "Use fprintf(fileptr, format, data) and fputs(string, fileptr)",
+                                "input": "Hello World\nThis is line 2\nNumber: 42",
+                                "output": "Data written to file successfully"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "File Positioning",
+                                "question": "<p>What does fseek() function do?</p><p>Consider these file positioning functions:</p><ul><li><code>fseek()</code> - sets file position indicator</li><li><code>ftell()</code> - returns current file position</li><li><code>rewind()</code> - sets position to beginning</li></ul>",
+                                "hint": "Consider file position indicator manipulation",
+                                "options": [
+                                    "Sets file position indicator to specified position",
+                                    "Reads data from file",
+                                    "Writes data to file",
+                                    "Closes the file"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Binary File Operations",
+                                "question": "<p>Write a C program that performs binary file operations.</p><p>Your program should:</p><ul><li>Open a file in binary write mode</li><li>Use <code>fwrite()</code> to write binary data</li><li>Open the same file in binary read mode</li><li>Use <code>fread()</code> to read binary data</li><li>Demonstrate binary file operations</li></ul>",
+                                "hint": "Use \"wb\" and \"rb\" modes with fwrite() and fread()",
+                                "input": "42\n3.14\nHello",
+                                "output": "Binary data written successfully\nBinary data read: 42, 3.14, Hello"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "File Buffering",
+                                "question": "<p>What is file buffering in C?</p><p>Consider these aspects:</p><ul><li>Data is stored in memory buffer before writing to disk</li><li>Improves I/O performance</li><li>fflush() forces buffer to disk</li><li>Buffers can be set to different modes</li></ul>",
+                                "hint": "Consider performance optimization",
+                                "options": [
+                                    "Data is stored in memory buffer before disk I/O - improves performance",
+                                    "Data is compressed before writing to disk",
+                                    "Data is encrypted before writing to disk",
+                                    "Data is split into smaller pieces"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Error Handling",
+                                "question": "<p>Write a C program that demonstrates proper file error handling.</p><p>Your program should:</p><ul><li>Check if file opens successfully</li><li>Use <code>perror()</code> to print error messages</li><li>Use <code>errno</code> to get error codes</li><li>Handle different types of file errors</li><li>Provide meaningful error messages</li></ul>",
+                                "hint": "Use perror() and errno for error handling",
+                                "input": "nonexistent.txt",
+                                "output": "Error opening file: No such file or directory"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "File Streams",
+                                "question": "<p>What are the three standard file streams in C?</p><p>Consider these standard streams:</p><ul><li><code>stdin</code> - standard input stream</li><li><code>stdout</code> - standard output stream</li><li><code>stderr</code> - standard error stream</li></ul>",
+                                "hint": "Consider input, output, and error streams",
+                                "options": [
+                                    "stdin, stdout, stderr - input, output, and error streams",
+                                    "input, output, error - basic stream names",
+                                    "file1, file2, file3 - generic file streams",
+                                    "read, write, append - operation-based streams"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

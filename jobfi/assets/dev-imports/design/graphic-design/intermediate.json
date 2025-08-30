@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Design",
+            "slug": "design",
+            "description": "Master design principles, user experience, and visual communication techniques.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/design.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Graphic Design",
+                "slug": "graphic-design",
+                "description": "Learn graphic design principles and visual communication techniques.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/graphic-design.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "Advanced Layout Design",
+                        "description": "Master advanced layout design principles and techniques.",
+                        "tags": [
+                            "layout-design",
+                            "advanced",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Grid Systems",
+                                "question": "<p>What is the purpose of a grid system in design?</p><p>Consider: Organizing content systematically</p>",
+                                "hint": "Think about creating consistent layouts",
+                                "options": [
+                                    "Making designs more colorful",
+                                    "Creating consistent, organized layouts",
+                                    "Making text smaller",
+                                    "Adding more images"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "White Space",
+                                "question": "<p>What is the purpose of white space in design?</p><p>Consider: Breathing room and visual hierarchy</p>",
+                                "hint": "Think about giving elements room to breathe",
+                                "options": [
+                                    "Wasting space",
+                                    "Creating breathing room and improving readability",
+                                    "Making designs look empty",
+                                    "Saving ink"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Visual Flow",
+                                "question": "<p>What is visual flow in design?</p><p>Consider: How the eye moves through a design</p>",
+                                "hint": "Think about guiding the viewer's eye",
+                                "options": [
+                                    "Using flowing fonts",
+                                    "The path the eye follows through a design",
+                                    "Making everything curved",
+                                    "Using only round shapes"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "Advanced Visual Design",
+                        "description": "Master advanced visual design techniques and principles.",
+                        "tags": [
+                            "visual-design",
+                            "advanced",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Color Psychology",
+                                "question": "<p>What is color psychology in design?</p><p>Consider: How colors affect emotions</p>",
+                                "hint": "Think about the emotional impact of colors",
+                                "options": [
+                                    "Using only bright colors",
+                                    "How colors affect emotions and behavior",
+                                    "Making everything colorful",
+                                    "Using only dark colors"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Texture in Design",
+                                "question": "<p>What is the purpose of texture in graphic design?</p><p>Consider: Adding visual interest and depth</p>",
+                                "hint": "Think about creating visual depth and interest",
+                                "options": [
+                                    "Making designs rough",
+                                    "Adding visual interest and depth",
+                                    "Making everything smooth",
+                                    "Using only flat colors"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Pattern Design",
+                                "question": "<p>What is a pattern in graphic design?</p><p>Consider: Repetitive visual elements</p>",
+                                "hint": "Think about repeating visual elements",
+                                "options": [
+                                    "A single design element",
+                                    "Repetitive visual elements that create texture",
+                                    "A random arrangement",
+                                    "A single color"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Aptitude",
+            "slug": "aptitude",
+            "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Arithmetic",
+                "slug": "arithmetic",
+                "description": "Master arithmetic operations, number theory, and mathematical problem-solving techniques.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/arithmetic.svg",
+                "exercises": [
+                    {
+                        "level": "Beginner",
+                        "title": "Basic Operations",
+                        "description": "Master fundamental arithmetic operations and number properties.",
+                        "tags": [
+                            "basic-operations",
+                            "arithmetic",
+                            "fundamentals"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Order of Operations",
+                                "question": "<p>What is the result of 2 + 3 × 4 - 1?</p><p>Consider: PEMDAS (Parentheses, Exponents, Multiplication/Division, Addition/Subtraction)</p>",
+                                "hint": "Follow the order of operations: multiplication first, then addition and subtraction",
+                                "options": [
+                                    "13 - correct order of operations",
+                                    "19 - left to right calculation",
+                                    "15 - incorrect order",
+                                    "11 - wrong calculation"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Number Properties",
+                                "question": "<p>Which of the following is a prime number?</p><p>Consider: Prime numbers have exactly two factors</p>",
+                                "hint": "Think about numbers that are only divisible by 1 and themselves",
+                                "options": [
+                                    "1 - has only one factor",
+                                    "2 - smallest prime number",
+                                    "4 - has three factors (1, 2, 4)",
+                                    "6 - has four factors (1, 2, 3, 6)"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Even and Odd Numbers",
+                                "question": "<p>What is the sum of the first 5 even numbers?</p><p>Consider: First 5 even numbers are 2, 4, 6, 8, 10</p>",
+                                "hint": "Add 2 + 4 + 6 + 8 + 10",
+                                "options": [
+                                    "25 - incorrect sum",
+                                    "30 - correct sum",
+                                    "35 - incorrect sum",
+                                    "40 - incorrect sum"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "Fractions and Decimals",
+                        "description": "Work with fractions, decimals, and their conversions.",
+                        "tags": [
+                            "fractions",
+                            "decimals",
+                            "conversions"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Fraction to Decimal",
+                                "question": "<p>What is the decimal equivalent of 3/8?</p><p>Consider: Divide numerator by denominator</p>",
+                                "hint": "Perform long division: 3 ÷ 8",
+                                "options": [
+                                    "0.375 - correct decimal",
+                                    "0.38 - rounded incorrectly",
+                                    "0.4 - approximated",
+                                    "0.3 - wrong calculation"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Adding Fractions",
+                                "question": "<p>What is 1/4 + 1/6?</p><p>Consider: Find common denominator and add numerators</p>",
+                                "hint": "Common denominator is 12, convert both fractions",
+                                "options": [
+                                    "2/10 - incorrect",
+                                    "5/12 - correct answer",
+                                    "1/5 - incorrect",
+                                    "2/12 - incorrect"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Simplifying Fractions",
+                                "question": "<p>What is 8/12 in simplest form?</p><p>Consider: Find the greatest common divisor</p>",
+                                "hint": "GCD of 8 and 12 is 4, divide both by 4",
+                                "options": [
+                                    "4/6 - not fully simplified",
+                                    "2/3 - correct simplified form",
+                                    "6/9 - not fully simplified",
+                                    "1/2 - incorrect"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

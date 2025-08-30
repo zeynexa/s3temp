@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Problem Solving",
+            "slug": "problem-solving",
+            "description": "Develop analytical thinking and problem-solving skills through algorithmic challenges.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/problem-solving.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Arrays & Strings",
+                "slug": "arrays-strings",
+                "description": "Master fundamental operations on arrays and string manipulation techniques.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/arrays-strings.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "Advanced Array Problems",
+                        "description": "Solve complex array problems requiring advanced algorithms and optimization.",
+                        "tags": [
+                            "arrays",
+                            "advanced",
+                            "optimization"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Dynamic Programming Arrays",
+                                "question": "<p>What is the time complexity of the longest increasing subsequence (LIS) problem using dynamic programming?</p><p>Consider: Nested loops and state transitions</p>",
+                                "hint": "Think about the DP table size and filling process",
+                                "options": [
+                                    "O(n) - linear time",
+                                    "O(n²) - quadratic time",
+                                    "O(n log n) - using binary search optimization",
+                                    "O(2^n) - exponential time"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Segment Tree Operations",
+                                "question": "<p>What is the time complexity of range sum query using a segment tree?</p><p>Consider: Tree traversal and node updates</p>",
+                                "hint": "Think about the height of the segment tree",
+                                "options": [
+                                    "O(1) - constant time",
+                                    "O(log n) - logarithmic time",
+                                    "O(n) - linear time",
+                                    "O(n log n) - linearithmic time"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Fenwick Tree (BIT)",
+                                "question": "<p>What is the main advantage of Fenwick Tree over Segment Tree?</p><p>Consider: Implementation complexity and memory usage</p>",
+                                "hint": "Think about code simplicity and space efficiency",
+                                "options": [
+                                    "Faster query time",
+                                    "Simpler implementation and less memory",
+                                    "Supports more operations",
+                                    "Better cache performance"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "Advanced String Problems",
+                        "description": "Solve complex string problems using advanced algorithms and data structures.",
+                        "tags": [
+                            "strings",
+                            "advanced",
+                            "algorithms"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "KMP Algorithm",
+                                "question": "<p>What is the time complexity of the KMP (Knuth-Morris-Pratt) string matching algorithm?</p><p>Consider: Pattern preprocessing and text scanning</p>",
+                                "hint": "Think about the number of character comparisons",
+                                "options": [
+                                    "O(n + m) - linear time where n is text length, m is pattern length",
+                                    "O(nm) - quadratic time",
+                                    "O(n log m) - linearithmic time",
+                                    "O(n²) - quadratic time"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Suffix Array",
+                                "question": "<p>What is the primary use of a suffix array?</p><p>Consider: String indexing and pattern matching</p>",
+                                "hint": "Think about finding all occurrences of a pattern",
+                                "options": [
+                                    "String compression",
+                                    "Efficient substring search and pattern matching",
+                                    "String sorting",
+                                    "String validation"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Trie Data Structure",
+                                "question": "<p>What is the time complexity of inserting a string of length m into a trie?</p><p>Consider: Character-by-character insertion</p>",
+                                "hint": "Think about the number of operations per character",
+                                "options": [
+                                    "O(1) - constant time",
+                                    "O(m) - linear in string length",
+                                    "O(m²) - quadratic in string length",
+                                    "O(log m) - logarithmic in string length"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

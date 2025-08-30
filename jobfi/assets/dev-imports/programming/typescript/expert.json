@@ -1,0 +1,372 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "TypeScript",
+                "slug": "typescript",
+                "description": "Learn TypeScript for type-safe JavaScript development.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/typescript.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "TypeScript Advanced Patterns",
+                        "description": "Master advanced TypeScript patterns including branded types, phantom types, and complex type manipulations.",
+                        "tags": [
+                            "advanced-patterns",
+                            "typescript",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Branded Types",
+                                "question": "<p>Write TypeScript branded types to create type-safe identifiers.</p><p>Your branded types should:</p><ul><li>Use intersection types with unique symbols</li><li>Create branded types for UserId and OrderId</li><li>Prevent mixing different branded types</li><li>Use type guards to validate branded types</li><li>Return the branded type usage</li></ul>",
+                                "hint": "Use type BrandedType = string & { readonly brand: unique symbol }",
+                                "input": "user123\norder456\ninvalid",
+                                "output": "Valid UserId: user123\nValid OrderId: order456\nInvalid type mixing prevented"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Phantom Types",
+                                "question": "<p>What are phantom types in TypeScript?</p><p>Consider this example:</p><pre><code>type Validated&lt;T&gt; = T & { readonly validated: true };<br>type Unvalidated&lt;T&gt; = T & { readonly validated: false };</code></pre>",
+                                "hint": "Consider types that carry additional information without runtime overhead",
+                                "options": [
+                                    "Types that carry additional information at compile time without runtime overhead",
+                                    "Types that are invisible at compile time",
+                                    "Types that only exist at runtime",
+                                    "Types that are automatically inferred"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Type-Level Programming",
+                                "question": "<p>Write TypeScript type-level programming examples.</p><p>Your examples should:</p><ul><li>Create type-level arithmetic operations</li><li>Implement type-level string manipulation</li><li>Use recursive conditional types</li><li>Create type-level data structures</li><li>Return the type-level programming results</li></ul>",
+                                "hint": "Use recursive conditional types and template literal types",
+                                "input": "5\n3\nHello\nWorld",
+                                "output": "Type-level sum: 8\nType-level concatenation: HelloWorld\nType-level length: 5"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Higher-Kinded Types",
+                                "question": "<p>What are higher-kinded types in TypeScript?</p><p>Consider this concept:</p><ul><li>Types that take other types as parameters</li><li>Types that can be applied to different type constructors</li><li>Types that abstract over type constructors</li><li>Types that work with generic types</li></ul>",
+                                "hint": "Consider types that abstract over type constructors",
+                                "options": [
+                                    "Types that abstract over type constructors - types that take type constructors as parameters",
+                                    "Types that only work with primitive types",
+                                    "Types that only work with object types",
+                                    "Types that only work with function types"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Type-Safe Event System",
+                                "question": "<p>Write a type-safe event system in TypeScript.</p><p>Your event system should:</p><ul><li>Define event types with specific payloads</li><li>Create type-safe event emitters</li><li>Implement event listeners with correct types</li><li>Prevent type mismatches at compile time</li><li>Return the type-safe event system usage</li></ul>",
+                                "hint": "Use mapped types and conditional types for event handling",
+                                "input": "userCreated\nuserDeleted\norderPlaced",
+                                "output": "Event: userCreated, Payload: { id: 123, name: John }\nEvent: orderPlaced, Payload: { orderId: 456, amount: 100 }"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Type-Safe API Design",
+                                "question": "<p>What are the benefits of type-safe API design in TypeScript?</p><p>Consider these benefits:</p><ul><li>Compile-time validation of API contracts</li><li>Automatic IntelliSense and autocomplete</li><li>Prevention of runtime type errors</li><li>Better developer experience</li></ul>",
+                                "hint": "Consider compile-time vs runtime benefits",
+                                "options": [
+                                    "Compile-time validation, better IntelliSense, prevention of runtime errors",
+                                    "Runtime validation, better performance, smaller bundle size",
+                                    "Dynamic typing, flexibility, easier debugging",
+                                    "Automatic testing, code generation, documentation"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Advanced Mapped Types",
+                                "question": "<p>Write advanced mapped types for complex type transformations.</p><p>Your mapped types should:</p><ul><li>Create deep readonly types</li><li>Implement deep partial types</li><li>Create pick and omit utilities</li><li>Use recursive type definitions</li><li>Return the advanced mapped type results</li></ul>",
+                                "hint": "Use recursive conditional types with mapped types",
+                                "input": "user\nprofile\nsettings",
+                                "output": "DeepReadonly: all properties readonly\nDeepPartial: all properties optional\nPicked: only selected properties"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Type Inference Limits",
+                                "question": "<p>What are the limits of type inference in TypeScript?</p><p>Consider these limitations:</p><ul><li>Complex conditional types may not be inferred</li><li>Recursive types have inference limits</li><li>Some generic constraints limit inference</li><li>Circular references break inference</li></ul>",
+                                "hint": "Consider when TypeScript cannot infer types automatically",
+                                "options": [
+                                    "Complex conditional types, recursive types, and circular references limit inference",
+                                    "Only primitive types can be inferred",
+                                    "All types can be inferred automatically",
+                                    "Only function return types can be inferred"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Type-Safe Builder Pattern",
+                                "question": "<p>Write a type-safe builder pattern implementation in TypeScript.</p><p>Your builder should:</p><ul><li>Use method chaining with type safety</li><li>Enforce required vs optional properties</li><li>Prevent invalid state combinations</li><li>Provide compile-time validation</li><li>Return the type-safe builder usage</li></ul>",
+                                "hint": "Use conditional types and method chaining for type safety",
+                                "input": "John\n25\nEngineer\njohn@email.com",
+                                "output": "User built: { name: John, age: 25, profession: Engineer, email: john@email.com }"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Type Assertions vs Type Guards",
+                                "question": "<p>What is the difference between type assertions and type guards?</p><p>Consider these differences:</p><ul><li>Type assertions tell the compiler about types</li><li>Type guards check types at runtime</li><li>Type assertions can be unsafe</li><li>Type guards provide runtime safety</li></ul>",
+                                "hint": "Consider compile-time vs runtime type checking",
+                                "options": [
+                                    "Type assertions tell the compiler about types, type guards check types at runtime",
+                                    "Type guards tell the compiler about types, type assertions check types at runtime",
+                                    "Both tell the compiler about types",
+                                    "Both check types at runtime"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "TypeScript Compiler API",
+                        "description": "Master TypeScript compiler API for programmatic type checking and code analysis.",
+                        "tags": [
+                            "compiler-api",
+                            "typescript",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Program Creation",
+                                "question": "<p>Write TypeScript code that uses the compiler API to create a program.</p><p>Your code should:</p><ul><li>Import <code>ts</code> from typescript module</li><li>Create a compiler host</li><li>Create a program with source files</li><li>Get the program instance</li><li>Return the program creation results</li></ul>",
+                                "hint": "Use ts.createProgram() with compiler options",
+                                "input": "src/main.ts\nsrc/utils.ts",
+                                "output": "Program created with 2 source files\nSource files: src/main.ts, src/utils.ts"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Type Checker",
+                                "question": "<p>What is the TypeChecker in the TypeScript compiler API?</p><p>Consider these capabilities:</p><ul><li>Analyzes types in the program</li><li>Performs type checking operations</li><li>Provides type information</li><li>Validates type compatibility</li></ul>",
+                                "hint": "Consider the main type analysis component",
+                                "options": [
+                                    "The main component that analyzes types and performs type checking operations",
+                                    "A component that only compiles TypeScript to JavaScript",
+                                    "A component that only validates syntax",
+                                    "A component that only generates declarations"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "AST Traversal",
+                                "question": "<p>Write TypeScript code that traverses the Abstract Syntax Tree (AST).</p><p>Your code should:</p><ul><li>Get the source file from the program</li><li>Traverse the AST using <code>ts.forEachChild</code></li><li>Identify different node types</li><li>Extract information from nodes</li><li>Return the AST traversal results</li></ul>",
+                                "hint": "Use ts.forEachChild() to traverse AST nodes",
+                                "input": "function test() { return 42; }",
+                                "output": "Found FunctionDeclaration: test\nFound ReturnStatement\nFound NumericLiteral: 42"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Symbol Resolution",
+                                "question": "<p>What is symbol resolution in the TypeScript compiler API?</p><p>Consider these aspects:</p><ul><li>Finding the declaration of a symbol</li><li>Resolving imports and exports</li><li>Understanding symbol relationships</li><li>Analyzing symbol usage</li></ul>",
+                                "hint": "Consider how symbols are resolved and connected",
+                                "options": [
+                                    "The process of finding and connecting symbol declarations to their usages",
+                                    "The process of compiling symbols to JavaScript",
+                                    "The process of validating symbol syntax",
+                                    "The process of generating symbol documentation"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Type Information Extraction",
+                                "question": "<p>Write TypeScript code that extracts type information using the compiler API.</p><p>Your code should:</p><ul><li>Get the type checker from the program</li><li>Find nodes in the source file</li><li>Get type information for nodes</li><li>Extract type details and properties</li><li>Return the type information results</li></ul>",
+                                "hint": "Use typeChecker.getTypeAtLocation() to get type information",
+                                "input": "let x: string = \"hello\";",
+                                "output": "Variable x\nType: string\nIs primitive: true\nIs string literal: false"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Diagnostic Messages",
+                                "question": "<p>What are diagnostic messages in the TypeScript compiler API?</p><p>Consider these characteristics:</p><ul><li>Error and warning messages</li><li>Location information for issues</li><li>Message categories and codes</li><li>Suggestions for fixes</li></ul>",
+                                "hint": "Consider error and warning reporting",
+                                "options": [
+                                    "Error and warning messages with location information and suggestions",
+                                    "Only error messages without location information",
+                                    "Only warning messages without suggestions",
+                                    "Only success messages without details"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Code Transformation",
+                                "question": "<p>Write TypeScript code that transforms source code using the compiler API.</p><p>Your code should:</p><ul><li>Create a transformer factory</li><li>Transform specific node types</li><li>Modify the AST structure</li><li>Generate transformed code</li><li>Return the transformation results</li></ul>",
+                                "hint": "Use ts.transform() with custom transformer",
+                                "input": "console.log(\"hello\");",
+                                "output": "Original: console.log(\"hello\");\nTransformed: logger.info(\"hello\");"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Language Service",
+                                "question": "<p>What is the Language Service in the TypeScript compiler API?</p><p>Consider these features:</p><ul><li>Provides IntelliSense information</li><li>Offers code completion</li><li>Supports refactoring operations</li><li>Enables real-time error checking</li></ul>",
+                                "hint": "Consider IDE-like features and services",
+                                "options": [
+                                    "A service that provides IDE-like features such as IntelliSense and code completion",
+                                    "A service that only compiles TypeScript files",
+                                    "A service that only validates syntax",
+                                    "A service that only generates declarations"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Custom Linter",
+                                "question": "<p>Write a custom linter using the TypeScript compiler API.</p><p>Your linter should:</p><ul><li>Create custom diagnostic rules</li><li>Analyze code patterns</li><li>Generate custom error messages</li><li>Report violations</li><li>Return the linting results</li></ul>",
+                                "hint": "Use AST traversal to implement custom rules",
+                                "input": "function test() { var x = 1; }",
+                                "output": "Custom lint error: Use 'let' or 'const' instead of 'var'\nLocation: line 1, column 20"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Performance Considerations",
+                                "question": "<p>What are performance considerations when using the TypeScript compiler API?</p><p>Consider these factors:</p><ul><li>Memory usage with large programs</li><li>Processing time for complex types</li><li>Caching strategies for repeated operations</li><li>Incremental compilation benefits</li></ul>",
+                                "hint": "Consider memory and processing efficiency",
+                                "options": [
+                                    "Memory usage, processing time, caching strategies, and incremental compilation",
+                                    "Only memory usage considerations",
+                                    "Only processing time considerations",
+                                    "Only caching considerations"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "TypeScript Tooling & Ecosystem",
+                        "description": "Master TypeScript tooling, build systems, and ecosystem integration.",
+                        "tags": [
+                            "tooling",
+                            "ecosystem",
+                            "typescript",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Custom Transformer",
+                                "question": "<p>Write a custom TypeScript transformer for build-time code generation.</p><p>Your transformer should:</p><ul><li>Create a transformer factory function</li><li>Transform specific AST nodes</li><li>Generate additional code</li><li>Integrate with build tools</li><li>Return the transformer usage</li></ul>",
+                                "hint": "Use ts.transform() with custom transformer factory",
+                                "input": "@generate\nclass User { name: string; }",
+                                "output": "Generated: UserBuilder class\nGenerated: UserValidator class\nGenerated: UserSerializer class"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Build Tools Integration",
+                                "question": "<p>How does TypeScript integrate with modern build tools?</p><p>Consider these integrations:</p><ul><li>Webpack with ts-loader or babel-loader</li><li>Rollup with @rollup/plugin-typescript</li><li>Vite with built-in TypeScript support</li><li>ESBuild with TypeScript plugin</li></ul>",
+                                "hint": "Consider bundler and build tool integrations",
+                                "options": [
+                                    "Through plugins and loaders that compile TypeScript during the build process",
+                                    "Only through manual compilation before building",
+                                    "Only through separate TypeScript compiler",
+                                    "Only through IDE integration"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "ESLint Integration",
+                                "question": "<p>Write TypeScript ESLint configuration and custom rules.</p><p>Your configuration should:</p><ul><li>Configure @typescript-eslint parser and plugin</li><li>Create custom ESLint rules</li><li>Use TypeScript-aware linting</li><li>Integrate with existing rules</li><li>Return the ESLint integration results</li></ul>",
+                                "hint": "Use @typescript-eslint/parser and @typescript-eslint/eslint-plugin",
+                                "input": "function test() { var x = 1; }",
+                                "output": "ESLint error: Use 'let' or 'const' instead of 'var'\nCustom rule: Function name should be PascalCase"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Prettier Integration",
+                                "question": "<p>What is the benefit of integrating Prettier with TypeScript?</p><p>Consider these benefits:</p><ul><li>Consistent code formatting</li><li>Automatic formatting on save</li><li>Integration with ESLint</li><li>Team-wide formatting standards</li></ul>",
+                                "hint": "Consider code formatting and consistency",
+                                "options": [
+                                    "Consistent code formatting, automatic formatting, and team-wide standards",
+                                    "Only faster compilation",
+                                    "Only better type checking",
+                                    "Only smaller bundle size"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Jest Testing Setup",
+                                "question": "<p>Write TypeScript Jest testing configuration and examples.</p><p>Your setup should:</p><ul><li>Configure Jest for TypeScript</li><li>Use ts-jest or @swc/jest</li><li>Write TypeScript test files</li><li>Test TypeScript-specific features</li><li>Return the Jest testing results</li></ul>",
+                                "hint": "Use ts-jest or @swc/jest for TypeScript testing",
+                                "input": "Calculator\nadd\n5\n3",
+                                "output": "Test passed: Calculator.add(5, 3) returns 8\nTest passed: Type checking works correctly"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "VS Code Integration",
+                                "question": "<p>What features does VS Code provide for TypeScript development?</p><p>Consider these features:</p><ul><li>IntelliSense and autocomplete</li><li>Real-time error checking</li><li>Refactoring tools</li><li>Debugging support</li></ul>",
+                                "hint": "Consider IDE features and development experience",
+                                "options": [
+                                    "IntelliSense, real-time error checking, refactoring tools, and debugging support",
+                                    "Only syntax highlighting",
+                                    "Only file management",
+                                    "Only version control integration"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Custom Language Service",
+                                "question": "<p>Write a custom TypeScript language service extension.</p><p>Your extension should:</p><ul><li>Extend the language service</li><li>Add custom IntelliSense features</li><li>Provide custom code actions</li><li>Integrate with VS Code</li><li>Return the language service extension results</li></ul>",
+                                "hint": "Use TypeScript language service APIs for custom features",
+                                "input": "User\ncreateUser",
+                                "output": "Custom IntelliSense: User.createUser()\nCustom code action: Generate User factory\nCustom completion: User methods"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Performance Monitoring",
+                                "question": "<p>What tools can be used to monitor TypeScript performance?</p><p>Consider these tools:</p><ul><li>TypeScript compiler performance metrics</li><li>Build time analysis tools</li><li>Memory usage monitoring</li><li>Type checking time analysis</li></ul>",
+                                "hint": "Consider performance analysis and monitoring",
+                                "options": [
+                                    "Compiler metrics, build time analysis, memory monitoring, and type checking analysis",
+                                    "Only runtime performance monitoring",
+                                    "Only memory usage monitoring",
+                                    "Only compilation time monitoring"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "CI/CD Integration",
+                                "question": "<p>Write TypeScript CI/CD pipeline configuration.</p><p>Your pipeline should:</p><ul><li>Install TypeScript and dependencies</li><li>Run type checking</li><li>Execute tests</li><li>Build and deploy</li><li>Return the CI/CD pipeline results</li></ul>",
+                                "hint": "Use GitHub Actions, GitLab CI, or similar CI/CD tools",
+                                "input": "build\ntest\ndeploy",
+                                "output": "TypeScript compilation: ✓\nType checking: ✓\nTests passed: ✓\nBuild successful: ✓\nDeployment: ✓"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Package Management",
+                                "question": "<p>What are the best practices for TypeScript package management?</p><p>Consider these practices:</p><ul><li>Using package.json with TypeScript configuration</li><li>Managing type definitions with @types packages</li><li>Version compatibility between TypeScript and dependencies</li><li>Peer dependency management</li></ul>",
+                                "hint": "Consider dependency and package management",
+                                "options": [
+                                    "Proper package.json configuration, @types management, version compatibility, and peer dependencies",
+                                    "Only installing TypeScript compiler",
+                                    "Only managing runtime dependencies",
+                                    "Only managing development dependencies"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

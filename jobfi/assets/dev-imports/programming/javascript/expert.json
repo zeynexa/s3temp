@@ -1,0 +1,372 @@
+[
+    {
+        "category": {
+            "name": "Programming",
+            "slug": "programming",
+            "description": "Learn programming languages, algorithms, and software development skills.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "JavaScript",
+                "slug": "javascript",
+                "description": "Master JavaScript for web development and dynamic applications.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/javascript.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "JavaScript Classes & OOP",
+                        "description": "Master object-oriented programming with ES6 classes.",
+                        "tags": [
+                            "classes",
+                            "oop",
+                            "javascript",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Class Definition",
+                                "question": "<p>Write a class that represents a Person with name and age properties.</p><p>Your class should:</p><ul><li>Use the <code>class</code> keyword</li><li>Have a constructor that accepts name and age</li><li>Store the parameters as instance properties</li><li>Have a method that returns the person's information</li><li>Return the formatted string with name and age</li></ul>",
+                                "hint": "Use class keyword with constructor",
+                                "input": "John\n25",
+                                "output": "John 25"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Class Syntax",
+                                "question": "<p>What is the correct syntax for defining a class method?</p><p>Consider these different ways to define methods:</p><ul><li><code>function methodName() {}</code> - function declaration</li><li><code>methodName() {}</code> - class method syntax</li><li><code>const methodName = () => {}</code> - arrow function</li><li><code>var methodName = function() {}</code> - function expression</li></ul>",
+                                "hint": "Consider ES6 class method syntax",
+                                "options": [
+                                    "function methodName() {} - traditional function syntax",
+                                    "methodName() {} - ES6 class method syntax",
+                                    "const methodName = () => {} - arrow function syntax",
+                                    "var methodName = function() {} - function expression syntax"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Class Inheritance",
+                                "question": "<p>Write a Student class that extends Person and adds a grade property.</p><p>Your class should:</p><ul><li>Use the <code>extends</code> keyword to inherit from Person</li><li>Call <code>super()</code> in the constructor to initialize the parent</li><li>Add a grade property to the Student class</li><li>Override or extend the parent's methods if needed</li><li>Return the student's information including grade</li></ul>",
+                                "hint": "Use extends keyword and super()",
+                                "input": "Alice\n20\nA",
+                                "output": "Alice 20 A"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Super Keyword",
+                                "question": "<p>What does the <code>super()</code> keyword do in a constructor?</p><p>Consider this inheritance example:</p><pre><code>class Child extends Parent {<br>  constructor(name, age, grade) {<br>    super(name, age); // What does this do?<br>    this.grade = grade;<br>  }<br>}</code></pre>",
+                                "hint": "Consider parent class constructor call",
+                                "options": [
+                                    "Calls the current class constructor - creates current instance",
+                                    "Calls the parent class constructor - initializes parent properties",
+                                    "Creates a new object - instantiates a new object",
+                                    "Returns undefined - doesn't do anything"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Static Methods",
+                                "question": "<p>Write a class with a static method that creates a Person instance.</p><p>The class should:</p><ul><li>Use the <code>static</code> keyword for the method</li><li>Accept parameters for creating a Person</li><li>Return a new instance of the class</li><li>Be callable on the class itself, not instances</li><li>Return the created person's information</li></ul>",
+                                "hint": "Use static keyword for class methods",
+                                "input": "Bob\n30",
+                                "output": "Bob 30"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Private Fields",
+                                "question": "<p>How do you define a private field in a class?</p><p>Consider these field declarations:</p><ul><li><code>#privateField</code> - private field syntax</li><li><code>_privateField</code> - convention for private</li><li><code>private privateField</code> - private keyword</li><li><code>let privateField</code> - let declaration</li></ul>",
+                                "hint": "Consider private field syntax",
+                                "options": [
+                                    "Using # prefix - #fieldName creates truly private fields",
+                                    "Using _ prefix - _fieldName is a convention",
+                                    "Using private keyword - private fieldName",
+                                    "Using let keyword - let fieldName"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Getter Methods",
+                                "question": "<p>Write a class with a getter method that returns a formatted name.</p><p>The class should:</p><ul><li>Use the <code>get</code> keyword for getter methods</li><li>Have firstName and lastName properties</li><li>Create a getter that returns full name</li><li>Format the name properly</li><li>Return the formatted full name</li></ul>",
+                                "hint": "Use get keyword for getter methods",
+                                "input": "John\nDoe",
+                                "output": "John Doe"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Setter Methods",
+                                "question": "<p>What is the purpose of a setter method?</p><p>Consider this setter example:</p><pre><code>class Person {<br>  set age(value) {<br>    if (value >= 0) {<br>      this._age = value;<br>    } else {<br>      throw new Error('Age cannot be negative');<br>    }<br>  }<br>}</code></pre>",
+                                "hint": "Consider property assignment control",
+                                "options": [
+                                    "To get property values - retrieve data",
+                                    "To set property values with validation - control assignment",
+                                    "To delete properties - remove data",
+                                    "To create new properties - add new fields"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Method Overriding",
+                                "question": "<p>Write a child class that overrides a parent class method.</p><p>The child class should:</p><ul><li>Inherit from a parent class</li><li>Define a method with the same name as parent</li><li>Provide different implementation</li><li>Return a different result or message</li><li>Demonstrate method overriding</li></ul>",
+                                "hint": "Define the same method name in child class",
+                                "input": "parent\nchild",
+                                "output": "Child method called"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Instance Of",
+                                "question": "<p>What does <code>instanceof</code> operator check?</p><p>Consider this code:</p><pre><code>class Animal {}<br>class Dog extends Animal {}<br>const dog = new Dog();<br>console.log(dog instanceof Dog); // true<br>console.log(dog instanceof Animal); // true<br>console.log(dog instanceof Object); // true</code></pre>",
+                                "hint": "Consider object type checking",
+                                "options": [
+                                    "If an object is an instance of a class - checks inheritance chain",
+                                    "If a variable is defined - checks variable existence",
+                                    "If a method exists - checks method availability",
+                                    "If a property is accessible - checks property access"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "JavaScript Design Patterns",
+                        "description": "Learn advanced design patterns and architectural concepts.",
+                        "tags": [
+                            "design-patterns",
+                            "javascript",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Singleton Pattern",
+                                "question": "<p>Write a singleton class that ensures only one instance exists.</p><p>Your implementation should:</p><ul><li>Use a static instance property</li><li>Have a private constructor</li><li>Provide a static method to get the instance</li><li>Ensure only one instance is ever created</li><li>Return the same instance for all calls</li></ul>",
+                                "hint": "Use static instance and private constructor",
+                                "input": "config1\nconfig2",
+                                "output": "same instance"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Factory Pattern",
+                                "question": "<p>What is the main purpose of the Factory pattern?</p><p>Consider this factory example:</p><pre><code>class UserFactory {<br>  createUser(type) {<br>    switch(type) {<br>      case 'admin': return new AdminUser();<br>      case 'regular': return new RegularUser();<br>      default: throw new Error('Invalid user type');<br>    }<br>  }<br>}</code></pre>",
+                                "hint": "Consider object creation abstraction",
+                                "options": [
+                                    "To create multiple instances - mass production",
+                                    "To abstract object creation - hide creation complexity",
+                                    "To destroy objects - cleanup resources",
+                                    "To copy objects - clone instances"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Observer Pattern",
+                                "question": "<p>Write an observer pattern implementation with subscribe and notify methods.</p><p>Your implementation should:</p><ul><li>Have a subject that maintains a list of observers</li><li>Provide subscribe method to add observers</li><li>Provide unsubscribe method to remove observers</li><li>Provide notify method to update all observers</li><li>Handle multiple observers properly</li></ul>",
+                                "hint": "Use arrays to store observers and notify all",
+                                "input": "observer1\nobserver2\nevent",
+                                "output": "observer1 notified\nobserver2 notified"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Module Pattern",
+                                "question": "<p>What is the Module pattern used for?</p><p>Consider this module example:</p><pre><code>const Calculator = (function() {<br>  const privateVar = 0;<br>  function privateMethod() {<br>    return privateVar;<br>  }<br>  return {<br>    add: function(a, b) { return a + b; },<br>    getPrivate: privateMethod<br>  };<br>})();</code></pre>",
+                                "hint": "Consider encapsulation and privacy",
+                                "options": [
+                                    "To create modules - organize code",
+                                    "To encapsulate private data - hide implementation details",
+                                    "To export functions - make functions available",
+                                    "To import libraries - use external code"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Decorator Pattern",
+                                "question": "<p>Write a decorator function that adds functionality to an existing function.</p><p>Your decorator should:</p><ul><li>Accept a function as a parameter</li><li>Return a new function that wraps the original</li><li>Add logging or timing functionality</li><li>Call the original function with its arguments</li><li>Return the result with additional information</li></ul>",
+                                "hint": "Wrap the original function with additional behavior",
+                                "input": "original\nlogging",
+                                "output": "logged: original result"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Strategy Pattern",
+                                "question": "<p>What is the Strategy pattern used for?</p><p>Consider this strategy example:</p><pre><code>const strategies = {<br>  add: (a, b) => a + b,<br>  subtract: (a, b) => a - b,<br>  multiply: (a, b) => a * b<br>};<br>function calculate(strategy, a, b) {<br>  return strategies[strategy](a, b);<br>}</code></pre>",
+                                "hint": "Consider algorithm selection",
+                                "options": [
+                                    "To select algorithms at runtime - dynamic algorithm choice",
+                                    "To create strategies - define different approaches",
+                                    "To optimize performance - improve speed",
+                                    "To reduce code size - minimize code"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Command Pattern",
+                                "question": "<p>Write a command pattern implementation with execute and undo methods.</p><p>Your implementation should:</p><ul><li>Encapsulate requests as objects</li><li>Have an execute method to perform the action</li><li>Have an undo method to reverse the action</li><li>Store the necessary state for undo</li><li>Handle command execution properly</li></ul>",
+                                "hint": "Encapsulate requests as objects",
+                                "input": "action\nparameter",
+                                "output": "executed: action parameter"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Proxy Pattern",
+                                "question": "<p>What is the Proxy pattern used for?</p><p>Consider this proxy example:</p><pre><code>const originalObject = { data: 'sensitive' };<br>const proxy = new Proxy(originalObject, {<br>  get: function(target, property) {<br>    console.log('Accessing:', property);<br>    return target[property];<br>  }<br>});</code></pre>",
+                                "hint": "Consider object access control",
+                                "options": [
+                                    "To control access to objects - add access control layer",
+                                    "To create proxies - duplicate objects",
+                                    "To copy objects - clone instances",
+                                    "To delete objects - remove instances"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Chain of Responsibility",
+                                "question": "<p>Write a chain of responsibility pattern with multiple handlers.</p><p>Your implementation should:</p><ul><li>Create a chain of handler objects</li><li>Each handler can process or pass the request</li><li>Use setNext method to chain handlers</li><li>Handle requests sequentially through the chain</li><li>Return the result from the appropriate handler</li></ul>",
+                                "hint": "Chain handlers that can process or pass requests",
+                                "input": "request1\nhandler1\nhandler2",
+                                "output": "handler1 processed request1"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "MVC Pattern",
+                                "question": "<p>What does MVC stand for in design patterns?</p><p>Consider the MVC architecture:</p><ul><li>One component handles data and business logic</li><li>One component handles user interface</li><li>One component handles user input and coordinates</li><li>These components are separated for maintainability</li></ul>",
+                                "hint": "Consider architectural pattern components",
+                                "options": [
+                                    "Model View Controller - separates concerns into three components",
+                                    "Main View Component - organizes main components",
+                                    "Module View Class - structures modules",
+                                    "Method View Constructor - organizes methods"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "JavaScript Advanced Concepts",
+                        "description": "Master advanced JavaScript concepts including generators, symbols, and metaprogramming.",
+                        "tags": [
+                            "advanced",
+                            "javascript",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "Coding",
+                                "title": "Generator Functions",
+                                "question": "<p>Write a generator function that yields numbers from 1 to n.</p><p>Your function should:</p><ul><li>Use the <code>function*</code> syntax to create a generator</li><li>Use <code>yield</code> keyword to yield values</li><li>Accept a parameter n for the upper limit</li><li>Yield numbers from 1 to n</li><li>Return the generator object</li></ul>",
+                                "hint": "Use function* syntax and yield keyword",
+                                "input": "5",
+                                "output": "1 2 3 4 5"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Symbols",
+                                "question": "<p>What is the purpose of Symbols in JavaScript?</p><p>Consider this example:</p><pre><code>const mySymbol = Symbol('description');<br>const obj = {<br>  [mySymbol]: 'value'<br>};<br>console.log(obj[mySymbol]); // 'value'</code></pre>",
+                                "hint": "Consider unique identifier creation",
+                                "options": [
+                                    "To create unique identifiers - prevent property name collisions",
+                                    "To create faster objects - improve performance",
+                                    "To create smaller objects - reduce memory usage",
+                                    "To create prettier objects - improve readability"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Proxy with Validation",
+                                "question": "<p>Write a Proxy that validates object properties before setting them.</p><p>Your Proxy should:</p><ul><li>Use the <code>Proxy</code> constructor</li><li>Implement a <code>set</code> trap for validation</li><li>Check if the value is a number before setting</li><li>Throw an error for invalid values</li><li>Allow valid values to be set</li></ul>",
+                                "hint": "Use Proxy constructor with set trap",
+                                "input": "age\n25\nname\nJohn",
+                                "output": "25\nError: Invalid value"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "WeakMap vs Map",
+                                "question": "<p>What is the main difference between WeakMap and Map?</p><p>Consider these characteristics:</p><ul><li>Map holds strong references to keys</li><li>WeakMap holds weak references to keys</li><li>Map allows any type as keys</li><li>WeakMap only allows objects as keys</li></ul>",
+                                "hint": "Consider memory management and garbage collection",
+                                "options": [
+                                    "WeakMap allows garbage collection of keys, Map prevents it",
+                                    "Map is faster, WeakMap is slower",
+                                    "Map is newer, WeakMap is older",
+                                    "There is no difference between them"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Reflect API",
+                                "question": "<p>Write a function that uses Reflect to get and set object properties.</p><p>Your function should:</p><ul><li>Use <code>Reflect.get()</code> to retrieve a property</li><li>Use <code>Reflect.set()</code> to set a property</li><li>Handle both operations properly</li><li>Return the property value after setting</li></ul>",
+                                "hint": "Use Reflect.get() and Reflect.set() methods",
+                                "input": "myObject\nname\nJohn",
+                                "output": "John"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Template Literals",
+                                "question": "<p>What are tagged template literals?</p><p>Consider this example:</p><pre><code>function tag(strings, ...values) {<br>  return strings.reduce((result, str, i) => {<br>    return result + str + (values[i] || '');<br>  }, '');<br>}<br>const result = tag`Hello ${name}!`;</code></pre>",
+                                "hint": "Consider custom processing of template literals",
+                                "options": [
+                                    "Template literals with custom processing - function processes the template",
+                                    "Template literals with HTML tags - automatic HTML generation",
+                                    "Template literals with CSS styling - automatic styling",
+                                    "Template literals with validation - automatic validation"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Object Destructuring",
+                                "question": "<p>Write a function that uses advanced object destructuring with default values and aliasing.</p><p>Your function should:</p><ul><li>Use object destructuring with default values</li><li>Use property aliasing with <code>:</code> syntax</li><li>Handle missing properties gracefully</li><li>Return the destructured values</li></ul>",
+                                "hint": "Use { property: alias = defaultValue } syntax",
+                                "input": "John\n30",
+                                "output": "John 30"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Iterators",
+                                "question": "<p>What is an iterator in JavaScript?</p><p>Consider this iterator example:</p><pre><code>const iterator = {<br>  next() {<br>    return { value: 1, done: false };<br>  }<br>};</code></pre>",
+                                "hint": "Consider sequential data access",
+                                "options": [
+                                    "An object that provides sequential access to data - defines iteration protocol",
+                                    "A function that loops through arrays - array iteration",
+                                    "A method that sorts data - data sorting",
+                                    "A property that counts elements - element counting"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "Coding",
+                                "title": "Async Iterators",
+                                "question": "<p>Write an async iterator that yields promises that resolve to numbers.</p><p>Your async iterator should:</p><ul><li>Use <code>async function*</code> syntax</li><li>Use <code>await</code> with promises</li><li>Yield resolved values</li><li>Handle async operations properly</li></ul>",
+                                "hint": "Use async function* and await with yield",
+                                "input": "1\n2\n3",
+                                "output": "1 2 3"
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Metaprogramming",
+                                "question": "<p>What is metaprogramming in JavaScript?</p><p>Consider these techniques:</p><ul><li>Using Proxy to intercept object operations</li><li>Using Reflect to manipulate objects</li><li>Using Symbols to create unique properties</li><li>Using eval() to execute dynamic code</li></ul>",
+                                "hint": "Consider code that manipulates other code",
+                                "options": [
+                                    "Writing code that manipulates other code - programs that write programs",
+                                    "Writing code that is very fast - performance optimization",
+                                    "Writing code that is very small - code minimization",
+                                    "Writing code that is very readable - code documentation"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

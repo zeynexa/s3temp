@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Problem Solving",
+            "slug": "problem-solving",
+            "description": "Develop analytical thinking and problem-solving skills through algorithmic challenges.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/problem-solving.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Searching & Sorting",
+                "slug": "searching-sorting",
+                "description": "Master fundamental searching and sorting algorithms and their implementations.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/searching-sorting.svg",
+                "exercises": [
+                    {
+                        "level": "Beginner",
+                        "title": "Basic Searching",
+                        "description": "Learn fundamental searching algorithms and their applications.",
+                        "tags": [
+                            "searching",
+                            "algorithms",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Linear Search Complexity",
+                                "question": "<p>What is the time complexity of linear search in the worst case?</p><p>Consider: Worst case is when element is not found or is at the end</p>",
+                                "hint": "Think about how many comparisons are needed",
+                                "options": [
+                                    "O(1) - constant time",
+                                    "O(n) - linear time, checks all elements",
+                                    "O(log n) - logarithmic time",
+                                    "O(n²) - quadratic time"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Binary Search Requirement",
+                                "question": "<p>What is the prerequisite for using binary search?</p><p>Consider: Binary search divides the search space in half</p>",
+                                "hint": "Think about what allows the divide and conquer approach",
+                                "options": [
+                                    "Array must be sorted - allows elimination of half",
+                                    "Array must be small - less than 100 elements",
+                                    "Array must contain only numbers",
+                                    "Array must be unique - no duplicates"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Search Space Reduction",
+                                "question": "<p>How much does binary search reduce the search space in each iteration?</p><p>Consider: Binary search compares with middle element</p>",
+                                "hint": "Think about what happens after comparing with middle",
+                                "options": [
+                                    "By 1 element - removes one element",
+                                    "By half - eliminates half of remaining elements",
+                                    "By 2 elements - removes two elements",
+                                    "By 75% - eliminates three quarters"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "Basic Sorting",
+                        "description": "Learn fundamental sorting algorithms and their implementations.",
+                        "tags": [
+                            "sorting",
+                            "algorithms",
+                            "basics"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Bubble Sort Complexity",
+                                "question": "<p>What is the time complexity of bubble sort in the worst case?</p><p>Consider: Nested loops and number of comparisons</p>",
+                                "hint": "Think about the number of passes and comparisons",
+                                "options": [
+                                    "O(n) - linear time",
+                                    "O(n²) - quadratic time, nested loops",
+                                    "O(n log n) - linearithmic time",
+                                    "O(log n) - logarithmic time"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Selection Sort",
+                                "question": "<p>What is the main operation in selection sort?</p><p>Consider: How selection sort works</p>",
+                                "hint": "Think about finding and selecting elements",
+                                "options": [
+                                    "Swapping adjacent elements",
+                                    "Finding minimum element and placing it at correct position",
+                                    "Dividing array into halves",
+                                    "Comparing all pairs of elements"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Insertion Sort",
+                                "question": "<p>What is the best case time complexity of insertion sort?</p><p>Consider: When array is already sorted</p>",
+                                "hint": "Think about what happens when array is already in order",
+                                "options": [
+                                    "O(n²) - quadratic time",
+                                    "O(n) - linear time, already sorted",
+                                    "O(n log n) - linearithmic time",
+                                    "O(log n) - logarithmic time"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

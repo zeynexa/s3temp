@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Aptitude",
+            "slug": "aptitude",
+            "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Puzzles",
+                "slug": "puzzles",
+                "description": "Solve logical puzzles, brain teasers, and analytical thinking problems.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/puzzles.svg",
+                "exercises": [
+                    {
+                        "level": "Beginner",
+                        "title": "Logic Puzzles",
+                        "description": "Solve basic logic puzzles and reasoning problems.",
+                        "tags": [
+                            "logic",
+                            "reasoning",
+                            "puzzles"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Logical Deduction",
+                                "question": "<p>If all roses are flowers and some flowers are red, what can we conclude?</p><p>Consider: Logical relationships and valid deductions</p>",
+                                "hint": "Think about what can be logically inferred from the given statements",
+                                "options": [
+                                    "All roses are red - invalid deduction",
+                                    "Some roses are red - possible but not certain",
+                                    "All red things are roses - invalid deduction",
+                                    "No valid conclusion can be drawn - correct"
+                                ],
+                                "correct_answer": 3
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Truth Teller and Liar",
+                                "question": "<p>In a village, people either always tell the truth or always lie. A person says 'I am a liar.' What can we conclude?</p><p>Consider: The logical contradiction</p>",
+                                "hint": "Think about what happens if a truth teller or liar makes this statement",
+                                "options": [
+                                    "The person is a truth teller",
+                                    "The person is a liar",
+                                    "This creates a logical paradox",
+                                    "We cannot determine"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Number Sequence",
+                                "question": "<p>What comes next in the sequence: 2, 4, 8, 16, 32, ?</p><p>Consider: Look for a pattern in the numbers</p>",
+                                "hint": "Each number is multiplied by 2 to get the next",
+                                "options": [
+                                    "48 - incorrect pattern",
+                                    "64 - correct next number",
+                                    "60 - incorrect",
+                                    "56 - incorrect"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "Word Puzzles",
+                        "description": "Solve word-based puzzles and language logic problems.",
+                        "tags": [
+                            "word-puzzles",
+                            "language",
+                            "logic"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Word Relationships",
+                                "question": "<p>What is the relationship between 'doctor' and 'patient'?</p><p>Consider: How these words are related in meaning</p>",
+                                "hint": "Think about the professional relationship and roles",
+                                "options": [
+                                    "Synonyms - same meaning",
+                                    "Antonyms - opposite meaning",
+                                    "Professional relationship - one serves the other",
+                                    "Hierarchical relationship - one is superior"
+                                ],
+                                "correct_answer": 2
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Anagrams",
+                                "question": "<p>Which of the following is an anagram of 'listen'?</p><p>Consider: Rearranging letters to form a new word</p>",
+                                "hint": "Rearrange the letters in 'listen'",
+                                "options": [
+                                    "silent - correct anagram",
+                                    "listen - same word",
+                                    "tinsel - different word",
+                                    "enlist - different word"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Word Patterns",
+                                "question": "<p>What word completes the pattern: cat, dog, rat, ?</p><p>Consider: Look for a pattern in the words</p>",
+                                "hint": "Think about the relationship between the words",
+                                "options": [
+                                    "bat - follows animal pattern",
+                                    "hat - incorrect category",
+                                    "mat - incorrect category",
+                                    "sat - incorrect category"
+                                ],
+                                "correct_answer": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

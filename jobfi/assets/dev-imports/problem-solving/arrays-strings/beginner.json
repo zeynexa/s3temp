@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Problem Solving",
+            "slug": "problem-solving",
+            "description": "Develop analytical thinking and problem-solving skills through algorithmic challenges.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/problem-solving.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Arrays & Strings",
+                "slug": "arrays-strings",
+                "description": "Master fundamental operations on arrays and string manipulation techniques.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/arrays-strings.svg",
+                "exercises": [
+                    {
+                        "level": "Beginner",
+                        "title": "Array Basics",
+                        "description": "Learn fundamental array operations and manipulation techniques.",
+                        "tags": [
+                            "arrays",
+                            "basics",
+                            "problem-solving"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Array Indexing",
+                                "question": "<p>What is the index of the first element in an array?</p><p>Consider this array: <code>[10, 20, 30, 40, 50]</code></p>",
+                                "hint": "Array indexing typically starts from 0",
+                                "options": [
+                                    "0 - arrays are zero-indexed",
+                                    "1 - arrays are one-indexed",
+                                    "-1 - arrays use negative indexing",
+                                    "It depends on the programming language"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Array Access Time",
+                                "question": "<p>What is the time complexity of accessing an element at a specific index in an array?</p><p>Consider: How arrays store elements in memory</p>",
+                                "hint": "Arrays use direct memory addressing",
+                                "options": [
+                                    "O(1) - constant time access",
+                                    "O(n) - linear time access",
+                                    "O(log n) - logarithmic time access",
+                                    "O(n²) - quadratic time access"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Array Memory Layout",
+                                "question": "<p>How are elements stored in memory for a one-dimensional array?</p><p>Consider: Memory allocation and addressing</p>",
+                                "hint": "Think about contiguous memory allocation",
+                                "options": [
+                                    "Randomly scattered in memory",
+                                    "Contiguously in adjacent memory locations",
+                                    "In a linked list structure",
+                                    "In a tree structure"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Beginner",
+                        "title": "String Fundamentals",
+                        "description": "Master basic string operations and manipulation techniques.",
+                        "tags": [
+                            "strings",
+                            "basics",
+                            "problem-solving"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "String Concatenation",
+                                "question": "<p>What is the result of concatenating \"Hello\" + \" \" + \"World\"?</p>",
+                                "hint": "Concatenation joins strings together",
+                                "options": [
+                                    "\"HelloWorld\" - no spaces",
+                                    "\"Hello World\" - with space",
+                                    "\"Hello  World\" - double space",
+                                    "Error - cannot concatenate strings"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "String Immutability",
+                                "question": "<p>In most programming languages, strings are immutable. What does this mean?</p><p>Consider: What happens when you try to modify a string</p>",
+                                "hint": "Think about whether you can change the original string",
+                                "options": [
+                                    "Strings cannot be created",
+                                    "Strings cannot be modified after creation - new string is created",
+                                    "Strings cannot be copied",
+                                    "Strings cannot be compared"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "String Length",
+                                "question": "<p>What is the length of the string \"Hello World\"?</p><p>Consider: Count each character including spaces</p>",
+                                "hint": "Count every character in the string",
+                                "options": [
+                                    "10 - excluding space",
+                                    "11 - including space",
+                                    "12 - including null terminator",
+                                    "9 - excluding 'l' characters"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

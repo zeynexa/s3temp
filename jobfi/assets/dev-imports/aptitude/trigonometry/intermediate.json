@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Aptitude",
+            "slug": "aptitude",
+            "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Trigonometry",
+                "slug": "trigonometry",
+                "description": "Master trigonometric functions, identities, and applications.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/trigonometry.svg",
+                "exercises": [
+                    {
+                        "level": "Intermediate",
+                        "title": "Advanced Trigonometric Identities",
+                        "description": "Master advanced trigonometric identities and their applications.",
+                        "tags": [
+                            "advanced-identities",
+                            "trigonometry",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Double Angle Formulas",
+                                "question": "<p>What is the double angle formula for sine?</p><p>Consider: sin(2θ) in terms of sin(θ) and cos(θ)</p>",
+                                "hint": "sin(2θ) = 2sin(θ)cos(θ)",
+                                "options": [
+                                    "sin(2θ) = sin²(θ) + cos²(θ)",
+                                    "sin(2θ) = 2sin(θ)cos(θ) - correct formula",
+                                    "sin(2θ) = sin(θ) + cos(θ)",
+                                    "sin(2θ) = sin²(θ) - cos²(θ)"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Sum and Difference Formulas",
+                                "question": "<p>What is sin(A + B) equal to?</p><p>Consider: The sum formula for sine</p>",
+                                "hint": "sin(A + B) = sin(A)cos(B) + cos(A)sin(B)",
+                                "options": [
+                                    "sin(A) + sin(B)",
+                                    "sin(A)cos(B) + cos(A)sin(B) - correct formula",
+                                    "sin(A)cos(B) - cos(A)sin(B)",
+                                    "sin(A) × sin(B)"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Half Angle Formulas",
+                                "question": "<p>What is cos(θ/2) equal to?</p><p>Consider: The half angle formula for cosine</p>",
+                                "hint": "cos(θ/2) = ±√((1 + cos(θ))/2)",
+                                "options": [
+                                    "cos(θ)/2",
+                                    "±√((1 + cos(θ))/2) - correct formula",
+                                    "√(cos(θ))",
+                                    "cos(θ)²"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Intermediate",
+                        "title": "Trigonometric Applications",
+                        "description": "Apply trigonometric concepts to real-world problems.",
+                        "tags": [
+                            "applications",
+                            "real-world",
+                            "intermediate"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Law of Sines",
+                                "question": "<p>What does the Law of Sines state?</p><p>Consider: Relationship between sides and angles in a triangle</p>",
+                                "hint": "a/sin(A) = b/sin(B) = c/sin(C)",
+                                "options": [
+                                    "a² = b² + c² - 2bc cos(A)",
+                                    "a/sin(A) = b/sin(B) = c/sin(C) - Law of Sines",
+                                    "sin(A) = sin(B) = sin(C)",
+                                    "a = b = c"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Law of Cosines",
+                                "question": "<p>What is the Law of Cosines formula?</p><p>Consider: Relationship between sides and angles</p>",
+                                "hint": "a² = b² + c² - 2bc cos(A)",
+                                "options": [
+                                    "a² = b² + c² - 2bc cos(A) - correct formula",
+                                    "a = b + c",
+                                    "a² = b² + c²",
+                                    "a = b cos(C) + c cos(B)"
+                                ],
+                                "correct_answer": 0
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Vector Operations",
+                                "question": "<p>How do you find the magnitude of a vector using trigonometry?</p><p>Consider: Vector components and magnitude</p>",
+                                "hint": "Use the Pythagorean theorem with components",
+                                "options": [
+                                    "Add the components",
+                                    "Use √(x² + y²) - magnitude formula",
+                                    "Multiply the components",
+                                    "Divide the components"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

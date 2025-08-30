@@ -1,0 +1,122 @@
+[
+    {
+        "category": {
+            "name": "Design",
+            "slug": "design",
+            "description": "Master design principles, user experience, and visual communication techniques.",
+            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/design.svg"
+        },
+        "sub_categories": [
+            {
+                "name": "Graphic Design",
+                "slug": "graphic-design",
+                "description": "Learn graphic design principles and visual communication techniques.",
+                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/graphic-design.svg",
+                "exercises": [
+                    {
+                        "level": "Expert",
+                        "title": "Design System Architecture",
+                        "description": "Master design system architecture and advanced design patterns.",
+                        "tags": [
+                            "design-systems",
+                            "architecture",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Design System Components",
+                                "question": "<p>What are the core components of a design system?</p><p>Consider: Essential elements for consistency</p>",
+                                "hint": "Think about what makes a design system complete",
+                                "options": [
+                                    "Only colors and fonts",
+                                    "Colors, typography, components, and guidelines",
+                                    "Only components",
+                                    "Only guidelines"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Design Token Management",
+                                "question": "<p>What is the purpose of design token management?</p><p>Consider: Centralizing design decisions</p>",
+                                "hint": "Think about maintaining consistency across platforms",
+                                "options": [
+                                    "Making designs more colorful",
+                                    "Centralizing design decisions for consistency",
+                                    "Making everything smaller",
+                                    "Adding more fonts"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Design System Governance",
+                                "question": "<p>What is design system governance?</p><p>Consider: Managing and maintaining design systems</p>",
+                                "hint": "Think about processes for maintaining consistency",
+                                "options": [
+                                    "Creating new designs",
+                                    "Processes for maintaining and evolving design systems",
+                                    "Deleting old components",
+                                    "Changing colors only"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    },
+                    {
+                        "level": "Expert",
+                        "title": "Advanced Visual Effects",
+                        "description": "Master advanced visual effects and design techniques.",
+                        "tags": [
+                            "visual-effects",
+                            "advanced",
+                            "expert"
+                        ],
+                        "tasks": [
+                            {
+                                "type": "MCQ",
+                                "title": "Visual Effects in Design",
+                                "question": "<p>What is the purpose of visual effects in graphic design?</p><p>Consider: Enhancing visual appeal and communication</p>",
+                                "hint": "Think about making designs more engaging",
+                                "options": [
+                                    "Making everything flashy",
+                                    "Enhancing visual appeal and communication",
+                                    "Making designs slower",
+                                    "Using only bright colors"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "3D Design Principles",
+                                "question": "<p>What are 3D design principles in graphic design?</p><p>Consider: Creating depth and dimension</p>",
+                                "hint": "Think about adding depth to flat designs",
+                                "options": [
+                                    "Making everything flat",
+                                    "Creating depth and dimension in designs",
+                                    "Using only 3D software",
+                                    "Making designs smaller"
+                                ],
+                                "correct_answer": 1
+                            },
+                            {
+                                "type": "MCQ",
+                                "title": "Motion Design",
+                                "question": "<p>What is motion design in graphic design?</p><p>Consider: Adding movement to static designs</p>",
+                                "hint": "Think about bringing designs to life",
+                                "options": [
+                                    "Making everything move",
+                                    "Adding purposeful movement to enhance communication",
+                                    "Using only animations",
+                                    "Making designs faster"
+                                ],
+                                "correct_answer": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
