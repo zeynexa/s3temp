@@ -4,14 +4,15 @@
             "name": "Programming",
             "slug": "programming",
             "description": "Learn programming languages, algorithms, and software development skills.",
-            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+            "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-categories/programming.svg"
         },
         "sub_categories": [
             {
                 "name": "C#",
                 "slug": "c-sharp",
                 "description": "Learn C# for .NET development, Windows applications, and enterprise software.",
-                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/c-sharp.svg",
+                "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-categories/c-sharp.svg",
+                "banner_image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-category-banners/c-sharp.webp",
                 "exercises": [
                     {
                         "level": "Intermediate",

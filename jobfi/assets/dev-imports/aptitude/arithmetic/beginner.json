@@ -4,16 +4,18 @@
             "name": "Aptitude",
             "slug": "aptitude",
             "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
-            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+            "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-categories/aptitude.svg"
         },
         "sub_categories": [
             {
                 "name": "Arithmetic",
                 "slug": "arithmetic",
                 "description": "Master arithmetic operations, number theory, and mathematical problem-solving techniques.",
-                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/arithmetic.svg",
+                "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-categories/arithmetic.svg",
+                "banner_image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-category-banners/arithmetic.webp",
                 "exercises": [
                     {
+                        
                         "level": "Beginner",
                         "title": "Basic Operations",
                         "description": "Master fundamental arithmetic operations and number properties.",

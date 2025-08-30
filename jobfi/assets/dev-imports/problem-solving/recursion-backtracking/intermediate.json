@@ -4,14 +4,15 @@
             "name": "Problem Solving",
             "slug": "problem-solving",
             "description": "Develop analytical thinking and problem-solving skills through algorithmic challenges.",
-            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/problem-solving.svg"
+            "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-categories/problem-solving.svg"
         },
         "sub_categories": [
             {
                 "name": "Recursion & Backtracking",
                 "slug": "recursion-backtracking",
                 "description": "Master recursive algorithms and backtracking techniques for complex problem solving.",
-                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/recursion-backtracking.svg",
+                "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-categories/recursion-backtracking.svg",
+                "banner_image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-category-banners/recursion-backtracking.webp",
                 "exercises": [
                     {
                         "level": "Intermediate",

@@ -4,14 +4,15 @@
             "name": "Aptitude",
             "slug": "aptitude",
             "description": "Develop mathematical reasoning and problem-solving skills for competitive exams and interviews.",
-            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/aptitude.svg"
+            "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-categories/aptitude.svg"
         },
         "sub_categories": [
             {
                 "name": "Trigonometry",
                 "slug": "trigonometry",
                 "description": "Master trigonometric functions, identities, and applications.",
-                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/trigonometry.svg",
+                "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-categories/trigonometry.svg",
+                "banner_image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-category-banners/trigonometry.webp",
                 "exercises": [
                     {
                         "level": "Expert",

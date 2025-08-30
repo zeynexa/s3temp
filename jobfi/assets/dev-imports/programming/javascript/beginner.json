@@ -4,14 +4,15 @@
             "name": "Programming",
             "slug": "programming",
             "description": "Learn programming languages, algorithms, and software development skills.",
-            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+            "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-categories/programming.svg"
         },
         "sub_categories": [
             {
                 "name": "JavaScript",
                 "slug": "javascript",
                 "description": "Master JavaScript for web development and dynamic applications.",
-                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/javascript.svg",
+                "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-categories/javascript.svg",
+                "banner_image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-category-banners/javascript.webp",
                 "exercises": [
                     {
                         "level": "Beginner",

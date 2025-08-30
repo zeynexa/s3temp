@@ -4,14 +4,15 @@
             "name": "Problem Solving",
             "slug": "problem-solving",
             "description": "Develop analytical thinking and problem-solving skills through algorithmic challenges.",
-            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/problem-solving.svg"
+            "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-categories/problem-solving.svg"
         },
         "sub_categories": [
             {
                 "name": "Arrays & Strings",
                 "slug": "arrays-strings",
                 "description": "Master fundamental operations on arrays and string manipulation techniques.",
-                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/arrays-strings.svg",
+                "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-categories/arrays-strings.svg",
+                "banner_image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-category-banners/arrays-strings.webp",
                 "exercises": [
                     {
                         "level": "Expert",

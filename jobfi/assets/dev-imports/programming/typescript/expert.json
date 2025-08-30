@@ -4,14 +4,15 @@
             "name": "Programming",
             "slug": "programming",
             "description": "Learn programming languages, algorithms, and software development skills.",
-            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/programming.svg"
+            "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-categories/programming.svg"
         },
         "sub_categories": [
             {
                 "name": "TypeScript",
                 "slug": "typescript",
                 "description": "Learn TypeScript for type-safe JavaScript development.",
-                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/typescript.svg",
+                "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-categories/typescript.svg",
+                "banner_image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-category-banners/typescript.webp",
                 "exercises": [
                     {
                         "level": "Expert",

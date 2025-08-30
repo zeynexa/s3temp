@@ -4,14 +4,15 @@
             "name": "Problem Solving",
             "slug": "problem-solving",
             "description": "Develop analytical thinking and problem-solving skills through algorithmic challenges.",
-            "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-categories/problem-solving.svg"
+            "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-categories/problem-solving.svg"
         },
         "sub_categories": [
             {
                 "name": "Searching & Sorting",
                 "slug": "searching-sorting",
                 "description": "Master fundamental searching and sorting algorithms and their implementations.",
-                "image": "https://raw.githubusercontent.com/zeynexa/jf2bucket/refs/heads/main/uploads/practice-sub-categories/searching-sorting.svg",
+                "image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-categories/searching-sorting.svg",
+                "banner_image": "https://raw.githubusercontent.com/zeynexa/s3temp/refs/heads/main/jobfi/uploads/practice-sub-category-banners/searching-sorting.webp",
                 "exercises": [
                     {
                         "level": "Expert",
